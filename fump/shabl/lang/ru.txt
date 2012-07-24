@@ -1,0 +1,1336 @@
+Russian	windows-1251
+#First line must have format:
+#LANGNAME<TAB>ENCODING
+###################################################
+#Created by Konstantin Ursaloff and Andrey Stepanuk
+#Follow Up Mailing List Processor PRO 4.21.01
+#Lang file version: 1.1
+#Last modified 01/17/2006
+###################################################
+#Version 5.01
+BTN_DEL_ALL_MSGS	Удалить все сообщения
+MAIN_HEADER	Follow Up Mailing List Processor панель управления v{VERSION}
+BROADCAST_MESSAGES_WAS_SENT1	было отправлено сообщений
+BROADCAST_MESSAGES_WAS_SENT2	осталось.
+BROADCAST_SENDER_PROCESS_FINISHED	Процесс отправки закончен
+BROADCAST_SENDER_PROCESS_STARTED	Процесс отправки начат
+BROADCAST_DISTRIBUTION_STARTED	Распределение сообщений между процессами начато
+BROADCAST_DISTRIBUTION_FINISHED	Распределение сообщений между процессами закончено
+BROADCAST_NO_MESS	Нет сообщений к отправке
+BROADCAST_DELETE_DOI	Подписчик
+BROADCAST_DELETE_DOI2	был удален из аккаунта
+BROADCAST_DELETE_DOI3	так как был не подтвержден
+BROADCAST_POP3_FINISHED	POP3 получение почты завершено
+BROADCAST_POP3_CANT_FETCH	Не могу получить сообщение с сервера, ID
+BROADCAST_POP3_ERROR5	Пожалуйста проверьте настройки аккаунта
+BROADCAST_POP3_ERROR4	POP3 пользователь
+BROADCAST_POP3_ERROR3	Не могу авторизироваться на  POP3 сервере (POP3 сервер
+BROADCAST_POP3_ERROR2	Не могу открыть соединение с 
+BROADCAST_POP3_ERROR	Ошибка в настройках аккаунта
+BROADCAST_POP3_PROCESS_STARTED	POP3 получение почты начато для аккаунта
+BROADCAST_ADDING_NEW_SUBSCRIBER	Подписка по почте: Добавление нового пользователя
+BROADCAST_ADDING_NEW_SUBSCRIBER2	в аккаунт
+BROADCAST_ALREADY_SUBSCRIBED	Подписка по почте: Email адрес уже существует
+BROADCAST_IS_SUBSCRIBE_ADDR2	Это ваш адрес - игнорирую
+BROADCAST_IS_SUBSCRIBE_ADDR	Подписка по почте: Получено сообщение от
+BROADCAST_EMAIL_BANNED	Подписка по почте: Email был забанен
+BROADCAST_INCORRECT_EMAIL	Подписка по почте: Некорректный email
+BROADCAST_CANT_FIND_EMAIL	Подписка по почте: Не могу найти обратный адрес
+DAILY_REPORT_SUBJ	Ежедневный отчет
+DAILY_REPORT_FROM_NAME	SellWide Broadcaster
+BROADCAST_SEQ_WAS_RESTARTED2	подписчиков
+BROADCAST_SEQ_WAS_RESTARTED	очередь была обновлена для
+BROADCAST_FOLLOWUP	Follow up сообщения
+BROADCAST_SEQUENCE_REPEAT_ERR	Follow up messages error: Can not process sequence repeating because message with ID
+BROADCAST_SEQUENCE_REPEAT_ERR2	was not found in account
+BROADCAST_CHECKING_SEQUENTIAL	Проверка нужно ли отправлять  follow up сообщения
+BROADCAST_NEED_TO_SEND	нужно послать
+BROADCAST_NEED_TO_SEND2	сообщений
+BROADCAST_MANUAL_AND_SCHEDULED	Ручные и запланированные сообщения
+BROADCAST_CHECKING_MANUAL	Проверка нужно ли отправлять ручные и запланированные сообщения
+BROADCAST_BOUNCED_DELETING_FINISHED	Удаление завершено
+BROADCAST_BOUNCED_NEED_TO_DELETE	Удаление
+BROADCAST_BOUNCED_NEED_TO_DELETE2	сообщений из почтового ящика
+BROADCAST_BOUNCED_DOWNLOADING_MESSAGES	Загрузка списка сообщений
+BROADCAST_BOUNCED_ERR_TODELMESS	to delete messages
+BROADCAST_BOUNCED_DELETING	Удаление возвращенных сообщений
+BROADCAST_BOUNCED_ERR_INCORRECT_LOGIN	Ошибка: Не правильное имя пользователя и пароль
+BROADCAST_BOUNCED_CANT_PARSE_MESS	Ошибка: не могу распарсить сообщения:
+BROADCAST_BOUNCED_NEW_MESSAGES	новых сообщений в почтовом ящике
+BROADCAST_BOUNCED_WE_HAVE	Обнаружено
+BROADCAST_BOUNCED_POP3ERROR2	чтобы получить возвращенные сообщения
+BROADCAST_BOUNCED_POP3ERROR	Ошибка: не могу соединиться с  POP3 сервером
+BROADCAST_PROCESSING_BOUNCED_ACCOUNT	Обработка возвращенных сообщений
+BROADCAST_PROCESSING_BOUNCED_ACCOUNT2	для
+BROADCAST_BOUNCED_FINISHED	Обработка возвращенных сообщений закончена
+BROADCAST_BOUNCED_MESSAGES_PROCESSED	сообщений обработано
+BROADCAST_BOUNCE_STARTED_2	Обработка сообщений
+BROADCAST_BOUNCE_STARTED	Обработка возвращенных сообщений начата
+BROADCAST_CAN_NOT_LOAD_DELIVERY_MODULE	Ошибка: Не могу загрузить модуль Mail::DeliveryStatus::BounceValidator
+BROADCAST_MAIN_PROC_STARTED	Основной процесс начат
+TAGS_FROM_NAME	Имя (от)
+TAGS_FROM_EMAIL	Email (от)
+ORDER	Упорядочить
+PERSONAL_LOAD_FROM_URL_DESCR	Вы можете загрузить контент любого URL. Например, [LOAD_FROM_URL_http://www.yourdomain.com/] скачает контент с вашей домашней странички в сообщение. Заметьте что Вы можете использовать только "http://" URLы. Эта функция к примеру может быть использована чтобы создать динамически обновляемые новости в Вашей рассылки, либо публикации Вашего прайс-листа в сообщениях.
+PERSONAL_SIGNATURE_DESCR	Вы можете добавить подпись из шаблона используя данных специальный тег. Чтобы создать новую подпись Вы должны пользоваться Менеджером подписей.
+ERROR_LOADING_FROM_URL	Ошибка загрузки контента из URL
+NOTE_MESSAGES_WILL_NOT_BE PERSONALIZED	<B>Примечание:</B> Сообщение отправленное в  "Тестовом режиме" не персонализируется.
+SIGNATURE_EDIT	Редактировать подпись
+SIGNATURE_NEW	Новая подпись
+SIGNATURE_INCORRECT_NAME	Разрешены только A-Z,a-z,_ символы
+TEXT_SIGNATURE	Текстовая подпись
+HTML_SIGNATURE	HTML подпись
+SIGNATURES_EDIT_DESCR	Вы можете добавлять все персонализационные тэги, как [FIRSTNAME], в Ваши подписи. Текстовая подпись будет использована только для текстовых сообщений, HTML подпись для HTML сообщений. Вы не можете использовать ссылки на другие подписи в теле данной подписи.
+INSERT_SIGNATURES	Добавить подпись
+SIGNATURE_NAME	Имя подписи
+USED_IN_MESSAGES	Используется в сообщениях
+SIGNATURE_DELETE_CONFIRM	Вы уверены, что Вы хотите удалить эту подпись?
+SIGNATURE_EDIT_DESCR	Редактировать подпись
+SIGNATURE_CLONE_DESCR	Сдублировать подпись
+SIGNATURE_DELETE_DESCR	Удалить подпись
+CREATE_NEW_SIGNATURE	Создать новую подпись
+YOUR_IP	Ваш текущий IP адрес
+IP_BAN_ERROR_MESSAGE_DEFAULT	Вам не разрешено просматривать данную страницу	
+IP_BAN_ERROR_MESSAGE	Сообщения об ошибке для IP бан листа 
+IP_BAN_LIST	Список забаненых IP
+IP_BAN_LIST_DESCR	Пожалуйста введите список IP если вы хотите заблокировать регистрацию и прочие действия от этого адреса. Вы должны ввести IP (например 201.22.34.65) один IP для каждой строки (можно использовать символ маски *). Так же вы должны определить сообщение которое будет отображаться для посетителя, если его IP был забанен. Учтите что список забаненных IP общий для всех аккаунтов.
+SIGNATURES_NOT_FOUND	Не найдено ни одной подписи
+INCORRECT_URL	Пожалуйста не экспериментируйте с URL
+MANAGE_SIGNATURES	Управление подписями
+ACCOUNT_ID	ID
+ACCOUNT_DELETE_CONFIRM	Вы уверены, что хотите удалить данный аккаунт?
+ACCOUNT_NEW	Новый аккаунт
+ACCOUNT_EDIT	Редактировать аккаунт
+ACCOUNT_CLONE	Дублировать аккаунт
+ACCOUNT_NAME	Имя аккаунта
+ACCOUNT_DESCR	Описание аккаунта
+CREATE_NEW_ACCOUNT	Создать новый аккаунт
+ACCOUNT_STATUS_INACTIV_DESCR	Аккаунт деактивирован. Нажмите чтобы активировать
+ACCOUNT_STATUS_ACTIV_DESCR	Аккаунт активирован. Нажмите чтобы деактивировать
+ACCOUNT_EDIT_ACCOUNT_DESCR	Редактировать имя и описание аккаунта
+ACCOUNT_CLONE_ACCOUNT_DESCR	Дублировать аккаунт (Настройки и сообщения)
+ACCOUNT_DELETE_ACCOUNT_DESCR	Удалить аккаунт (Все настройки, сообщения и подписчики будут удалены!)
+CONFIRM_ENABLING_ACCOUNT	Вы уверены, что хотите активировать аккаунт?
+CONFIRM_DISABLING_ACCOUNT	Вы уверены, что хотите деактивировать аккаунт?
+DESCRIPTION	Описание
+MANAGE_ACCOUNTS	Управление аккаунтами
+ACCOUNT_BROWSER_NO_ACCOUNTS_FOUND	Не найдено аккаунтов
+DAILY_REPORT	Ежедневный отчет
+#register.cgi
+REG_FROM_ACCOUNT	из аккаунта
+REG_ACCOUNT_WAS_NOT_FOUND	Аккаунт не найден
+REG_SUBSCRIBER_WAS_NOT_FOUND	Подписчик не найден
+REG_REDIRECT_LINK_NOT_FOUND	Ссылка не найдена
+REG_ACCOUNT_IS_NOT_EXIST	АККАУНТ НЕ СУЩЕСТВУЕТ!
+REG_EMAIL_IS_INCORRECT	Email некорректен
+REG_REQUIRED	обязательно
+REG_CANTSHOW_CONFIRM	Не могу отобразить страницу подтверждения подписки - некорректные параметры
+REG_CANTSHOW_THANKYOU	Не могу отобразить страницу "Спасибо за регистрацию" - некорректные параметры
+REG_CAN_NOT_OPEN_FILE	Не могу открыть файл
+REG_DOI_PAGE_IS_NOT_DEFINED	Страница подтверждения подписки не определен
+REG_ALREADY_CONFIRMED	Спасибо, но вы уже подтвердили свою подписку
+REG_LOG_DELETING_USER	Удаление подписчика
+REG_MSG_UNSUBSCRIBED_SUBJ	Подписчик удален
+REG_MSG_UNSUBSCRIBED_BODY1	Подписчик
+REG_MSG_UNSUBSCRIBED_BODY2	был удален из аккаунта
+#end register.cgi
+FROM_SETTINGS	Настройки поля From
+USER_DEFAULT_ACCOUNT_FROM_NAME	Использовать настройки аккаунта
+OVERRIDE_FROM_NAME_AND_EMAIL	Определить другие имя и email
+USE_EMAIL_AND_NAME_FROM_PROSPECT_FIELDS	Из настроек каждого подписчика
+USE_EMAIL_AND_NAME_FROM_REFERRER	Из контактной информации приведшего подписчика
+UPDATE	обновить
+SKIP	пропустить
+WITH_EXISTING_PROSPECTS	С существующими подписчиками
+USR_BROWSER_IMPORT_PROSPUPDATED	подписчиков обновлено
+EXPORT_TO_TAB_DELMITTED	Экспортировать в файл разделенный табуляцией
+DUBLICATE_MESSAGE	Дубликаты сообщений
+WARNING	Внимание
+TAB_DELMITTED_DESCR	Вы можете импортировать подписчиков из файла, поля которого разделены символами табуляции. Вы можете скачать пример для просмотра всех полей которые вы можете импортировать..<BR> <FONT color="red"><B>Пожалуйста не изменяйте позицию каждого поля (Вы не можете удалить или поменять колонки местами)</B></FONT>. Имя и email обязательны для заполнения, все остальные поля опциональны (просто оставьте их пустыми если вы не хотите их импортировать). Дата регистрации должна быть в формате <B>YYYY-MM-DD</B> (примечание: MS-Excel может изменить формат даты - Вы должны использовать только такой формат, будьте внимательны). Первая строка файла будет пропущена - Она используется для наименований колонок.<BR><BR><B>Примечание: </B>Вы можете легко отредактировать такой файл в MS-Excel импортировать всех подписчиков обратно, все существующие подписчики будут обновлены. Поля которые будут обновлены Имя, Дата регистрации, IP, все дополнительные поля и формат сообщения по умолчанию. Поля которые не будут обновлены для существующих подписчиков: Email, Информация об очереди сообщений.
+DOWNLOAD_TEMPLATE	Сохранить пример файла
+UPLOAD_TAB_DELMITTED_FILE	Загрузить файл на сервер
+IMPORT_FROM_XML	XML import
+IMPORT_FROM_TAB_DELMITTED	Импорт из файла разделенного символами табуляции
+IMPORT_FROM_TEXT	Простой текстовый импорт
+CUSTOM_FROM_EMAIL	Другие имя и email (от)
+SELECT_TO_ADD_HIDDEN_FROM	Выберите эту опцию если вы хотите сохранять "from name" и "from email" для каждого пользователя
+SELECT_TO_ADD_HIDDEN_FROM_DESCR	2 скрытых поля 'fromname' и 'fromemail' будут добавлены в форму подписки. Если эти поля не пустые - подписчик будет получать сообщения от этих обратных данных.
+JS_VALIDATION_EMAIL_ERROR	Пожалуйста введите правильный e-mail адрес!
+JS_EMAIL_NAME_VALIDATION	JavaScript проверка корректности формы
+SELECT_JS_VALIDATION	Выберите эту опцию если Вы хотите добавить JavaScript проверку в форму
+PERSONAL_REFERRER_TRACKING_ID_DESCR	Эта настройка необходима если вы хотите использовать реферральную систему. Вы можете добавить специальный тэг как <U>http://www.yourdomain.com/page-where-my-form-is-located.html?ref=[REFERRER_TRACKING_ID]</U> и если данный подписчик передаст эту ссылку другу, то, когда друг подпишется, в базе будет сохранена информация о том кто привел данного подписчика на страницу 
+PERSONAL_REFERRER_TRACKING_ID	Поле отслеживания реферралов
+COLLECTING_AFFILIATE_INFORMATION	Сохранять информацию о направившем пользователя
+ENABLE_COLLECTING_AFFILIATE_INFORMATION	Сохранять информацию о реферрере
+COLLECTING_AFFILIATE_INFORMATION_DESCR	Выберите эту опцию если Вы хотите сохранять информацию о том, кто привел к Вам этого пользователя.<BR><B> Реферрер:</B> Активный подписчик, который привел нового пользователя на в эту подписку. Каждый подписчик имеет собственный уникальный REFERRER TRACKING ID. Для того чтобы запустить этот механизм вы должны персонализировать сообщения, включив этот уникальный ключ в персонализацию. <BR>Пример: <B>Вы можете привести своих друзей в мою рассылку, пожалуйста используйте данный URL  для того, чтобы передать его другу http://www.yourdomain.com/subscribe.html?ref=[REFERRER_TRACKING_ID]</B><BR><BR>[REFERRER_TRACKING_ID] будет замещено значением уникального для каждого подписчика ключа. Если новый подписчик был зарегистрирован с такого линка, информации о приведшем его подписчике будет сохранена в базе.
+HTML_FORM_OTIONAL_SUBSCRIBE_CKECKBOX	Подписаться в аккаунт
+HTML_FORM_UNSUBSCRIBEUNSUBSCRIBED_ACCOUNTS	Выберите аккаунты, откуда вы хотите автоматически отписывать пользователей<br>когда они отписались от текущего аккаунта.	
+HTML_FORM_SUBSCRIBEOPTION_ACCOUNTS	Добавить опциональные чекбоксы для подписки на другие аккаунты.
+MESSAGE_FORMAT_CHOISE	Выбор формата сообщения
+HTML_FORM_INTEGRATION	Интеграция
+HTML_FORM_OPTIONS	Опции подписки/отписки
+HTML_FORM_FIELDS	Дополнительные поля
+CYCLE_ACTIVATED	Цикл активирован
+DISABLED	Отключен
+SEQUENCE_CYCLE_DESCR	Если цикл включен, и скрипт закончил отправку всех follow up сообщений для данного пользователя, FUMP подождет указанное количество дней, а затем рестартует данный цикл сообщений, начиная  с указанного.
+REPEAT_SEQUENCE_TIMES	раз для каждого подписчика
+REPEAT_SEQUENCE	Повторять цикл максимум
+SEQ_WAIT	Ждать
+START_NEW_SEQ_AFTER_DAYS	дней и начать новый цикл с  <BR> сообщения
+ENABLE_SEQ_CYCLE	Включить цикл
+SEQUENCE_CYCLE_SETUP	Настройки цикла последовательных сообщений
+MODIFY	Изменить
+ERROR_DATE_MUST_BE_IN_FUTURE	Должна быть будущая дата
+PROSPECT_NOT_FOUND	Подписчик не найден
+CUSTOM_FROM_MESSAGES_SETTINGS	Дополнительные настройки заголовка FROM и TO в сообщениях
+AFFILIATE_ID	ID реферрала
+CURRENT_AFFILIATE_EMAIL	Email реферрала:
+CURRENT_AFFILIATE_NAME	Имя реферрала:
+AFFILIATE_INFORMATION	Информация о реферрале
+LAST_SEQUENCE_MESSAGE_WAS_SENT_AT	Последний раз последовательное сообщение было отправлено
+SEQUENCE_WAS_SENT	было отправлено
+SEQUENCE_DAY_SMALL	день
+SEQUENCE_STATUS_STARTED	Очередь стартовала
+SEQUENCE_STATUS_DISABLED	Очередь выключена
+SEQUENCE_STATUS_FINISHED	Очередь закончена
+HIDE_ADVANCED	Спрятать дополнительные настройки
+SHOW_ADVANCED	Дополнительные настройки
+CLICK_TO	Кликните для
+REPEAT_MESSAGE_0	без повторений
+REPEAT_MESSAGE_1	ежедневно
+REPEAT_MESSAGE_2	еженедельно
+REPEAT_MESSAGE_3	ежемесячно
+REPEAT_MESSAGE_4	ежегодно
+REPEAT_MESSAGE	Повторять запланированные сообщения
+MESS_TYPE_MANUAL	Ручная рассылка
+MESS_TYPE_DOI	Запрос подтверждения
+MESS_TYPE_AUTO	Последовательные (очередные) сообщения
+MESS_TYPE_SENDDAT	Запланированные или зацикленные
+MESS_TYPE_SUBSCRIBE	Уведомление о подписке
+MESS_TYPE_UNSUBSCRIBE	Уведомление об отписке
+MESS_TYPE	Тип сообщения:
+MESS_SENDING_FORMAT_TYPE	Формат сообщения:
+SPLASH_PAGE_SETTINGS_DAILY_STATS	Ежедневный отчет
+SPLASH_PAGE_SETTINGS_ACTIVITY	Лог активности 
+SPLASH_PAGE_SETTINGS_CURBROADCAST	Лог сервиса рассылки 
+SPLASH_PAGE_SETTINGS_TOTALSTAT	Общая статистика
+SPLASH_PAGE_SETTINGS_BOUNCED	Возвращенные сообщения
+SPLASH_PAGE_SETTINGS_BOUNCED_TOTAL	Всего возвращенных
+SPLASH_PAGE_SETTINGS_NEWS	Новости/Суппорт
+SPLASH_PAGE_SETTINGS	Настройки первой страницы:
+OPEN_ONLINE_HTML_EDITOR	Открыть онлайн HTML редактор
+ACCOUNT_MENU_EDIT_CURRENT_PROSPECT	Редактировать подписчика
+SELECT_FIELDS_DESCR	Выберите поля, которые будут отображены в менеджере подписчиков. Просто используйте кнопки или двойной клик на выбранных полях, чтобы переместить их между окнами. (Данные действия не вызовут изменений в базе данных подписчиков)<BR><BR><B>Уровень реферрера: </B>Если вы используете реферальную систему, тут вы можете выбрать уровень вложенности. Это позволит Вам просматривать информацию об участниках, приведших других пользователей к подписке.
+PROSP_SEQUENCE_STATUS	Текущий статус последовательности
+PROSP_SEQUENCE_STATUS_DESCR	Текущий статус последовательности это информация о том какое последовательное сообщение было отправлено к пользователю и когда это случилось. Эта информация обновляется скриптом автоматически, но вы можете откорректировать ее в любое время. 
+PROP_IMG_DESCR	Редактировать
+REMOVE_IMG_DESCR	Удалить подписчика
+ACTION_VALUE_REMOVE	удалить
+ACTION_VALUE_ACTIVATE	активировать
+ACTION_VALUE_DEACTIVATE	отключить
+ACTION_VALUE_RESTART_SEQUENCE	рестартовать последовательность
+ACTION_VALUE_DEACTIVATE_SEQUENCE	деактивировать последовательность
+BUTTON_CONFIRM_BEFORE	Вы уверены что хотите
+BUTTON_CONFIRM_AFTER	выделенных подписчиков?
+BUTTON_ACTION	Выполнить
+WITH_SELECTED	С выбранными
+REPORTSEARCHBY	Искать по 
+REP_FIELDS_SELECTED_END	выбрано
+REP_FIELDS_SELECTED_BEGIN	поля от
+ORDER_BY 	Сортировать по
+SHOW_AFFILIATE_LEVEL	Уровень реферральной системы
+SELECT_FIELDS_UP	&nbsp;&nbsp;Вверх&nbsp;&nbsp;
+SELECT_FIELDS_DOWN	Вниз
+SELECT_FIELDS_ALL	Все
+AVALIBLE_FIELDS	Доступные поля
+SELECTED_FIELDS	Выбранные поля
+FLD_SEQUENCE_REPEAT_DESC	Сколько раз последовательность была повторена
+FLD_NAME_DESC	Имя подписчика
+FLD_EMAIL_DESC	Email подписчика
+FLD_PK_USER_DESC	ID подписчика в базе данных FUMPа
+FLD_DATEREG_DESC	Дата регистрации
+FLD_DAYS_DESC	Информация о состоянии последовательности. Если сообщение последнее сообщение которое было отправлено пользователю было, к примеру "отправить через 10 дней после регистрации", то в отчете покажется цифра 10.
+FLD_DATELASTSEND_DESC	Дата, когда последний раз было отправлено последовательное сообщение
+FLD_MESSLASTSEND_DESC	ID последнего последовательного сообщения, которое было отправлено пользователю
+FLD_COUNTSEND_DESC	Счетчик сообщений (учитываются все типы сообщений)
+FLD_IP_DESC	IP регистрации
+FLD_UNSUBSCRIBE_DESC	Уникальная комбинация цифр и букв для каждого пользователя. Генерируется автоматически при регистрации.
+FLD_USERMESSAGEFORMAT_DESC	HTML, текст или по умолчанию
+FLD_SEQUENSE_SIZE_DESC	Сколько всего последовательных сообщений в данном аккаунте.
+FLD_SEQUENCE_NOW_DESC	Сколько последовательных сообщений было отправлено к подписчику.
+FLD_STATUS_DESC	Активный, Ожидание (Не подтвержденный) или  Отключенный
+FLD_FROMEMAIL_DESC	Если вы использует скрытое поле для <B>from email</B> в Вашей HTML форме, это поле отобразит данное значение.
+FLD_FROMNAME_DESC	Если вы использует скрытое поле для <B>from name</B> в Вашей HTML форме, это поле отобразит данное значение.
+FLD_REFERRER_LINK_DESC	Трек реферрера используется для отслеживания подписчиков, которые направляют пользователей в Ваши листы рассылки. Значение подобно "Unique user ID" но по соображению безопасности генерируются новые комбинации.
+FLD_PK_USER	ID
+FLD_SEQUENCE_REPEAT	Последовательность повторена
+FLD_REFERRER_LINK	След реферрера
+FLD_DATEREG	Дата регистрации
+FLD_DAYS	Дней в последовательности
+FLD_DATELASTSEND	Последний раз отправлено
+FLD_MESSLASTSEND	Последнее сообщение отправлено ID
+FLD_COUNTSEND	Счетчик сообщений
+FLD_IP	IP
+FLD_UNSUBSCRIBE	Unique user ID
+FLD_USERMESSAGEFORMAT	Формат сообщения по умолчанию
+FLD_SEQUENSE_SIZE	Размер последовательности
+FLD_SEQUENCE_NOW	Текущая позиция в последовательности
+FLD_STATUS	Статус
+FLD_FROMEMAIL	From email
+FLD_FROMNAME	From имя
+FLD_KEY	ID
+FLD_NAME	Имя
+FLD_EMAIL	Email
+PARENT_AFFILIATE	Реферрер
+PROSPECT_REPORT_SELECT_FIELDS	Выберите поля
+FROM_DATE	От
+TO_DATE	до
+SEARCH_BY	Искать по
+#WEEK_START_DAY 0=Sunday 1=Monday 
+WEEK_START_DAY	0
+TODAY	Сегодня
+DW_0	Воскресенье
+DW_1	Понедельник
+DW_2	Вторник
+DW_3	Среда
+DW_4	Четверг
+DW_5	Пятница
+DW_6	Суббота
+DW_0_S	Вс
+DW_1_S	Пн
+DW_2_S	Вт
+DW_3_S	Ср
+DW_4_S	Чт
+DW_5_S	Пт
+DW_6_S	Сб
+#Version 4.21
+LINK_CLEAN	очистить
+REG_ERROR_NAME	Имя:
+TEMPLATES_LOCATED_IN	Шаблоны находятся в директории
+PREFERENCES_PAGE_TEMPLATE	Шаблон для страницы личных настроек
+SENDING_DELAY_DESCR	Предупреждение: Используйте ненулевое значение только при наличии проблем с производительностью сервера или при наличии лимита на отправку сообщений. Скрипт будет отсылать сообщения с задержкой, что снизит скорость рассылки. Например сервер может отсылать 10 сообщений в секунду (36000 сообщений в час), если установлена задержка в 1 сек/сообщение, то общая задержка составит 36000 секунд (10 часов), и все сообщения будут отправлены за 11 часов
+SENDING_DELAY	Задержка между отсылкой каждого сообщения в секундах
+REDIR_ALREADYREMOVED_DISCR	Это значение будет общим для всех аккаунтов
+REDIR_ALREADYREMOVED_TO	URL страницы "Already removed"
+REDIR_ALREADYSUSCR_TO	URL страницы "Already subscribed"
+READ_MORE	Читать дальше...
+NO_MSGS_HISTORY_FOUND	Не найдено сообщений в вашей истории
+YOUR_WEB_HISTORY	История ваших сообщений в Веб.
+RSS_DEF_ENC	По-умолчанию - предпочтительно
+RSS_SCRIPT_PARAM	Введите имя CGI-параметра
+RSS_SCRIPT_URL	Введите URL скрипта
+RSS_TEXTINPUT	Настройки поля с ответом
+RSS_USETEXT_INPUT	Использовать поле ввода текста
+RSS_ENCODING	Кодировка канала
+RSS_LANG	Язык канала
+RSS_COPYLINE	Строка копирайта
+RSS_TITLE	Название
+RSS_DISCR	Описание
+RSS_URL	URL вашего сайта
+PERSONAL_RSS_LINK	Кликнув на эту ссылку ваш подписчик сможет подписаться на персонализированный RSS из ваших сообщений
+PERSONAL_HTML_LINK	Кликнув на эту ссылку ваш подписчик сможет просмотреть персонализированный HTML архив сообщений
+TAGS_RSS_LINK_DISCR	Линки на персонализированный RSS и HTML архив новостей
+TAGS_RSS_LINK	RSS линк
+TAGS_HTML_LINK	Ссылка на HTML архив
+SAVE_MESSAGE_IN_USER_HISTORY	Отметьте чекбокс чтобы сохранить текущее сообщение в персонализированную ленту новостей RSS
+RSS_LINK	Ссылка на вашу домашнюю страницу
+RSS_MAIN_SETTINGS	Главные настройки RSS
+RSS_SETTINGS	Ваши настройки канала RSS 2.0
+ACCOUNTMENU_HTML_RSS	RSS канал
+ACCOUNTMENU_HTML_RSS_DESCR	Здесь вы можете настроить свой RSS канал
+NOTIFY_ABOUT_MODIFICATIONS	Включить уведомление админа
+ERROR_CONFIRM_SUBJ_NOT_DEFINED	Ошибка: тема подтверждающего сообщения не указана - пожалуйста проверьте настройки аккаунта
+ERROR_CONFIRM_BODY_NOT_DEFINED	Ошибка: текст подтверждающего сообщения не указан - пожалуйста проверьте настройки аккаунта
+ERROR_NOT_ALLOWED_TO_MODIFY	Извините, но вам не разрешено изменять вашу контактную информацию
+ERROR_TAG_CONFIRM_REQUIRED	тэг <B>[CONFIRM_URL]</B> не указан
+CONFIRMATION_MESSAGE_SUBJECT	Тема подтверждающего сообщения
+CONFIRMATION_MESSAGE_TEXT	Текст подтверждающего сообщения
+DISABLE_MODIFY_SERVICE	Запретить доступ к странице личных настроек
+DISABLE_MODIFY_SERVICE_DISCR	Изменение контактной информации будет запрещено
+ALLOW_MODIFY_MESSAGES_FORMAT	Разрешить изменение формата сообщений
+MODIFY_CONTACT_INFORMATION	Изменение контактной информации подписчиками
+SAVE_CONTACT_INFO	Обновить настройки
+NAME	Ваше имя
+YOUR_CONTACT_INFO	Ваши настройки
+CHANGE_YOUR_PREF	Здесь Вы можете изменить личные настройки
+HTML_ONLY	только HTML
+TEXT_ONLY	только TEXT
+HTML_AND_TEXT	HTML и TEXT
+MSG_TEXT_FORMAT	Ваше сообщение в текстовом формате
+MSG_HTML_FORMAT	Ваше сообщение в HTML формате
+MSG_RSS_FORMAT	Текст описания вашего RSS канала (500 символов максимум)
+DEFAULT_MESSAGE_TYPE	Тип сообщения по-умолчанию
+DEFAULT_MESSAGE_TYPE_DISCR	Если ваши подписчики не выбрали предпочтительный формат сообщений, сообщения будут отосланы им в указанном формате
+INSERT_SPECIAL_TAG	Нажмите на эту ссылку чтобы вставить тэг персонализации
+CLICK_HERE_TO_INSERT	Нажмите на эту ссылку чтобы вставить специальный тэг
+TAGS_CHANGE_CONTACT_INFO	Изменить контактную информацию
+TAGS_UNSUBSCRIBE_LINK	Линк отписки
+TAGS_FNAME	Имя
+TAGS_FULLNAME	Имя и Фамилия
+TAGS_DATE	Дата
+TAGS_REGDATE	Дата регистрации
+TAGS_EMAIL	Email
+TAGS_PERSONAL_INFO	Личная информация
+TAGS_CUSTOM_FIELDS	Дополнительные
+TAGS_TEMPLATES	Шаблоны
+TAGS_LINKTRACK	Отслеживание ссылок
+TAGS_ONE_CLICK_SUBSCRIBE	Подписка одним кликом на другой аккаунт
+TAGS_ONE_CLICK_SUBSCRIBE_LINK	Подписать на
+HTML_EDIT_DISABLE	Нажмите здесь чтобы <B>ВЫКЛЮЧИТЬ</B> HTML редактор
+HTML_EDIT_ENABLE	Нажмите здесь чтобы <B>ВКЛЮЧИТЬ</B> HTML редактор
+HTML_EDITOR_ENABLED	Ваш HTML редактор <B>включен</B> сохраните сообщение и перегрузите страницу редактирования сообщений чтобы изменения вступили в силу
+HTML_EDITOR_DISABLED	Ваш HTML редактор <B>выключен</B> сохраните сообщение и перегрузите страницу редактирования сообщений чтобы изменения вступили в силу
+TEST_SEND_LINK	Тестовая&nbsp;отсылка
+PLEASE_CHOICE_FOFMAT	Выберите формат сообщения
+TYPE_MESS	Формат Формат
+MESS_ACTIVE	Активно
+MESS_INACTIVE	неактивно
+TEST_SEND_HEADER	Отправить тестовое сообщение
+TEST_SEND_BUTTON	Отправить сообщение
+TEST_SEND_FORMAT	Формат сообщения
+TEST_SEND_RCPT	Адрес получателя
+MESSAGE_WAS_SENT	Спасибо!<BR>Сообщение было отправлено 
+CLOSE_WINDOW	Закрыть это окно
+ENABLE_HTML_CHOISE	Разрешить ползователям выбирать формат сообщения 
+ENABLE_HTML_CHOISE_DISCR	Выберите эту опцию чтобы включить пункт выбора формата сообщений в HTML форму
+HTML_FORM_MESSFORMAT	Формат сообщения
+DATE_FORMAT_SETTINGS	Настройки формата даты
+DATE_FORMAT_LINE	Строка <i>strftime</i> формата
+DATE_FORMAT_DISCR	Здесь вы можете настроить <B>[DATE]</B> тэги в ваших сообщениях.<BR>Формат по-умолчанию:  <B>%m/%d/%Y</B> <BR><a href="http://se.php.net/manual/sv/function.strftime.php" target="_blank">усзнать больше о формате даты...</a>
+CURRENT_FORMATTED_DATE	Текущая форматированная дата
+USR_BROWSER_HEAD_FORMAT	Формат
+USR_BROWSER_DEFAULT_FORMAT	По-умолчанию
+USR_BROWSER_HTML_USER_FORMAT	HTML
+USR_BROWSER_TEXT_USER_FORMAT	Text
+PERSONAL_REG_DATE	выведет дату регистрации подписчика
+PERSONAL_SUBSCRIBER_ID	ID подписчика
+PERSONAL_SUBSCRIBER_ID_DISCR	ID подписчика (Первичный ключ может быть использован для интеграции FUMP с другими приложениями)
+PERSONAL_MODIFY_CONTACT_INFO	Ссылка на скрипт перейдя по которой подписчик может изменить имя, email и формат сообщений
+PERSONAL_SUBSCRIBER_UUI	UUI подписчика
+PERSONAL_SUBSCRIBER_UUI_DISCR	UUI подписчика (Уникальный идентификатор пользователя также может быть использован для интеграции FUMP с другими приложениями)
+PERSONAL_REG_DATE_CORRECTED	Выведет откорректированную дату регистрации подписчика.
+ADD_UNSUBSCRIBE_LINK	Автоматически добавлять ссылку отписки в конец сообщения
+RSSMESS_DISCR	Предпочтительнее использовать небольшую часть сообщения как текст RSS ленты. RSS лента перенаправит подписчика на полную версию сообщения Веб-истории.
+DUBLICATES	Проверка сообщений на повторы
+USE_MES_LOG_NEW	Не отсылать повторяющиеся сообщения подписчикам
+THANK_YOU_PAGE_SETTINGS	Настройки страницы с благодарностями
+OR	Или
+GENARATE_PERSONALIZED_PAGE	Генерировать персонализированную страницу из шаблона
+DOI_PAGE_SETTINGS	Настройка подтверждающего сообщения
+UNSUBSCRIBE_PAGE_SETTINGS	Настройки отписки
+NOTIFICATION_HEADER	Настройки уведомления админа
+#End Version 4.21
+#########################	
+#file account_shabl.dat	
+##########################
+ACCOUNT_BIG	Аккаунт
+TOTAL_PROSPECTS	Всего подписчиков:
+ACTIVE	Активный
+INACTIVE	Не активный:
+HTML_CODE_FORM	HTML код для вашей формы:
+FORM_PREVIEW	Предварительный просмотр формы:
+CUSTOM_FIELD	Дополнительные реквизиты
+CUSTOM_FIELD_NAME	Имя доп. реквизита:
+ONLY_CHARS	3..20 символов только [A-Za-z0-9_] 
+IS_REQUIRED	Обязательно?
+FIELD_FORMAT	Формат поля:
+ADD_FIELD	Добавить реквизит
+CANCEL	Отменить
+ACC_SETTINGS	Настройки аккаунта
+PERSONAL	Персональные:
+FROM_NAME	Имя От:
+FROM_EMAIL	Email От:
+DEF_SUBSCRIB_NAME	Имя подписчика по умолчанию:
+REPLY_HEADER	Заголовок Reply-to:
+SUBSCRIB_OPTS	Настройка подписки:
+REDIR_SUSCR_TO	После подписки перенаправлять на:
+REDIR_REMOV_TO	После отписки перенаправлять на:
+NOTIFY_ME_SUSCR	Уведомлять администратора о новых подписчиках?
+NOTIFY_ME_UNSUB	Уведомлять администратора об отписчиках?
+ACC_ADMIN_NAME	Имя администратора аккаунта:
+ACC_ADMIN_MAIL	Email администратора аккаунта:
+USE_DOI	Использовать подтверждение подписки?
+DOICONFURL	URL страницы подтверждения подписки:
+LOGGING	Отслеживание:
+USE_MES_LOG	Отслеживать отправку сообщений и предотвращать повторную отправку одному и тому же подписчику
+LOCALIZ	Локализация:
+NO_UPPERCASE	Не переводить первую букву имени подписчика в верхний регистр:
+DEF_CHARSET	Кодировка по умолчанию:
+SAV_ALL_SET	Сохранить настройки
+POP_SET	Настройки POP3
+IS_POP	Разрешить подписку отправкой сообщения:
+SUBSCR_EMAIL	Email для подписки:
+POP_SERVER2	POP3 сервер:
+POP_USER2	POP3 логин:
+POP_PASS	POP3 пароль:
+POP_PORT	POP3 порт:
+BAN_MAILS	Запрещенный список адресов
+BAN_LIST	Список адресов (1 адрес в строку):
+CUST_ERR_MSG	Сообщение об ошибке при подписке:
+SORTFILTER	Фильтровать или сортировать по:
+SORTFILTER_SEARCH	Поиск:
+SORTFILTER_ORDER	Сортировка:
+USE_DATE_RANGE	Использовать период:
+REC_PER_PAGE	Записей на странице:
+REC_PER_PAGE_SHOW	Показать:
+REC_PER_PAGE_RECORDS	записей
+SF_DISPLAY	Показать!!!
+SF_SAVETEXT	Сохранить как текст...
+SF_REMOVE	Удалить
+SF_INV_STATUS	Изменить статус
+SF_SEL_ALL	Выделить все
+SF_DESEL_ALL	Убрать выделение
+PROSPECT	Подписчик
+PROSPECTS2	подписчики
+PROSP_NAME	Имя:
+PROSP_MAIL	Email:
+PROSP_BEGIN_DAY	Настройки последовательной отправки:
+PROSP_NO_SEQ	Без последовательной отправки
+PROSP_ADD_BEGIN_DAY	Последовательная отправка сообщений начинается с дня после подписки №
+PROSP_UPD_USER	Обновить подписчика
+BULK_REM	Пакетное удаление
+PROSP_REM_DB	удалено из базы
+PROSP_REMOVE	Удалить подписчиков
+PROSP_IMPORT	Импорт подписчиков
+INSERT_TEXT	Вставьте текст:
+OR_UPLOAD_FILE	или укажите файл:
+SEND_SUBSC_ALL_PROSP	Послать уведомление о подписке всем новым подписчикам.
+ADD_NO_SEQ	Только добавить контакт в базу данных (отключить последовательную отправку)
+ADD_SEQ	Добавить с возможностью последовательной отправки начиная с дня №
+COPY_PROSPS_FROM_ACC	Скопировать подписчиков из аккаунта
+ACCOUNT	Аккаунт:
+FILTER	Фильтр:
+IMPORT	Импорт
+PROSP_EXPORT_READY	подписчиков будет экспортировано.
+FORMAT	Формат:
+EXPORT_TO	Экспорт в :
+EXPORT	Экспорт
+SUB_UNSUB_MSG	Зарезервированные сообщения
+EDIT_DOI_CONF_MSG	Запрашивать на подтверждение подписки
+SEND_SUBSC_MSG	Уведомлять пользователя о подписке
+SEND_UNSUB_MSG	Уведомлять пользователя об отписке
+EDIT	Редактировать
+PREVIEW	Просмотр
+UPD_SETTINGS	Сохранить настройки
+ADD_NEW_MSG	Добавить новое сообщение&gt;&gt;&gt;
+SEQ_MSGS	Последовательные сообщения:
+SEQ_MSG_SUBJECT	Тема сообщения
+ATTACH	Вложения
+SENT	Отправлено
+DAY	День
+MANUAL_SHED_MSGS	Сообщения, запланированные на дату и единоразовая рассылка:
+SHED_DATE	Дата отправки
+IN_PROGRESS	В процессе
+BROADCAST	Отправить!
+TERM_PROC	Прервать отправку
+TST_SND_STR1	Отправить выделенные сообщения
+TST_SND_STR2	на следующий адрес:
+BTN_TEST_SEND	Отправить
+SUBJECT	Тема:
+TYPE	Тип:
+CHARSET	Кодировка:
+PRIORITY	Приоритет:
+MSG	Сообщение:
+ADD_ATTACH	Добавить вложение:
+SEL_MSG_TYPE	Выберите тип сообщения:
+DAYS_AFTER_REG	Дней после регистрации:
+SAVE	Сохранить
+#########################	
+#file accounts.dat	
+#########################	
+LOGOUT	ВЫЙТИ
+FEEDBACK_FORM	Обратная связь
+GLOBAL_SETTS	Общие настройки
+GLOBAL_LENG	Языки
+STATS	Статистика
+XML_IMP	XML&nbsp;импорт
+XML_EXP	XML&nbsp;экспорт
+BOUNC_MAILS	Возвращенные сообщения
+MANUAL	Документация
+ADD_NEW_ACC	Добавить новый аккаунт:
+CLONE	Клонировать:
+BTN_NEW_ACC	Новый аккаунт
+#########################	
+#file author.dat	
+#########################	
+AUTHOR_LINE1	Для доступа в админ панель,
+AUTHOR_LINE2	Вы должны ввести пароль
+PASSWORD	Пароль:
+ENTER	ВХОД
+#########################	
+#file bounce.dat	
+#########################	
+HANDLING_TOOL	обработка возвращенных сообщений.
+POP_ACCS	POP3 аккаунт
+BOUNC_MSGS	Возвращенные сообщения
+BLACKLIST	Черный список
+YOUR_POP_ACCS	Ваши POP3 аккаунты
+NO_POP_ACCS_FOUND	Не POP3 аккаунтов
+TOTAL_ACCS	Всего аккаунтов:
+POP_SERVER	POP3 сервер
+POP_USER	POP3 логин
+REM_PROSPS_AFTER	Удалять подписчиков после:
+BOUNC_HARD	hard возвраты
+BOUNC_SOFT	soft возвраты
+DEL_BOUNC_MSGS	Удалять сообщения с сервера
+TEST_CONN	Проверка соединения
+STATUS	Состояние
+TEST	Проверка
+WITH_SEL	С отмеченными:
+DELETE	Удалить
+ACTIVATE	Включить
+DEACTIV	Отключить
+TOTALS	Итоги
+NO_MSGS_FOUND	Сообщений не найдено
+TOTAL_DATES	Всего дат:
+DATE	Дата
+TOTAL	Итого
+TOTAL_HARD	Итого hard
+HARD	Hard
+PROSPS_REMOVED	Удалено подписчиков
+PROSPS_INACT	Отключено подписчиков
+PROSP_NOT_FOUND	Подписчик не найден
+SOFT	Soft
+TOTAL_SOFT	Всего soft
+WAITING	Ожидает
+POP_SERV_SETTS	Информация о подсоединении к POP3 серверу:
+DEL_BNC_ML_SERV	Удалять возвращенные сообщения с сервера
+DEF_COUNT_BOUNC	Определение количества полученных сообщений перед выполнением действия: 
+REM_AFTER_HARD	Количество hard сообщений:
+REM_AFTER_SOFT	Количество soft сообщений:
+ACT_WITH_BOUNC	Определение действия с подписчиками:
+ACT_WITH_PROSP	Действие с подписчиками:
+ADD_BNC_MAILS_BLACKL	добавлять адреса в черный список
+SAV_ACC	Сохранить
+RESET	Отменить
+EMAIL	Email:
+BOUNC_CODE	Код ошибки:
+HARD_SOFT	Hard/soft:
+PROC_STAT	Действие:
+BOUNC_REASON	Причина возврата:
+ORDER_BY	Сортировать по:
+SHOW_EMAILS_EXIST_PROS	Показывать только адреса, существующие в базах
+DISPLAY	Показать
+NO_COL_BNC_MSGS_FOUND	Не найдено возвращенных сообщений
+EXP_MAIL_TXT	Экспорт адресов в текстовый файл
+TOTAL_MSGS	Итого сообщений:
+BOUNC_MAIL	Проблемный адрес
+PROSPS	Подписчики
+INACT	Отключено
+RECVD	Получено
+PROC_STAT2	Действие 
+BNC_STATUS	Статус
+BNC_REASON	Причина
+CODE	Код
+HARD_SOFT2	Hard/Soft
+BTN_DEL_MSGS	Удалить сообщения
+BTN_REM_PROSP	Удалить подписчиков
+BTN_ACT_PROSP	Включить подписчика
+BTN_INACT_PROSP	Отключить подписчика
+RFC_ERR_DESCR	RFC1893 описание ошибки 
+CODE2	Код:
+BACK_2_BNC_MSGS	Назад к сообщениям
+REG_SETTS	Настройка правил регистрации:
+REJECT_SUBSCR	Отказывать в регистрации если адрес находится в черном списке
+REG_ERR_MSG	Сообщение об ошибке при регистрации:
+SAV_SETTS	Сохранить настройку
+BNC_MAIL_BLACK	Черный список.
+IMP_MAILS	Импорт адресов 
+EXP_MAILS	Экспорт адресов 
+NO_MAIL_FOUND	Не найдено
+TOTAL_EMAILS	Всего адресов:
+IMP_PROSPS	Импорт
+IMP_PROSPS_DESC	Вы можете добавить адреса в черный список. Вставьте email адреса (один адрес в строку). Адреса будут проверены на корректность перед добавлением.
+BTN_IMPORT	Импорт
+BULK_REM_DESC1	Вы можете удалить адреса из черного списка введя их в текстовое поле и нажав кнопку "Удалить"
+BULK_REM_DESC2	Один email в строке. Можно также использовать маску. Например, если вы напишите "hotmail" в текстовом поле, это удалит все адреса содержащие
+BULK_REM_DESC3	hotmail в любой части email адреса.
+BULK_REM_DESC4	адреса hotmail@aol.com, mike@hotmail.com, myhotmail@email.com - будут удалены из списка
+BTN_REMOVE	Удалить
+#########################	
+#file daylystat.dat	
+#########################	
+BRODC_STARTED	Рассылка была запущена
+TIMES_THIS_DAY	раз за сегодня
+REPORT_GEN	Отчет сгенерирован
+#########################	
+#file exportxml.dat	
+#########################	
+STEP1	Шаг 1 
+STEP1_DESC1	Выберите аккаунт, XML файл уровень вложенности, где находятся данные о подписчиках
+STEP1_DESC2	(XML файл должен быть в директории FUMP)
+XML_DOC	XML документ:
+WHERE_STORE_XML_DOC	Где хранится XML документ?
+ENCODING	Кодировка:
+CREATE_XSD	Создать XSD файл с схемой таблицы for Excel 2002™:
+NEXT2	ДАЛЬШЕ[2]&gt;&gt;
+XSD_DESC1	XSD файл.
+XSD_DESC2	При создании XSD schema файла вы можете легко импортировать таблицу в Microsoft Excel 2002™. Он будет иметь имя файла 
+XSD_DESC3	которое Вы укажете, например emails.xml - emails.xsd
+STEP2_SEL_FLDS	Шаг 2 - Выберите поля
+STEP2_SEL_FLDS_DESC	Пожалуйста выберите поля в которые и из которых импортировать данные.
+NEXT3	Дальше[3]&gt;&gt;
+STEP4_FINISH	Шаг 4 - КОНЕЦ:
+XML_EXP_SUC	XML ЭКСПОРТ УСПЕШЕН!
+#########################	
+#file importxml.dat	
+#########################	
+IMP_ST1_DESC1	Выберите аккаунт, XML файл и уровень где в XML файле хранятся данные о пользователях
+IMP_ST1_DESC2	(XML файл должен быть в директории FUMP)
+LEVEL_DATA_STORED	Уровень где хранились данные о пользователях:
+HERE_IS_SAMPLE	Это пример XML файла, который Вы можете экспортировать из Microsoft Access 2002™
+STEP2_SEL_FLDS_DESC_IMP	Пожалуйста выберите поля в которые и из которых Вы хотите импортировать данные.
+STEP3	Шаг 3 - Вы пытаетесь импортировать :
+BTN_IMPXML	ИМПОРТ&gt;&gt;
+XML_IMP_SUC	ИМПОРТ УСПЕШЕН!
+PROSPS_WERE_ADD	подписчиков добавлено в базу данных.
+#########################	
+#file links.dat	
+#########################	
+YOUR_LINKS	Ваши ссылки
+ADD_NEW_LINK	Добавить новую ссылку&gt;&gt;&gt;
+NO_LINKS_FOUND	Ссылки не найдены
+TOTAL_LINKS	Всего ссылок:
+TEMPLATE	Шаблон
+NAMEE	Имя
+CLICKS	Клики
+PROSPECTS	Подписчики
+ISCLEAN	Пусто?
+DEL_SELECTED	Удалить выделенных
+TOTALU	Всего:
+LINKS_DESC1	Здесь Вы можете редактировать ссылки чтобы добавить специальные тэги в Ваши сообщения чтобы отслеживать активность пользователей и видеть эффективность Ваших рассылок. 
+LINKS_DESC2	В сообщениях Вам нужно всего лишь добавить специальный тэг типа [LINK123] 
+EDIT_LINK	Редактировать ссылку
+INS_NEW_LINK	Вставить новую ссылку
+LINK_PROPS	Свойства ссылки
+UPD_LINK	Обновить ссылку
+SAV_LINK	Сохранить новую ссылку
+BTN_CANCEL	Отмена
+SHOW_REC_FOR	Показать записи для: 
+BTN_SHOW	Показать
+DATE2	Дата:
+LINK	Ссылка:
+MESSAGE	Сообщение:
+NO_PROSPS_FOUND	Подписчики не найдены
+NO_CLICKS_FOUND	Клики не найдены
+ACT_UNIQ_PROSPS	Активных уникальных подписчиков:
+CLICKS_FOUND	Найдено кликов:
+CL_NAME	Имя
+CL_MAIL	Email
+CL_PROF	Профиль
+TOTAL_CLICKS_U	Всего кликов:
+#########################	
+#file links.dat	
+#########################	
+REGISTRATION_ERROR	ОШИБКА РЕГИСТРАЦИИ
+REGISTER	Регистрация
+#########################	
+#file settings_shabl.dat	
+#########################	
+YOUR_PERS_INFO	Ваша личная информация
+YOUR_NAME	Ваше имя:
+YOUR_EMAIL	Ваш email:
+YOUR_PERS_INFO_DESCR	Эти общие административные настройки используются по умолчанию для всех аккаунтов. Вы можете настроить общие административные настройки индивидуально для любого другого аккаунта также.
+SEND_ME_BROAD_STAT	Посылать мне статистику
+SEND_ME_BROAD_STAT2	рассылки по email:
+BTN_UPD_SETTS	Обновить настройки
+MAIL_PROG_SETTS	Настройки почтовой программы
+SENDMAIL_PATH	Путь к sendmail:
+SEND_THROUGH	Использовать для отсылки:
+SMTP_SERVER	Сервер SMTP:
+SMTP_AUTH	SMTP аутентификация
+SMTP_REQ_SASL	SMTP сервер требует SASL (Simple Authentication and Security Layer RFC2554) аутентификацию
+SMTP_USER	SMTP логин:
+SMTP_PASS	SMTP пароль:
+SEND_SPD	Скорость отсылки
+QUANT_PROCS	Число параллельных процессов рассылки:
+OR_B	ИЛИ
+USE_OLD_ALG	использовать старый (один процесс) алгоритм отсылки (если возникли проблемы с отсылкой через скрипт 'sender')
+BOUNC_RET_PATH_OPTS	Настройки Return Path возвращенных сообщений:
+USE_FOLLOW_UP	Еmail адрес для возвращенных сообщений 
+1ST_WAY	1-й вариант:
+1ST_WAY2	Использовать sendmail с флагом -f и адресом:
+2ND_WAY	2-й вариант: Return-Path заголовок сообщения:
+2ND_WAY2	Может быть пустым если вы не хотите его добавлять.
+2ND_WAY3	Не рекомендуется добавлять этот заголовок в сообщения вручную, но иногда с Qmail это работает.
+3RD_WAY	3-й вариант: Errors-To заголовок сообщения:
+3RD_WAY2	Может быть пустым если вы не хотите его добавлять
+ADMIN_AREA_PASS	Пароль доступа в админ-панель
+ADMIN_AREA_PASS_OLD	Старый пароль:
+ADMIN_AREA_PASS_NEW	Новый пароль:
+ADMIN_AREA_PASS_RET	Повторите пароль:
+USE_PERIOD	Использовать период:
+USE_PERIOD_TO	по
+USE_PERIOD_BTN_SHOW	Показать
+ENABLE_LOG	Разрешить протоколирование
+BTN_OK	OK
+BTN_CLENUP_LOGS_IN_RANGE	Очистить логи в диапазоне дат
+BTN_CLEANUP_ALL_LOGS	Очистить все логи
+BROAD_LOG_TOTAL	Лог отсылки. Всего
+RECORDS	записей.
+CURRENT_OR_PREV_BR_LOG	Настоящий или предыдущий лог отсылки
+ROWS_FOUND	строк найдено
+SAVE_LOG_INTO	Сохранять логи в
+SAVE_LOG_INTO_FILE	файл
+BTN_SAVE_SETTS	Сохранить настройки
+TIME_SYNCH	Синхронизация времени
+TIME_SYNCH_SRV_TIME	Время сервера:
+TIME_SYNCH_CORR_TIME	Время клиента:
+TIME_SYNCH_COR_TIME	Разница времени:
+TIME_SYNCH_HHMM	+чч:мм или -чч:мм
+SETTS_REMOVE	Удалить
+SETTS_NAME	Имя
+SETTS_RESTORE	Восстановить
+SETTS_DATE	Дата
+SETTS_SIZE	Размер
+BTN_REM_SEL	Удалить выделенные
+BTN_RESTORE	Восстановить
+NEW_BACKUP	Новая резервная копия
+NEW_BACKUP_NAME	Имя новой резервной копии:
+NEW_BACKUP_NAME_CHARS	только знаки[a-z_0-9]
+BTN_BACKUP	Сохранить
+MAIL_PROG_PERF_TEST	Тест производительности почтовой программы
+MAIL_PROG_PERF_TEST_DESC1	Этот тест покажет как много времени уйдет у Вашего сервера на отсылку сообщений. 
+MAIL_PROG_PERF_TEST_DESC2	Введите e-mail адрес ниже и нажмите
+MAIL_PROG_PERF_TEST_DESC3	Тест
+MAIL_PROG_PERF_TEST_DESC4	
+MAIL_PROG_PERF_TEST_DESC5	ОДИН РАЗ
+MAIL_PROG_PERF_TEST_DESC6	FollowUp Mailing List Processor будет посылать письма на введенный Вами адрес. Будет измерено время отправки сообщений.
+MAIL_PROG_PERF_TEST_DESC7	Этот тест будет использовать  
+ENTER_YOUR_EMAIL_ADDRESS	Введите Ваш e-mail
+BLAST_SIZE	Повторять сообщения (от 30 до 300 раз)
+MAIL_PROG_PERF_TEST_BTN_TEST	Тест
+MAIL_PROG_PERF_TEST_RESULTS	Результаты тестирования производительности почтовой программы
+MAIL_PROG_PERF_TEST_RESULTS1	сообщений отправлено
+MAIL_PROG_PERF_TEST_RESULTS2	Процесс занял
+MAIL_PROG_PERF_TEST_RESULTS3	секунд
+MAIL_PROG_PERF_TEST_RESULTS4	Ваш
+MAIL_PROG_PERF_TEST_RESULTS5	производительность показана ниже: 
+MAIL_PROG_PERF_TEST_RESULTS6	сообщений в минуту
+MAIL_PROG_PERF_TEST_RESULTS7	сообщений в час
+#########################	
+#file responder.cgi	
+#########################	
+ACCOUNTMENU_MAIN	Главная
+ACCOUNTMENU_OPTIONS	Опции аккаунта
+ACCOUNTMENU_OPTIONS_DESCR	Здесь Вы можете редактировать важные настройки для конкретного списка рассылки включая настройку для POP3 подписки/отписки. Вы можете установить поле "From" и адрес email, редирект URL для подписавшихся и отписавшихся пользователей, уведомление администратора. 
+ACCOUNTMENU_HTML_FORM	HTML Форма
+ACCOUNTMENU_HTML_FORM_DESCR	Здесь Вы можете создавать и просматривать HTML код для формы подписки, который должен быть вставлен в страницы на Вашем сайте. Так же Вы можете добавить дополнительные поля информации о пользователе, такие как телефон, факс, адрес, домашняя страничка и т.д. 
+ACCOUNTMENU_SUBSCR_MAN	Подписчики
+ACCOUNTMENU_SUBSCR_MAN_DESCR	Здесь Вы можете добавить/удалить подписчиков из списка или сделать резервную копию, или копировать список в другой аккаунт. 
+ACCOUNTMENU_EDIT_MESS	Сообщения
+ACCOUNTMENU_EDIT_MESS_DESCR	Здесь Вы можете редактировать Ваши персонализированные сообщения, включать автоматические подтверждения о подписке или отписке. Отсюда Вы можете рассылать запланированные и ручные рассылки.
+ACCOUNTMENU_LINKS	Ссылки
+ACCOUNTMENU_LINK	Ссылка
+ACCOUNTMENU_LINKS_DESCR	Тут вы можете создавать ссылки для отслеживания кликов по ссылкам в Ваших сообщениях
+ACCOUNTMENU_LINKS_MESS_STAT	Статистика сообщений
+ACCOUNTMENU_LINKS_ACT_PROSP	Активных подписчиков
+ACCOUNTMENU_LINKS_CLICKS	Кликов
+SETTINGSMENU_MAIN	Главная
+SETTINGSMENU_PERSONAL	Персональные
+SETTINGSMENU_PERSONAL_DESCR	Здесь Вы можете указать Ваши имя пользователя и почтовый адрес на который Вы будете получать отчеты о рассылке и уведомления если кто-то подпишется/отпишется.
+SETTINGSMENU_SENDING_OPTIONS	Опции отправки
+SETTINGSMENU_SENDING_OPTIONS_DESCR	Настройка метода отправки. Здесь Вы должны выбрать и указать почтовую программу Вашего сервера и путь к ней или адрес Вашего SMTP сервера. Вы можете указать заголовки <i>Return-Path</i> или <i>Erorrs-To</i> чтобы выбрать почтовый ящик для возвращенных сообщений.
+SETTINGSMENU_ACCESS	Доступ
+SETTINGSMENU_ACCESS_DESCR	Здесь Вы можете изменить пароль доступа к админ-панели.
+SETTINGSMENU_TIME_SYNC	Время.
+SETTINGSMENU_TIME_SYNC_DESCR	Здесь Вы можете синхронизировать время Вашего сервера с Вашим локальным временем. Полезно для запланированных или чувствительных ко времени рассылок. 
+SETTINGSMENU_PERFOM	Производительность
+SETTINGSMENU_PERFOM_DESCR	Это инструмент для тестирования производительности Вашего сервера по отправке рассылок.
+SETTINGSMENU_BACUP_RESTORE	Архивировать/Восстановить
+SETTINGSMENU_BACUP_RESTORE_DESCR	Здесь Вы можете создать резервную копию либо восстановить Вашу базу данных.
+STATMENU_MAIN	Главная
+STATMENU_ACT_LOGS	Логи активности
+STATMENU_ACT_LOGS_DESCR	Здесь Вы можете просмотреть логи рассылок и логи подписки/отписки за указанный промежуток времени. Показываются записи и время выполнения программой Ваших команд. 
+STATMENU_CURRENT_BROADCAST	Последний лог рассылки
+STATMENU_CURRENT_BROADCAST_DESCR	Здесь Вы можете найти информацию о последнем процессе рассылки.
+STATMENU_TOTALS	Итоги
+STATMENU_TOTALS_DESCR	Здесь Вы можете видеть сколько подписчиков/отписавшихся и сообщений было отправлено в Ваших аккаунтах
+STATMENU_TOTALS_SENT_MESS	Отправлено сообщений
+STATMENU_TOTALS_SUBSCRIBERS	Подписчиков
+STATMENU_TOTALS_PROSPECTS	Размер аккаунтов
+PROSPMENU_ADD_PROSP	Добавить
+PROSPMENU_IMPORT	Импорт
+PROSPMENU_EXPORT	Экспорт
+PROSPMENU_COPY	Из аккаунта...
+PROSPMENU_BULK_REMOVE	Удаление...
+ERROR_NOT_CHANGE_URL	Пожалуйста не меняйте url
+ERROR	Ошибка
+MENU_GO	-&gt;
+ERROR_YOUR_NAME_REQUIRED	Не указано имя
+ERROR_EMAIL_INCORRECT	неправильный E-mail
+ERROR_EMAIL_REQUIRED	Email не указан
+ERROR_REQUIRED	Не указан
+ERROR_DUBL	Повторяется
+ERROR_CANT_LOCK_FILE	Не могу заблокировать файл для записи
+ERROR_REQUIRED_SMALL	отсутствует
+MESS_SETTINGS_UPDATED	Настройки обновлены
+ERROR_FILENAME_INCORRECT	Неверное имя файла
+ERROR_INCORRECT	Неверно
+ERROR_NOT_EQUAL	Не совпадает
+ERROR_NOT_SELECTED	Не выбрано
+ERROR_REQUIRED_SENDMAIL	Sendmail отсутствует
+ERROR_INCORRECT_SENDMAIL_PATH	Не правильный путь к sendmail
+ERROR_INCORRECT_SENDMAIL_NOT_EXISTS	Sendmail не существует на этом сервере
+ERROR_REQUIRED_SMTP	Имя SMTP сервера не указано
+ERROR_INCORRECT_FORMAT	Неправильный формат
+MESS_LOGOUT_TO_CHECK	Выйдите из админ панели для проверки
+ERROR_CANT_OPEN_DIR	Не могу открыть директорию
+ERROR_CANT_UNLINK_FILE	Не могу удалить файл
+ERROR_CANT_CREATE_DIR	Не могу создать директорию
+ERROR_CANT_OPEN_FILE	Не могу открыть файл
+ERROR_CANT_WRITE	для записи
+ERROR_NEED_TO_CREATE	Вы должны создать файл
+ERROR_NEED_TO_CREATE2	и установить разрешения CHMOD 666
+ERROR_SHORTER_THEN_3	Должен быть длиннее, чем 3 символа
+MONTH_1	Январь
+MONTH_2	Февраль
+MONTH_3	Март
+MONTH_4	Апрель
+MONTH_5	Май
+MONTH_6	Июнь
+MONTH_7	Июль
+MONTH_8	Август
+MONTH_9	Сентябрь
+MONTH_10	Октябрь
+MONTH_11	Ноябрь
+MONTH_12	Декабрь
+MESS_NO_BROADCAST_LOG	Не найдено записей
+BROADCAST_LOG_PROC	Номер процесса
+BROADCAST_LOG_TIME	Время
+BROADCAST_LOG_STATUS	Статус
+BROADCAST_LOG_MAIN	основной
+STAT_NO_MESS	Не было отправлено ни одного сообщения
+STAT_STATISTICS	Статистика
+STAT_TOTAL_PROSP	Всего подписчиков в аккаунте
+STAT_ACCOUNT	Аккаунт
+STAT_SEQUNTIAL	Последовательные
+STAT_ACT_PROSP	Активные подписчики
+STAT_INACT_PROSP	Неактивные подписчики
+STAT_TOTAL	Всего
+STAT_NO_LOGS_FOUND	Логи не найдены
+STAT_SHEDULED	Запланированные
+STAT_MANUAL	Ручные
+STAT_DOI	Подтверждения
+STAT_SUBSCRIBE	Подписки
+STAT_UNSUBSCRIBE	Отписки
+STAT_SUBSCRIBERS	Подписчиков
+STAT_UNSUBSCRIBERS	Отписавшихся
+STAT_SENT_MESS_STAT	Статистика отправленных сообщений
+STAT_SUBSCRIBERS_STAT	Статистика подписчиков
+STAT_PERIOD_FOR	для
+STAT_PERIOD_FROM	от
+STAT_PERIOD_TILL	до
+TXT_EMAIL_ADDRESS	Email
+TXT_NAME	Имя
+ERROR_IS_ALREADY_EXISTS	уже существует
+ERROR_NUMBER_REQUIRED	Должно быть число
+ERROR_TO_BIG	Слишком большое число
+ERROR_ALREADY_USED	уже используется
+ERROR_USER_NOT_FOUND	ОШИБКА: пользователь не найден
+TXT_MODE_NEW	Новый
+TXT_MODE_EDIT	Изменить
+USR_SENT_MESS	Послать сообщения
+USR_SENT_RECORDS_IN_LOGS	записей в логах
+USR_SENT_MESSAGE	Сообщение
+USR_SENT_DATE	Дата
+USR_BROWSER_PAGE	Страница
+USR_BROWSER_PROSPECTS	подписчиков
+USR_BROWSER_PREVIOUSE	Предыдущее
+USR_BROWSER_NEXT	Следующее
+USR_BROWSER_SHOWING	Показано
+USR_BROWSER_FROM	от
+USR_BROWSER_NO_RECORDS_FOUND	НЕ НАЙДЕНО ЗАПИСЕЙ
+USR_BROWSER_INACTIVE	отключен
+USR_BROWSER_ACTIVE	включен
+USR_BROWSER_PENDING	ожидает
+USR_BROWSER_CYCLE_DISABLED	отключен
+USR_BROWSER_EDIT_USER	Изменить пользователя
+USR_BROWSER_HEAD_SENT	Отправлено
+USR_BROWSER_HEAD_STATUS	Состояние
+USR_BROWSER_HEAD_DATE	Дата
+USR_BROWSER_HEAD_CYCLE	Цикл
+USR_BROWSER_HEAD_HOST	Хост
+USR_BROWSER_HEAD_USERID	UserID
+USR_BROWSER_USERS_REMOVED	пользователей удалено
+USR_BROWSER_USERS_CHANGED	пользователей изменено
+USR_BROWSER_USERS_SHOW_FIELDS	Показывать поля
+USR_BROWSER_USERS_SHOW_EXTRA	Дополнительно
+USR_BROWSER_USERS_SORT_ASC	Возрастание
+USR_BROWSER_USERS_SORT_DESC	Убывание
+USR_BROWSER_FINISHED	закончено
+USR_BROWSER_ALL	все
+USR_BROWSER_CANT_IMPORT	Не могу импортировать - не найдено подписчиков
+USR_BROWSER_EXPORTED	Экспортировано
+USR_BROWSER_CANT_EXPORT	Не могу экспортировать - не найдено подписчиков
+USR_BROWSER_EXPORT_EMAIL_ONLY	только EMAIL
+USR_BROWSER_EXPORT_EMAIL	EMAIL
+USR_BROWSER_EXPORT_NAME	NAME
+USR_BROWSER_EXPORT_FILE	файл
+USR_BROWSER_EXPORT_PAGE	страница
+USR_BROWSER_BULK_QUERY_INCORRECT	Запрос некорректен
+USR_BROWSER_BULK_CURRENT_ACCOUNT	Текущий аккаунт
+USR_BROWSER_BULK_ALL_ACCOUNTS	Все аккаунты
+USR_BROWSER_IMPORT_PROSPADD	подписчиков добавлено
+USR_BROWSER_IMPORT_ERRORS_DETECTED	ошибок обнаружено
+ERROR_FIELD_NAME_INCORRECT	Имя поля некорректно
+HTML_FORM_FIELD_NAME	Имя поля
+HTML_FORM_ERR_RESERVED	зарезервировано
+HTML_FORM_ERR_USED	используется
+HTML_FORM_ERR_EMPTY	пустое
+HTML_FORM_SUBSCRIBE_ACCOUNTS	Выберите аккаунты в которые вы хотите автоматически <B>подписывать</B> пользователей, которые подписались в текущий аккаунт
+HTML_FORM_SAVE_ACCOUNTS	Сохранить аккаунты
+HTML_FORM_UNSUBSCRIBE_ACCOUNTS	Выберите аккаунты из которых вы хотите автоматически <B>отписывать</B> пользователей, которые отписались из  текущего аккаунта
+HTML_FORM_UNSUBSCRIBE_ALL	Отписывать из всех аккаунтов
+HTML_FORM_ADD_NEW	Добавить новое поле
+HTML_FORM_NAME	Имя
+HTML_FORM_RESERVED	Зарезервировано
+HTML_FORM_EMAIL	Email
+HTML_FORM_CONFIRM	Вы уверены, что хотите удалить это поле? Данные этого поля будут потеряны.
+HTML_FORM_YOU_HAVE	У вас
+HTML_FORM_COSTUM_FIELDS	пользовательских полей
+HTML_FORM_DROP	Удалить
+HTML_FORM_UP	ВВЕРХ
+HTML_FORM_DOWN	ВНИЗ
+HTML_FORM_MOVE	Сдвинуть
+HTML_FORM_SUBSCRIBE	Подписаться
+ERROR_URL_INCORRECT	URL не корректный
+TXT_DEFAULT	По умолчанию
+ERROR_CANT_UPLOAD_FILE	Не могу закачать файл
+ERROR_CANT_FIND_EMAIL	Не могу найти email
+TXT_LINE	Строка
+TXT_EMAIL	email
+TXT_ISINCORRECT	некорректен
+TXT_IS_EXISTS	используется
+TXT_IS_BOUNSED	находится в черном списке
+MESS_ERR_CONFIRM	В теле сообщения должен присутствовать специальный тэг
+ERROR_DATE_INCORRECT	Дата некорректна
+MESS_CREATE_NEWMESS	Создание нового сообщения в аккаунте
+MESS_EDIT_MESS	Изменить сообщение
+MESS_DOWNLOAD_ATTACH	Скачать вложение
+MESS_ATTACHMENTS	Вложения
+MESS_BROADCAST_STARTED	Broadcaster запущен в фоновом режиме
+MESS_PREVIEW	Просмотр
+LINKS_ALL_MONTH	Все месяцы
+LINKS_ALL_MESS	Все сообщения
+LINKS_ALL_LINKS	Все ссылки
+LINKS_CHANGE	Изменить
+LINKS_CHANGE_LINK	Изменить ссылку
+MESS_PERS_EXTRA	Дополнительные поля
+MESS_PERS_LOAD_FROM_FILE	Загрузить из текстового файла
+MESS_PERS_LOAD_FROM_TEMPL	Загрузить текст из шаблона
+MESS_PERS_REDIR_LINK	ссылка для перенаправления
+MESS_PERS_REDIR_LINK_TO	на
+MESS_PERS_TRACK	Отслеживаемые ссылки
+MESS_PERS_NEW	Новое
+TXT_VIEW	Просмотр
+LINKS_MESSAGES_LINKS_ACT	Активность линков в сообщениях
+LINKS_VIEW_PROSP	Просмотреть пользователей
+LINKS_VIEW_CLICKS	Просмотреть клики
+ACCOUNT_EXISTS	Аккаунт уже существует
+ACCOUNT_INVALID_NAME	Некорректное имя аккаунта
+ACCOUNT_NO_ACCOUNTS	Нет аккаунтов
+ACCOUNT_YOUR_ACCOUNTS	Ваши аккаунты
+ACCOUNT_DISABLED	Отключено
+ACCOUNT_DELETE_QUESTION	Вы уверены что хотите удалить выделенные аккаунты?
+ACCOUNT_INVERT_STATUS	Переключить статус
+LANG_SELECT_LANG	Выберите Ваш язык.
+LANG_SELECT_LANG_TABHEADER	Выберите ваш язык и кодировку.
+LANG_LANG	Язык
+#########################	
+#file bounce.cgi	
+#########################
+BOUNCE_ERROR	ОШИБКА ОБРАБОТКИ ВОЗВРАЩЕННЫХ СООБЩЕНИЙ
+BOUNCE_ERROR_HEADER	ОШИБКА ОБРАБОТКИ ВОЗВРАЩЕННЫХ СООБЩЕНИЙ - не могу загрузить модуль Mail::DeliveryStatus::BounceValidator
+BOUNCE_ERROR_DESCR1	Не могу загрузить модуль Mail::DeliveryStatus::BounceValidator
+BOUNCE_ERROR_DESCR2	Проверьте существует ли файл <B>BounceValidator.pm</b> в директории lib/Mail/DeliveryStatus/  или попросите хостеров установить модули MIME::Tools
+BOUNCE_ERROR_TXT	Ошибка
+BOUNCE_ERROR_ACTION	Действие
+BOUNCE_ERROR_ACTION_WAS_NOTFOUND	не найден
+BOUNCE_ERROR_CANT_OPEN_CONN	Ошибка: Невозможно установить соединение с
+BOUNCE_CONNECTED	СОЕДИНЕНО
+BOUNCE_CONNECTED_AUTH	Проверка пользователя
+BOUNCE_CONNECTED_AUTH_AND_PASS	и пароля **********
+BOUNCE_CONNECTED_LOGGED	Вошли
+BOUNCE_CONNECTED_FETCH	Получаем сообщения
+BOUNCE_CONNECTED_YOU_HAVE	У Вас
+BOUNCE_CONNECTED_YOU_HAVE_MESS	сообщений в почтовом ящике
+BOUNCE_CONNECTED_LOADING	Загружаем первые
+BOUNCE_CONNECTED_LOADING_MESS	сообщений
+BOUNCE_CONNECTED_LOADING_EMPTY	Ваш почтовый ящик пуст
+BOUNCE_ERROR_VALIDATOR	Ошибка BounceValidator: невозможно обработать сообщение
+BOUNCE_LOAD_MSG	Loading сообщение
+BOUNCE_LOAD_MSG_IS_BOUNC	Это сообщение возвращено
+BOUNCE_LOAD_MSG_EMAIL_IS	email возвращенного
+BOUNCE_LOAD_MSG_EMAIL_IS_DIAG	Диагностика
+BOUNCE_LOAD_MSG_CANT_LOAD	Ошибка: невозможно загрузить сообщение
+BOUNCE_COUNT_TOTAL	Всего
+BOUNCE_COUNT_TOTAL_MSGS	возвращенных сообщений в Вашем почтовом ящике
+BOUNCE_TEST_OK	Test is OK
+BOUNCE_TEST_ERROR	Ошибка: Отказано в соединении. Неправильные настройки POP3
+BOUNCE_PAGE_REM_MAIL_ALL_ACC	Удалить email из всех аккаунтов
+BOUNCE_PAGE_SET_STATUS_INACT	Установить статус подписчика в ОТКЛЮЧЕН
+BOUNCE_PAGE_ADD_NEW_POP	Добавить новый pop3 аккаунт
+BOUNCE_PAGE_EDIT_POP	Редактировать существующий pop3 аккаунт
+BOUNCE_STATUS_WAITING	Ожидание
+BOUNCE_STATUS_REMOVED	Подписчик удален
+BOUNCE_STATUS_INACTIV	Подписчик ОТКЛЮЧЕН
+BOUNCE_STATUS_NOTFOUND	Подписчик не найден
+BOUNCE_STATUS_PROC_MAN	Обработано вручную
+BOUNCE_SORT_HARD	Hard
+BOUNCE_SORT_SOFT	Soft
+BOUNCE_SORT_DATE	Дата
+BOUNCE_SORT_MAIL	Email
+BOUNCE_SORT_ASC	Возрастание
+BOUNCE_SORT_DESC	Убывание
+BOUNCE_INPUT_REM_PROSP	Удалить подписчиков
+BOUNCE_INPUT_REM_PROSP_SURE	Вы уверены что хотите удалить
+BOUNCE_INPUT_REM_PROSP_SURE_MAILS	email адресов
+BOUNCE_INPUT_REM_PROSP_CANCEL	Отмена
+BOUNCE_INPUT_BACK_BLACKLIST	Назад в черный список
+BOUNCE_EMAILS_WERE_REM	адресов было удалено из черного списка
+BOUNCE_EMAILS_WERE_ADD	адресов было добавлено в черный список
+BOUNCE_ERROR_DELIVER_MSGS	Извините, возникли проблемы при доставке сообщений на этот адрес
+BOUNCE_SETTS_UPDATED	Настройки обновлены
+#########################	
+#file xmlimport.cgi	
+#########################
+XMLI_ERROR_BNC_PROC	ОШИБКА ОБРАБОТКИ ВОЗВРАЩЕННЫХ СООБЩЕНИЙ
+XMLI_ERROR_BNC_PROC_TXT	ОШИБКА XML ИМПОРТА - невозможно загрузить модуль XML::Parser
+XMLI_ERROR_BNC_PROC_TXT_DESCR1	Невозможно загрузить модуль 
+XMLI_ERROR_BNC_PROC_TXT_DESCR2	Пожалуйста попросите хостеров установить
+XMLI_ERROR_BNC_PROC_TXT_DESCR2_1	модули
+XMLI_ERROR_BNC_PROC_ERROR	Ошибка
+XMLI_MSG	Не изменяйте URL
+XMLI_MSG_PROSPS_WERE_ADDED	подписчиков добавлено и
+XMLI_MSG_PROSPS_WERE_UPD	обновлено в базе данных
+XMLI_MSG_TOTAL_ELMS	Всего элементов в XML файле
+XMLI_ERR_ELEMENT	Элемент
+XMLI_ERR_ELEMENT_EMAIL	email
+XMLI_ERR_ELEMENT_EMAIL_INCORR	некорректен
+XMLI_ERR_ELEMENT_EMAIL_ALR_EX	уже существует и обновлен
+XMLI_ERR_ELEMENT_EMAIL_WAS_NOT_ADDED_SQL	не добавлен в базу данных. Ошибка SQL
+#########################	
+#file xmlexport.cgi	
+#########################
+XMLE_PAGE_FUMP_DIR	В FUMP директорию
+XMLE_PAGE_INTO_BRO	В браузер
+XMLE_PAGE_SAVE_AS_FILE	Сохранить как файл
+XMLE_PAGE_ENC_DEF	<По-умолчанию>
+XMLE_FIELDS_REG_DATE	Дата регистрации
+XMLE_FIELDS_EMAIL	Email
+XMLE_FIELDS_NAME	Имя
+____STARTTEXTS____
+[T_SENDING_TIPS]	
+	<h2>Советы по настройке заголовков возвращенных сообщений. </h2>
+                    <p>Если Вы хотите обрабатывать возвращенные сообщения, Вы можете выбрать 
+                      опции их отправки.</p>
+                    <p>&nbsp;</p>
+                    <p><font color="#FF0000"><strong>Внимание!</strong></font> 
+                      Возвращенные сообщения могут быть возвращены с настройками по умолчанию, 
+                      Вы должны определить опции возвращенных сообщений если не можете найти возвращенные 
+		      сообщения в Ваших почтовых ящиках или укажите почтовый адрес который 
+                      должен отличаться от того который указан в From или Reply-To заголовках. 
+                      Желаем Вам удачи!</p>
+                    <p>Обычно все возвращенные сообщения приходят на email указанный в 
+                      Return-path заголовке Ваших сообщений. Есть несколько путей 
+                      достичь этого, некоторые более предпочтительны чем остальные.</p>
+                    <p><strong><u>Настройки SMTP</u></strong></p>
+                    <p>Если Вы используете SMTP для отправки сообщений, Вы можете указать 
+                      email отличающийся от 'From' или 'Reply-To' заголовков. 
+                      Вам нужно выбрать 'Еmail адрес для возвращенных сообщений' 
+                      опцию и указать email адрес. <br>
+                      <br>
+                      <strong><u>Настройка Sendmail</u></strong></p>
+                    <p>Ваши результаты будут зависеть от метода,  
+                      но оно того стоит: </p>
+                    <p><br>
+                      <strong><em>Метод 1:</em></strong> Флаг -f</p>
+                    <p>Вы должны выбрать 'Использовать sendmail с флагом -f и адресом' и указать 
+                      адрес</p>
+                    <p>Будет установлен Return-Path заголовок.</p>
+                    <p>&nbsp;</p>
+                    <p><em><strong>Метод 2: </strong></em>Return-Path заголовок</p>
+                    <p>Если это не сработает, Вы можете попробовать настроить Return-Path 
+                      заголовок детально. Это не лучший выход, 
+                      но Qmail позволяет это сделать.</p>
+                    <p>&nbsp;</p>
+                    <p><strong>Метод 3: </strong>Errors-To заголовок</p>
+                    <p>Errors-To заголовок как может показаться был создан именно для 
+                      этой задачи, но его нужно использовать осторожно. 
+                      Чтобы он использовался по назначению, Вы должны настроить 
+                      Sendmail так, чтоб Sendmail различал Errors-To заголовок. Я не рекомендую 
+                      использовать этот заголовок, но если все остальное не сработало вы можете 
+                      настроить Errors-To заголовок.</p>
+                    <p>&nbsp;</p>
+                    <p>Чтобы проверить любую из этих настроек, пошлите себе 
+                      тестовое сообщение и просмотрите исходный код сообщения, 
+                      в вашей почтовой программы. В заголовках сообщения, Вы должны увидеть 
+                      Return-Path заголовок типа:</p>
+                    <blockquote>
+                      <p><code>Return-Path: &lt;info-store@sellwide.net&gt;<br>
+                        Delivered-To: helpdesk@sellwide.net<br>
+                        Content-Disposition: inline<br>
+                        Content-Transfer-Encoding: binary<br>
+                        Content-Type: text/plain<br>
+                        MIME-Version: 1.0<br>
+                        X-Mailer: MIME::Lite 2.117 (F2.71)<br>
+                        Date: Tue, 14 Jun 2005 15:26:41 UT<br>
+                        From: FUMP Registration &lt;info-store@sellwide.net&gt;<br>
+                        To: Konstantin Ursaloff &lt;info-store@sellwide.net&gt;<br>
+                        Subject: User mom_id2000@yahoo.com registered at the dlfumlpl 
+                        account </code></p>
+                    </blockquote>
+[/T_SENDING_TIPS]
+[T_BOUNCE_HELP]
+<p>Здесь Вы можете настроить POP3 аккаунты для сбора 
+                    возвращенных сообщений и определить правила/действия с подписчиками (удалять 
+                    или отключать подписчиков):<br>
+                    <br>
+                    <strong>POP3 сервер</strong> - Ваш POP3 сервер для сбора 
+                    сообщений</p>
+                  <p><strong>POP3 порт</strong> - по умолчанию POP3 использует порт 110</p>
+                  <p><strong>POP3 пользователь</strong> - имя пользователя для доступа к почтовому ящику</p>
+                  <p><strong>POP3 пароль</strong> - пароль для доступа к почтовому ящику<br>
+                  </p>
+                  <p><strong>Удалять&nbsp;подписчиков&nbsp;после</strong>:<br>
+                    - <strong>hard возвратов:</strong> Это число hard возвратов 
+                    после которых пользователь будет удален или отключен (Hard 
+                    возвраты это постоянные ошибки, такие как хост или пользователь не найден, 
+                    отклонен как СПАМ, и означают что сообщение не будет доставлено 
+                    получателю). По умолчанию подписчики будут удалены/отключены 
+                    после 1 hard возврата, но Вы можете изменить это правило.</p>
+                  <p>- <strong>soft возвраты:</strong> число soft возвратов 
+                    после которых пользователь будет удален или отключен (Soft возвраты 
+                    это случайные временные ошибки, такие как ящик пользователя переполнен 
+                    и т.д.). По умолчанию подписчики будут удалены/отключены после
+                    3 soft возвратов,  но Вы можете изменить это правило.</p>
+                  <p><strong><br>
+                    Действия: </strong></p>
+                  <p>- <strong>удалить подписчика из базы данных:</strong> Ваш подписчик 
+                    будет удален из базы данных</p>
+                  <p>- <strong>отключить:</strong> Ваш подписчик 
+                    будет отключен</p>
+                  <p>- <strong>добавить подписчика в черный список:</strong> 
+                    Вы можете установить эту опцию, чтобы автоматически добавлять подписчиков 
+                    в черный список если они были удалены или отключены.</p>
+[/T_BOUNCE_HELP]
+[T_ACCOUNT_OPTIONS_SUBSCRIBE]
+
+			  Вы также можете заполучить подписчиков 
+                          путем их клика по e-mail ссылке. <br>
+                          Просто создайте новый e-mail адрес для вашего домена или 
+                          любой pop3 e-mail аккаунт. <br>
+                          Затем введите настройки ниже. <br>
+                          Это особенно полезно если Вы хотите исключить вероятность 
+                          того что кто-то введет<br>
+                          неправильное имя и e-mail адрес, потому что информация 
+                          о них будет получена прямо из их почтового клиента. 
+                          <br>
+                          Смотрите файл README.TXT для получения более полной информации.
+[/T_ACCOUNT_OPTIONS_SUBSCRIBE]
+[T_ACCOUNT_OPTIONS_SUBSCRIBE2]
+			<u>Разрешить подписку путем посылки 
+                          пустого сообщения:</u> Установите эту опцию если хотите разрешить 
+                          подписываться<br>
+                          на Вашу рассылку кликнув по e-mail ссылке или 
+                          при посылке пустого сообщения.<br> <br> <u>POP3 сервер:</u> 
+                          Сервер входящей почты для Вашего pop3 аккаунта. Ваш 
+                          провайдер pop3 e-mail аккаунта<br>
+                          должен предоставить эту информацию для Вас.<br> <br> 
+                          <u>POP3 имя пользователя:</u> Ваше имя пользователя для доступа 
+                          к Вашему pop3 аккаунту.<br> <br> <u>POP3 пароль:</u> Ваш пароль 
+                          для доступа к Вашему pop3 аккаунту.<br> <br> <u>POP3 порт:</u>
+			  На большинстве серверов 110. Но если возникает ошибка, 
+                          уточните у администратора Вашего сервера. 
+[/T_ACCOUNT_OPTIONS_SUBSCRIBE2]
+[T_ACCOUNT_OPTIONS_BLACKLIST]
+		    <p><u>Черный список:</u> Вы можете добавить email адреса или хосты которые 
+                      хотите заблокировать, например <b>&quot;spam@yahoo.com&quot;</b> или 
+                      <b>&quot;hotmail.com&quot;</b></p>
+                    <p>&nbsp;</p>
+                    <p><u>Настраиваемое сообщение об ошибке:</u> Это сообщение получают подписчики 
+                      если их email адреса заблокированы в форме ошибки регистрации.<br>
+                    </p>
+[/T_ACCOUNT_OPTIONS_BLACKLIST]
+[T_MESSEDIT_PERSONALIZE]
+			<h2>ПЕРСОНАЛИЗАЦИЯ ВАШИХ СООБЩЕНИЙ</h2>
+			<P><span class="ERROR_ELEMENT"><U><B>Новое!</B></U></span> Чтобы 
+                    ссылку отписки Вам нужно поместить специальное поле 
+		    <strong>[UNSUBSCRIBE_LINK]</strong> в любом месте Вашего сообщения (в HTML сообщениях 
+                    Вы можете добавить ссылку tag &lt;a href=&quot;<strong>[UNSUBSCRIBE_LINK]</strong>&quot;&gt;Нажмите 
+                    здесь чтобы отписаться&lt;/a&gt;)
+                  <P>&nbsp;
+                  <p>Вы можете использовать 4 тэга в поле
+                    Body или Subject для персонализации Ваших сообщений.</p>
+                  <ul>
+                    <li><b>[FIRSTNAME]</b> выдаст имя Вашего подписчика 
+                      (например, 'Hi <b>[FIRSTNAME]</b>' выдаст 'Hi 
+                      John!', если имя Вашего подписчика <i>John</i>).</li>
+                    <li><b>[FULLNAME]</b> выдаст полное имя Вашего подписчика 
+                      (например, 'Mr. <b>[FULLNAME]</b>,' выдаст 'Mr. 
+                      John Doe', если полное имя Вашего подписчика <i>John Doe</i>).</li>
+                    <li><b>[EMAIL]</b> выдаст e-mail адрес Вашего подписчика 
+                      (например, 'Ваш e-mail адрес <b>[EMAIL]</b>' 
+                      выдаст 'Ваш e-mail адрес john@aol.com', если 
+                      e-mail адрес Вашего подписчика <i>john@aol.com</i>. <br>
+
+                      <b>[DATE]</b> выдаст текущую дату в формате <i>дд/мм/гггг</i>. </li>
+                    <li><b>[DATE+32d] [DATE-32d] [DATE+1m] [DATE-1m] [DATE+1y] 
+                      [DATE-1y] </b>выдаст текущую дату с поправкой в формате <i>дд/мм/гггг</i>. </li>
+                    <li><b>[IP]</b> выдаст IP адрес Вашего подписчика 
+                      если он был подписан через HTML форму, или пустое значение</li>
+                    <!--Please do not remove or translate this tag-->
+		    {additional}
+		    <!--Please do not remove or translate this tag-->
+		    </ul>
+[/T_MESSEDIT_PERSONALIZE]
+[T_BULK_REM_HELP]
+		<p>Вы можете удалить подписчиков из этого аккаунта введя их email <br>
+		в текстовом поле ниже и нажав "удалить подписчиков" </p>
+		<p>&nbsp;</p>
+		<p>Один email в строке. Можно использовать маску. Например если Вы <br>
+		введете "hotmail" в текстовом поле, то удалите все emails адреса содержащие 
+		<br>
+		"hotmail" в любой части email адреса. <br>
+		<br>
+		например hotmail@aol.com, mike@hotmail.com, myhotmail@email.com - все 
+		будут удалены из списка</p>
+[/T_BULK_REM_HELP]
+[T_IMPORT_HELP]
+	<p>Здесь Вы можете добавить новые контакты к списку "текущие подписчики" и <br>
+	отправить им полный список сообщений. Вы можете также ввести контакты <br>
+	вставив их из файла в окно "Ввести текст" или загрузить их в текстовом файле используя следующий формат:<br>
+	<br>
+	<i>John Smith|his@email.com</i><br>
+	или:<br>
+	<i>his@email.com</i><br>
+	или:<br>
+	<i>&lt;his@email.com&gt; </i><br>
+	или:<br>
+	<i>John Smith &lt;his@email.com&gt; </i><br>
+	или:<br>
+	<i>“John Smith” his@email.com</i><br>
+	или:<br>
+	<i>John Smith his@email.com</i><br>
+	<br>
+	Один контакт в строке. Если готовы, нажмите кнопку Импортировать Подписчиков.</p>
+[/T_IMPORT_HELP]
+[T_DOI_MESS]
+Для подтверждения подписки, нажмите следующую ссылку 
+(Вы должны быть подсоединены к Интернет):
+
+[CONFIRM_URL]
+
+Если Вы не посылали запрос, просто ничего не делайте.
+[/T_DOI_MESS]
+[T_ATTANTIONFILES1]
+<hr size="4" noshade>
+<H1 class="mess">Внимание!</H1>
+Эти файлы по прежнему есть на сервере:
+<UL>
+[/T_ATTANTIONFILES1]
+[T_ATTANTIONFILES2]
+</UL><h2>Пожалуйста удалите их с сервера после инсталляции</H2><hr size=\"4\" noshade>
+[/T_ATTANTIONFILES2]
+

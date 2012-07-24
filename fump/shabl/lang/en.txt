@@ -1,0 +1,1353 @@
+English	iso-8859-1
+#First line must have format:
+#LANGNAME<TAB>ENCODING
+###################################################
+#Created by Konstantin Ursaloff, Andrey Stepanuk and
+#Dick Schiferli
+#Follow Up Mailing List Processor PRO 5.01
+#Last modified 07/01/2009
+###################################################
+#Version 5.1
+NO_SUBS_OR_UNSUBS_THIS_DATE	Nobody subscribed or unsubscribed this date
+ACCOUNTS_PROSPECTS	Accounts prospects.
+TO_UNSUBSCRIBE_CLICK_LINK_BELOW	To unsubscribe click on the link below:
+HTML_FORM_SUSPEND_ACCOUNTS	Select accounts where you automatically want to suspend prospects<br>when they subscribe to this account.
+HTML_FORM_SUSPEND_ALL	Suspend on all other accounts
+HTML_FORM_LOCK_ACCOUNTS	Select accounts where you automatically want to lock prospects<br>when they subscribe to this account.
+HTML_FORM_LOCK_ALL	Lock on all other accounts
+MAIN_MENU	Main Menu
+ADMIN_CONTROL_PANEL	Admin Control Panel
+LOGO	<img src=logo.png>
+#Version 5.01.03
+PHP_INTEGRATION	PHP Integration
+PHP_INTEGRATION_DESCR	This PHP code will help you emulate posting to the account registration code. You can use this function in your PHP scripts to post information to FUMP.
+AJAX_INTEGRATION	JavaScript Ajax	Integration
+AJAX_INTEGRATION_DESCR	This code can be inserted into HTML code and will be executed on client side. You can add this function in onSubmit form event.
+#Version 5.01
+BTN_DEL_ALL_MSGS	Delete all messages
+MAIN_HEADER	Follow Up Mailing List Processor Admin Control Panel v{VERSION}
+BROADCAST_MESSAGES_WAS_SENT1	messages where sent
+BROADCAST_MESSAGES_WAS_SENT2	left
+BROADCAST_SENDER_PROCESS_FINISHED	Sender process completed
+BROADCAST_SENDER_PROCESS_STARTED	Sender process started
+BROADCAST_DISTRIBUTION_STARTED	Concurrent message distribution started
+BROADCAST_DISTRIBUTION_FINISHED	Concurrent message distribution completed
+BROADCAST_NO_MESS	No messages to send
+BROADCAST_DELETE_DOI	User
+BROADCAST_DELETE_DOI2	was deleted from account
+BROADCAST_DELETE_DOI3	after DOI time limit
+BROADCAST_POP3_FINISHED	POP3 receiving completed
+BROADCAST_POP3_CANT_FETCH	Couldn't retrieve the message from server, ID
+BROADCAST_POP3_ERROR5	Please check configuration settings in the account options
+BROADCAST_POP3_ERROR4	POP3 user
+BROADCAST_POP3_ERROR3	Cannot authenticate POP3 settings (POP3 server
+BROADCAST_POP3_ERROR2	Cannot open connection to
+BROADCAST_POP3_ERROR	Error in account options
+BROADCAST_POP3_PROCESS_STARTED	POP3 receive process started for account
+BROADCAST_ADDING_NEW_SUBSCRIBER	Subscribe by email: Adding new subscriber
+BROADCAST_ADDING_NEW_SUBSCRIBER2	to account
+BROADCAST_ALREADY_SUBSCRIBED	Subscribe by email: Email already exists in database
+BROADCAST_IS_SUBSCRIBE_ADDR2	This is your subscribe mail address - ignoring
+BROADCAST_IS_SUBSCRIBE_ADDR	Subscribe by email: Received email from
+BROADCAST_EMAIL_BANNED	Subscribe by email: Email was banned
+BROADCAST_INCORRECT_EMAIL	Subscribe by email: Incorrect email
+BROADCAST_CANT_FIND_EMAIL	Subscribe by email: Cannot find email address in
+DAILY_REPORT_SUBJ	Daily report
+DAILY_REPORT_FROM_NAME	FUMP Broadcaster
+BROADCAST_SEQ_WAS_RESTARTED2	prospects
+BROADCAST_SEQ_WAS_RESTARTED	sequence was restarted for
+BROADCAST_FOLLOWUP	Follow up messages
+BROADCAST_SEQUENCE_REPEAT_ERR	Follow up messages error: Cannot process sequence repeating because message with ID
+BROADCAST_SEQUENCE_REPEAT_ERR2	was not found in account
+BROADCAST_CHECKING_SEQUENTIAL	Check if follow up messages need to be sent
+BROADCAST_NEED_TO_SEND	need to send
+BROADCAST_NEED_TO_SEND2	messages
+BROADCAST_MANUAL_AND_SCHEDULED	Manual and scheduled messages
+BROADCAST_CHECKING_MANUAL	Check if manual or scheduled messages need to be sent
+BROADCAST_BOUNCED_DELETING_FINISHED	Deleting finished
+BROADCAST_BOUNCED_NEED_TO_DELETE	Deleting
+BROADCAST_BOUNCED_NEED_TO_DELETE2	messages from the mailbox
+BROADCAST_BOUNCED_DOWNLOADING_MESSAGES	Downloading messages list
+BROADCAST_BOUNCED_ERR_TODELMESS	to delete messages
+BROADCAST_BOUNCED_DELETING	Deleting bounced messages in account
+BROADCAST_BOUNCED_ERR_INCORRECT_LOGIN	Error: Incorrect username and password at
+BROADCAST_BOUNCED_CANT_PARSE_MESS	Error: Cannot parse message:
+BROADCAST_BOUNCED_NEW_MESSAGES	new messages in the mailbox
+BROADCAST_BOUNCED_WE_HAVE	We have
+BROADCAST_BOUNCED_POP3ERROR2	to receive bounce messages
+BROADCAST_BOUNCED_POP3ERROR	Error: Cannot connect to POP3 server
+BROADCAST_PROCESSING_BOUNCED_ACCOUNT	Processing bounce account
+BROADCAST_PROCESSING_BOUNCED_ACCOUNT2	for
+BROADCAST_BOUNCED_FINISHED	Finished processing bounced messages
+BROADCAST_BOUNCED_MESSAGES_PROCESSED	messages processed
+BROADCAST_BOUNCE_STARTED_2	Processing bounced messages
+BROADCAST_BOUNCE_STARTED	Bounced processing started
+BROADCAST_CAN_NOT_LOAD_DELIVERY_MODULE	Error: Cannot load Mail::DeliveryStatus::BounceValidator module
+BROADCAST_MAIN_PROC_STARTED	Main process started
+TAGS_FROM_NAME	From name
+TAGS_FROM_EMAIL	From email
+ORDER	Order
+PERSONAL_LOAD_FROM_URL_DESCR	You can load content from any URL. For example [LOAD_FROM_URL_http://www.yourdomain.com/] will download the content of your home page into the message. Note that you can use only "http://" URLs. This function can be used e.g. to add content of a news page to all your messages without the need to add the news to each message template.
+PERSONAL_SIGNATURE_DESCR	You can add a preset signature by using this special tag. To create a new signature please use the Signature Manager.
+ERROR_LOADING_FROM_URL	Error loading content from URL
+NOTE_MESSAGES_WILL_NOT_BE PERSONALIZED	<B>Note:</B> Message sent with "Test send" are not personalized.
+SIGNATURE_EDIT	Edit signature
+SIGNATURE_NEW	New signature
+SIGNATURE_INCORRECT_NAME	Allowed are only A-Z,a-z,_ symbols
+TEXT_SIGNATURE	Text signature
+HTML_SIGNATURE	HTML signature
+SIGNATURES_EDIT_DESCR	You can add message personalization tags like [FIRSTNAME] into signatures. Text signature will be used for text type messages - HTML signature for HTML body of messages. You cannot add links to other signatures and change a signature name if it is already used in messages.
+INSERT_SIGNATURES	Insert signature
+SIGNATURE_NAME	Signature name
+USED_IN_MESSAGES	Active in messages
+SIGNATURE_DELETE_CONFIRM	Are you sure you want to delete this signature?
+SIGNATURE_EDIT_DESCR	Edit signature
+SIGNATURE_CLONE_DESCR	Duplicate signature
+SIGNATURE_DELETE_DESCR	Delete signature
+CREATE_NEW_SIGNATURE	Create new signature
+YOUR_IP	You current IP address
+IP_BAN_ERROR_MESSAGE_DEFAULT	You are not allowed to view this page	
+IP_BAN_ERROR_MESSAGE	Ban IP error message
+IP_BAN_LIST	Banned IP list
+IP_BAN_LIST_DESCR	Please enter a list of banned IP if you want to block registration from a particular address. You need to enter one IP (like 167.22.34.65) per line (mask addresses are also supported). Also you need define an error message, that will be displayed to visitors if their IP was banned. Note that the banned IP list is global for all accounts.
+SIGNATURES_NOT_FOUND	No signatures found
+INCORRECT_URL	Please do not experiment with the URL
+MANAGE_SIGNATURES	Manage signatures
+ACCOUNT_ID	ID
+ACCOUNT_DELETE_CONFIRM	Are you sure you want to delete the account?
+ACCOUNT_NEW	New account
+ACCOUNT_EDIT	Edit account
+ACCOUNT_CLONE	Duplicate account
+ACCOUNT_NAME	Account name
+ACCOUNT_DESCR	Account description	
+CREATE_NEW_ACCOUNT	Create new account
+ACCOUNT_STATUS_INACTIV_DESCR	Account disabled. Click to activate the account
+ACCOUNT_STATUS_ACTIV_DESCR	Account active. Click to disable the account
+ACCOUNT_EDIT_ACCOUNT_DESCR	Edit account name and description
+ACCOUNT_CLONE_ACCOUNT_DESCR	Duplicate account. (Settings and messages)
+ACCOUNT_DELETE_ACCOUNT_DESCR	Delete account (All settings, prospects and messages will be removed)
+CONFIRM_ENABLING_ACCOUNT	Are you sure that you want activate the account?
+CONFIRM_DISABLING_ACCOUNT	Are you sure that you want disable the account?
+DESCRIPTION	Description
+MANAGE_ACCOUNTS	Manage accounts
+ACCOUNT_BROWSER_NO_ACCOUNTS_FOUND	No accounts found
+DAILY_REPORT	Daily report
+#register.cgi
+REG_FROM_ACCOUNT	from account
+REG_ACCOUNT_WAS_NOT_FOUND	Account not found
+REG_SUBSCRIBER_WAS_NOT_FOUND	Subscriber not found
+REG_REDIRECT_LINK_NOT_FOUND	Redirect links not found
+REG_ACCOUNT_IS_NOT_EXIST	ACCOUNT DOES NOT EXIST!
+REG_EMAIL_IS_INCORRECT	Email is incorrect
+REG_REQUIRED	required
+REG_CANTSHOW_CONFIRM	Unable to show confirm page - incorrect parameters
+REG_CANTSHOW_THANKYOU	Unable to show thank you page - incorrect parameters
+REG_CAN_NOT_OPEN_FILE	Unable to open file
+REG_DOI_PAGE_IS_NOT_DEFINED	Double opt-in page is not defined
+REG_ALREADY_CONFIRMED	You have already confirmed your subscription.
+REG_LOG_DELETING_USER	Deleting  prospect
+REG_MSG_UNSUBSCRIBED_SUBJ	User unsubscribed
+REG_MSG_UNSUBSCRIBED_BODY1	Prospect
+REG_MSG_UNSUBSCRIBED_BODY2	removed from account
+#end register.cgi
+FROM_SETTINGS	From settings
+USER_DEFAULT_ACCOUNT_FROM_NAME	Use account defaults 
+OVERRIDE_FROM_NAME_AND_EMAIL	Override name and email 
+USE_EMAIL_AND_NAME_FROM_PROSPECT_FIELDS	From prospect preferences
+USE_EMAIL_AND_NAME_FROM_REFERRER	From referrer contact information
+UPDATE	update
+SKIP	skip
+WITH_EXISTING_PROSPECTS	With existing prospects
+USR_BROWSER_IMPORT_PROSPUPDATED	prospects updated
+EXPORT_TO_TAB_DELMITTED	Export to tab-delimited file
+DUBLICATE_MESSAGE	Duplicate message
+WARNING	Warning
+TAB_DELMITTED_DESCR	You can import prospects from tab- delimited files. You can download an example to see all the fields that you can import.<BR> <FONT color="red"><B>Please do not change fields position (you cannot delete or swap columns)</B></FONT>. Name and email are required, all others fields are optional (just leave them blank if you do not want to import them). Registration date must be in format <B>YYYY-MM-DD</B> (note that MS-Excel will convert date format and you need turn it back). First line of file will be skipped - it is usually the column header.<BR><BR><B>Tip: </B>You can easily edit tab-delimited files in MS-Excel and then import them back by using tab separated import tool - all existing prospects will be updated. Fields that will be updated: Name, Registration Date, IP, all custom fields and the default message format. Fields that will not be updated in existing prospects: Email, Sequence Information.
+DOWNLOAD_TEMPLATE	Download example tab-delimited file
+UPLOAD_TAB_DELMITTED_FILE	Upload tab-delimited file
+IMPORT_FROM_XML	XML import
+IMPORT_FROM_TAB_DELMITTED	Import from tab-delimited file
+IMPORT_FROM_TEXT	Simple text import
+CUSTOM_FROM_EMAIL	Custom from name and email
+SELECT_TO_ADD_HIDDEN_FROM	Select this option if you want to add customized "From name" and "From email" information for each prospect
+SELECT_TO_ADD_HIDDEN_FROM_DESCR	2 hidden fields 'FromName' and 'FromEmail' will be added to subscribe form. If these fields are not empty then the prospect will receive messages from the name and email address defined in these hidden fields.
+JS_VALIDATION_EMAIL_ERROR	Please enter a valid email address!
+JS_EMAIL_NAME_VALIDATION	JavaScript form validation
+SELECT_JS_VALIDATION	Select this option if you want add JavaScript name and email address validation
+PERSONAL_REFERRER_TRACKING_ID_DESCR	This field is used to personalize referring to your subscribe form. You can add this tag in links like <U>http://www.yourdomain.com/page-where-my-form-is-located.html?ref=[REFERRER_TRACKING_ID]</U>.
+PERSONAL_REFERRER_TRACKING_ID	Referrer tracking ID
+COLLECTING_AFFILIATE_INFORMATION	Collecting referrer information
+ENABLE_COLLECTING_AFFILIATE_INFORMATION	Collect referrer information
+COLLECTING_AFFILIATE_INFORMATION_DESCR	Select this checkbox if you want to collect information about your referrers.<BR><B> Referrer:</B> An active prospect who referred your subscription form on your website. Each prospect has its own unique REFERRER TRACKING ID. You can personalize messages with referrer tracking id by adding a link to the page where your subscribe form is located. <BR>Example: <B>You can refer your friends to my mailing list by using URL http://www.yourdomain.com/subscribe.html?ref=[REFERRER_TRACKING_ID]</B><BR><BR>[REFERRER_TRACKING_ID] will be replaced with a unique value for each prospect. New prospects will be registered by using this link, referrer information will be saved and new prospects will receive messages from your referrer (FROM header will be replaced by your referrer information).
+HTML_FORM_OTIONAL_SUBSCRIBE_CKECKBOX	Subscribe to account
+HTML_FORM_UNSUBSCRIBEUNSUBSCRIBED_ACCOUNTS	Select accounts where you automatically want to unsubscribe prospects<br>when they unsubscribe from this account.	
+HTML_FORM_SUBSCRIBEOPTION_ACCOUNTS	Add an optional subscription checkbox for another account to your registration form.
+MESSAGE_FORMAT_CHOISE	Messages format choice
+HTML_FORM_INTEGRATION	Integration
+HTML_FORM_OPTIONS	Subscribe/unsubscribe settings
+HTML_FORM_FIELDS	Custom fields
+CYCLE_ACTIVATED	Cycle activated
+DISABLED	Disabled
+SEQUENCE_CYCLE_DESCR	If enabled, all sequential messages will be sent to the prospects. FUMP will wait the defined number of days and then restart the sequence. You can setup how many times the sequence will be repeated for each prospect (leave the field blank for unlimited repetition).
+REPEAT_SEQUENCE_TIMES	times for each prospect.
+REPEAT_SEQUENCE	Repeat sequence maximum 
+SEQ_WAIT	Wait
+START_NEW_SEQ_AFTER_DAYS	days and start new sequence starting from <BR> message
+ENABLE_SEQ_CYCLE	Enable sequence cycle
+SEQUENCE_CYCLE_SETUP	Sequence cycle preferences
+MODIFY	Modify
+ERROR_DATE_MUST_BE_IN_FUTURE	Must be a future date
+PROSPECT_NOT_FOUND	Prospect not found
+CUSTOM_FROM_MESSAGES_SETTINGS	Custom from message header information
+AFFILIATE_ID	Referrer ID
+CURRENT_AFFILIATE_EMAIL	Referrer email:
+CURRENT_AFFILIATE_NAME	Referrer name:
+AFFILIATE_INFORMATION	Referrer information
+LAST_SEQUENCE_MESSAGE_WAS_SENT_AT	Last sequential message was sent on
+SEQUENCE_WAS_SENT	was sent
+SEQUENCE_DAY_SMALL	day
+SEQUENCE_STATUS_STARTED	Sequence started
+SEQUENCE_STATUS_DISABLED	Sequence disabled
+SEQUENCE_STATUS_FINISHED	Sequence finished
+HIDE_ADVANCED	Hide advanced settings
+SHOW_ADVANCED	Advanced settings
+CLICK_TO	Click to
+REPEAT_MESSAGE_0	no repeat
+REPEAT_MESSAGE_1	repeat daily
+REPEAT_MESSAGE_2	repeat weekly
+REPEAT_MESSAGE_3	repeat monthly
+REPEAT_MESSAGE_4	repeat yearly
+REPEAT_MESSAGE	Repeat scheduled message
+MESS_TYPE_MANUAL	Manual broadcasting
+MESS_TYPE_DOI	Double opt-in confirmation
+MESS_TYPE_AUTO	Sequential follow up
+MESS_TYPE_SENDDAT	Scheduled or repeated
+MESS_TYPE_SUBSCRIBE	Subscribe
+MESS_TYPE_UNSUBSCRIBE	Unsubscribe
+MESS_TYPE	Message type:
+MESS_SENDING_FORMAT_TYPE	Sending format type:
+SPLASH_PAGE_SETTINGS_DAILY_STATS	Daily report
+SPLASH_PAGE_SETTINGS_ACTIVITY	Activity Logs 
+SPLASH_PAGE_SETTINGS_CURBROADCAST	Current Broadcast Logs 
+SPLASH_PAGE_SETTINGS_TOTALSTAT	Total Statistics
+SPLASH_PAGE_SETTINGS_BOUNCED	Bounced Emails
+SPLASH_PAGE_SETTINGS_BOUNCED_TOTAL	Bounced Totals
+SPLASH_PAGE_SETTINGS_NEWS	News/Support
+SPLASH_PAGE_SETTINGS	Splash page settings:
+OPEN_ONLINE_HTML_EDITOR	Open HTML editor
+ACCOUNT_MENU_EDIT_CURRENT_PROSPECT	Edit prospect
+SELECT_FIELDS_DESCR	Select the fields that will be displayed in the prospect manager. Just use buttons or double click on boxes to select/remove fields from prospect manager. (It will not change any information in your database)<BR><BR><B>Referrer level: </B>If you are using the referral system, you can choose the level of your referral system. This will add additional information about the Referrer ID, Email and Name for each level of your referral system. If you prospects have no referrers these fields will be empty in your prospects manager.
+PROSP_SEQUENCE_STATUS	Current sequence status
+PROSP_SEQUENCE_STATUS_DESCR	Current sequence status means what last sequential message was sent to your prospect and when it was sent. This information is updated by FUMP automatically, but if you want you can correct it manually. 
+PROP_IMG_DESCR	Edit
+REMOVE_IMG_DESCR	Remove prospect
+ACTION_VALUE_REMOVE	remove
+ACTION_VALUE_ACTIVATE	activate
+ACTION_VALUE_DEACTIVATE	deactivate
+ACTION_VALUE_RESTART_SEQUENCE	restart sequence
+ACTION_VALUE_DEACTIVATE_SEQUENCE	deactivate sequence
+BUTTON_CONFIRM_BEFORE	Are you sure that you want to
+BUTTON_CONFIRM_AFTER	the selected prospects?
+BUTTON_ACTION	Process
+WITH_SELECTED	With selected
+REPORTSEARCHBY	Search by
+REP_FIELDS_SELECTED_END	selected
+REP_FIELDS_SELECTED_BEGIN	fields from
+ORDER_BY 	Order by
+SHOW_AFFILIATE_LEVEL	Referrer level
+SELECT_FIELDS_UP	&nbsp;&nbsp;Up&nbsp;&nbsp;
+SELECT_FIELDS_DOWN	Down
+SELECT_FIELDS_ALL	All
+AVALIBLE_FIELDS	Available fields
+SELECTED_FIELDS	Selected fields
+FLD_SEQUENCE_REPEAT_DESC	How many times the sequence was repeated
+FLD_NAME_DESC	Prospect name
+FLD_EMAIL_DESC	Prospect email
+FLD_PK_USER_DESC	Prospect ID in the FUMP database
+FLD_DATEREG_DESC	Date when prospect was registered
+FLD_DAYS_DESC	Sequense status information. If a message with days set to 10 was sent to prospect, it will show 10 in report.
+FLD_DATELASTSEND_DESC	Date when last sequential message was sent
+FLD_MESSLASTSEND_DESC	ID in last sequential message was sent
+FLD_COUNTSEND_DESC	Counter of messages (all types of messages are logged)
+FLD_IP_DESC	Registration IP address
+FLD_UNSUBSCRIBE_DESC	Unique value that has been assigned to each prospect. Usually it is generated automatically when the first message was sent to the prospect.
+FLD_USERMESSAGEFORMAT_DESC	HTML, text or default
+FLD_SEQUENSE_SIZE_DESC	How many messages in sequence in current account. Same value for each prospect.
+FLD_SEQUENCE_NOW_DESC	How many sequential messages where sent.
+FLD_STATUS_DESC	Active, Pending (not confirmed), or Inactive
+FLD_FROMEMAIL_DESC	If you are using hidden <B>from email</B> field in your HTML form, this field will display the value of <B>from email</B> that was submitted on registration. If you define <B>From settings</B> as <B>"From prospect preferences"</B> in your message, then messages will be sent to prospect from this email address (if field is empty messages will be sent from default account settings). Also you can put this value into your messages as personalization tags.
+FLD_FROMNAME_DESC	If you are using hidden <B>from name</B> field in your HTML form, this field will display the value of <B>from name</B> that was submitted on registration. If you define <B>From settings</B> as <B>"From prospect preferences"</B> in your message, then messages will be sent to prospect from this name (if field is empty messages will be sent from default account settings). Also you can put this value into your messages as personalization tags.
+FLD_REFERRER_LINK_DESC	Referrer track is used for referring prospects to your mailing list. It is the same as "Unique user ID" but for security reasons it must be a different unique value.
+FLD_PK_USER	ID
+FLD_SEQUENCE_REPEAT	Sequence repeated
+FLD_REFERRER_LINK	Referrer track
+FLD_DATEREG	Registration date
+FLD_DAYS	Sequence days
+FLD_DATELASTSEND	Last sent date
+FLD_MESSLASTSEND	Last sent message ID
+FLD_COUNTSEND	Sent messages count
+FLD_IP	IP
+FLD_UNSUBSCRIBE	Unique user ID
+FLD_USERMESSAGEFORMAT	Default message format
+FLD_SEQUENSE_SIZE	Sequence size
+FLD_SEQUENCE_NOW	Sequence now
+FLD_STATUS	Status
+FLD_FROMEMAIL	From email
+FLD_FROMNAME	From name
+FLD_KEY	ID
+FLD_NAME	Name
+FLD_EMAIL	Email
+PARENT_AFFILIATE	Referrer
+PROSPECT_REPORT_SELECT_FIELDS	Select fields
+FROM_DATE	From
+TO_DATE	till
+SEARCH_BY Search by
+#WEEK_START_DAY 0=Sunday 1=Monday 
+WEEK_START_DAY	0
+TODAY	Today
+DW_0	Sunday
+DW_1	Monday
+DW_2	Tuesday
+DW_3	Wednesday
+DW_4	Thursday
+DW_5	Friday
+DW_6	Saturday
+DW_0_S	Su
+DW_1_S	Mo
+DW_2_S	Tu
+DW_3_S	We
+DW_4_S	Th
+DW_5_S	Fr
+DW_6_S	Sa
+#Version 4.21
+LINK_CLEAN	clean
+REG_ERROR_NAME	Your name:
+TEMPLATES_LOCATED_IN	Templates directory - 
+PREFERENCES_PAGE_TEMPLATE	Preferences page template
+SENDING_DELAY_DESCR	*) Critical settings. Ensure you choose the correct setting!<br><br>Warning: Use non-zero value for "Delay between emails" only if you have performance issues with your server, a limit for sending messages or if you are on a shared web server. A delay will be added between each email to be sent and will result in slower delivery of your emails. For example your server can send 10 messages per second (36.000 messages per hour) if the delay is set to 1 second per email, the added delay will be 36.000 seconds (10 hours). As result all emails will be completely sent after 11 hours.
+SENDING_DELAY	Delay between emails (seconds)
+REDIR_ALREADYREMOVED_DISCR	This value will be used for all accounts
+REDIR_ALREADYREMOVED_TO	"Already removed" page URL
+REDIR_ALREADYSUSCR_TO	"Already subscribed" page URL
+READ_MORE	Show email...
+NO_MSGS_HISTORY_FOUND	No emails present in your history archive.
+YOUR_WEB_HISTORY	Personal email archive
+RSS_DEF_ENC	Default - preferred
+RSS_SCRIPT_PARAM	Input script parameter name
+RSS_SCRIPT_URL	Input script URL
+RSS_TEXTINPUT	Text input settings
+RSS_USETEXT_INPUT	Use text input section
+RSS_ENCODING	Channel encoding
+RSS_LANG	Channel language
+RSS_COPYLINE	Copyright text
+RSS_TITLE	Title
+RSS_DISCR	Description
+RSS_URL	Your site URL
+PERSONAL_RSS_LINK	By clicking this link your prospect will be able to subscribe to the personalized RSS-feed from your messages
+PERSONAL_HTML_LINK	By clicking this link your prospect will be able to view the personalized HTML archive of your messages
+TAGS_RSS_LINK_DISCR	Links to personalized RSS and HTML newsfeed archive
+TAGS_RSS_LINK	RSS-link
+TAGS_HTML_LINK	HTML archive link
+SAVE_MESSAGE_IN_USER_HISTORY	Save current message into personalized RSS-feed
+RSS_LINK	Link to your homepage
+RSS_MAIN_SETTINGS	Main RSS settings
+RSS_SETTINGS	RSS 2.0 Channel settings
+ACCOUNTMENU_HTML_RSS	RSS Channel
+ACCOUNTMENU_HTML_RSS_DESCR	Configure the RSS channel.
+NOTIFY_ABOUT_MODIFICATIONS	Enable admin notification of each modification:
+ERROR_CONFIRM_SUBJ_NOT_DEFINED	Error: Confirmation message subject is not defined - please check your account options.
+ERROR_CONFIRM_BODY_NOT_DEFINED	Error: Confirmation message body is not defined - please check your account options.
+ERROR_NOT_ALLOWED_TO_MODIFY	Apologies, the modification of contact information is currently not possible.
+ERROR_TAG_CONFIRM_REQUIRED	<B>[CONFIRM_URL]</B> tag required
+CONFIRMATION_MESSAGE_SUBJECT	Confirmation email subject
+CONFIRMATION_MESSAGE_TEXT	Confirmation email body
+DISABLE_MODIFY_SERVICE	Disable modification of contact information:
+DISABLE_MODIFY_SERVICE_DISCR	Access to modify contact information page will be disabled
+ALLOW_MODIFY_MESSAGES_FORMAT	Allow prospect to change message format:
+MODIFY_CONTACT_INFORMATION	Modification of contact information by prospects
+SAVE_CONTACT_INFO	Save
+NAME	Your name:
+YOUR_CONTACT_INFO	Your preferences:
+CHANGE_YOUR_PREF	Change your preferences
+HTML_ONLY	HTML only
+TEXT_ONLY	TEXT only
+HTML_AND_TEXT	HTML and TEXT
+MSG_TEXT_FORMAT	Send emails in TEXT format
+MSG_HTML_FORMAT	Send emails in HTML format
+MSG_RSS_FORMAT	Your RSS-feed description text (500 characters max.)
+DEFAULT_MESSAGE_TYPE	Default email format
+DEFAULT_MESSAGE_TYPE_DISCR	If your subscriber did not select a preferred email format, the message will be sent in the default format.
+INSERT_SPECIAL_TAG	<br>Click on link below to insert personalization tag.<br>
+CLICK_HERE_TO_INSERT	Click here to insert a special tag
+TAGS_CHANGE_CONTACT_INFO	Modify contact info
+TAGS_UNSUBSCRIBE_LINK	Unsubscribe link
+TAGS_FNAME	First name
+TAGS_FULLNAME	Full name
+TAGS_DATE	Date
+TAGS_REGDATE	Registration date
+TAGS_EMAIL	Email
+TAGS_PERSONAL_INFO	Personal info
+TAGS_CUSTOM_FIELDS	Custom fields
+TAGS_TEMPLATES	Templates
+TAGS_LINKTRACK	Link tracking
+TAGS_ONE_CLICK_SUBSCRIBE	One click subscribe link to another account
+TAGS_ONE_CLICK_SUBSCRIBE_LINK	Subscribe to
+HTML_EDIT_DISABLE	Click here to <B>DISABLE</B> online HTML editor
+HTML_EDIT_ENABLE	Click here to <B>ENABLE</B> online HTML editor
+HTML_EDITOR_ENABLED	Your online HTML editor is <B>enabled</B>. Please save your message and reload edit message page to update the content.<br>
+HTML_EDITOR_DISABLED	Your online HTML editor is <B>disabled</B>. Please save your message and reload edit message page to update the content.<br>
+TEST_SEND_LINK	Test&nbsp;send
+PLEASE_CHOICE_FOFMAT	Select email format
+TYPE_MESS	Format	Format
+MESS_ACTIVE	Active
+MESS_INACTIVE	Inactive
+TEST_SEND_HEADER	Email test send
+TEST_SEND_BUTTON	Send email
+TEST_SEND_FORMAT	Email format
+TEST_SEND_RCPT	Recipient address
+MESSAGE_WAS_SENT	Thank you!<BR>Your message was sent to 
+CLOSE_WINDOW	Close window
+ENABLE_HTML_CHOISE	Add selection box to select the email format
+ENABLE_HTML_CHOISE_DISCR	Check this option to add a selection box to the HTML form to select the email format (Text or HTML).
+HTML_FORM_MESSFORMAT	Message format
+DATE_FORMAT_SETTINGS	Date format settings
+DATE_FORMAT_LINE	Your <i>strftime</i> format line
+DATE_FORMAT_DISCR	Set the format for <B>[DATE]</B> tags in your messages.<BR>The default format is:  <B>%m/%d/%Y</B> <BR><a href="http://se.php.net/manual/sv/function.strftime.php" target="_blank">More info about the format...</a>
+CURRENT_FORMATTED_DATE	Current date format
+USR_BROWSER_HEAD_FORMAT	Format
+USR_BROWSER_DEFAULT_FORMAT	Default
+USR_BROWSER_HTML_USER_FORMAT	HTML
+USR_BROWSER_TEXT_USER_FORMAT	Text
+PERSONAL_REG_DATE	will print subscriber registration date
+PERSONAL_SUBSCRIBER_ID	Subscriber ID
+PERSONAL_SUBSCRIBER_ID_DISCR	Subscriber ID (Primary key can be used to integrate FUMP with other applications)
+PERSONAL_MODIFY_CONTACT_INFO	Link to script where subscriber can modify name, email address and message format
+PERSONAL_SUBSCRIBER_UUI	Subscriber UUI
+PERSONAL_SUBSCRIBER_UUI_DISCR	Subscriber UUI (Unique User Identifier can be used to integrate FUMP with others applications)
+PERSONAL_REG_DATE_CORRECTED	will print the corrected subscriber registration date.
+ADD_UNSUBSCRIBE_LINK	Automatically add an unsubscribe link to the email footer
+RSSMESS_DISCR	Tip: Use a short, one paragraph, message as RSS-feed text. The RSS-feed will redirect your prospect to the message online.
+DUBLICATES	Duplicate message checking
+USE_MES_LOG_NEW	Do not send duplicate messages to subscribers:
+THANK_YOU_PAGE_SETTINGS	Thank you page settings:
+OR	Or
+GENARATE_PERSONALIZED_PAGE	Generate personalized page from template
+DOI_PAGE_SETTINGS	Subscribers double opt-in confirmation settings:
+UNSUBSCRIBE_PAGE_SETTINGS	Unsubscribe settings
+NOTIFICATION_HEADER	Admin notification settings
+INTEGRATION_TOOLS	Integration tools
+SQL_INTEGRATION	Prospect SQL query
+SQL_INTEGRATION_DESCR	This SQL query will return all information about prospects in the account.
+PERL_INTEGRATION	Perl integration
+PERL_INTEGRATION_DESCR	This Perl code will help you emulate posting to the account registration code.
+#End Version 4.21
+#########################	
+#file account_shabl.dat	
+##########################
+ACCOUNT_BIG	Account
+TOTAL_PROSPECTS	Total prospects:
+ACTIVE	Active
+INACTIVE	Inactive:
+HTML_CODE_FORM	HTML form code:
+FORM_PREVIEW	Form preview (you can use it to test subscribing):
+CUSTOM_FIELD	Custom field
+CUSTOM_FIELD_NAME	Custom field name:
+ONLY_CHARS	3...20 chars [A-Za-z0-9_] only
+IS_REQUIRED	Is required?
+FIELD_FORMAT	Field format:
+ADD_FIELD	Add field
+CANCEL	Cancel
+ACC_SETTINGS	Account Settings
+PERSONAL	Personal:
+FROM_NAME	From name:
+FROM_EMAIL	From email:
+DEF_SUBSCRIB_NAME	Default subscriber (recipient) name:
+REPLY_HEADER	Reply-to header:
+SUBSCRIB_OPTS	Subscribing options
+REDIR_SUSCR_TO	Redirect subscribers to:
+REDIR_REMOV_TO	Redirect removals to:
+NOTIFY_ME_SUSCR	Notify when someone subscribes:
+NOTIFY_ME_UNSUB	Notify when someone unsubscribed:
+ACC_ADMIN_NAME	Account administrator name:
+ACC_ADMIN_MAIL	Account administrator email:
+USE_DOI	Use double opt-in:
+DOICONFURL	Double opt-in confirmation page:
+LOGGING	Logging
+USE_MES_LOG	Use message logging (check for duplicate emails):
+LOCALIZ	Localization:
+NO_UPPERCASE	Do not uppercase the first letter of prospects names:
+DEF_CHARSET	Default character set:
+SAV_ALL_SET	Save
+POP_SET	POP3 Settings
+IS_POP	Allow subscribing by sending blank email:
+SUBSCR_EMAIL	Subscribe email:
+POP_SERVER2	POP3 Server:
+POP_USER2	POP3 Username:
+POP_PASS	POP3 Password:
+POP_PORT	POP3 Server port:
+BAN_MAILS	Ban emails
+BAN_LIST	Ban list (1 rule per line):
+CUST_ERR_MSG	Custom error message:
+SORTFILTER	Sort or filter by:
+SORTFILTER_SEARCH	Search:
+SORTFILTER_ORDER	Order:
+USE_DATE_RANGE	Use date range:
+REC_PER_PAGE	Records per page:
+REC_PER_PAGE_SHOW	Show:
+REC_PER_PAGE_RECORDS	records
+SF_DISPLAY	Display!
+SF_SAVETEXT	Save as text...
+SF_REMOVE	Remove
+SF_INV_STATUS	Invert status
+SF_SEL_ALL	Select All
+SF_DESEL_ALL	Deselect All
+PROSPECT	Prospect
+PROSPECTS2	prospects
+PROSP_NAME	Name:
+PROSP_MAIL	Email:
+PROSP_BEGIN_DAY	Start with day:
+PROSP_NO_SEQ	Without sequence
+PROSP_ADD_BEGIN_DAY	Add prospects into sequence starting with day
+PROSP_UPD_USER	Update user
+BULK_REM	Bulk Removal
+PROSP_REM_DB	removed from database
+PROSP_REMOVE	Remove Prospects
+PROSP_IMPORT	Import Prospects
+INSERT_TEXT	Insert text:
+OR_UPLOAD_FILE	or upload file:
+SEND_SUBSC_ALL_PROSP	Send subscribe confirmation message to all imported prospects.
+ADD_NO_SEQ	Only add new contacts to the mailing list
+ADD_SEQ	Add prospects into sequence starting with day
+COPY_PROSPS_FROM_ACC	Copy prospects from accounts
+ACCOUNT	Account:
+FILTER	Filter:
+IMPORT	Import
+PROSP_EXPORT_READY	prospects ready to export.
+FORMAT	Format:
+EXPORT_TO	Export to:
+EXPORT	Export
+SUB_UNSUB_MSG	Subscribe / unsubscribe messages
+EDIT_DOI_CONF_MSG	Send double opt-in confirmation message
+SEND_SUBSC_MSG	Send subscribe confirmation message
+SEND_UNSUB_MSG	Send unsubscribe confirmation message
+EDIT	Edit
+PREVIEW	Preview
+UPD_SETTINGS	Save
+ADD_NEW_MSG	Add new message
+SEQ_MSGS	Sequential messages:
+SEQ_MSG_SUBJECT	Message Subject
+ATTACH	Attach
+SENT	Sent
+DAY	Day
+MANUAL_SHED_MSGS	Manual/Scheduled messages:
+SHED_DATE	Schedule date
+IN_PROGRESS	In progress
+BROADCAST	Broadcast
+TERM_PROC	Terminate process
+TST_SND_STR1	Test send selected messages
+TST_SND_STR2	to the following email address:
+BTN_TEST_SEND	Test Send
+SUBJECT	Subject:
+TYPE	Type:
+CHARSET	Charset:
+PRIORITY	Priority:
+MSG	Message:
+ADD_ATTACH	Add attachment:
+SEL_MSG_TYPE	Select the type of this message:
+DAYS_AFTER_REG	Send after (days):
+SAVE	Save
+#########################	
+#file accounts.dat	
+#########################	
+LOGOUT	LOGOUT
+FEEDBACK_FORM	News/Support
+GLOBAL_SETTS	System settings
+GLOBAL_LENG	Languages
+STATS	Statistics
+XML_IMP	XML&nbsp;Import
+XML_EXP	XML&nbsp;Export
+BOUNC_MAILS	Bounced emails
+MANUAL	Online manual
+ADD_NEW_ACC	Add new account
+CLONE	Clone:
+BTN_NEW_ACC	Create account
+#########################	
+#file author.dat	
+#########################	
+AUTHOR_LINE1	To access the admin control panel,
+AUTHOR_LINE2	you must enter the correct password.
+PASSWORD	Password:
+ENTER	ENTER
+#########################	
+#file bounce.dat	
+#########################	
+HANDLING_TOOL	Bounced email handling
+POP_ACCS	POP3 Accounts
+BOUNC_MSGS	Bounced messages
+BLACKLIST	Blacklist
+YOUR_POP_ACCS	Your POP3 accounts
+NO_POP_ACCS_FOUND	No POP3 accounts found
+TOTAL_ACCS	Total accounts:
+POP_SERVER	POP3 Server:
+POP_USER	POP3 User:
+REM_PROSPS_AFTER	Remove prospects after:
+BOUNC_HARD	hard bounces
+BOUNC_SOFT	soft bounces
+DEL_BOUNC_MSGS	Delete bounced messages
+TEST_CONN	Test connection
+STATUS	Status
+TEST	Test
+WITH_SEL	With selected:
+DELETE	Delete
+ACTIVATE	Activate
+DEACTIV	Deactivate
+TOTALS	Totals
+NO_MSGS_FOUND	No messages found
+TOTAL_DATES	Total dates:
+DATE	Date
+TOTAL	Total
+TOTAL_HARD	Total hard
+HARD	Hard
+PROSPS_REMOVED	Prospect removed
+PROSPS_INACT	Prospect deactivated
+PROSP_NOT_FOUND	Prospect not found
+SOFT	Soft
+TOTAL_SOFT	Total soft
+WAITING	Waiting
+POP_SERV_SETTS	POP3 server connection settings
+DEL_BNC_ML_SERV	Delete bounced emails from POP3 server
+DEF_COUNT_BOUNC	Define number of bounced emails before removal 
+REM_AFTER_HARD	Remove prospects after hard bounces:
+REM_AFTER_SOFT	Remove prospects after soft bounces:
+ACT_WITH_BOUNC	Actions with bounced prospects:
+ACT_WITH_PROSP	Action with prospects
+ADD_BNC_MAILS_BLACKL	Add bounced emails to the blacklist database
+SAV_ACC	Save account
+RESET	Reset
+EMAIL	Email:
+BOUNC_CODE	Bounce code:
+HARD_SOFT	Hard/soft:
+PROC_STAT	Processing status:
+BOUNC_REASON	Bounce reason:
+ORDER_BY	Order by:
+SHOW_EMAILS_EXIST_PROS	Show email from existing prospects
+DISPLAY	Display
+NO_COL_BNC_MSGS_FOUND	No bounced messages found
+EXP_MAIL_TXT	Export emails to a text file
+TOTAL_MSGS	Total messages:
+BOUNC_MAIL	Bounced email
+PROSPS	Prospects
+INACT	Inactive
+RECVD	Received
+PROC_STAT2	Processing status 
+BNC_STATUS	Bounce status
+BNC_REASON	Bounce reason
+CODE	Code
+HARD_SOFT2	Hard/Soft
+BTN_DEL_MSGS	Delete messages
+BTN_REM_PROSP	Remove prospect
+BTN_ACT_PROSP	Activate prospect
+BTN_INACT_PROSP	Inactivate prospect
+RFC_ERR_DESCR	RFC1893 error code description 
+CODE2	Code:
+BACK_2_BNC_MSGS	Back to bounced messages
+REG_SETTS	Registration settings
+REJECT_SUBSCR	Reject subscription from blacklist emails
+REG_ERR_MSG	Registration error message:
+SAV_SETTS	Save settings
+BNC_MAIL_BLACK	Bounced emails blacklist
+IMP_MAILS	Import emails 
+EXP_MAILS	Export emails 
+NO_MAIL_FOUND	No emails found
+TOTAL_EMAILS	Total emails:
+IMP_PROSPS	Import email addresses
+IMP_PROSPS_DESC	To import emails to the blacklist, paste the email addresses in the textbox below (one email per row). Email addresses will be validated for their correct syntax before importing.
+BTN_IMPORT	Import
+BULK_REM_DESC1	To remove emails from the blacklist, paste the email addresses into the text box below (one email per row) and click "Remove".
+BULK_REM_DESC2	Enter one email per row. You can also use a mask. For example if you type "hotmail" in the text box this will remove all emails that contain hotmail in any part of the email address.
+BULK_REM_DESC3	
+BULK_REM_DESC4	For example "hotmail@aol.com", "mike@hotmail.com", "myhotmail@email.com" will all be removed from the list.
+BTN_REMOVE	Remove
+#########################	
+#file daylystat.dat	
+#########################	
+BRODC_STARTED	Broadcaster has been started
+TIMES_THIS_DAY	times today.
+REPORT_GEN	This report was generated
+#########################	
+#file exportxml.dat	
+#########################	
+STEP1	Step 1 
+STEP1_DESC1	Select an account, an XML file name, location and encoding of your XML file.
+STEP1_DESC2	This wizard has 4 steps.
+XML_DOC	XML document:
+WHERE_STORE_XML_DOC	Location to save the XML file:
+ENCODING	Encoding:
+CREATE_XSD	Create XSD file with table scheme for Access 2002™:
+NEXT2	NEXT [2] &gt;&gt;
+XSD_DESC1	XSD file.
+XSD_DESC2	If you create a XSD scheme file then you can easily import the table into Microsoft Access 2002™. The table has the same name as the filename.
+XSD_DESC3	Examples: emails.xml or emails.xsd.
+STEP2_SEL_FLDS	Step 2 - Select fields
+STEP2_SEL_FLDS_DESC	Select the fields which you want to export. Click on 'Export >>' to start the export.
+NEXT3	Export &gt;&gt;
+STEP4_FINISH	Step 4 - Finish
+XML_EXP_SUC	XML export was successful!
+#########################	
+#file importxml.dat	
+#########################	
+IMP_ST1_DESC1	Select an account, XML file and level where in the XML file the user data is stored.
+IMP_ST1_DESC2	The XML file must be in your FUMP directory.
+LEVEL_DATA_STORED	Level where user data is stored:
+HERE_IS_SAMPLE	Here is a sample XML file, which you can import in Microsoft Access 2002™
+STEP2_SEL_FLDS_DESC_IMP	Please select the mapping of fields to import the data.
+STEP3	Step 3 - Check import. Click 'Import >>' to start the import.
+BTN_IMPXML	Import &gt;&gt;
+XML_IMP_SUC	XML import was successful!
+PROSPS_WERE_ADD	prospects were added to the database.
+#########################	
+#file links.dat	
+#########################	
+YOUR_LINKS	Links overview
+ADD_NEW_LINK	Add new link
+NO_LINKS_FOUND	No links found
+TOTAL_LINKS	Total links:
+TEMPLATE	Template
+NAMEE	Name
+CLICKS	Clicks
+PROSPECTS	Prospects
+ISCLEAN	Clean
+DEL_SELECTED	Delete selected
+TOTALU	Total:
+LINKS_DESC1	Edit links to add special tags in your emails to back trace user activity and view the efficiency of your mailings. 
+LINKS_DESC2	In your emails you just need to place the special tag like [LINK123] instead of the direct link.
+EDIT_LINK	Edit link
+INS_NEW_LINK	Insert new link
+LINK_PROPS	Link properties
+UPD_LINK	Update link
+SAV_LINK	Save new link
+BTN_CANCEL	Cancel
+SHOW_REC_FOR	Show records for: 
+BTN_SHOW	Show
+DATE2	Date:
+LINK	Link:
+MESSAGE	Message:
+NO_PROSPS_FOUND	No prospects found
+NO_CLICKS_FOUND	No clicks found
+ACT_UNIQ_PROSPS	Unique clicks by prospects:
+CLICKS_FOUND	Total clicks:
+CL_NAME	Name
+CL_MAIL	Email
+CL_PROF	Profile
+TOTAL_CLICKS_U	Total clicks:
+#########################	
+#file links.dat	
+#########################	
+REGISTRATION_ERROR	REGISTRATION ERROR
+REGISTER	Register
+#########################	
+#file settings_shabl.dat	
+#########################	
+YOUR_PERS_INFO	Your personal information
+YOUR_NAME	Your name:
+YOUR_EMAIL	Your email:
+YOUR_PERS_INFO_DESCR	These global admin settings are used for all accounts by default. You can also set up the global admin settings individually for any of your other accounts.
+SEND_ME_BROAD_STAT	Send me broadcaster
+SEND_ME_BROAD_STAT2	statistics by email:
+BTN_UPD_SETTS	Save
+MAIL_PROG_SETTS	Mail settings
+SENDMAIL_PATH	Sendmail path:
+SEND_THROUGH	Send through:
+SMTP_SERVER	SMTP server:
+SMTP_AUTH	SMTP authentication
+SMTP_REQ_SASL	SMTP server require SASL (Simple Authentication and Security Layer RFC2554) authentication
+SMTP_USER	SMTP username:
+SMTP_PASS	SMTP password:
+SEND_SPD	Performance settings
+QUANT_PROCS	Number of concurrent processes:
+OR_B	or
+USE_OLD_ALG	<b>Send with single process (requires significant lower server resources)</b>
+BOUNC_RET_PATH_OPTS	SMTP bounce return email address
+USE_FOLLOW_UP	Email address to receive bounced emails:
+1ST_WAY	1st way:
+1ST_WAY2	Use sendmail -f flag with following address:
+2ND_WAY	2nd way: Return-Path message header:
+2ND_WAY2	Can be blank if you do not want to add this header.
+2ND_WAY3	Tip: it is not advisable to add this header to your messages manually, but sometimes with Qmail it works.
+3RD_WAY	3rd way: "Errors-To" message header:
+3RD_WAY2	Can be blank if you do not want to add this header.
+ADMIN_AREA_PASS	Password to access admin area
+ADMIN_AREA_PASS_OLD	Old password:
+ADMIN_AREA_PASS_NEW	New password:
+ADMIN_AREA_PASS_RET	Retype password:
+USE_PERIOD	Use period:
+USE_PERIOD_TO	to
+USE_PERIOD_BTN_SHOW	Show
+ENABLE_LOG	Enable logging
+BTN_OK	OK
+BTN_CLENUP_LOGS_IN_RANGE	Cleanup logs in date range
+BTN_CLEANUP_ALL_LOGS	Cleanup all logs
+BROAD_LOG_TOTAL	Broadcaster log. Total
+RECORDS	records.
+CURRENT_OR_PREV_BR_LOG	Current or previous broadcast log:
+ROWS_FOUND	rows found.
+SAVE_LOG_INTO	Save logs to
+SAVE_LOG_INTO_FILE	file.
+BTN_SAVE_SETTS	Save settings
+TIME_SYNCH	Time Synchronization
+TIME_SYNCH_SRV_TIME	Server time:
+TIME_SYNCH_CORR_TIME	Corrected time:
+TIME_SYNCH_COR_TIME	Correction time:
+TIME_SYNCH_HHMM	+hh:mm or -hh:mm
+SETTS_REMOVE	Remove
+SETTS_NAME	Name
+SETTS_RESTORE	Restore
+SETTS_DATE	Date
+SETTS_SIZE	Size
+BTN_REM_SEL	Remove selected
+BTN_RESTORE	Restore
+NEW_BACKUP	New Backup
+NEW_BACKUP_NAME	New backup name:
+NEW_BACKUP_NAME_CHARS	[a-z_0-9] characters only
+BTN_BACKUP	Backup
+MAIL_PROG_PERF_TEST	Mail program performance test
+MAIL_PROG_PERF_TEST_DESC1	This test will tell you how long it takes your server to send out emails. 
+MAIL_PROG_PERF_TEST_DESC2	Enter your email address below and click the
+MAIL_PROG_PERF_TEST_DESC3	Test
+MAIL_PROG_PERF_TEST_DESC4	button
+MAIL_PROG_PERF_TEST_DESC5	once only
+MAIL_PROG_PERF_TEST_DESC6	Follow Up Mailing List Processor will send emails to the address you enter. The process will be timed.
+MAIL_PROG_PERF_TEST_DESC7	This test will use 
+ENTER_YOUR_EMAIL_ADDRESS	Enter your email address
+BLAST_SIZE	Blast size (30-300 messages)
+MAIL_PROG_PERF_TEST_BTN_TEST	Test
+MAIL_PROG_PERF_TEST_RESULTS	Mail program performance test results
+MAIL_PROG_PERF_TEST_RESULTS1	messages have been sent to
+MAIL_PROG_PERF_TEST_RESULTS2	The process has taken
+MAIL_PROG_PERF_TEST_RESULTS3	seconds
+MAIL_PROG_PERF_TEST_RESULTS4	Your
+MAIL_PROG_PERF_TEST_RESULTS5	performance shown below: 
+MAIL_PROG_PERF_TEST_RESULTS6	messages per minute
+MAIL_PROG_PERF_TEST_RESULTS7	messages per hour
+#########################	
+#file responder.cgi	
+#########################	
+ACCOUNTMENU_MAIN	Account Menu
+ACCOUNTMENU_OPTIONS	Account Options
+ACCOUNTMENU_OPTIONS_DESCR	Edit settings for this specific mailing list including the setup for the POP3 subscribe/unsubscribe feature. You can set your "From" name and email address, redirect URL for subscribers and removals, admin notification and specify whether to use double opt-in. 
+ACCOUNTMENU_HTML_FORM	HTML Form
+ACCOUNTMENU_HTML_FORM_DESCR	Generate and preview the HTML for the subscription box that will be pasted into the pages of your website. You can also add and delete extra fields such as phone, fax, street address, etc. 
+ACCOUNTMENU_SUBSCR_MAN	Subscriber Manager
+ACCOUNTMENU_SUBSCR_MAN_DESCR	Add to, edit and backup your prospect list or copy a list from another account. 
+ACCOUNTMENU_EDIT_MESS	Edit Messages
+ACCOUNTMENU_EDIT_MESS_DESCR	Add and edit your personalized broadcast mailing and sequential autoresponder messages, including automatic subscribe and unsubscribe confirmations and attached files. From here you also start all your broadcasts (mailouts).
+ACCOUNTMENU_LINKS	Link&nbsp;Tracker
+ACCOUNTMENU_LINK	Link
+ACCOUNTMENU_LINKS_DESCR	Add and edit your links to view link tracking statistics of your mailing.
+ACCOUNTMENU_LINKS_MESS_STAT	Statistics
+ACCOUNTMENU_LINKS_ACT_PROSP	Active prospects
+ACCOUNTMENU_LINKS_CLICKS	Clicks
+SETTINGSMENU_MAIN	Main
+SETTINGSMENU_PERSONAL	Personal
+SETTINGSMENU_PERSONAL_DESCR	Set your username and email address to receive mailing reports and notifications when someone subscribes/unsubscribed.
+SETTINGSMENU_SENDING_OPTIONS	Send Options
+SETTINGSMENU_SENDING_OPTIONS_DESCR	Mailing method setup. Select and setup either your web server mail program and path or the address of your SMTP server. Additionally you may setup headers like <i>"Return-Path"</i> or <i>"Errors-To"</i> to define mailbox for bounced messages.
+SETTINGSMENU_ACCESS	Access
+SETTINGSMENU_ACCESS_DESCR	You can change your admin area login password here.
+SETTINGSMENU_TIME_SYNC	Time Settings
+SETTINGSMENU_TIME_SYNC_DESCR	Synchronize your server's time with your local time. Useful for scheduled and time sensitive mailouts. 
+SETTINGSMENU_PERFOM	Performance
+SETTINGSMENU_PERFOM_DESCR	This is a facility to test the performance of your server in sending out emails.
+SETTINGSMENU_BACUP_RESTORE	Backup/Restore
+SETTINGSMENU_BACUP_RESTORE_DESCR	Backup and restore your database.
+STATMENU_MAIN	Main
+STATMENU_ACT_LOGS	Activity Logs
+STATMENU_ACT_LOGS_DESCR	View the broadcaster logs and subscribe/unsubscribe logs within a specified date range. It shows the records and time frame when the program executed your commands.
+STATMENU_CURRENT_BROADCAST	Current Broadcast Log
+STATMENU_CURRENT_BROADCAST_DESCR	Information about the current broadcaster progress.
+STATMENU_TOTALS	Totals
+STATMENU_TOTALS_DESCR	Total amount of subscribers/unsubscribers and messages sent in the accounts.
+STATMENU_TOTALS_SENT_MESS	Sent messages
+STATMENU_TOTALS_SUBSCRIBERS	Subscribers
+STATMENU_TOTALS_PROSPECTS	Prospects
+PROSPMENU_ADD_PROSP	Add new prospect
+PROSPMENU_IMPORT	Import list
+PROSPMENU_EXPORT	Export list
+PROSPMENU_COPY	Copy from account
+PROSPMENU_BULK_REMOVE	Bulk removal
+ERROR_NOT_CHANGE_URL	Please do not change the URL
+ERROR	Error
+MENU_GO	Go
+ERROR_YOUR_NAME_REQUIRED	Your name is required
+ERROR_EMAIL_INCORRECT	Email is incorrect
+ERROR_EMAIL_REQUIRED	Email is required
+ERROR_REQUIRED	Required
+ERROR_DUBL	Duplicating
+ERROR_CANT_LOCK_FILE	cannot lock file for writing
+ERROR_REQUIRED_SMALL	required
+MESS_SETTINGS_UPDATED	Settings updated
+ERROR_FILENAME_INCORRECT	Incorrect filename
+ERROR_INCORRECT	Incorrect
+ERROR_NOT_EQUAL	Not equal
+ERROR_NOT_SELECTED	Not selected
+ERROR_REQUIRED_SENDMAIL	Sendmail required
+ERROR_INCORRECT_SENDMAIL_PATH	Incorrect path to sendmail
+ERROR_INCORRECT_SENDMAIL_NOT_EXISTS	Sendmail does not exist on this server
+ERROR_REQUIRED_SMTP	SMTP server name is required
+ERROR_INCORRECT_FORMAT	Incorrect format
+MESS_LOGOUT_TO_CHECK	Logout to check
+ERROR_CANT_OPEN_DIR	Cannot open directory
+ERROR_CANT_UNLINK_FILE	Cannot delete file
+ERROR_CANT_CREATE_DIR	Cannot create directory
+ERROR_CANT_OPEN_FILE	Cannot open file
+ERROR_CANT_WRITE	for writing
+ERROR_NEED_TO_CREATE	You need to create a file
+ERROR_NEED_TO_CREATE2	and set it’s permissions to CHMOD 666 
+ERROR_SHORTER_THEN_3	Must be more than 3 characters
+MONTH_1	January
+MONTH_2	February
+MONTH_3	March
+MONTH_4	April
+MONTH_5	May
+MONTH_6	June
+MONTH_7	July
+MONTH_8	August
+MONTH_9	September
+MONTH_10	October
+MONTH_11	November
+MONTH_12	December
+MESS_NO_BROADCAST_LOG	No current or previous broadcast logs found
+BROADCAST_LOG_PROC	Proc #
+BROADCAST_LOG_TIME	Time
+BROADCAST_LOG_STATUS	Status
+BROADCAST_LOG_MAIN	main
+STAT_NO_MESS	No messages for this date
+STAT_STATISTICS	Statistics
+STAT_TOTAL_PROSP	Total prospects
+STAT_ACCOUNT	Account
+STAT_SEQUNTIAL	Sequential
+STAT_ACT_PROSP	Active prospects
+STAT_INACT_PROSP	Inactive prospects
+STAT_TOTAL	Total
+STAT_NO_LOGS_FOUND	No logs found
+STAT_SHEDULED	Scheduled
+STAT_MANUAL	Manual
+STAT_DOI	Double opt-in
+STAT_SUBSCRIBE	Subscribe
+STAT_UNSUBSCRIBE	Unsubscribe
+STAT_SUBSCRIBERS	Subscribers
+STAT_UNSUBSCRIBERS	Unsubscribers
+STAT_SENT_MESS_STAT	Sent messages statistics
+STAT_SUBSCRIBERS_STAT	Subscribers statistics
+STAT_PERIOD_FOR	for
+STAT_PERIOD_FROM	from
+STAT_PERIOD_TILL	till
+TXT_EMAIL_ADDRESS	Email
+TXT_NAME	Name
+ERROR_IS_ALREADY_EXISTS	already exists
+ERROR_NUMBER_REQUIRED	Must be the number
+ERROR_TO_BIG	Number too large
+ERROR_ALREADY_USED	already used
+ERROR_USER_NOT_FOUND	Error: Bad request USER not found
+TXT_MODE_NEW	New
+TXT_MODE_EDIT	Edit
+USR_SENT_MESS	Sent messages
+USR_SENT_RECORDS_IN_LOGS	records in logs
+USR_SENT_MESSAGE	Message
+USR_SENT_DATE	Date
+USR_BROWSER_PAGE	Page
+USR_BROWSER_PROSPECTS	prospects
+USR_BROWSER_PREVIOUSE	Previous
+USR_BROWSER_NEXT	Next
+USR_BROWSER_SHOWING	Showing
+USR_BROWSER_FROM	from
+USR_BROWSER_NO_RECORDS_FOUND	No matching records found
+USR_BROWSER_INACTIVE	Inactive
+USR_BROWSER_ACTIVE	Active
+USR_BROWSER_PENDING	Pending
+USR_BROWSER_CYCLE_DISABLED	Disabled
+USR_BROWSER_EDIT_USER	Edit user
+USR_BROWSER_HEAD_SENT	Sent
+USR_BROWSER_HEAD_STATUS	Status
+USR_BROWSER_HEAD_DATE	Date
+USR_BROWSER_HEAD_CYCLE	Cycle
+USR_BROWSER_HEAD_HOST	Host
+USR_BROWSER_HEAD_USERID	UserID
+USR_BROWSER_USERS_REMOVED	prospects removed
+USR_BROWSER_USERS_CHANGED	prospects changed
+USR_BROWSER_USERS_SHOW_FIELDS	Show fields
+USR_BROWSER_USERS_SHOW_EXTRA	Show extra
+USR_BROWSER_USERS_SORT_ASC	Ascending
+USR_BROWSER_USERS_SORT_DESC	Descending
+USR_BROWSER_FINISHED	Finished
+USR_BROWSER_ALL	All
+USR_BROWSER_CANT_IMPORT	Cannot import - found 0 prospects in the other account
+USR_BROWSER_EXPORTED	Exported
+USR_BROWSER_CANT_EXPORT	Cannot export - found 0 prospects
+USR_BROWSER_EXPORT_EMAIL_ONLY	EMAIL only
+USR_BROWSER_EXPORT_EMAIL	EMAIL
+USR_BROWSER_EXPORT_NAME	NAME
+USR_BROWSER_EXPORT_FILE	File
+USR_BROWSER_EXPORT_PAGE	Page
+USR_BROWSER_BULK_QUERY_INCORRECT	Bulk query is incorrect
+USR_BROWSER_BULK_CURRENT_ACCOUNT	Current account
+USR_BROWSER_BULK_ALL_ACCOUNTS	All accounts
+USR_BROWSER_IMPORT_PROSPADD	prospects added
+USR_BROWSER_IMPORT_ERRORS_DETECTED	errors detected
+ERROR_FIELD_NAME_INCORRECT	Field name is incorrect
+HTML_FORM_FIELD_NAME	Field name
+HTML_FORM_ERR_RESERVED	is reserved
+HTML_FORM_ERR_USED	is already used
+HTML_FORM_ERR_EMPTY	is empty
+HTML_FORM_SUBSCRIBE_ACCOUNTS	Select accounts where you automatically want to subscribe prospects<br>when they subscribe to this account.
+HTML_FORM_SAVE_ACCOUNTS	Save accounts
+HTML_FORM_UNSUBSCRIBE_ACCOUNTS	Select accounts where you automatically want to unsubscribe prospects<br>when they subscribe to this account.
+HTML_FORM_UNSUBSCRIBE_ALL	Unsubscribe from all other accounts
+HTML_FORM_ADD_NEW	Add a new field
+HTML_FORM_NAME	Name
+HTML_FORM_RESERVED	Reserved
+HTML_FORM_EMAIL	Email
+HTML_FORM_CONFIRM	Are you sure you want to delete this field? Data can be lost!
+HTML_FORM_YOU_HAVE	You have
+HTML_FORM_COSTUM_FIELDS	custom field(s)
+HTML_FORM_DROP	Drop
+HTML_FORM_UP	UP
+HTML_FORM_DOWN	DOWN
+HTML_FORM_MOVE	Move
+HTML_FORM_SUBSCRIBE	Subscribe
+ERROR_URL_INCORRECT	URL is incorrect
+TXT_DEFAULT	Default
+ERROR_CANT_UPLOAD_FILE	Unable to upload file
+ERROR_CANT_FIND_EMAIL	Unable to find email address
+TXT_LINE	Line
+TXT_EMAIL	email
+TXT_ISINCORRECT	is incorrect
+TXT_IS_EXISTS	already exists
+TXT_IS_BOUNSED	is in the email blacklist
+MESS_ERR_CONFIRM	Message body must contain a special tag
+ERROR_DATE_INCORRECT	Date is incorrect
+MESS_CREATE_NEWMESS	Creating new message
+MESS_EDIT_MESS	Edit message
+MESS_DOWNLOAD_ATTACH	Download attachment
+MESS_ATTACHMENTS	Attachments
+MESS_TYPE_SCHEDULED	At date
+MESS_BROADCAST_STARTED	Broadcaster started in background
+MESS_PREVIEW	Preview
+LINKS_ALL_MONTH	Entire month
+LINKS_ALL_MESS	All messages
+LINKS_ALL_LINKS	All links
+LINKS_CHANGE	Change
+LINKS_CHANGE_LINK	Change link
+MESS_PERS_EXTRA	Extra merge field words
+MESS_PERS_LOAD_FROM_FILE	Load content from file
+MESS_PERS_LOAD_FROM_TEMPL	Load content from templates
+MESS_PERS_REDIR_LINK	redirect link
+MESS_PERS_REDIR_LINK_TO	to
+MESS_PERS_TRACK	Tracking links
+MESS_PERS_NEW	New
+TXT_VIEW	View
+LINKS_MESSAGES_LINKS_ACT	Link activity
+LINKS_VIEW_PROSP	View prospects
+LINKS_VIEW_CLICKS	View clicks
+ACCOUNT_EXISTS	Account already exists
+ACCOUNT_INVALID_NAME	Invalid account name
+ACCOUNT_NO_ACCOUNTS	No accounts
+ACCOUNT_YOUR_ACCOUNTS	Accounts
+ACCOUNT_DISABLED	Disabled
+ACCOUNT_DELETE_QUESTION	Are you sure you want to delete the selected accounts?
+ACCOUNT_INVERT_STATUS	Invert status
+LANG_SELECT_LANG	Select Language
+LANG_SELECT_LANG_TABHEADER	Select application language
+LANG_LANG	Language
+#########################	
+#file bounce.cgi	
+#########################
+BOUNCE_ERROR	BOUNCE PROCESSING ERROR
+BOUNCE_ERROR_HEADER	BOUNCE PROCESSING ERROR – Unable to load module Mail::DeliveryStatus::BounceValidator
+BOUNCE_ERROR_DESCR1	Unable to load module Mail::DeliveryStatus::BounceValidator
+BOUNCE_ERROR_DESCR2	Please check if the file <B>BounceValidator.pm</b> exists in the lib/Mail/DeliveryStatus/ directory or ask your website host to install the MIME::Tools modules.
+BOUNCE_ERROR_TXT	Error
+BOUNCE_ERROR_ACTION	Action
+BOUNCE_ERROR_ACTION_WAS_NOTFOUND	was not found
+BOUNCE_ERROR_CANT_OPEN_CONN	Error: Can't open connection to
+BOUNCE_CONNECTED	CONNECTED
+BOUNCE_CONNECTED_AUTH	Authenticating with user
+BOUNCE_CONNECTED_AUTH_AND_PASS	and password **********
+BOUNCE_CONNECTED_LOGGED	Logged in
+BOUNCE_CONNECTED_FETCH	Downloading messages
+BOUNCE_CONNECTED_YOU_HAVE	You have
+BOUNCE_CONNECTED_YOU_HAVE_MESS	messages in your mailbox
+BOUNCE_CONNECTED_LOADING	Loading first
+BOUNCE_CONNECTED_LOADING_MESS	messages
+BOUNCE_CONNECTED_LOADING_EMPTY	Your mailbox is empty
+BOUNCE_ERROR_VALIDATOR	BounceValidator error: Cannot parse message
+BOUNCE_LOAD_MSG	Loading message
+BOUNCE_LOAD_MSG_IS_BOUNC	This message bounced
+BOUNCE_LOAD_MSG_EMAIL_IS	Bounced email is
+BOUNCE_LOAD_MSG_EMAIL_IS_DIAG	Diagnostic
+BOUNCE_LOAD_MSG_CANT_LOAD	Error: Can't load message
+BOUNCE_COUNT_TOTAL	Total
+BOUNCE_COUNT_TOTAL_MSGS	bounced messages in your mailbox
+BOUNCE_TEST_OK	Test is OK
+BOUNCE_TEST_ERROR	Error: Can't authenticate - Incorrect POP3 settings
+BOUNCE_PAGE_REM_MAIL_ALL_ACC	Remove email from all accounts
+BOUNCE_PAGE_SET_STATUS_INACT	Set status of prospects to inactive
+BOUNCE_PAGE_ADD_NEW_POP	Adding new POP3 account
+BOUNCE_PAGE_EDIT_POP	Edit POP3 account
+BOUNCE_STATUS_WAITING	Waiting
+BOUNCE_STATUS_REMOVED	Prospect removed
+BOUNCE_STATUS_INACTIV	Prospect deactivated
+BOUNCE_STATUS_NOTFOUND	Prospect not found
+BOUNCE_STATUS_PROC_MAN	Processed manually
+BOUNCE_SORT_HARD	Hard
+BOUNCE_SORT_SOFT	Soft
+BOUNCE_SORT_DATE	Date
+BOUNCE_SORT_MAIL	Email
+BOUNCE_SORT_ASC	Ascending
+BOUNCE_SORT_DESC	Descending
+BOUNCE_INPUT_REM_PROSP	Remove prospects
+BOUNCE_INPUT_REM_PROSP_SURE	Are you sure you want to delete
+BOUNCE_INPUT_REM_PROSP_SURE_MAILS	emails
+BOUNCE_INPUT_REM_PROSP_CANCEL	Cancel
+BOUNCE_INPUT_BACK_BLACKLIST	Back to blacklist
+BOUNCE_EMAILS_WERE_REM	emails were removed from blacklist
+BOUNCE_EMAILS_WERE_ADD	emails were added to blacklist
+BOUNCE_ERROR_DELIVER_MSGS	Sorry, but we are unable to add this address. Please try again with a different email address.
+BOUNCE_SETTS_UPDATED	Settings updated
+#########################	
+#file xmlimport.cgi	
+#########################
+XMLI_ERROR_BNC_PROC	BOUNCE PROCESSING ERROR
+XMLI_ERROR_BNC_PROC_TXT	XML IMPORT ERROR - Cannot load module XML::Parser
+XMLI_ERROR_BNC_PROC_TXT_DESCR1	Cannot load module
+XMLI_ERROR_BNC_PROC_TXT_DESCR2	Please ask your website host to install
+XMLI_ERROR_BNC_PROC_TXT_DESCR2_1	the modules.
+XMLI_ERROR_BNC_PROC_ERROR	Error
+XMLI_MSG	Do not change the URL
+XMLI_MSG_PROSPS_WERE_ADDED	prospects were added and are
+XMLI_MSG_PROSPS_WERE_UPD	updated in the database
+XMLI_MSG_TOTAL_ELMS	Total elements in XML file
+XMLI_ERR_ELEMENT	Element
+XMLI_ERR_ELEMENT_EMAIL	email
+XMLI_ERR_ELEMENT_EMAIL_INCORR	is incorrect.
+XMLI_ERR_ELEMENT_EMAIL_ALR_EX	already exists and was updated.
+XMLI_ERR_ELEMENT_EMAIL_WAS_NOT_ADDED_SQL	was not added to the database (SQL error).
+#########################	
+#file xmlexport.cgi	
+#########################
+XMLE_PAGE_FUMP_DIR	In FUMP directory
+XMLE_PAGE_INTO_BRO	In browser
+XMLE_PAGE_SAVE_AS_FILE	Save as file
+XMLE_PAGE_ENC_DEF	<default>
+XMLE_FIELDS_REG_DATE	Registration date
+XMLE_FIELDS_EMAIL	Email
+XMLE_FIELDS_NAME	Name
+____STARTTEXTS____
+[T_SENDING_TIPS]	
+	<h2>Setting bounce headers tips. </h2>
+                    <p>If you are going to process bounced messages you can define 
+                      bounce send options there.</p>
+                    <p>&nbsp;</p>
+                    <p><font color="#FF0000"><strong>Attention!</strong></font> 
+                      Bounced messages can be returned with default settings.
+                      You need to define or check the bounce options if you cannot find bounced 
+                      messages in your mailboxes. Alternatively specify a separate mailbox which 
+                      must be different from your “From” or “Reply-To” addresses.</p>
+                    <p>Usually all bounced messages should be returned to the email in the 
+                      Return-path header in your messages. There are a few ways 
+                      to accomplish this.</p>
+                    <p><strong><u>SMTP</u></strong></p>
+                    <p>If you are using SMTP to send your messages you can specify 
+                      a different email address from your 'From' or 'Reply-To' headers. 
+                      You need to check 'Email address to receive bounced emails' 
+                      checkbox and specify the email address. <br>
+                      <br>
+                      <strong><u>Setup using the Sendmail Command</u></strong></p>
+                    <p>The result might not be optimal, but there are good alternatives: </p>
+                    <p><br>
+                      <strong><em>Technique 1:</em></strong> The -f flag</p>
+                    <p>You need to check 'Use sendmail -f flag' and specify email 
+                      address there</p>
+                    <p>This should set the Return-Path header.</p>
+                    <p>&nbsp;</p>
+                    <p><em><strong>Technique 2: </strong></em>Return-Path header</p>
+                    <p>If that doesn't work, you can try to set the Return-Path 
+                      header explicitly. This is not the best way by any means, 
+                      but Qmail allows you to do this.</p>
+                    <p>&nbsp;</p>
+                    <p><strong>Technique 3: </strong>”Errors-To” header</p>
+                    <p>The “Errors-To” header seems to have been created just for 
+                      this task, but it's actually a deprecated header. Use it
+                      with caution. For it to do anything, you need to configure 
+                      Sendmail to actually see the “Errors-To” header. If the previous
+                      techniques fail you can try to specify the “Errors-To” header.</p>
+                    <p>&nbsp;</p>
+                    <p>To test any of these configurations, send yourself 
+                      a test message and view the source of the message itself 
+                      in your mail reader. In the mail headers you should see 
+                      the Return-Path header like:</p>
+                    <blockquote>
+                      <p><code>Return-Path: &lt;johndoe@domain.net&gt;<br>
+                        Delivered-To: support@domain.net<br>
+                        Content-Disposition: inline<br>
+                        Content-Transfer-Encoding: binary<br>
+                        Content-Type: text/plain<br>
+                        MIME-Version: 1.0<br>
+                        X-Mailer: MIME::Lite 2.117 (F2.71)<br>
+                        Date: Tue, 14 Jun 2008 15:26:41 UT<br>
+                        From: FUMP Registration &lt;johndoe@domain.net&gt;<br>
+                        To: John Doe &lt;johndoe@domain.net&gt;<br>
+                        Subject: User someone@yahoo.com registered at the Newsletter 
+                        account </code></p>
+                    </blockquote>
+[/T_SENDING_TIPS]
+[T_BOUNCE_HELP]
+<p>Edit your bounce POP3 accounts to collect 
+                    bounced messages and define rules/actions with prospects (remove 
+                    or inactivate prospects):<br>
+                    <br>
+                    <strong>POP3 server</strong> - your POP3 server to collect 
+                    messages</p>
+                  <p><strong>POP3 port</strong> - default POP3 port is 110</p>
+                  <p><strong>POP3 user</strong> - username to access to mailbox</p>
+                  <p><strong>POP3 password</strong> - password to access to mailbox<br>
+                  </p>
+                  <p><strong>Remove&nbsp;prospects&nbsp;after</strong>:<br>
+                    - <strong>Hard bounces:</strong> This is the number of hard bounced 
+                    messages before prospects will be removed or deactivated (Hard 
+                    bounces are permanent errors like host or user not found, 
+                    spam reject. It means that your message will definitely not be delivered 
+                    to the recipient). By default prospects will be removed/deactivated 
+                    after 1 hard bounced message, but you can change this setting.</p>
+                  <p>- <strong>Soft bounces:</strong> This is the number of soft bounced messages 
+                    before prospects will be removed or deactivated (Soft bounces 
+                    are temporary errors like user mailbox full etc.) 
+                    By default prospects will be removed/deactivated after 
+                    3 soft bounced message, but you can change this setting.</p>
+                  <p><strong><br>
+                    Actions: </strong></p>
+                  <p>- <strong>Remove prospect from database:</strong> your prospect 
+                    will be removed from database.</p>
+                  <p>- <strong>Set status to inactive:</strong> your prospect 
+                    will be deactivated.</p>
+                  <p>- <strong>Add bounced emails to the blacklist database:</strong> 
+                    you can set this option to automatically add prospects to 
+                    the blacklist when they are removed or deactivated.</p>
+[/T_BOUNCE_HELP]
+[T_ACCOUNT_OPTIONS_SUBSCRIBE]
+
+			  You can also add subscribers 
+                          by having them click on an e-mail link. <br>
+                          Just create a new e-mail address for your domain or 
+                          any pop3 e-mail account. <br>
+                          Then enter the settings below. <br>
+                          This is especially useful if you want to avoid the possibility 
+                          of someone entering a<br>
+                          false name and e-mail address because it will collect 
+                          their information directly from their email client. 
+                          <br>
+                          See README.TXT file for more information.
+[/T_ACCOUNT_OPTIONS_SUBSCRIBE]
+[T_ACCOUNT_OPTIONS_SUBSCRIBE2]
+			<u>Allow subscribing by sending a
+                          blank email:</u> Checkmark this box if you wish to allow 
+                          people to subscribe<br>
+                          to your mailing list by clicking on an e-mail link or 
+                          by sending a blank email.<br> <br> <u>POP3 server:</u> 
+                          The incoming mail server for your POP3 account. Your 
+                          POP3 e-mail account provider<br>
+                          should have provided this information to you.<br> <br> 
+                          <u>POP3 username:</u> Your username for accessing your 
+                          POP3 account.<br> <br> <u>POP3 password:</u> Your password 
+                          for accessing your POP3 account.<br> <br> <u>POP3 server 
+                          port:</u> On most servers 110. But if you are getting an 
+                          error, ask your server administrator. 
+[/T_ACCOUNT_OPTIONS_SUBSCRIBE2]
+[T_ACCOUNT_OPTIONS_BLACKLIST]
+		    <p><u>Ban list:</u> You can add email addresses or hosts which 
+                      you want to ban like <b>&quot;spam@yahoo.com&quot;</b> or 
+                      <b>&quot;hotmail.com&quot;</b>.</p>
+                    <p>&nbsp;</p>
+                    <p><u>Custom error message:</u> This is the message prospects 
+                      see at registration if their email address is banned.<br>
+                    </p>
+[/T_ACCOUNT_OPTIONS_BLACKLIST]
+[T_MESSEDIT_PERSONALIZE]
+			<h2>Personalizing your messages</h2><br>
+			<P>To add the unsubscribe link, place the tag <strong>[UNSUBSCRIBE_LINK]</strong> 
+                    anywhere in your message (in HTML messages you can add the link tag
+					&lt;a href=&quot;<strong>[UNSUBSCRIBE_LINK]</strong>&quot;&gt;Click 
+                    here to unsubscribe&lt;/a&gt;).
+                  <P>&nbsp;
+                  <p>There are four pre-set merge field words you may use in the 
+                    Body or Subject line to personalize your messages.</p>
+                  <ul>
+                    <li><b>[FIRSTNAME]</b> will extract and print your prospect's 
+                      first name (i.e. 'Hi <b>[FIRSTNAME]</b>' will print 'Hi 
+                      John!', if your prospect's first name is <i>John</i>).</li>
+                    <li><b>[FULLNAME]</b> will extract and print your prospect's 
+                      first and last name (i.e. 'Mr. <b>[FULLNAME]</b>,' will print 'Mr. 
+                      John Doe', if your prospect's name is <i>John Doe</i>).</li>
+                    <li><b>[EMAIL]</b> will extract and print your prospect's 
+                      email address (i.e. 'Your e-mail address is <b>[EMAIL]</b>' 
+                      will output 'Your e-mail address is john@aol.com', if your 
+                      prospect's e-mail address is <i>john@aol.com</i>. <br>
+                      <b>[DATE]</b> will print current date  </li>
+                    <li><b>[DATE+32d] [DATE-32d] [DATE+1m] [DATE-1m] [DATE+1y] 
+                      [DATE-1y] </b>will print the corrected current date. </li>
+                    <li><b>[IP]</b> will extract and print your prospect's IP 
+                      address if subscribed via HTML form, or empty value</li>
+                    <!--Please do not remove or translate this tag-->
+		    {additional}
+		    <!--Please do not remove or translate this tag-->
+		    </ul>
+[/T_MESSEDIT_PERSONALIZE]
+[T_BULK_REM_HELP]
+		<p>You can remove prospects from this account by pasting their email <br>
+		into the text box below and clicking "remove prospects". </p>
+		<p>&nbsp;</p>
+		<p>Enter one email per row. You can also use a mask. For example if you <br>
+		type "hotmail" in the text box this will remove all emails that contain 
+		<br>
+		"hotmail" in any part of the email address. <br>
+		<br>
+		i.e. hotmail@aol.com, mike@hotmail.com, myhotmail@email.com - will all 
+		be removed from the list</p>
+[/T_BULK_REM_HELP]
+[T_IMPORT_HELP]
+	<p>Add new contacts to your "current prospect" list and run <br>
+	them through your entire message set. You can either paste them into <br>
+	the "Insert text" box below or upload them in a text file using the format 
+	below: <br>
+	<br>
+	<i>John Smith|his@email.com</i><br>
+	or:<br>
+	<i>his@email.com</i><br>
+	or:<br>
+	<i>&lt;his@email.com&gt; </i><br>
+	or:<br>
+	<i>John Smith &lt;his@email.com&gt; </i><br>
+	or:<br>
+	<i>“John Smith” his@email.com</i><br>
+	or:<br>
+	<i>John Smith his@email.com</i><br>
+	<br>
+	Enter one contact per row. When ready, click the “Import Prospects” button.</p>
+[/T_IMPORT_HELP]
+[T_DOI_MESS]
+To confirm your subscription, click on the link below:
+
+[CONFIRM_URL]
+
+If you did not make the request, there is no need
+to take any further action.
+[/T_DOI_MESS]
+[T_ATTANTIONFILES1]
+<hr size="4" noshade>
+<H1 class="mess">Warning!</H1>
+These files still exist on the server:
+<UL>
+[/T_ATTANTIONFILES1]
+[T_ATTANTIONFILES2]
+</UL><h2>Please remove them from the server after installation</H2><hr size="4" noshade>
+[/T_ATTANTIONFILES2]

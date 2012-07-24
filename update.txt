@@ -1,0 +1,42 @@
+######################################################################
+# Follow Up Mailing List Processor                                   #
+# Version 5.1                                                        #
+# Last modified 24.03.2012                                           #
+######################################################################
+
+How to update FUMP (Follow Up Mailing List Processor) to v5.1. 
+
+Update Instructions:
+
+STEP 1
+Backup the following files and directories:
+ - ‘cnf.rd’ - file with your database connection settings
+ - ‘cron’ directory with ‘startercron’ file
+ - ‘personal’ directory with your saved signatures and custom pages
+ - *.html files in your ‘shabl’ directory (if you already changed some HTML templates like ‘regerror.html’ or ‘linknotfound.html’)
+ - ‘backup’ directory (Database backups are stored here)
+
+STEP 2
+Delete all the files from following directories:
+ - ‘shabl’ (except your modified *.html files)
+ - ‘lib’ (Delete this directory)
+ - all files from FUMP root directory (EXCEPT ‘cnf.rd’ files) 
+
+STEP 3
+Upload the files from the FUMP archive package: ‘shabl’, ‘lib’ and all files (except ‘cnf.rd’) from FUMP root directory. You need to upload all files in FTP TEXT mode (except files in shabl/img/ - these file must be uploaded in BINARY mode).
+
+STEP 4
+Change permissions for all *.cgi and 'broadcaster' and 'sender' files  to '755' (please sure that all *.cgi files has permission 755 and was uploaded in FTP TEXT mode if you received 500 error in your browser). Change permissions to '666' to 'broadcast.log'.
+
+STEP 5
+Upload any saved files from ‘Step 1’. 
+NOTE: If you are updating from 4.20, the 'templates' directory was changed to 'personal/signatures'. You need to manually move your TXT files from 'templates' to 'personal/signatures'.
+
+STEP 6
+Run the updater (e.g. http://www.yourdomain.com/cgi-bin/fump/update.cgi).
+
+STEP 7
+Click 'Finish' button to complete the database upgrade.
+
+STEP 8
+Once you have completed the installation, you need to delete the install.cgi and update.cgi from your server. Leaving them is a serious potential security issue! A notice will be present in the admin interface as long as these files are still present.

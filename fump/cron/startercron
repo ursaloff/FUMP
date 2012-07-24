@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+######################################################################
+# Follow Up Mailing List Processor                                   #
+# Version 5.01                                                       #
+# Last modified 12/05/2005                                           #
+######################################################################
+#Put here absolute to your broadcaster directory 
+
+$yourdir='/home/httpd/vhosts/myhost.com/cgi-bin/maillist';
+
+#You can  run this script from cron like
+#*/15 * * * *  perl /home/httpd/vhosts/myhost.com/cgi-bin/maillist/cron/startercron
+#in this case script will starts each 15 minutes
+
+chdir($yourdir) || die "Can not change dir to $yourdir : $!";	
+exec('/usr/bin/perl broadcaster');
+

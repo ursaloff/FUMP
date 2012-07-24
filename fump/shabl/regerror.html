@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Registration error</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+<h1><font color="#FF0000">[LNG_REGISTRATION_ERROR]</font></h1>
+      <hr size="4" noshade>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="80%">
+  <tr>
+    <td valign="top">
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr> 
+          <td> 
+            <form name="form1" method="get" action="{ME}" target="_self">
+              {error}
+<input type="hidden" name="issubmit" value="1">
+{fm_hidden_addaccount} 
+{fm_hidden_account} 
+              <table width="50%" border="0" cellspacing="3" cellpadding="4" align="center">
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_REGISTER]</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="50%" align="right" class="data"><b>[LNG_REG_ERROR_NAME]</b></td>
+                  <td width="54%"> 
+                    <div align="left">{fm_text_name}</div>
+                  </td>
+                </tr>
+                <tr class="data" > 
+                  <td align="right"><b>[LNG_EMAIL]</b></td>
+                  <td align="left">{fm_text_email}</td>
+                </tr>
+                {additional_fields} 
+                <tr class="data" align="center"> 
+                  <td colspan="2"> 
+                    <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                      <tr align="center" valign="middle"> 
+                        <td> 
+                          <input type="submit" value="[LNG_REGISTER]" class="BUTTONmy">
+                        </td>
+                        <td> 
+                          <input type="button" value="[LNG_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+</table>
+<h1>&nbsp; </h1>
+</body>
+</html>

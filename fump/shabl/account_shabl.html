@@ -1,0 +1,1959 @@
+<html>
+<head>
+<!--CHARSET-->
+		<title>Account</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+<script language="JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.0  var p,i,x;
+				if(!d) d=document; 
+				if((p=n.indexOf("?"))>0&&parent.frames.length) {
+					d=parent.frames[n.substring(p+1)].document;
+					n=n.substring(0,p);
+				}
+				if(!(x=d[n])&&d.all) x=d.all[n];
+				for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+				for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+				if(!x && document.getElementById) x=document.getElementById(n);
+				return x;
+			}
+			function MM_changeProp(objName,x,theProp,theValue) { 
+				//v3.0  
+				var obj = MM_findObj(objName);
+				if (obj && (theProp.indexOf("style.")==-1 || obj.style)) eval("obj."+theProp+"='"+theValue+"'");
+			}
+
+function MM_openBrWindow(theURL,winName,features) { //v2.0
+  window.open(theURL,winName,features);
+}
+//-->
+</script>
+	</head>
+	<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+		
+			<tr> 
+				<td class="data"> 
+					<h2>!!! don't edit this page !!!</h2>
+				</td>
+			</tr>
+		</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" height="80%">
+			<tr> 
+				
+    <td valign="top" bordercolor="#CCCCCC">#begin#main 
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+						<tr> 
+							<td> 
+								<table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr>
+										
+                <td class="line">{main_menu_body}</td>
+									</tr>
+								</table>
+								<p>&nbsp;</p>
+								<table width="21%" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr> 
+                <td width="54%" class="line"><table width="100%" border="0" align="center" cellpadding="2" cellspacing="1">
+                    <tr class="data"> 
+                      <td width="54%" height="16"><strong><nobr>[LNG_TOTAL_PROSPECTS]</nobr></strong></td>
+                      <td width="46%" height="16">{total_prospects}</td>
+                    </tr>
+                    <tr class="data"> 
+                      <td width="54%"><strong>[LNG_ACTIVE]</strong></td>
+                      <td width="46%">{total_active}</td>
+                    </tr>
+                    <tr class="data"> 
+                      <td width="54%"><strong>[LNG_INACTIVE]</strong></td>
+                      <td width="46%">{total_inactive}</td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table></td>
+						</tr>
+					</table>
+					
+     #end#main<br>
+        #start#htmlformsettings<br>
+         <h2>[LNG_HTML_FORM_OPTIONS]</h2>
+<form name="form1" method="post" action="{ME}" target="_self"><input type="hidden" name="issubmit" value="1">
+        {error}{fm_hidden_ses} {fm_hidden_account}{fm_hidden_act} {fm_hidden_act2}{fm_hidden_act3} 
+        {mess} 
+        <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+                  <td class="line"> 
+                    <table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                <tr class="dataheader"> 
+                  <td colspan="2" class="data">[LNG_JS_EMAIL_NAME_VALIDATION]</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" class="data">{fm_check_add_js_validation} [LNG_SELECT_JS_VALIDATION]</td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2" class="data">[LNG_MESSAGE_FORMAT_CHOISE]</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="left" class="data"> <div align="left">{fm_check_allowchoiseformat} 
+                      [LNG_ENABLE_HTML_CHOISE] 
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                        <tr> 
+                          <td class="smallcomment"> [LNG_ENABLE_HTML_CHOISE_DISCR] 
+                          </td>
+                        </tr>
+                      </table>
+                    </div></td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_COLLECTING_AFFILIATE_INFORMATION]</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2">{fm_check_collect_affiliate_info} [LNG_ENABLE_COLLECTING_AFFILIATE_INFORMATION] 
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                      <tr> 
+                        <td class="smallcomment"> [LNG_COLLECTING_AFFILIATE_INFORMATION_DESCR] 
+                        </td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_CUSTOM_FROM_EMAIL]</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2">{fm_check_addhiddenfrom}[LNG_SELECT_TO_ADD_HIDDEN_FROM] 
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                      <tr> 
+                        <td class="smallcomment"> [LNG_SELECT_TO_ADD_HIDDEN_FROM_DESCR] 
+                        </td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_HTML_FORM_SUBSCRIBEOPTION_ACCOUNTS]</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2">{optional_subscribe}</td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_HTML_FORM_SUBSCRIBE_ACCOUNTS] </td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2">{automatic_subscribe}</td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_HTML_FORM_UNSUBSCRIBE_ACCOUNTS]</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2">{fm_check_unsub_account_all}<strong> [LNG_HTML_FORM_UNSUBSCRIBE_ALL]</strong><br>
+                    {unsubscribe_when_subscribed}</td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_HTML_FORM_SUSPEND_ACCOUNTS]</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2">{fm_check_suspend_account_all}<strong> [LNG_HTML_FORM_SUSPEND_ALL]</strong><br>
+                    {suspend_when_subscribed}</td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_HTML_FORM_LOCK_ACCOUNTS]</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2">{fm_check_lock_account_all}<strong> [LNG_HTML_FORM_LOCK_ALL]</strong><br>
+                    {lock_when_subscribed}</td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_HTML_FORM_UNSUBSCRIBEUNSUBSCRIBED_ACCOUNTS]</td>
+                </tr>
+                <tr align="left" class="data"> 
+                  <td colspan="2">{fm_check_unsub_unsubscribed_all}<strong> [LNG_HTML_FORM_UNSUBSCRIBE_ALL]</strong><br>
+                    {unsubscribe_when_unsubscribed}</td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2" align="center">[LNG_IP_BAN_LIST]</td>
+                </tr>
+                <tr align="left" class="data"> 
+                  <td colspan="2"><div align="center">{fm_textarea_ipbanlist}<br>
+                      [LNG_YOUR_IP]: {yourIP}</div>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                      <tr> 
+                        <td class="smallcomment"> [LNG_IP_BAN_LIST_DESCR] </td>
+                      </tr>
+                    </table>					  
+					  </td>
+					  
+                </tr>
+                <tr align="left" class="data"> 
+                  <td align="right">[LNG_IP_BAN_ERROR_MESSAGE]:</td>
+                  <td>{fm_text_ipbanlist_error(size=35)}</td>
+                </tr>
+
+                <tr class="data"> 
+                  <td width="50%" align="center"> <input type="submit" value="[LNG_UPD_SETTINGS]" class="BUTTONmy" name="submit42"></td>
+                  <td width="54%" align="center"> <input type="button" value="[LNG_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button4"></td>
+                </tr>
+              </table>
+				  </td>
+                </tr>
+              </table> 
+          </form> 
+        
+      #end#htmlformsettings<br>
+        #begin#htmlform#integration
+<h2>[LNG_INTEGRATION_TOOLS]</h2>
+      <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr> 
+          <td class="line"> <table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+              <tr class="dataheader"> 
+                <td width="104%" colspan="2" class="data">[LNG_SQL_INTEGRATION]</td>
+              </tr>
+              <tr class="data"> 
+                <td colspan="2" class="data">[LNG_SQL_INTEGRATION_DESCR]
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                    <tr> 
+                      <td class="smallcomment">
+					  {sql}
+                      </td>
+                    </tr>
+                  </table></td>
+              </tr>
+			<tr class="dataheader"> 
+                <td width="104%" colspan="2" class="data">[LNG_PERL_INTEGRATION]</td>
+            </tr>
+			  <tr class="data"> 
+			 <td colspan="2" class="data">[LNG_PERL_INTEGRATION_DESCR]
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                    <tr> 
+                      <td class="smallcomment" align="left">
+					  {perl}
+                      </td>
+                    </tr>
+                  </table></td>
+              </tr>
+			  
+			<tr class="dataheader"> 
+                <td width="104%" colspan="2" class="data">[LNG_PHP_INTEGRATION]</td>
+            </tr>
+			  <tr class="data"> 
+			 <td colspan="2" class="data">[LNG_PHP_INTEGRATION_DESCR]
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                    <tr> 
+                      <td class="smallcomment" align="left">
+					  {php}
+                      </td>
+                    </tr>
+                  </table></td>
+              </tr>
+			<tr class="dataheader"> 
+                <td width="104%" colspan="2" class="data">[LNG_AJAX_INTEGRATION]</td>
+            </tr>
+			  <tr class="data"> 
+			 <td colspan="2" class="data">[LNG_AJAX_INTEGRATION_DESCR]
+                  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                    <tr> 
+                      <td class="smallcomment" align="left">
+					  {ajax}
+                      </td>
+                    </tr>
+                  </table></td>
+              </tr>			  
+            </table></td>
+        </tr>
+      </table>
+
+      #end#htmlform#integration <br>
+        #begin#column_browser </p>
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+						<tr> 
+          <td> 
+           <h2 align="center">[LNG_HTML_CODE_FORM]</h2><br><br>
+            						<div align="center">{fm_textarea_htmlcode} 
+									<hr noshade size="4">
+              <h2 align="center">[LNG_FORM_PREVIEW]</h2>
+									
+              <div align="center"> 
+                <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="center">{formPrewiew} </td>
+                  </tr>
+                </table>
+                <p class="data">&nbsp;</p>
+									</div>
+									<br>
+								</div>
+							</td>
+						</tr>
+					</table>
+					#end#column_browser<br>
+					#begin#column_form 
+					<table width="100%" border="0" cellspacing="0" cellpadding="4">
+						<tr> 
+							<td> 
+								<form name="form1" method="post" action="{ME}" target="_self">
+              {error}{fm_hidden_reckey}{fm_hidden_ses} {fm_hidden_account}{fm_hidden_act} 
+              {fm_hidden_act2}
+<input type="hidden" name="issubmit" value="1">
+              <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="line"> 
+                    <table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                      <tr class="dataheader"> 
+											
+                  <td colspan="2" class="data">[LNG_CUSTOM_FIELD]</td>
+										</tr>
+										<tr class="data"> 
+											
+                  <td width="50%" align="right" class="data"> <b>[LNG_CUSTOM_FIELD_NAME]</b></td>
+											<td width="54%"> 
+												<div align="left">{fm_text_fieldname}<br>
+                      <font size="1">[LNG_ONLY_CHARS]</font></div>
+											</td>
+										</tr>
+										<tr class="data"> 
+											
+                  <td colspan="2" align="center">{fm_check_isreq} [LNG_IS_REQUIRED]</td>
+										</tr>
+										<tr class="data"> 
+											
+                  <td width="50%" align="right"> <b class="data">[LNG_FIELD_FORMAT]</b></td>
+											<td width="54%" class="data">{fm_select_type}</td>
+										</tr>
+										<tr class="data" align="center"> 
+											<td colspan="2"> 
+												
+													<tr align="center"> 
+														
+                        <td> <input type="submit" value="[LNG_UPD_SETTINGS]" class="BUTTONmy" name="submit4"></td>
+														<td> 
+															<input type="button" value="[LNG_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button">
+														</td>
+													</tr>
+												</table>
+												&nbsp;&nbsp; </td>
+										</tr>
+									</table>
+				  </td>
+                </tr>
+              </table>
+              
+								</form>
+							</td>
+						</tr>
+					</table>
+					#end#column_form<BR>
+      #start#rss
+      
+        <TR>
+          <TD>
+		  					<h2>[LNG_RSS_SETTINGS]</h2>
+		  							<form name="form2" method="post" action="{ME}">
+									<input type="hidden" name="issubmit" value="1">
+              {fm_hidden_ses} {fm_hidden_account} {fm_hidden_act} {fm_hidden_act2}{fm_hidden_act3} 
+              {error} 
+              <table width="60%" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr>
+    <td class="line">
+	<table border="0" align="center"  cellpadding="3" cellspacing="1"   width="100%">
+                <tr class="dataheader"> 
+                  <td align="center" colspan="2"><b>[LNG_RSS_MAIN_SETTINGS]</b></td>
+                </tr>
+                <!--
+                <tr  class="data"> 
+                  <td align="right">Add unsubscribe link:</td>
+                  <td align="left"> <div align="center" class="ERROR_ELEMENT" title="To add unsubscribe link now you need just put [USUBSCRIBE_LINK] spetial tag in your message">disabled</div></td>
+                </tr>
+				-->
+                <tr class="data"> 
+                  <td align="right">[LNG_RSS_TITLE]:</td>
+                  <td align="left"> 
+                      <TR> 
+                        <TD>{fm_text_rss_title}</TD>
+                        <TD><FONT color="red">*</FONT></TD>
+                      </TR>
+                    </TABLE> </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_RSS_DISCR]:</td>
+                  <td align="left"> 
+                      <TR> 
+                        <TD> {fm_text_rss_description}</TD>
+                        <TD><FONT color="red">*</FONT></TD>
+                      </TR>
+                    </TABLE> </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_RSS_URL]:</td>
+                  <td align="left">{fm_text_rss_link}</td>
+                </tr >
+                <tr class="data">
+                  <td align="right">[LNG_RSS_LANG]:</td>
+                  <td align="left">{fm_select_rss_lang}</td>
+                </tr >
+                <tr class="data"> 
+                  <td align="right">[LNG_RSS_ENCODING]:</td>
+                  <td align="left">{fm_select_rss_encoding}</td>
+                </tr >
+                <tr class="data"> 
+                  <td align="right">[LNG_RSS_COPYLINE]:</td>
+                  <td align="left">{fm_text_rss_copy_line}</td>
+                </tr >
+                <tr align="center" class="dataheader"> 
+                  <td colspan="2">[LNG_RSS_TEXTINPUT]</td>
+                </tr >
+                <tr align="left" class="data"> 
+                  <td colspan="2">{fm_check_rss_use_text_input}[LNG_RSS_USETEXT_INPUT]</td>
+                </tr >
+                <tr class="data"> 
+                  <td align="right">[LNG_RSS_TITLE]:</td>
+                  <td align="left">{fm_text_rss_ti_title}</td>
+                </tr >
+                <tr class="data"> 
+                  <td align="right">[LNG_RSS_DISCR]:</td>
+                  <td align="left">{fm_text_rss_ti_description}</td>
+                </tr >
+                <tr class="data"> 
+                  <td align="right">[LNG_RSS_SCRIPT_URL]:</td>
+                  <td align="left">{fm_text_rss_ti_link}</td>
+                </tr >
+                <tr class="data"> 
+                  <td align="right">[LNG_RSS_SCRIPT_PARAM]:</td>
+                  <td align="left">{fm_text_rss_ti_name}</td>
+                </tr >
+                <tr class="data"> 
+                  <td align="center" colspan="2"> <input type="submit" value="[LNG_SAV_ALL_SET]"name="submit2" class="BUTTONmy"> 
+                  </td>
+                </tr>
+              </table>
+	</td>
+  </tr>
+</table>
+            </form>
+		  </TD>
+        </TR>
+      </TABLE>
+      #end#rss<br>
+					#begin#config 
+					<table width="100%" border="0" cellspacing="0" cellpadding="4">
+						<tr> 
+							<td> 
+								<form name="form2" method="post" action="{ME}">
+									<input type="hidden" name="issubmit" value="1">
+              {fm_hidden_ses} {fm_hidden_account} {fm_hidden_act} {fm_hidden_act2} 
+              {error} 
+              <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="line">
+<table width="100%" border="0" align="center"  cellpadding="3" cellspacing="1"  style="font-family: Tahoma, Verdana; font-size: 9pt">
+                <tr class="dataheader"> 
+                  <td align="center" colspan="2"><b>[LNG_ACC_SETTINGS]</b></td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center"><b>[LNG_PERSONAL]</b></td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_FROM_NAME]</td>
+                  <td align="left"> {fm_text_fromname} </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_FROM_EMAIL]</td>
+                  <td align="left"> {fm_text_fromemail} </td>
+                </tr>
+                <tr  class="data"> 
+                  <td align="right">[LNG_DEF_SUBSCRIB_NAME]</td>
+                  <td align="left">{fm_text_defname} </td>
+                </tr>
+                <tr  class="data"> 
+                  <td align="right">[LNG_REPLY_HEADER]</td>
+                  <td align="left">{fm_text_replyto}</td>
+                </tr >
+                <tr class="data"> 
+                  <td colspan="2" align="center"><b>[LNG_THANK_YOU_PAGE_SETTINGS]</b></td>
+                </tr>
+                <tr  class="data"> 
+                  <td align="right">[LNG_REDIR_SUSCR_TO]</td>
+                  <td align="left"> {fm_text_redirsub} </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_REDIR_ALREADYSUSCR_TO]:</td>
+                  <td align="left">{fm_text_alreadysub}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="left">[LNG_OR] {fm_check_personalizedsub}[LNG_GENARATE_PERSONALIZED_PAGE]:</td>
+                  <td align="left">{fm_select_subscribetemplate}<BR>
+                    <EM><FONT size="1">[LNG_TEMPLATES_LOCATED_IN] '{dir_sub}'</FONT></EM> 
+                  </td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center"><b>[LNG_DOI_PAGE_SETTINGS]</b></td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_USE_DOI]</td>
+                  <td align="left">{fm_check_isdoi} </td>
+                </tr >
+                <tr class="data"> 
+                  <td align="right">[LNG_DOICONFURL]</td>
+                  <td align="left">{fm_text_doiconfurl} </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="left">[LNG_OR] {fm_check_personalizeddoi}[LNG_GENARATE_PERSONALIZED_PAGE]:</td>
+                  <td align="left">{fm_select_doiconftemplate} <BR>
+                    <EM><FONT size="1">[LNG_TEMPLATES_LOCATED_IN] '{dir_doi}'</FONT></EM></td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center"><b>[LNG_UNSUBSCRIBE_PAGE_SETTINGS]:</b></td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_REDIR_REMOV_TO]</td>
+                  <td align="left"> {fm_text_redirrem}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_REDIR_ALREADYREMOVED_TO]:</td>
+                  <td align="left">{fm_text_alreadyremoved}<BR> <FONT color="red" size="1">[LNG_REDIR_ALREADYREMOVED_DISCR]</FONT> 
+                  </td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="left">{fm_check_addunsubscribelinkauto}[LNG_ADD_UNSUBSCRIBE_LINK]</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center"><b>[LNG_NOTIFICATION_HEADER]:</b></td>
+                </tr>
+                <!--
+                <tr  class="data"> 
+                  <td align="right">Add unsubscribe link:</td>
+                  <td align="left"> <div align="center" class="ERROR_ELEMENT" title="To add unsubscribe link now you need just put [USUBSCRIBE_LINK] special tag in your message">disabled</div></td>
+                </tr>
+				-->
+                <tr class="data"> 
+                  <td align="right">[LNG_NOTIFY_ME_SUSCR]</td>
+                  <td align="left"> {fm_check_isnotifsubscr}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_NOTIFY_ME_UNSUB]</td>
+                  <td align="left"> {fm_check_isnotifunsubscr}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_ACC_ADMIN_NAME]</td>
+                  <td align="left">{fm_text_adminname}</td>
+                </tr >
+                <tr class="data"> 
+                  <td align="right">[LNG_ACC_ADMIN_MAIL]</td>
+                  <td align="left">{fm_text_adminemail}</td>
+                </tr >
+                <tr class="data"> 
+                  <td colspan="2" align="center"><b>[LNG_DUBLICATES]:</b></td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_USE_MES_LOG_NEW]</td>
+                  <td align="left">{fm_check_messlogging}</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center"><b>[LNG_LOCALIZ]</b></td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_NO_UPPERCASE]</td>
+                  <td align="left">{fm_check_no_uppercase}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_DEF_CHARSET]</td>
+                  <td align="left">{fm_select_defcharset}</td>
+                </tr>
+                <tr align="center" class="data"> 
+                  <td colspan="2"><STRONG>[LNG_MODIFY_CONTACT_INFORMATION]:</STRONG></td>
+                </tr>
+                <tr class="data">
+                  <td align="right">[LNG_PREFERENCES_PAGE_TEMPLATE]:</td>
+                  <td align="left">{fm_select_prefpagetempl}<BR>
+                    <EM><FONT size="1">[LNG_TEMPLATES_LOCATED_IN] '{dir_pref}'</FONT></EM> 
+                  </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_CONFIRMATION_MESSAGE_SUBJECT]:</td>
+                  <td align="left">{fm_text_confirm_modify_subject}</td>
+                </tr>
+                <tr align="center" class="data"> 
+                  <td colspan="2">[LNG_CONFIRMATION_MESSAGE_TEXT]:<BR>
+                    {fm_textarea_confirm_modify_body} </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_DISABLE_MODIFY_SERVICE]</td>
+                  <td align="left">{fm_check_disable_modify}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_NOTIFY_ABOUT_MODIFICATIONS]</td>
+                  <td align="left">{fm_check_notify_about_modification}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_ALLOW_MODIFY_MESSAGES_FORMAT]</td>
+                  <td align="left">{fm_check_allow_modyfy_format}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="center" colspan="2"> <input type="submit" value="[LNG_SAV_ALL_SET]"name="submit" class="BUTTONmy"> 
+                  </td>
+                </tr>
+                      <tr class="data"> 
+                        <td  colspan="2" align="left" style="font-family: Tahoma, Verdana; font-size: 8pt"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                      <tr> 
+                        <td class="smallcomment">[LNG_ACCOUNT_OPTIONS_SUBSCRIBE]</td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2" align="center"> [LNG_POP_SET]</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_IS_POP]</td>
+                  <td align="left">{fm_check_ispop3} </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_SUBSCR_EMAIL]</td>
+                  <td align="left">{fm_text_subscribeemail} </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_POP_SERVER2]</td>
+                  <td align="left">{fm_text_pop3server} </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_POP_USER2]</td>
+                  <td align="left">{fm_text_pop3user} </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_POP_PASS]</td>
+                  <td align="left"> {fm_password_pop3pass}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_POP_PORT]</td>
+                  <td align="left">{fm_text_pop3port}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="center" colspan="2"> <input type="submit" value="[LNG_SAV_ALL_SET]"name="submit8" class="BUTTONmy"> 
+                  </td>
+                </tr>
+                      <tr class="data"> 
+                        <td colspan="2" align="left"> <table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                      <tr> 
+                        <td class="smallcomment"> [LNG_ACCOUNT_OPTIONS_SUBSCRIBE2] 
+                        </td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2" align="center">[LNG_BAN_MAILS]</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right">[LNG_BAN_LIST]</td>
+                  <td  align="left">{fm_textarea_banmails}</td>
+                </tr>
+                <tr class="data"> 
+                  <td  align="right">[LNG_CUST_ERR_MSG]</td>
+                  <td  align="left">{fm_text_banmailserror}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="center" colspan="2"> <input type="submit" value="[LNG_SAV_ALL_SET]"name="submit" class="BUTTONmy"> 
+                  </td>
+                </tr>
+                      <tr class="data"> 
+                        <td colspan="2" align="left" style="font-family: Tahoma, Verdana; font-size: 8pt"> 
+                          <table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                            <tr> 
+                              <td class="smallcomment"> [LNG_ACCOUNT_OPTIONS_BLACKLIST] 
+                              </td>
+                            </tr>
+                          </table></td>
+                </tr>
+              </table>				  
+				  </td>
+                </tr>
+              </table>
+              
+											</form>
+											<br>
+										</td>
+									</tr>
+								</table>
+								#end#config#<br>
+      #begin#reportselectfields
+	  
+					<table width="100%" border="0" cellspacing="0" cellpadding="4">
+						<tr> 
+							<td> 
+								<form name="form2" method="post" action="{ME}" >
+								<input type="hidden" name="issubmit" value="1">
+              {fm_hidden_ses} {fm_hidden_account} {fm_hidden_act} {fm_hidden_act2}{fm_hidden_act3}{fm_hidden_mode} 
+              {error} 
+              <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="line"> 
+                    <table width="100%" border="0" align="center"  cellpadding="3" cellspacing="1"  style="font-family: Tahoma, Verdana; font-size: 9pt">
+                      <tr class="dataheader"> 
+                  <td align="center" colspan="4"><b>[LNG_PROSPECT_REPORT_SELECT_FIELDS]</b></td>
+                </tr>
+                <tr class="data"> 
+                  <td width="40%" align="right"> <div align="center"><strong>[LNG_AVALIBLE_FIELDS]</strong></div></td>
+                  <td width="10%" align="left"> <div align="center"></div></td>
+                  <td width="40%" align="left"> <div align="center"><strong>[LNG_SELECTED_FIELDS]</strong></div></td>
+                  <td width="10%" align="left"> <div align="center"></div></td>
+                </tr>
+                <tr class="data"> 
+                        <td width="40%" align="center"> 
+                          <SELECT NAME="avaliblelist" MULTIPLE SIZE=18 onDblClick="moveSelectedOptions(this.form['avaliblelist'],this.form['selectedlist'],false)" class="INPUTmy">
+{avalible_list_options}
+					</SELECT>
+                        </td>
+                  <td width="10%" align="center" valign="middle"> <INPUT NAME="right" TYPE="button" class="BUTTONmySmall" ONCLICK="moveAllOptions(this.form['avaliblelist'],this.form['selectedlist'],false,'')" VALUE="[LNG_SELECT_FIELDS_ALL] &gt;&gt;"> 
+                    <BR> <BR> <INPUT NAME="right" TYPE="button" class="BUTTONmySmall" ONCLICK="moveSelectedOptions(this.form['avaliblelist'],this.form['selectedlist'],false,'')" VALUE="&gt;&gt;"> 
+                    <BR> <BR> <INPUT NAME="left" TYPE="button" class="BUTTONmySmall" ONCLICK="moveSelectedOptions(this.form['selectedlist'],this.form['avaliblelist'],false,'')" VALUE="&lt;&lt;"> 
+                    <BR> <BR> <INPUT NAME="left" TYPE="button" class="BUTTONmySmall" ONCLICK="moveAllOptions(this.form['selectedlist'],this.form['avaliblelist'],false,'')" VALUE="[LNG_SELECT_FIELDS_ALL] &lt;&lt;">	
+                  </td>
+                  <td width="40%" align="center"> <select name="selectedlist"  MULTIPLE size=18 ondblclick="moveSelectedOptions(this.form['selectedlist'],this.form['avaliblelist'],false)" class="INPUTmy">
+{selected_list_options}
+                    </select> </td>
+                  <td width="10%" align="left" valign="middle"> <INPUT TYPE="button" class="BUTTONmySmall" onClick="moveOptionUp(this.form['selectedlist'])" VALUE="[LNG_SELECT_FIELDS_UP]"> 
+                    <BR> <BR> <INPUT TYPE="button" class="BUTTONmySmall" onClick="moveOptionDown(this.form['selectedlist'])" VALUE="[LNG_SELECT_FIELDS_DOWN]"> 
+                  </td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="right"><strong>[LNG_SHOW_AFFILIATE_LEVEL]:</strong></td>
+                  <td colspan="2" align="left">{fm_select_affiliate_level}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="center" colspan="4"> <input type="submit" value="[LNG_SAV_ALL_SET]"name="submit" class="BUTTONmy" onClick="selectAllOptions(this.form['selectedlist']) ;  return true;"> 
+                  </td>
+                </tr>
+                      <tr class="data"> 
+                        <td colspan="4" align="left"> <table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                            <tr> 
+                              <td class="smallcomment"> <p>[LNG_SELECT_FIELDS_DESCR]<br>
+                                </p>
+                                <ul>
+                                  <li> <strong>[LNG_FLD_NAME]</strong> - [LNG_FLD_NAME_DESC]</li>
+                                  <li><strong> [LNG_FLD_EMAIL]</strong> - [LNG_FLD_EMAIL_DESC]</li>
+                                  <li><strong> [LNG_FLD_PK_USER]</strong> - [LNG_FLD_PK_USER_DESC]</li>
+                                  <li><strong> [LNG_FLD_DATEREG] - </strong>[LNG_FLD_DATEREG_DESC]</li>
+                                  <li><strong> [LNG_FLD_DAYS]</strong> - [LNG_FLD_DAYS_DESC]</li>
+                                  <li> <strong>[LNG_FLD_DATELASTSEND]</strong> 
+                                    - [LNG_FLD_DATELASTSEND_DESC]</li>
+                                  <li> <strong>[LNG_FLD_MESSLASTSEND]</strong> 
+                                    - [LNG_FLD_MESSLASTSEND_DESC]</li>
+                                  <li> <strong>[LNG_FLD_COUNTSEND]</strong> - 
+                                    [LNG_FLD_COUNTSEND_DESC]</li>
+                                  <li> <strong> [LNG_FLD_IP] </strong>- [LNG_FLD_IP_DESC]</li>
+                                  <li> <strong>[LNG_FLD_UNSUBSCRIBE]</strong> 
+                                    - [LNG_FLD_UNSUBSCRIBE_DESC]</li>
+                                  <li> <strong>[LNG_FLD_USERMESSAGEFORMAT]</strong> 
+                                    - [LNG_FLD_USERMESSAGEFORMAT_DESC]</li>
+                                  <li> <strong>[LNG_FLD_SEQUENSE_SIZE]</strong> 
+                                    - [LNG_FLD_SEQUENSE_SIZE_DESC]</li>
+                                  <li> <strong>[LNG_FLD_SEQUENCE_NOW]</strong> 
+                                    - [LNG_FLD_SEQUENCE_NOW_DESC]</li>
+                                  <li><strong>[LNG_FLD_SEQUENCE_REPEAT]</strong> 
+                                    - [LNG_FLD_SEQUENCE_REPEAT_DESC]</li>
+                                  <li> <strong>[LNG_FLD_STATUS]</strong> - [LNG_FLD_STATUS_DESC]</li>
+                                  <li> <strong>[LNG_FLD_FROMEMAIL]</strong> - 
+                                    [LNG_FLD_FROMEMAIL_DESC]</li>
+                                  <li> <strong>[LNG_FLD_FROMNAME]</strong> - [LNG_FLD_FROMNAME_DESC]</li>
+                                  <li><strong>[LNG_FLD_REFERRER_LINK]</strong> 
+                                    - [LNG_FLD_REFERRER_LINK_DESC]<br>
+                                  </li>
+                                </ul></td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>				  
+				  </td>
+                </tr>
+              </table>
+              
+											</form>
+											<br>
+										</td>
+									</tr>
+								</table>
+      #end#reportselectfields <br>
+      #begin#reportusers 
+      <form name="form2" method="post" action="{ME}">
+        {fm_hidden_ses} {fm_hidden_account} {fm_hidden_act} {fm_hidden_act2} 
+        <table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr>
+            <td align="left" valign="middle" width="120"  height="1"><img src="img/sp.gif" width="120" height="1"></td>
+            <td colspan="2" align="left" valign="middle" width="99%"><img src="img/sp.gif" width="120" height="1"></td>
+          </tr>
+          <tr> 
+            <td align="left" width="100" valign="middle"><b>[LNG_REPORTSEARCHBY]:</b></td>
+            <td width="865" colspan="2" align="left" valign="middle"><table width="100%" border="0" cellpadding="2" cellspacing="0">
+                <tr> 
+                  <td width="1%">{fm_select_searchbyfield}</td>
+                  <td width="1%">{fm_select_searchrule}</td>
+                  <td width="1%">{fm_text_search}</td>
+                  <td width="97%">&nbsp;</td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+		<div id="showadvanced" style="display:block;">
+		<a href ="#" onClick="document.getElementById('advanced').style.display='block'; document.getElementById('hideadvanced').style.display='block'; document.getElementById('showadvanced').style.display='none';  return false;"><strong>[LNG_SHOW_ADVANCED]</strong></a>
+		</div>
+		<div id="hideadvanced" style="display:none">
+		<a href ="#" onClick="document.getElementById('advanced').style.display='none'; document.getElementById('hideadvanced').style.display='none'; document.getElementById('showadvanced').style.display='block';  return false;"><strong>[LNG_HIDE_ADVANCED]</strong></a>
+		</div>
+		<div id="advanced" style="display:none">
+          <table width="100%" border="0" cellspacing="0" cellpadding="2">
+            <tr>
+            <td align="left" valign="middle" width="120"  height="1"><img src="img/sp.gif" width="120" height="1"></td>
+            <td colspan="2" align="left" valign="middle" width="99%"><img src="img/sp.gif" width="120" height="1"></td>
+            </tr>
+            <tr> 
+              <td width="120" align="left"><b>[LNG_REC_PER_PAGE_SHOW]</b> </td>
+              <td width="100%" colspan="2" align="left">{fm_select_filter}</td>
+            </tr>
+            <tr> 
+              <td width="120" align="left"><b>[LNG_REC_PER_PAGE]</b></td>
+              <td colspan="2" align="left">{fm_select_rponpage}</td>
+            </tr>
+            <tr> 
+              <td width="100" align="left"><nobr>{fm_check_usedate}<b>[LNG_USE_DATE_RANGE]</b></nobr></td>
+              <td colspan="2" align="left"><table width="100" border="0" cellpadding="2" cellspacing="0">
+                  <tr> 
+                    <td width="10%">[LNG_FROM_DATE]</td>
+                    <td width="10%"> 
+                      <!--start date sfield-->
+                      <table width="10%" border="0"  cellpadding="3">
+                        <tr> 
+                          <td width="50%"> <script language="JavaScript" id="calendar1">
+			var cal = new CalendarPopup();
+//cal.showNavigationDropdowns();
+cal.showYearNavigation();
+cal.setMonthNames('[LNG_MONTH_1]','[LNG_MONTH_2]','[LNG_MONTH_3]','[LNG_MONTH_4]','[LNG_MONTH_5]','[LNG_MONTH_6]','[LNG_MONTH_7]','[LNG_MONTH_8]','[LNG_MONTH_9]','[LNG_MONTH_10]','[LNG_MONTH_11]','[LNG_MONTH_12]');
+cal.setDayHeaders('[LNG_DW_0_S]','[LNG_DW_1_S]','[LNG_DW_2_S]','[LNG_DW_3_S]','[LNG_DW_4_S]','[LNG_DW_5_S]','[LNG_DW_6_S]');
+cal.setWeekStartDay([LNG_WEEK_START_DAY]);
+cal.setTodayText("[LNG_TODAY]");
+</script>
+                            {fm_text_datefrom(size=10)} </td>
+                          <td width="50%"><a href="#" onClick="cal.select(document.forms[0].datefrom,'anchor4','yyyy-MM-dd'); return false;" 
+title="" name="anchor4" id="anchor4"> <img src="img/cal.gif" width="16" height="16" border="0"></a> 
+                          </td>
+                        </tr>
+                      </table>
+                      <!--end date field-->
+                    </td>
+                    <td width="3%">[LNG_TO_DATE]</td>
+                    <td width="10%"> 
+                      <!--start date sfield-->
+                      <table width="10%" border="0"  cellpadding="3">
+                        <tr> 
+                          <td width="50%"> <script language="JavaScript" id="calendar2">
+var cal = new CalendarPopup();
+//cal.showNavigationDropdowns();
+cal.showYearNavigation();
+cal.setMonthNames('[LNG_MONTH_1]','[LNG_MONTH_2]','[LNG_MONTH_3]','[LNG_MONTH_4]','[LNG_MONTH_5]','[LNG_MONTH_6]','[LNG_MONTH_7]','[LNG_MONTH_8]','[LNG_MONTH_9]','[LNG_MONTH_10]','[LNG_MONTH_11]','[LNG_MONTH_12]');
+cal.setDayHeaders('[LNG_DW_0_S]','[LNG_DW_1_S]','[LNG_DW_2_S]','[LNG_DW_3_S]','[LNG_DW_4_S]','[LNG_DW_5_S]','[LNG_DW_6_S]');
+cal.setWeekStartDay([LNG_WEEK_START_DAY]);
+cal.setTodayText("[LNG_TODAY]");
+</script>
+                            {fm_text_dateto(size=10)} </td>
+                          <td width="50%"><a href="#" onClick="cal.select(document.forms[0].dateto,'anchor5','yyyy-MM-dd'); return false;" 
+title="" name="anchor5" id="anchor5"> <img src="img/cal.gif" width="16" height="16" border="0"></a> 
+                          </td>
+                        </tr>
+                      </table>
+                      <!--end date field-->
+                    </td>
+                    <td width="99%">&nbsp;</td>
+                  </tr>
+                </table></td>
+            </tr>
+          </table>
+		</div>
+		<strong><a href="{ME}?ses={ses}&account={account}&act={act}&act2={act2}&act3={act3}&mode=selectfields">[LNG_PROSPECT_REPORT_SELECT_FIELDS]</a> 
+        ({selected_fields_count} [LNG_REP_FIELDS_SELECTED_BEGIN] {all_fields_count} 
+        [LNG_REP_FIELDS_SELECTED_END]) </strong><br>
+        <BR>
+        &nbsp;&nbsp;&nbsp; <input type="submit" name="Display!!!" value="[LNG_SF_DISPLAY]" class="BUTTONmy">
+              &nbsp;&nbsp;&nbsp;  <input type="submit" name="export_to_txt" value="[LNG_SF_SAVETEXT]" class="BUTTONmy">
+	  <!--rep_start-->
+      <!--rep_empty_start-->
+      <h3 class="mess">[LNG_USR_BROWSER_NO_RECORDS_FOUND]</h3>
+              <!--rep_empty_end-->
+              <!--rep_header_start-->
+              
+      
+              <table width="100%" border="0" align="center" cellpadding="4" cellspacing="0">
+                <tr> 
+                  
+          <td> {RP_PAGE_LINE} </td>
+                </tr>
+              </table>
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        
+            <td bgcolor="#000000" class="line"> 
+              <table width="100%" height="0%" border="0" align="center" cellpadding="2" cellspacing="1">
+                <tr class="dataheader" > 
+                  <td colspan="2" align="left"> <input type="checkbox" name="checkbox" value="SelectAll"    onClick="selectAllCheckBoxes('form2', 'sel', this.checked)" > 
+                  </td>
+                  <td width="15%" align="center"><a href="[ORDER_LINK_email]" title="[LNG_ORDER_BY]">&nbsp;&nbsp;&nbsp;&nbsp;[LNG_FLD_EMAIL]&nbsp;&nbsp;&nbsp;&nbsp;</A></td>
+                  <td width="15%" align="center"><a href="[ORDER_LINK_name]" title="[LNG_ORDER_BY]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[LNG_FLD_NAME]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</A></td>
+                  {ADDITIONAL_FIELDS_HEADERS} </tr>
+                <!--rep_header_end-->
+                <!--rep_row_start-->
+                <tr valign="middle" bgcolor="#F0F0F0" class="data"> 
+                  <td width="1%" align="left"><nobr>{fm_check_sel(value={r_pk_user})}{r_#}</nobr></td>
+                  <td width="1%" align="left"><table width="100%" border="0">
+                      <tr align="center"> 
+                        <td width="33%"><a href="{r_editlink}"><img  border="0" src="img/b_props.png" width="16" height="16"></a></td>
+                        <td width="33%"><a href="{r_removelink}" class="BUTTONmy" onClick="return confirm('[LNG_BUTTON_CONFIRM_BEFORE] [LNG_ACTION_VALUE_REMOVE] {r_email}?');" title="[LNG_REMOVE_IMG_DESCR]"><img src="img/b_drop.png" width="16" height="16" border="0"></a></td>
+                        <td width="34%"><a href="{r_change_status_link}" class="BUTTONmy" onClick="return confirm('[LNG_BUTTON_CONFIRM_BEFORE]  {r_activation_action} {r_email}?');" title="{r_status_link_descr}"><img src="{r_status_image}" width="16" height="16" border="0"></a></td>
+                      </tr>
+                    </table></td>
+                  <td width="15%" align="left"><strong><NOBR>{r_email}</NOBR></strong></td>
+                  <td width="15%" align="center"><NOBR><strong>{r_name}</strong></NOBR></td>
+                  {ADDITIONAL_FIELDS_ROWS} </tr>
+                <!--ROW_DELMITTER-->
+                <tr valign="middle" class="data2"> 
+                  <td width="1%"  align="left"><nobr>{fm_check_sel(value={r_pk_user})}{r_#}</nobr></td>
+                  <td width="1%" align="left"><table width="100%" border="0">
+                      <tr align="center"> 
+                        <td width="33%"><a href="{r_editlink}"><img border="0" src="img/b_props.png" width="16" height="16"></a></td>
+                        <td width="33%"><a href="{r_removelink}" class="BUTTONmy" onClick="return confirm('[LNG_BUTTON_CONFIRM_BEFORE] [LNG_ACTION_VALUE_REMOVE] {r_email}?');" title="[LNG_REMOVE_IMG_DESCR]"><img src="img/b_drop.png" width="16" height="16" border="0"></a></td>
+                        <td width="34%"><a href="{r_change_status_link}" class="BUTTONmy" onClick="return confirm('[LNG_BUTTON_CONFIRM_BEFORE]  {r_activation_action} {r_email}?');" title="{r_status_link_descr}"><img src="{r_status_image}" width="16" height="16" border="0"></a></td>
+                      </tr>
+                    </table></td>
+                  <td width="15%" align="left"><strong><NOBR>{r_email}</NOBR></strong></td>
+                  <td width="15%" align="center"><strong>{r_name}</strong></td>
+                  {ADDITIONAL_FIELDS_ROWS} </tr>
+                <!--rep_row_end-->
+                <!--rep_footer_start-->
+              </table>
+                  </td>
+                      </tr>
+                    </table>			  
+			
+					<tr> 
+						<td> 
+						
+						<script language="JavaScript" type="text/JavaScript">
+function find_selected_text(obj) {
+		for (var i=0; i<obj.options.length; i++) {
+			if(obj.options[i].value==obj.value){
+
+				return  obj.options[i].text;
+			}
+			
+		}
+	return "Not found";
+	}
+</script>
+
+						<BR>[LNG_WITH_SELECTED]:{fm_select_action} 
+						<input type="submit" name="bnAction" value="[LNG_BUTTON_ACTION]" class="BUTTONmy" onClick="return confirm('[LNG_BUTTON_CONFIRM_BEFORE] '+find_selected_text(this.form.action)+'  [LNG_BUTTON_CONFIRM_AFTER]');">
+						</td>
+				</tr>
+		</table>
+		<br>
+        <table width="50%" border="0" cellspacing="0" cellpadding="3">
+          <tr> 
+            <td width="16"><img src="img/active.gif" width="16" height="16"></td>
+            <td width="40%" align="left" valign="middle">- [LNG_USR_BROWSER_ACTIVE]</td>
+            <td width="16" align="left" valign="middle"><img src="img/b_props.png" width="16" height="16"></td>
+            <td width="45%" align="left" valign="middle">- [LNG_ACCOUNT_MENU_EDIT_CURRENT_PROSPECT]</td>
+          </tr>
+          <tr> 
+            <td width="16"><img src="img/inact.gif" width="16" height="16"></td>
+            <td width="40%" align="left" valign="middle">- [LNG_USR_BROWSER_INACTIVE]</td>
+            <td width="16" align="left" valign="middle"><img src="img/b_drop.png" width="16" height="16"></td>
+            <td width="45%" align="left" valign="middle">- [LNG_REMOVE_IMG_DESCR]</td>
+          </tr>
+          <tr> 
+            <td width="16"><img src="img/pending.gif" width="16" height="16"></td>
+            <td width="40%" align="left" valign="middle">- [LNG_USR_BROWSER_PENDING]</td>
+            <td width="16" align="left" valign="middle">&nbsp;</td>
+            <td width="45%" align="left" valign="middle">&nbsp;</td>
+          </tr>
+        </table>
+              
+      <!--rep_footer_end-->
+      <!--rep_end-->
+	  </form>
+      #end#reportusers<br>
+	#begin#user_form 
+								{prospects_menu}
+								<table width="100%" border="0" cellspacing="0" cellpadding="4">
+									<tr> 
+
+										<td> 
+											<form name="form1" method="POST" action="{ME}" target="_self">
+              {error}{fm_hidden_reckey}{fm_hidden_ses} {fm_hidden_account}{fm_hidden_act} 
+              {fm_hidden_act2} {fm_hidden_act3}{fm_hidden_referer} 
+              <input type="hidden" name="issubmit" value="1">
+              <table width="75%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="line"> 
+                    <table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                      <tr class="dataheader"> 
+                        <td colspan="2">{mode} [LNG_PROSPECT]</td>
+                      </tr>
+                      <tr class="data"> 
+                        <td width="50%" align="right" class="data"><b>[LNG_PROSP_NAME]</b></td>
+                        <td width="50%"> <div align="left">{fm_text_name}</div></td>
+                      </tr>
+                      <tr class="data" > 
+                        <td width="50%" align="right"><b>[LNG_PROSP_MAIL]</b></td>
+                        <td width="50%" align="left">{fm_text_email}</td>
+                      </tr>
+                      {additional_fields} 
+                      <tr class="data" align="left"> 
+                        <td width="50%" align="right"><strong>[LNG_HTML_FORM_MESSFORMAT]:</strong></td>
+                        <td width="50%">{fm_select_messageformat}</td>
+                      </tr>
+                      <tr class="dataheader" align="left"> 
+                        <td colspan="2">[LNG_FLD_DATEREG]</td>
+                      </tr>
+<tr class="data" align="left"> 
+                        <td width="50%" align="right">[LNG_FLD_DATEREG]:</td>
+                        <td width="50%"> 
+                          <!--start date sfield-->
+                          <table width="10%" border="0"  cellpadding="3">
+                            <tr> 
+                              <td width="50%"> <script language="JavaScript" id="calendar1">
+			var cal_1 = new CalendarPopup();
+//cal.showNavigationDropdowns();
+cal_1.showYearNavigation();
+cal_1.setMonthNames('[LNG_MONTH_1]','[LNG_MONTH_2]','[LNG_MONTH_3]','[LNG_MONTH_4]','[LNG_MONTH_5]','[LNG_MONTH_6]','[LNG_MONTH_7]','[LNG_MONTH_8]','[LNG_MONTH_9]','[LNG_MONTH_10]','[LNG_MONTH_11]','[LNG_MONTH_12]');
+cal_1.setDayHeaders('[LNG_DW_0_S]','[LNG_DW_1_S]','[LNG_DW_2_S]','[LNG_DW_3_S]','[LNG_DW_4_S]','[LNG_DW_5_S]','[LNG_DW_6_S]');
+cal_1.setWeekStartDay([LNG_WEEK_START_DAY]);
+cal_1.setTodayText("[LNG_TODAY]");
+</script>
+                                {fm_text_datereg(size=10)} </td>
+                              <td width="50%"><a href="#" onClick="cal_1.select(document.forms[0].datereg,'anchor4','yyyy-MM-dd'); return false;" 
+title="" name="anchor4" id="anchor4"><img src="img/cal.gif" width="16" height="16" border="0"></a> 
+                              </td>
+                            </tr>
+                          </table>
+                          <!--end date field-->
+                        </td>
+                      </tr>
+                      <tr class="dataheader" align="left"> 
+                        <td colspan="2">[LNG_PROSP_SEQUENCE_STATUS] </td>
+                      </tr>
+                      <tr class="data" align="left"> 
+                        <td width="50%" align="right">[LNG_PROSP_SEQUENCE_STATUS]:</td>
+                        <td width="50%">{fm_select_sequence}</td>
+                      </tr>
+                      <tr class="data" align="left"> 
+                        <td width="50%" align="right">[LNG_LAST_SEQUENCE_MESSAGE_WAS_SENT_AT]:</td>
+                        <td width="50%"> 
+                          <!--start date sfield-->
+                          <table width="10%" border="0"  cellpadding="3">
+                            <tr> 
+                              <td width="50%"> <script language="JavaScript" id="calendar1">
+			var cal = new CalendarPopup();
+//cal.showNavigationDropdowns();
+cal.showYearNavigation();
+cal.setMonthNames('[LNG_MONTH_1]','[LNG_MONTH_2]','[LNG_MONTH_3]','[LNG_MONTH_4]','[LNG_MONTH_5]','[LNG_MONTH_6]','[LNG_MONTH_7]','[LNG_MONTH_8]','[LNG_MONTH_9]','[LNG_MONTH_10]','[LNG_MONTH_11]','[LNG_MONTH_12]');
+cal.setDayHeaders('[LNG_DW_0_S]','[LNG_DW_1_S]','[LNG_DW_2_S]','[LNG_DW_3_S]','[LNG_DW_4_S]','[LNG_DW_5_S]','[LNG_DW_6_S]');
+cal.setWeekStartDay([LNG_WEEK_START_DAY]);
+cal.setTodayText("[LNG_TODAY]");
+</script>
+                                {fm_text_datelastsend(size=10)} </td>
+                              <td width="50%">
+							  <a href="#" onClick="cal.select(document.forms[0].datelastsend,'anchor5','yyyy-MM-dd'); return false;" 
+title="" name="anchor5" id="anchor5"> <img src="img/cal.gif" width="16" height="16" border="0"></a> 
+                              </td>
+                            </tr>
+                          </table>
+                          <!--end date field-->
+                        </td>
+                      </tr>
+                      <tr class="dataheader" align="left"> 
+                        <td  colspan="2">[LNG_AFFILIATE_INFORMATION]</td>
+                      </tr>
+                      <tr class="data" align="left"> 
+                        <td width="50%" align="right">[LNG_AFFILIATE_ID]:</td>
+                        <td width="50%">{fm_text_fk_affiliate(size=5)} {AFFINFO}</td>
+                      </tr>
+                      <tr class="dataheader" align="left"> 
+                        <td  colspan="2">[LNG_CUSTOM_FROM_MESSAGES_SETTINGS]</td>
+                      </tr>
+                      <tr class="data" align="left"> 
+                        <td width="50%" align="right">[LNG_FLD_FROMEMAIL]:</td>
+                        <td width="50%">{fm_text_fromemail}</td>
+                      </tr>
+                      <tr class="data" align="left"> 
+                        <td width="50%" align="right">[LNG_FLD_FROMNAME]:</td>
+                        <td width="50%">{fm_text_fromname}</td>
+                      </tr>
+                      <tr class="data" align="left"> 
+                        <td align="center"><input type="submit" value="[LNG_PROSP_UPD_USER]" class="BUTTONmy" name="submit3"> 
+                        </td>
+                        <td align="center"><input name="button3" type="button" class="BUTTONmy" onClick="history.back(1)" value="[LNG_CANCEL]"></td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>
+              <br>
+												{LOGMESS} 
+											</form>
+										</td>
+									</tr>
+								</table>
+								#end#user_form<br>
+      #start#user_confirmbulk <b><font size="+1">[LNG_BULK_REM]</font></b><br>
+								<form name="form1" method="post" action="{ME}" target="_self" >
+        {error} {fm_hidden_reckey} {fm_hidden_ses} {fm_hidden_account} {fm_hidden_act} 
+        {fm_hidden_act2}{fm_hidden_act3} 
+        <input type="hidden" name="issubmit" value="1">
+									<table width="100%" border="0" cellspacing="0" cellpadding="8">
+										<tr> 
+											
+            <td align="left" valign="top"> <h1 class="mess">{countusers} [LNG_PROSPECTS2] 
+                {status} [LNG_PROSP_REM_DB]</h1>
+												<!--startdel-->
+												{fm_hidden_bulk}{fm_hidden_accounts} 
+												<input type="hidden" name="issubmit2" value="1">
+												<div align="center"> 
+													<input type="submit" value="[LNG_PROSP_REMOVE]" name="submit7" class="BUTTONmy">
+												</div>
+												<!--enddel-->
+											</td>
+										</tr>
+									</table>
+								</form>
+								#end#user_confirmbulk<br>
+      #start#user_bulk <b><font size="+1">[LNG_BULK_REM]</font></b><br>
+								[LNG_BULK_REM_HELP]
+								<form name="form1" method="post" action="{ME}" target="_self" enctype="multipart/form-data">
+        {error} {fm_hidden_reckey} {fm_hidden_ses} {fm_hidden_account} {fm_hidden_act} 
+        {fm_hidden_act2}{fm_hidden_act3} 
+        <input type="hidden" name="issubmit" value="1">
+									<table width="100%" border="0" cellspacing="0" cellpadding="8">
+										<tr> 
+											<td align="center" valign="top">{fm_textarea_bulk} 
+												<table width="30%" border="0" cellspacing="2" cellpadding="2" align="center">
+													<tr>
+														<td>{fm_radio_accounts} </td>
+													</tr>
+												</table>
+
+											</td>
+										</tr>
+									</table>
+									<div align="center"> 
+										<input type="submit" value="[LNG_PROSP_REMOVE]" name="submit6" class="BUTTONmy">
+									</div>
+								</form>
+								#end#user_bulk <br>
+      #start#user_tab_import 
+      <h2><br>
+        <br>
+        [LNG_IMPORT_FROM_TAB_DELMITTED]</h2>
+								<form name="form1" method="post" action="{ME}" target="_self" enctype="multipart/form-data">
+        {error} {fm_hidden_reckey} {fm_hidden_ses} {fm_hidden_account} {fm_hidden_act} 
+        {fm_hidden_act2}{fm_hidden_act3}{fm_hidden_act4} 
+        <input type="hidden" name="issubmit" value="1">
+									<p>&nbsp; </p>
+									
+        <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="line">
+          <tr>
+            <td>
+			<table width="100%" border="0" cellspacing="1" cellpadding="3">
+                <tr class="dataheader"> 
+                  <td colspan="2" >[LNG_PROSP_IMPORT]</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center" valign="top"><strong><a href="{ME}?ses={ses}&account={account}&act={act}&act2={act2}&act3={act3}&act4={act4}&getsample=1" target="_blank">[LNG_DOWNLOAD_TEMPLATE]</a></strong></td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right" width="50%" valign="top"><b>[LNG_UPLOAD_TAB_DELMITTED_FILE]</b></td>
+                  <td width="50%"> <input type="file" name="uploaded_file" class="INPUTmy"> 
+                  </td>
+                </tr>
+                <tr class="data">
+                  <td align="right" valign="top"><strong>[LNG_WITH_EXISTING_PROSPECTS]:</strong></td>
+                  <td align="left" valign="top">{fm_select_withexisting}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="left" valign="top"><strong> </strong></td>
+                  <td align="left" valign="top">{fm_check_sendsubscribe} <strong>[LNG_SEND_SUBSC_ALL_PROSP] 
+                    </strong></td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right" valign="top"><strong>[LNG_PROSP_SEQUENCE_STATUS]:</strong></td>
+                  <td>{fm_select_sequence}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right" valign="top"><strong>[LNG_HTML_FORM_MESSFORMAT]:</strong></td>
+                  <td>{fm_select_messageformat}</td>
+                </tr>
+                <tr align="center" class="data"> 
+                  <td colspan="2" valign="top"> <input type="submit" value="[LNG_PROSP_IMPORT]" name="submit5" class="BUTTONmy"> 
+                  </td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                      <tr> 
+                        <td class="smallcomment"> <p>[LNG_TAB_DELMITTED_DESCR] 
+                            <br>
+                          </p></td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>
+			</td>
+          </tr>
+        </table>
+					</form>
+	  #end#user_tab_import #start#user_import 
+      <h2><br>
+        <br>
+        [LNG_IMPORT_FROM_TEXT]</h2>
+								<form name="form1" method="post" action="{ME}" target="_self" enctype="multipart/form-data">
+        {error} {fm_hidden_reckey} {fm_hidden_ses} {fm_hidden_account} {fm_hidden_act} 
+        {fm_hidden_act2}{fm_hidden_act3}{fm_hidden_act4} 
+        <input type="hidden" name="issubmit" value="1">
+									<p>&nbsp; </p>
+									
+        <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0" class="line">
+          <tr>
+            <td>
+			<table width="100%" border="0" cellspacing="1" cellpadding="3">
+                <tr class="dataheader"> 
+                  <td colspan="2" >[LNG_PROSP_IMPORT]</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right" width="11%" valign="top"><b>[LNG_INSERT_TEXT]</b></td>
+                  <td width="89%">{fm_textarea_import} </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right" width="11%" valign="top"><b>[LNG_OR_UPLOAD_FILE]</b></td>
+                  <td width="89%"> <input type="file" name="uploaded_file" class="INPUTmy"> 
+                  </td>
+                </tr>
+                <tr class="data"> 
+                  <td align="left" valign="top"><strong> </strong></td>
+                  <td align="left" valign="top">{fm_check_sendsubscribe} <strong>[LNG_SEND_SUBSC_ALL_PROSP] 
+                    </strong></td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right" valign="top"><strong>[LNG_PROSP_SEQUENCE_STATUS]:</strong></td>
+                  <td>{fm_select_sequence}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right" valign="top"><strong>[LNG_HTML_FORM_MESSFORMAT]:</strong></td>
+                  <td>{fm_select_messageformat}</td>
+                </tr>
+                <tr align="center" class="data"> 
+                  <td colspan="2" valign="top"> <input type="submit" value="[LNG_PROSP_IMPORT]" name="submit5" class="BUTTONmy"> 
+                  </td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                      <tr> 
+                        <td class="smallcomment"> <p>[LNG_IMPORT_HELP] <br>
+                          </p></td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>
+			</td>
+          </tr>
+        </table>
+					</form>
+								#end#user_import<br>
+      #start#user_loadfrom 
+      <!--START_RESULT-->
+      <form name="form1" method="get" action="{ME}" target="_self">
+        {error}{fm_hidden_reckey}{fm_hidden_ses} {fm_hidden_account}{fm_hidden_act} 
+        {fm_hidden_act2}{fm_hidden_act3} 
+        <input type="hidden" name="issubmit" value="1">
+     
+       <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="line">
+<table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                <tr class="dataheader"> 
+											
+            <td colspan="2"><b>[LNG_COPY_PROSPS_FROM_ACC]</b></td>
+										</tr>
+										<tr class="data"> 
+											
+            <td width="48%" align="right" class="data"><b>[LNG_ACCOUNT]</b></td>
+											<td width="52%"> 
+												<div align="left">{fm_select_import}</div>
+											</td>
+										</tr>
+										<tr class="data" > 
+											
+            <td align="right" width="48%"><b>[LNG_FILTER]</b></td>
+											<td align="left" width="52%">{fm_radio_activ}</td>
+										</tr>
+										<tr class="data" align="center"> 
+											<td colspan="2"> 
+												<table width="100%" border="0" cellspacing="0" cellpadding="4">
+													<tr align="center" valign="middle"> 
+														<td> 
+															<input type="submit" value="[LNG_IMPORT]" class="BUTTONmy" name="submit">
+														</td>
+														<td> 
+															<input type="button" value="[LNG_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+									</td>
+          </tr>
+       </table>
+		</form>
+
+								
+      <!--END_RESULT-->
+      #end#user_loadfrom 
+	  #start#user_tabexport 
+						<br><br>
+								<h2>[LNG_EXPORT_TO_TAB_DELMITTED]</h2>
+       <form name="form1" method="get" action="{ME}" target="_self">
+        {error}{fm_hidden_reckey}{fm_hidden_ses} {fm_hidden_account}{fm_hidden_act} 
+        {fm_hidden_act2}{fm_hidden_act3}{fm_hidden_act4} 
+        <input type="hidden" name="issubmit" value="1">
+        	
+								<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="line">
+			<table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                <tr class="dataheader"> 
+                  <td colspan="2"><b>{all_count} [LNG_PROSP_EXPORT_READY]</b></td>
+                </tr>
+                <tr class="data" > 
+                  <td align="right" width="48%"><b>[LNG_FILTER]</b></td>
+                  <td align="left" width="52%">{fm_select_filter}</td>
+                </tr>
+                <tr align="left" class="data" > 
+                  <td colspan="2"> <table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                      <tr> 
+                        <td class="smallcomment"> <p>[LNG_TAB_DELMITTED_DESCR] 
+                            <br>
+                          </p></td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr class="data" align="center"> 
+                  <td colspan="2"> <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                      <tr align="center" valign="middle"> 
+                        <td> <input type="submit" value="[LNG_EXPORT]" class="BUTTONmy" name="submit32"> 
+                        </td>
+                        <td> <input type="button" value="[LNG_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button2"> 
+                        </td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>
+			</td>
+          </tr>
+        </table>
+        
+								</form>
+      #end#user_tabexport
+	  
+	  #start#user_export 
+						<br><br>
+								<h2>[LNG_PROSPMENU_EXPORT]</h2>
+      <!--START_RESULT-->
+      <form name="form1" method="get" action="{ME}" target="_self">
+        {error}{fm_hidden_reckey}{fm_hidden_ses} {fm_hidden_account}{fm_hidden_act} 
+        {fm_hidden_act2}{fm_hidden_act3} 
+        <input type="hidden" name="issubmit" value="1">
+        	
+								<table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="line">
+			<table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                <tr class="dataheader"> 
+											
+            <td colspan="2"><b>{all_count} [LNG_PROSP_EXPORT_READY]</b></td>
+										</tr>
+										<tr class="data"> 
+											
+            <td width="48%" align="right" class="data"><b>[LNG_FORMAT]</b></td>
+											<td width="52%"> 
+												<div align="left">{fm_select_format}</div>
+											</td>
+										</tr>
+										<tr class="data" > 
+											
+            <td align="right" width="48%"><b>[LNG_FILTER]</b></td>
+											
+            <td align="left" width="52%">{fm_radio_activ}</td>
+										</tr>
+										<tr class="data" > 
+											
+            <td align="right" width="48%"><b>[LNG_EXPORT_TO]</b></td>
+											<td align="left" width="52%">{fm_radio_to}</td>
+										</tr>
+										<tr class="data" align="center"> 
+											<td colspan="2"> 
+												<table width="100%" border="0" cellspacing="0" cellpadding="4">
+													<tr align="center" valign="middle"> 
+														<td> 
+															<input type="submit" value="[LNG_EXPORT]" class="BUTTONmy" name="submit32">
+														</td>
+														<td> 
+															<input type="button" value="[LNG_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button2">
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
+			</td>
+          </tr>
+        </table>
+        
+								</form>
+								
+      <!--END_RESULT-->
+      #end#user_export<br>
+      #start#mess_seq_cycle <br><br><br><br>
+      <form name="form1" method="get" action="{ME}" target="_self">
+        {error}{fm_hidden_reckey}{fm_hidden_ses} {fm_hidden_account}{fm_hidden_act} 
+        {fm_hidden_act2}{fm_hidden_editcycle} 
+        <input type="hidden" name="issubmit" value="1">
+        <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr> 
+            <td class="line"> <table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                <tr class="dataheader"> 
+                  <td colspan="2"><b> [LNG_SEQUENCE_CYCLE_SETUP]</b></td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="left" class="data">{fm_check_seqcycle_enabled}<B>[LNG_ENABLE_SEQ_CYCLE] 
+                    </B></td>
+                </tr>
+                <tr align="left" class="data" > 
+                  <td colspan="2"><b>[LNG_SEQ_WAIT]</b>&nbsp;&nbsp;{fm_text_seqcycle_days(size=4)}&nbsp;&nbsp;<b>[LNG_START_NEW_SEQ_AFTER_DAYS]: 
+                    </b>{fm_select_seqcycle_startmess}<br>
+                    </td>
+                </tr>
+                <tr class="data" align="center"> 
+                  <td colspan="2" align="left">[LNG_REPEAT_SEQUENCE]&nbsp;&nbsp;{fm_text_seqcycle_maxrepeat(size=4)}&nbsp;&nbsp;[LNG_REPEAT_SEQUENCE_TIMES] 
+                  </td>
+                </tr>
+                <tr class="data" align="center"> 
+                  <td  width="50%" align="center"><input type="submit" value="[LNG_SAV_ALL_SET]" class="BUTTONmy" name="submit322"></td>
+                  <td  width="70%" align="center"><input type="button" value="[LNG_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button23"> 
+                  </td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+        <br>
+        <table width="70%" border="0" align="center" cellpadding="0" cellspacing="0" class="smallcomment">
+          <tr> 
+            <td class="smallcomment"> <p>[LNG_SEQUENCE_CYCLE_DESCR]<br>
+                <br>
+              </p>
+              </td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+      </form>
+      #end#mess_seq_cycle<br>
+								#start#user_mess
+								<!--START_AUTORESPOND-->
+								<form name="messform" method="get" action="{ME}" target="_self">
+									{start_broadcast}{error}{fm_hidden_reckey}{fm_hidden_ses} {fm_hidden_account}{fm_hidden_act} 
+									{fm_hidden_act2} 
+									<input type="hidden" name="issubmit" value="1">
+        <h2>[LNG_SUB_UNSUB_MSG]</h2>
+
+									
+        <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="line"><table width="100%" border="0" cellspacing="1" cellpadding="2" align="center">
+                <tr class="data"> 
+                  <td width="1%">{fm_check_isdoi}</td>
+                  <td width="25"><img src="{RSS_IMAGE_DOI}" width="25" height="13"></td>
+                  <td width="79%">[LNG_EDIT_DOI_CONF_MSG]</td>
+                  <td width="5%">{STATUS_DOI}</td>
+                  <td width="5%" nowrap><A href="{ME}?ses={ses}&account={account}&act=doimess">[LNG_EDIT]</A> 
+                    <A href="{ME}?ses={ses}&account={account}&act=doimess&act2=preview" target="_blank"onClick="window.open('{ME}?ses={ses}&account={account}&act=doimess&act2=preview','','scrollbars=yes,resizable=yes,width=600,height=550'); return false;"></A></td>
+                  <td width="5%" nowrap><A href="{ME}?ses={ses}&account={account}&act=doimess&act2=preview" target="_blank"onClick="window.open('{ME}?ses={ses}&account={account}&act=doimess&act2=preview','','scrollbars=yes,resizable=yes,width=550,height=500'); return false;">[LNG_PREVIEW]</A></td>
+                  <td width="5%" nowrap> {test_send_doi}</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="1%">{fm_check_sendsubscr}</td>
+                  <td width="25"><img src="{RSS_IMAGE_SUBSCRIBE}" width="25" height="13"></td>
+                  <td width="79%">[LNG_SEND_SUBSC_MSG]</td>
+                  <td width="5%">{STATUS_SUBSCRIBE}</td>
+                  <td width="5%" nowrap><A href="{ME}?ses={ses}&account={account}&act=subscrmess">[LNG_EDIT]</A></td>
+                  <td width="5%" nowrap><A href="{ME}?ses={ses}&account={account}&act=subscrmess&act2=preview" target="_blank"onClick="window.open('{ME}?ses={ses}&account={account}&act=subscrmess&act2=preview','','scrollbars=yes,resizable=yes,width=600,height=550'); return false;">[LNG_PREVIEW]</A></td>
+                  <td width="5%" nowrap> {test_send_subscribe}</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="1%">{fm_check_sendunsubscr}</td>
+                  <td width="25"><img src="{RSS_IMAGE_UNSUBSCRIBE}" width="25" height="13"></td>
+                  <td width="79%">[LNG_SEND_UNSUB_MSG]</td>
+                  <td width="5%">{STATUS_UNSUBSCRIBE}</td>
+                  <td width="5%" nowrap><A href="{ME}?ses={ses}&account={account}&act=unsubscrmess">[LNG_EDIT]</A>&nbsp;</td>
+                  <td width="5%" nowrap><A href="{ME}?ses={ses}&account={account}&act=unsubscrmess&act2=preview" target="_blank"onClick="window.open('{ME}?ses={ses}&account={account}&act=unsubscrmess&act2=preview','','scrollbars=yes,resizable=yes,width=600,height=550'); return false;">[LNG_PREVIEW]</A></td>
+                  <td width="5%" nowrap> {test_send_unsubscribe}</td>
+                </tr>
+                <tr align="center" class="data"> 
+                  <td colspan="4" align="center"> <input type="submit" value="[LNG_UPD_SETTINGS]" class="BUTTONmy" name="bnsettings"> 
+                  </td>
+                  <td align="center">&nbsp;</td>
+                  <td align="center">&nbsp;</td>
+                  <td align="center">&nbsp;</td>
+                </tr>
+              </table></td>
+          </tr>
+        </table>
+        
+								<!--NOMESS-->	
+								<BR><BR>
+								<input type="submit" name="addnewmess" value="[LNG_ADD_NEW_MSG]" class="BUTTONmy">
+								<!--NOMESS-->	
+								 
+        <!--START_AUTO-->
+																<BR><BR>
+        <h2>[LNG_SEQ_MSGS] {autocount}</h2>
+		<table  width="95%"  cellspacing="0"  cellpadding="0" align="center"><tr><td class="line">
+									<table   border="0" cellspacing="1"  cellpadding="3" align="center" width="100%">
+                <tr class="dataheader"> 
+                  <td  width="1" ><input type="checkbox" onClick="selectAllCheckBoxes('messform', 'selauto', this.checked)"></td>
+					  <td  width="16" ><img src="img/sp.gif" width="16" height="16" border="0"></td>
+					  <td  width="25" ><img src="img/sp.gif" width="25" height="13" border="0"></td>
+                  <td width="99%"  >[LNG_SEQ_MSG_SUBJECT]</td>
+                  <td >[LNG_TYPE_MESS]</td>
+                  <td >[LNG_ATTACH]</td>
+                  <td  >[LNG_SENT]</td>
+                  <td >[LNG_DAY]</td>
+                  <td >[LNG_PREVIEW]</td>
+                  <td >[LNG_TEST_SEND_LINK]</td>
+                </tr>
+                <!--AUTOMESS-->
+                <tr class="data"> 
+                  <td colspan="10">
+																<table width="100%" border="0" cellspacing="0" cellpadding="3" align="center">
+																<tr class="data"> 
+																	<td width="5%"> 
+																		<input type="submit" name="bnRemoveAuto" value="[LNG_SF_REMOVE]" class="BUTTONmy" onClick="return confirm('Are you sure you want to delete the checked messages?');">
+                 </td>
+																	<td width="5%"> 
+																	<input type="submit" name="addnewmessseq" value="[LNG_ADD_NEW_MSG]" class="BUTTONmy">
+																	</td>
+																	<td width="90%">&nbsp;</td>
+																	</tr>
+																	</table>
+																		</td>
+                </tr>
+       </table>
+									
+            </td>
+          </tr></table><BR>
+		  
+        <DIV align="left"  style="margin-left:25"><strong>[LNG_SEQUENCE_CYCLE_SETUP]</strong>:<em>(<strong>{SEQUENCE_CYCLE_STATUS}</strong>)</em> 
+          <strong><a href="{ME}?ses={ses}&account={account}&act={act}&act2={act2}&editcycle=1">[LNG_MODIFY]</a></strong> 
+        </div>							
+		  
+        <!--END_AUTO-->
+        <!--START_DATE-->
+								<BR><BR>
+        <h2>[LNG_MANUAL_SHED_MSGS] {datecount}</h2>
+        <table   border="0" cellspacing="0"  cellpadding="0" align="center" width="95%">									
+		<tr><td class="line">
+        <table   border="0" cellspacing="1"  cellpadding="3" align="center" width="100%">
+          <tr class="dataheader"> 
+            <td   ><input type="checkbox" onClick="selectAllCheckBoxes('messform', 'seldate', this.checked)"></td>
+		  <td  width="16" >
+			  <img src="img/sp.gif" width="16" height="16" border="0">
+		  </td>	
+		  <td  width="25" >
+			  <img src="img/sp.gif" width="25" height="13" border="0">
+		  </td>			
+            <td width="99%"  >[LNG_SEQ_MSG_SUBJECT]</td>
+            <td >[LNG_TYPE_MESS]</td>
+            <td >[LNG_ATTACH]</td>
+            <td >[LNG_SHED_DATE]</td>
+            <td >[LNG_IN_PROGRESS]</td>
+            <td >[LNG_SENT]</td>
+            <td >[LNG_PREVIEW]</td>
+            <td >[LNG_TEST_SEND_LINK]</td>
+          </tr>   
+		  <!--DATEMESS-->
+          <tr class="data"> 
+            <td colspan="11">
+												<table width="100%" border="0" cellspacing="0" cellpadding="3" align="center">
+          <tr class="data"> 
+											<td width="5%"> 
+												<input type="submit" name="bnRemoveDate" value="[LNG_SF_REMOVE]" class="BUTTONmy" onClick="return confirm('Are you sure you want to delete the checked messages?');">
+											</td>
+											<td width="5%"> 
+															<input type="submit" name="addnewmessmanual" value="[LNG_ADD_NEW_MSG]" class="BUTTONmy">
+											</td>
+												<td width="5%" align="left"> 
+												<input style="font-weight: bolder" type="submit" name="bnBroadkast" value="[LNG_BROADCAST]" class="BUTTONmy" onClick="return confirm('Are you sure you want to send selected messages for all active users?');">
+											</td>
+											<td width="5%" align="left">
+											<input  type="submit" name="bnClearTosent" value="[LNG_TERM_PROC]" class="BUTTONmy" onClick="return confirm('Are you sure you want terminate sending process now?');">
+											</td>
+            <td width="75%" align="right">&nbsp; </td>
+										</tr>
+									</table>
+									</td>
+          </tr>
+       
+        </table>
+		</td></tr></table>
+									
+        
+									<!--END_DATE-->
+									
+									<!--START_SENDTO--><!--
+									<br><br>
+									
+        <table width="55%" border="0" cellpadding="5" cellspacing="0" class="comment">
+          <tr> 
+											
+            <td width="38%"><nobr><b>[LNG_TST_SND_STR1]<br>
+              [LNG_TST_SND_STR2]</b></nobr></td>
+											<td width="23%">{fm_text_sendto}</td>
+											<td width="39%"> 
+												<input type="submit" name="SEND" value="[LNG_BTN_TEST_SEND]" class="BUTTONmy">
+											</td>
+										</tr>
+									</table> -->									
+									<!--END_SENDTO-->
+								</form>
+								#end#user_mess<br>
+								#start#user_newmess 
+      <SCRIPT language="JavaScript" type="text/JavaScript">
+function OpenXinha(){
+	var XinhaWindow=window.open('{ME}?account={account}&ses={ses}&act=openhtmleditor','XinhaWind','scrollbars=yes,resizable=yes,width=770,height=650');
+	XinhaWindow.focus();
+//	XinhaWindow.forms[0].messhtml.value=document.messform.messhtml.value
+//	XinhaWindow.document.forms[0].messhtml.value=document.forms[0].messhtml.value;
+//	alert(x.value);
+}
+function ProcessPageVisability(){
+	var thisform=document.forms[0];
+	var ismixed=thisform.type.value;
+	if (ismixed=='mixed'){
+		document.getElementById('divhtmlmessarea').style.display='block';
+		document.getElementById('divtextmessarea').style.display='block';
+		document.getElementById('divprefferedtype').style.display='block';
+	}else{
+		document.getElementById('divprefferedtype').style.display='none';
+		if(ismixed=='text'){
+			document.getElementById('divhtmlmessarea').style.display='none';
+			document.getElementById('divtextmessarea').style.display='block';
+		}else{
+			document.getElementById('divhtmlmessarea').style.display='block';
+			document.getElementById('divtextmessarea').style.display='none';
+		}
+	}
+	if(thisform['saveinhistory'].checked){
+		document.getElementById('divrssmessarea').style.display='block';
+	}else{
+		document.getElementById('divrssmessarea').style.display='none';
+	}
+	if(thisform.usefrom.value == 1){
+			document.getElementById('usefromsettings').style.display='block';
+	}else{
+	document.getElementById('usefromsettings').style.display='none';
+	}
+	if(thisform.typesend.value=='senddat'){
+	document.getElementById('datediv').style.display='block';
+	}else{
+		document.getElementById('datediv').style.display='none';
+	}
+	if(thisform.typesend.value=='auto'){
+		document.getElementById('daysdiv').style.display='block';
+	}else{
+	document.getElementById('daysdiv').style.display='none';
+	}
+}
+
+function add_text_mess(text) {
+	var txtarea = document.messform.mess;
+	text =  text + ' ';
+	if (txtarea.createTextRange && txtarea.caretPos) {
+		var caretPos = txtarea.caretPos;
+		caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? caretPos.text + text + ' ' : caretPos.text + text;
+		txtarea.focus();
+	} else {
+		txtarea.value  += text;
+		txtarea.focus();
+	}
+}
+function add_text_messhtml(text) {
+	var txtarea = document.messform.messhtml;
+	text =  text + ' ';
+	if (txtarea.createTextRange && txtarea.caretPos) {
+		var caretPos = txtarea.caretPos;
+		caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? caretPos.text + text + ' ' : caretPos.text + text;
+		//txtarea.focus();
+	} else {
+		txtarea.value  += text;
+		//txtarea.focus();
+	}
+}
+function add_text_rss(text) {
+	var txtarea = document.messform.messrss;
+	text =  text + ' ';
+	if (txtarea.createTextRange && txtarea.caretPos) {
+		var caretPos = txtarea.caretPos;
+		caretPos.text = caretPos.text.charAt(caretPos.text.length - 1) == ' ' ? caretPos.text + text + ' ' : caretPos.text + text;
+		//txtarea.focus();
+	} else {
+		txtarea.value  += text;
+		//txtarea.focus();
+	}
+}
+function storeCaret (textEl) {
+       if (textEl.createTextRange) 
+         textEl.caretPos = document.selection.createRange().duplicate();
+     }
+</SCRIPT>
+      <h2>{header}</h2>
+								<form name="messform"  id="messform"   method="post" action="{ME}" target="_self" enctype="multipart/form-data">
+									{error}{fm_hidden_reckey}{fm_hidden_ses} {fm_hidden_account}{fm_hidden_act} 
+									{fm_hidden_act2} {fm_hidden_reckey} 
+									<input type="hidden" name="issubmit" value="1">
+									
+        <table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr valign="middle"> 
+            <td align="right" width="150"><img src="img/sp.gif" width="150" height="1" border="0"></td>
+            <td width="90%"><img src="img/sp.gif" width="1" height="1" border="0"></td>
+          </tr>
+		  <tr valign="middle"> 
+            <td align="right" ><b>[LNG_SUBJECT]</b></td>
+            <td >{fm_text_subject}</td>
+          </tr>
+          <tr align="left" valign="middle"> 
+            <td align="right"><strong>[LNG_FROM_SETTINGS]:</strong></td>
+            <td>{fm_select_usefrom##PAR##onCLICK=ProcessPageVisability()}
+		</td>
+          </tr>
+		  </table>
+		  <div  id="usefromsettings">
+		  <table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr valign="middle"> 
+            <td align="right" width="150"><img src="img/sp.gif" width="150" height="1" border="0"></td>
+            <td width="90%"><img src="img/sp.gif" width="1" height="1" border="0"></td>
+          </tr>
+		  
+          <tr valign="middle">
+            <td align="right"><b>[LNG_FROM_NAME]</b></td>
+              <td align="left">{fm_text_fromnamemess}</td>
+          </tr>
+          <tr valign="middle"> 
+            <td align="right"><b>[LNG_FROM_EMAIL]</b></td>
+              <td align="left">{fm_text_fromemailmess}</td>
+          </tr>
+		  </table>
+			</div >
+		<table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr valign="middle"> 
+            <td align="right" width="150"><img src="img/sp.gif" width="150" height="1" border="0"></td>
+            <td width="90%"><img src="img/sp.gif" width="1" height="1" border="0"></td>
+          </tr>
+          <tr valign="middle"> 
+            <td  align="right"><strong>[LNG_MESS_TYPE]</strong></td>
+            <td  align="left">{fm_select_typesend##PAR##onCHANGE=ProcessPageVisability()}</td>
+          </tr>
+		  </table>
+		  <div id="daysdiv">
+		  <table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr valign="middle"> 
+            <td align="right" width="150"><img src="img/sp.gif" width="150" height="1" border="0"></td>
+            <td width="90%"><img src="img/sp.gif" width="1" height="1" border="0"></td>
+          </tr>
+          <tr valign="middle"> 
+            <td  align="right"><strong>[LNG_DAYS_AFTER_REG]</strong></td>
+            <td  align="left">{fm_text_days}</td>
+          </tr>
+		  </table>
+		  </div>
+ 		  <div id="datediv">
+		<table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr valign="middle"> 
+            <td align="right" width="150"><img src="img/sp.gif" width="150" height="1" border="0"></td>
+            <td width="90%"><img src="img/sp.gif" width="1" height="1" border="0"></td>
+          </tr>		  
+          <tr valign="middle"> 
+            <td  align="right"><strong>[LNG_SHED_DATE]:</strong></td>
+            <td  align="left"> 
+              <!--start date sfield-->
+              <table width="10%" border="0"  cellpadding="0" cellspacing="0">
+                <tr valign="middle"> 
+                  <td width="50%"> 
+                    <script language="JavaScript" id="calendar1">
+			var cal = new CalendarPopup();
+			
+var now = new Date();
+cal.addDisabledDates(null,formatDate(now,"yyyy-MM-dd"));			
+//cal.showNavigationDropdowns();
+cal.showYearNavigation();
+cal.setMonthNames('[LNG_MONTH_1]','[LNG_MONTH_2]','[LNG_MONTH_3]','[LNG_MONTH_4]','[LNG_MONTH_5]','[LNG_MONTH_6]','[LNG_MONTH_7]','[LNG_MONTH_8]','[LNG_MONTH_9]','[LNG_MONTH_10]','[LNG_MONTH_11]','[LNG_MONTH_12]');
+cal.setDayHeaders('[LNG_DW_0_S]','[LNG_DW_1_S]','[LNG_DW_2_S]','[LNG_DW_3_S]','[LNG_DW_4_S]','[LNG_DW_5_S]','[LNG_DW_6_S]');
+cal.setWeekStartDay([LNG_WEEK_START_DAY]);
+cal.setTodayText("[LNG_TODAY]");
+</script>
+                    {fm_text_senddat(size=10)} </td>
+                  <td width="50%"> <a href="#" onClick="cal.select(document.forms[0].senddat,'anchor4','yyyy-MM-dd'); return false;" 
+                  title="" name="anchor4" id="anchor4"> <img src="img/cal.gif" width="16" height="16" hspace="3" vspace="3" border="0"></a> 
+                  </td>
+                </tr>
+              </table>
+              <!--end date field-->
+            </td>
+          </tr>
+          <tr valign="middle"> 
+            <td  align="right"><strong>[LNG_REPEAT_MESSAGE]</strong></td>
+            <td  align="left">{fm_select_repeating}</td>
+          </tr>
+		  </table>
+		  </div>
+		<table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr valign="middle"> 
+            <td align="right" width="150"><img src="img/sp.gif" width="150" height="1" border="0"></td>
+            <td width="90%"><img src="img/sp.gif" width="1" height="1" border="0"></td>
+          </tr>		  
+          <tr> 
+            <td align="right" valign="top"  > <b>[LNG_MESS_SENDING_FORMAT_TYPE]</b></td>
+            <td align="left" valign="top"  > {fm_select_type##PAR##onCHANGE=ProcessPageVisability()} 
+            </td>
+          </tr>
+        </table>
+		  <div id="divprefferedtype">
+		  <table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr valign="middle"> 
+            <td align="right" width="150"><img src="img/sp.gif" width="150" height="1" border="0"></td>
+            <td width="90%"><img src="img/sp.gif" width="1" height="1" border="0"></td>
+          </tr>		  		  
+          <tr > 
+              <td align="right" valign="top" > <b>[LNG_DEFAULT_MESSAGE_TYPE]</b>: 
+              </td>
+              <td align="left" valign="top" > {fm_select_defmesstype}<br> <font size="1">[LNG_DEFAULT_MESSAGE_TYPE_DISCR]</font> 
+            </td>
+          </tr>
+		  </table>
+		  </div>
+		  
+        <table width="100%" border="0" cellspacing="0" cellpadding="2">
+		    <tr valign="middle"> 
+            <td align="right" width="150"><img src="img/sp.gif" width="150" height="1" border="0"></td>
+            <td width="90%"><img src="img/sp.gif" width="1" height="1" border="0"></td>
+          </tr>
+          <tr> 
+            <td  align="right" valign="top"><strong>[LNG_CHARSET]</strong></td>
+            <td >{fm_select_encoding}</td>
+          </tr>
+          <tr> 
+            <td align="right"  valign="top"><strong>[LNG_PRIORITY]</strong></td>
+            <td >{fm_select_priority}</td>
+          </tr>
+          {attach} 
+		  </table>
+         <table width="100%" border="0" cellspacing="0" cellpadding="2">
+          <tr align="left"> 
+            <td colspan="2" align="left" ><b> </b> 
+                <TR> 
+                  <TD> 
+				  <div id="divtextmessarea"> 
+                      <table width="100%" border="0" cellpadding="6" cellspacing="0" class="comment">
+                        <tr class="data"> 
+                          <td> 
+                            <div align="center"><B><u>[LNG_MSG_TEXT_FORMAT]:</u></B></div>
+                            <STRONG>[LNG_INSERT_SPECIAL_TAG]<BR>
+                            </STRONG>{personal_links}<BR>
+                            {fm_textarea_mess}</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <BR>
+					<div id="divhtmlmessarea"> 
+                      <table width="100%" border="0" cellpadding="6" cellspacing="0" class="comment">
+                        <tr class="data"> 
+                          <td> 
+                            <div align="center"> 
+                              <P><B><u>[LNG_MSG_HTML_FORMAT]:</u></B></P>
+                            </div>
+                            <STRONG>[LNG_INSERT_SPECIAL_TAG]<BR>
+                            </STRONG>{personal_links_html}<BR>
+                            {fm_textarea_messhtml} <div align="center">
+                              <input name="submit9" type="button"  tabindex="100"class="BUTTONmy" value="[LNG_OPEN_ONLINE_HTML_EDITOR]" onClick="OpenXinha(); return false;">
+							</div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <BR> </TD>
+                  <TD width="90%">&nbsp;</TD>
+                </TR>
+              </TABLE></td>
+          </tr>
+          <tr align="left"> 
+            <td colspan="2" > <DIV align="left">{fm_check_saveinhistory##PAR##onCLICK=ProcessPageVisability()} 
+                [LNG_SAVE_MESSAGE_IN_USER_HISTORY]</DIV>
+              <div id="divrssmessarea"> 
+                
+                  <TR> 
+                    <TD> <table width="100%" border="0" cellpadding="6" cellspacing="0" class="comment">
+                        <tr class="data"> 
+                          <td> <STRONG>[LNG_INSERT_SPECIAL_TAG]<BR>
+                            </STRONG>{personal_links_rss}<BR> <div align="center"> 
+                              <P><B><u>[LNG_MSG_RSS_FORMAT]:</u></B></P>
+                            </div>
+                            {fm_textarea_messrss} <BR>
+                            [LNG_RSSMESS_DISCR] </td>
+                        </tr>
+                      </table>
+                      <BR> </TD>
+                    <TD width="90%">&nbsp;</TD>
+                  </TR>
+                </TABLE>
+              </div></td>
+          </tr>
+          <tr> 
+            <td align="right" width="18%" ><b>[LNG_ADD_ATTACH]</b></td>
+            <td width="82%"> <input type="file" name="uploaded_file" class="INPUTmy"> 
+            </td>
+          </tr>
+          <tr align="left"> 
+            <td colspan="2" >{attach}</td>
+          </tr>
+        </table>
+									
+        <p> &nbsp;
+          <input type="submit" value="[LNG_SAVE]" class="BUTTONmy" name="button222">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+          <input type="button" value="[LNG_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button22">
+          <br>
+        </p>
+								</form>
+{personalize}
+<SCRIPT language="JavaScript" type="text/JavaScript">
+ProcessPageVisability();
+</SCRIPT>
+								#end#user_newmess<br>
+								#start#personalize 
+								<table width="100%" border="0" cellspacing="0" cellpadding="5">
+									<tr> 
+										
+          <td> <h2>&nbsp; </h2>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="comment">
+              <tr>
+                <td>
+				[LNG_MESSEDIT_PERSONALIZE]
+										</td>
+              </tr>
+            </table>
+            <h2>&nbsp;</h2>
+											</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					#end#personalize<br>
+</body>
+</html>

@@ -1,0 +1,592 @@
+<html>
+<head>
+<title>Settings</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="data"> 
+      <h1> don't edit this page</h1>
+      </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="80%">
+  <tr>
+    <td valign="top">#begin#main
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr>
+          <td> 
+            <table width="80%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr> 
+                <td class="line">{main_menu_body} </td>
+              </tr>
+            </table>
+            
+          </td>
+        </tr>
+      </table>
+    #end#main<br>
+      #begin#personal 
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr>
+          <td> 
+            <form name="form1" method="post" action="{ME}" target="_self">
+              {error}{fm_hidden_ses} {fm_hidden_act} {fm_hidden_act2} 
+              <input type="hidden" name="issubmit" value="1">
+              <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="line"><table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                      <tr class="dataheader"> 
+                        <td colspan="2" class="data">[LNG_YOUR_PERS_INFO]</td>
+                      </tr>
+                      <tr class="data"> 
+                        <td width="50%" align="right" class="data"><b>[LNG_YOUR_NAME]</b></td>
+                        <td width="54%"> <div align="left">{fm_text_adminname}<font color="red">*</font></div></td>
+                      </tr>
+                      <tr class="data"> 
+                        <td width="50%" align="right" class="data"><b>[LNG_YOUR_EMAIL]</b></td>
+                        <td width="54%">{fm_text_adminemail}<font color="red">*</font></td>
+                      </tr>
+                      <tr class="data" align="center"> 
+                        <td colspan="2" align="right"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="comment" align="center">
+                            <tr> 
+                              <td>[LNG_YOUR_PERS_INFO_DESCR]</td>
+                            </tr>
+                          </table></td>
+                      </tr>
+                      <tr class="data" align="center">
+                        <td align="right">[LNG_SPLASH_PAGE_SETTINGS]</td>
+                        <td align="left">{fm_select_splashsettings}</td>
+                      </tr>
+                      <tr class="data" align="center"> 
+                        <td align="right"><b>[LNG_SEND_ME_BROAD_STAT]<br>
+                          [LNG_SEND_ME_BROAD_STAT2]</b></td>
+                        <td align="left">{fm_check_statbyemail}<font color="red">&nbsp;</font></td>
+                      </tr>
+                      <tr class="data" align="center"> 
+                        <td colspan="2"> <input type="submit" value="[LNG_BTN_UPD_SETTS]" name="submit3" class="BUTTONmy"> 
+                        </td>
+                      </tr>
+                    </table></td>
+                </tr>
+              </table>
+              
+              </form>
+          </td>
+        </tr>
+      </table>
+      #end#personal<br>
+      #begin#smtp 
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr> 
+          <td> 
+            <form name="form1" method="post" action="{ME}" target="_self">
+              {error}{fm_hidden_ses} {fm_hidden_act} {fm_hidden_act2} 
+              <input type="hidden" name="issubmit" value="1">
+              <table width="70%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="line">
+<table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                <tr class="dataheader"> 
+                  <td colspan="2" class="data">[LNG_MAIL_PROG_SETTS]</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="55%" align="right" class="data"><b>[LNG_SENDMAIL_PATH]</b></td>
+                  <td width="45%"> <div align="left">{fm_text_sendmail}</div></td>
+                </tr>
+                <tr class="data"> 
+                  <td width="55%" align="right" class="data"><b>[LNG_SEND_THROUGH]</b></td>
+                  <td width="45%">{fm_select_modsend}<font color="red">*</font></td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right" class="data"><b>[LNG_SMTP_SERVER]</b></td>
+                  <td>{fm_text_smtp}</td>
+                </tr>
+                <!--HIDEIFSENDMAIL-->
+                <tr align="center" class="dataheader"> 
+                  <td colspan="2">[LNG_SMTP_AUTH]</td>
+                </tr>
+                <tr align="center" class="data"> 
+                  <td colspan="2" class="data">{fm_check_smtpauth} [LNG_SMTP_REQ_SASL]</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right" class="data">[LNG_SMTP_USER]</td>
+                  <td>{fm_text_smtpusername}</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right" class="data">[LNG_SMTP_PASS]</td>
+                  <td>{fm_password_smtppassword}</td>
+                </tr>
+                <!--HIDEIFSENDMAIL-->
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_SEND_SPD]</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="55%" align="right" class="data"><strong>[LNG_QUANT_PROCS]</strong></td>
+                  <td width="45%">{fm_select_COUNT_PROC}<font color="red">*</font></td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center"><strong>[LNG_OR_B]</strong></td>
+                </tr>
+                <tr align="left" class="data"> 
+                  <td colspan="2">{fm_check_OLD_ALGORITHM_PROC} [LNG_USE_OLD_ALG]</td>
+                </tr>
+                <tr align="left" class="data"> 
+                  <td align="right">[LNG_SENDING_DELAY]:</td>
+                  <td>{fm_select_sendingdelay}</td>
+                </tr>
+                <tr align="left" class="data"> 
+                        <td colspan="2"> 
+                          <table width="90%" border="0" align="center" cellpadding="3" cellspacing="0" class="comment">
+                            <tr>
+                              <td>[LNG_SENDING_DELAY_DESCR] </td>
+                            </tr>
+                          </table></td>
+                </tr>
+                <tr align="center" class="dataheader"> 
+                  <td colspan="2">[LNG_BOUNC_RET_PATH_OPTS]</td>
+                </tr>
+                <!--HIDEIFSENDMAIL-->
+                <tr align="left" class="data"> 
+                  <td colspan="2">{fm_check_smtpuseadminemail} [LNG_USE_FOLLOW_UP] 
+                    {fm_text_smtpfromemail}</td>
+                </tr>
+                <!--HIDEIFSENDMAIL-->
+                <!--HIDEIFSMTP-->
+                <tr align="left" class="data"> 
+                  <td colspan="2"><strong>[LNG_1ST_WAY]</strong>{fm_check_issendmailf}[LNG_1ST_WAY2]{fm_text_sendmailaddress}</td>
+                </tr>
+                <tr align="left" class="data"> 
+                  <td align="left"><strong>[LNG_2ND_WAY]</strong></td>
+                  <td>{fm_text_returnpath}<br>
+                          <font color="red" size="-2">[LNG_2ND_WAY2]</font></td>
+                </tr>
+                <tr class="data"> 
+                  <td align="left"><strong>[LNG_3RD_WAY]</strong></td>
+                        <td align="left">{fm_text_errorsto}<font size="-2"><br>
+                          <font color="red">[LNG_3RD_WAY2]</font></font></td>
+                </tr>
+                <!--HIDEIFSMTP-->
+                <tr class="data"> 
+                  <td colspan="2" align="center"> <input type="submit" value="[LNG_BTN_UPD_SETTS]" name="submit32" class="BUTTONmy"> 
+                  </td>
+                </tr>
+              </table>				  
+				  </td>
+                </tr>
+              </table>
+              <p>&nbsp;</p>
+              <table width="95%" border="0" align="center" cellpadding="5" cellspacing="0" class="comment">
+                <tr> 
+                  <td>[LNG_SENDING_TIPS]</td>
+                </tr>
+              </table>
+              <p>&nbsp;</p>
+            </form>
+          </td>
+        </tr>
+      </table>
+      #end#smtp<br>
+      #begin#pass 
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr> 
+          <td> 
+            <form name="form1" method="post" action="{ME}" target="_self">
+              {error}{fm_hidden_ses} {fm_hidden_act} {fm_hidden_act2} 
+              <input type="hidden" name="issubmit" value="1">
+              <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="line">
+				  <table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                <tr class="dataheader"> 
+                  <td colspan="2" class="data">[LNG_ADMIN_AREA_PASS]</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="50%" align="right" class="data"><b>[LNG_ADMIN_AREA_PASS_OLD]</b></td>
+                  <td width="54%"> 
+                    <div align="left">{fm_password_oldpass}<font color="red">*</font></div>
+                  </td>
+                </tr>
+                <tr class="data"> 
+                  <td width="50%" align="right" class="data"><b>[LNG_ADMIN_AREA_PASS_NEW]</b></td>
+                  <td width="54%">{fm_password_newpass1}<font color="red">*</font></td>
+                </tr>
+                <tr class="data"> 
+                  <td width="50%" align="right" class="data"><b>[LNG_ADMIN_AREA_PASS_RET]</b></td>
+                  <td width="54%">{fm_password_newpass2}<font color="red">*</font></td>
+                </tr>
+                <tr class="data" align="center"> 
+                  <td colspan="2"> 
+                    <input type="submit" value="[LNG_BTN_UPD_SETTS]" class="BUTTONmy">
+                  </td>
+                </tr>
+              </table>
+				  </td>
+                </tr>
+              </table>
+            </form>
+          </td>
+        </tr>
+      </table>
+      #end#pass<br>
+      #begin#total 
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr> 
+          <td> 
+            <form name="form1" method="post" action="{ME}" target="_self">
+              {error}{fm_hidden_ses} {fm_hidden_act} {fm_hidden_act2}{fm_hidden_modelog} 
+              <input type="hidden" name="issubmit" value="1">
+			  <!--HIDE_PERIOD-->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="20%" align="right"><nobr><b>[LNG_USE_PERIOD]</b></nobr></td>
+                  <td colspan="2" align="left"> 
+                    <table width="50%" border="0" cellspacing="0" cellpadding="4">
+                      <tr> 
+                        <td align="right"> 
+                          <table width="50%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td>{fm_select_year1}</td>
+                              <td>{fm_select_month1}</td>
+                              <td>{fm_select_day1}</td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center">&nbsp;[LNG_USE_PERIOD_TO]&nbsp;</td>
+                        <td align="left"> 
+                          <table width="50%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td>{fm_select_year2}</td>
+                              <td>{fm_select_month2}</td>
+                              <td>{fm_select_day2}</td>
+                            </tr>
+                          </table>
+                        </td>
+						<td valign="middle"><input type="submit" name="show" value="[LNG_USE_PERIOD_BTN_SHOW]" class="BUTTONmySmall"  style="margin:0px">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                
+                </tr>
+              </table>
+  			  <!--HIDE_PERIOD-->
+            </form>
+			    <h2>{log_header}</h2>
+              {logdata}
+          </td>
+        </tr>
+      </table>
+      #end#total<br>	  
+      #begin#log 
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr> 
+          <td> 
+            <form name="form1" method="post" action="{ME}" target="_self">
+              {error}{fm_hidden_ses} {fm_hidden_act} {fm_hidden_act2}  
+			  <input type="hidden" name="issubmit" value="1">
+              <table width="50%" border="0" cellspacing="0">
+                <tr>
+                  <td><nobr>{fm_check_enablelog} [LNG_ENABLE_LOG]
+                    <input type="submit" value="[LNG_BTN_OK]" class="BUTTONmy" name="submit2" style=" margin:0px">
+                    <nobr></td>
+                  <td>&nbsp; </td>
+                </tr>
+              </table>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td width="20%" align="left"><nobr>{fm_check_usedate}<b>[LNG_USE_DATE_RANGE]</b></nobr></td>
+                  <td colspan="2" align="left"> 
+                    <table width="50%" border="0" cellspacing="0" cellpadding="0">
+                      <tr> 
+                        <td align="right"> 
+                          <table width="50%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td>{fm_select_year1}</td>
+                              <td>{fm_select_month1}</td>
+                              <td>{fm_select_day1}</td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td align="center">&nbsp;[LNG_USE_PERIOD_TO]&nbsp;</td>
+                        <td align="left"> 
+                          <table width="50%" border="0" cellspacing="0" cellpadding="0">
+                            <tr> 
+                              <td>{fm_select_year2}</td>
+                              <td>{fm_select_month2}</td>
+                              <td>{fm_select_day2}</td>
+                            </tr>
+                          </table>
+                        </td>
+						<td> &nbsp;<input type="submit" name="show" value="[LNG_BTN_OK]" class="BUTTONmySmall" style=" margin:0px">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                
+                </tr>
+              </table>
+              <p>&nbsp;</p>
+              <table width="70%" border="0" cellspacing="0" cellpadding="0" align="center">
+                <tr align="center"> 
+                  <td>
+                    <input type="submit" value="[LNG_BTN_CLENUP_LOGS_IN_RANGE]" class="BUTTONmySmall" name="cleandate">
+                  </td>
+                  <td> 
+                    <input type="submit" value="[LNG_BTN_CLEANUP_ALL_LOGS]" class="BUTTONmySmall" name="cleanall">
+                  </td>
+                </tr>
+              </table>
+			  <br>
+              <table width="98%" border="0" cellspacing="0" cellpadding="0" align="center">
+			  <tr><td class="line">
+              <table width="100%" border="0" cellspacing="1" cellpadding="2" align="center">
+                      <tr class="dataheader"> 
+                  <td colspan="2" class="data">[LNG_BROAD_LOG_TOTAL] {allcountlog} 
+                    [LNG_RECORDS]</td>
+                </tr>
+                {logdata} 
+              </table>
+			  </td></tr></table>
+            </form>
+          </td>
+        </tr>
+      </table>
+      #end#log<br>
+      #begin#broadcastlog
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr> 
+          <td> <h2> [LNG_CURRENT_OR_PREV_BR_LOG] {count_rows} [LNG_ROWS_FOUND]</h2>
+            <form name="form1" method="post" action="{ME}" target="_self">
+              {error}{mess}{fm_hidden_ses} {fm_hidden_act} {fm_hidden_act2} 
+              <input type="hidden" name="issubmit" value="1">
+              <table width="80%" border="0" cellspacing="0">
+                <tr>
+                  <td width="50%" align="right"><nobr>{fm_check_save_broadcast_log} [LNG_SAVE_LOG_INTO]<strong> 
+                    '{broadcast_file}' </strong>[LNG_SAVE_LOG_INTO_FILE]<nobr></td>
+                  <td width="50%" align="left">
+                    <input type="submit" value="[LNG_BTN_SAVE_SETTS]" class="BUTTONmy" name="submit"  style=" margin:0px">
+                  </td>
+                </tr>
+              </table>
+              <br>
+              {broadcast_mess} 
+            </form>
+          </td>
+        </tr>
+      </table>
+#end#broadcastlog<br>
+      #begin#time 
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr> 
+          <td> 
+            <form name="form1" method="post" action="{ME}" target="_self">
+              {error}{fm_hidden_ses} {fm_hidden_act} {fm_hidden_act2} 
+              <input type="hidden" name="issubmit" value="1">
+              <table width="65%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="line"><table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                      <tr class="dataheader"> 
+                  <td colspan="2" class="data">[LNG_TIME_SYNCH]</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="50%" align="right" class="data"><b>[LNG_TIME_SYNCH_SRV_TIME]</b></td>
+                  <td width="54%"> <div align="left"><i><nobr>{time}</nobr></i></div></td>
+                </tr>
+                <tr class="data"> 
+                  <td width="50%" align="right" class="data"><b>[LNG_TIME_SYNCH_CORR_TIME]</b></td>
+                  <td width="54%"><i><nobr>{mytime}</nobr></i></td>
+                </tr>
+                <tr class="data"> 
+                  <td width="50%" align="right" class="data"><b>[LNG_TIME_SYNCH_COR_TIME]</b></td>
+                  <td width="54%">{fm_text_timecorr}</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center" class="data"><font size="2"><b>[LNG_TIME_SYNCH_HHMM]</b></font></td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_DATE_FORMAT_SETTINGS]</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="right"><STRONG>[LNG_DATE_FORMAT_LINE]:</STRONG></td>
+                  <td align="left">{fm_text_date_format}</td>
+                </tr>
+                <tr class="data">
+                  <td colspan="2" align="center"><STRONG>[LNG_CURRENT_FORMATTED_DATE]:</STRONG> 
+                    {testdate}</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center"><table width="75%" border="0" cellpadding="0" cellspacing="0" class="comment" align="center">
+                      <tr> 
+                        <td>[LNG_DATE_FORMAT_DISCR]</td>
+                      </tr>
+                    </table></td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" align="center"> <input type="submit" value="[LNG_BTN_UPD_SETTS]" name="submit322" class="BUTTONmy"> 
+                  </td>
+                </tr>
+              </table></td>
+                </tr>
+              </table>
+              
+            </form>
+          </td>
+        </tr>
+      </table>
+      #end#time <br>
+#begin#backup
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr> 
+          <td> 
+            <form name="form1" method="post" action="{ME}" target="_self">
+              {error}{fm_hidden_ses} {fm_hidden_act} {fm_hidden_act2} 
+              <input type="hidden" name="issubmit" value="1">
+              <!--HIDE_START-->
+              <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="line"><table width="100%" border="0" cellspacing="1" cellpadding="3" align="center">
+                <tr class="dataheader"> 
+                  <td width="7%">[LNG_SETTS_REMOVE]</td>
+                  <td width="30%">[LNG_SETTS_NAME]</td>
+                  <td width="6%">[LNG_SETTS_RESTORE]</td>
+                  <td width="24%">[LNG_SETTS_DATE]</td>
+                  <td width="33%">[LNG_SETTS_SIZE]</td>
+                </tr>
+                {BACKUP} 
+                <tr class="data"> 
+                  <td colspan="2"> 
+                    <input type="submit" value="[LNG_BTN_REM_SEL]" name="unlink" class="BUTTONmy"
+onClick="return (confirm('Are you sure that you whant remove selected backups?'))"
+>
+                  </td>
+                  <td colspan="3"> 
+                    <input type="submit" value="[LNG_BTN_RESTORE]" name="restore" class="BUTTONmy"
+onClick="return (confirm('Are you sure that you whant to restore database. ALL CHANGES WILL BE LOST IN DATABASE!!!'))"
+>
+                  </td>
+                </tr>
+              </table></td>
+                </tr>
+              </table>
+              
+              <br>
+              <br>
+              <!--HIDE_END-->
+              <table width="80%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="line"><table cellspacing="1" cellpadding="3" border="0" width="100%" align="center">
+                <tr class="dataheader"> 
+                  <td colspan="2" valign="middle">[LNG_NEW_BACKUP]</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="50%" valign="middle" align="right"><b>[LNG_NEW_BACKUP_NAME]</b></td>
+                  <td width="50%" valign="middle"> {fm_text_filename} <br>
+                    <i>[LNG_NEW_BACKUP_NAME_CHARS]</i></td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2" valign="middle" align="center"> 
+                    <input type="submit" value="[LNG_BTN_BACKUP]" name="backup" class="BUTTONmy">
+                  </td>
+                </tr>
+              </table></td>
+                </tr>
+              </table>
+              
+            </form>
+          </td>
+        </tr>
+      </table>
+#end#backup
+#begin#test 
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr> 
+          <td> 
+            <form name="form1" method="post" action="{ME}" target="_self">
+              {error}{fm_hidden_ses} {fm_hidden_act} {fm_hidden_act2} 
+              <input type="hidden" name="issubmit" value="1">
+             <table cellspacing="0" cellpadding="0" border="0" align="center" width="90%">
+                <tr> 
+                  <td class="line">
+                    <table cellspacing="1" cellpadding="3" border="0"  width="100%">
+					  <tr class="dataheader"> 
+                        <td colspan="2" valign="middle">[LNG_MAIL_PROG_PERF_TEST]</td>
+                     </tr>
+                      <tr class="data"> 
+                        <td colspan="2" valign="middle">[LNG_MAIL_PROG_PERF_TEST_DESC1]<br>
+                          <br>
+                          [LNG_MAIL_PROG_PERF_TEST_DESC2] <b>[LNG_MAIL_PROG_PERF_TEST_DESC3]</b> 
+                          [LNG_MAIL_PROG_PERF_TEST_DESC4] <font color="#FF0000"><b>[LNG_MAIL_PROG_PERF_TEST_DESC5]</b></font>.<br>
+                          [LNG_MAIL_PROG_PERF_TEST_DESC6]<br>
+                          <br>
+                          [LNG_MAIL_PROG_PERF_TEST_DESC7]<b>{conf_mail}</b></td>
+                      </tr>
+                      <tr class="data"> 
+                        <td width="50%" valign="middle" align="right"><b>[LNG_ENTER_YOUR_EMAIL_ADDRESS]</b></td>
+                        <td width="50%" valign="middle"> {fm_text_emailtest}</td>
+                      </tr>
+                      <tr class="data"> 
+                        <td width="50%" valign="middle" align="right"><b>[LNG_BLAST_SIZE]</b></td>
+                        <td width="50%" valign="middle"> {fm_text_messcount} </td>
+                      </tr>
+                      <tr class="data"> 
+                        <td colspan="2" valign="middle" align="center"> 
+                          <input type="submit" value="[LNG_MAIL_PROG_PERF_TEST_BTN_TEST]" name="submit" class="BUTTONmy">
+                        </td>
+                      </tr>
+                   </table>
+                  </td>
+                </tr>
+              </table>
+           </form>
+          </td>
+        </tr>
+      </table>
+      #end#test
+#begin#testresult 
+      <table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr> 
+          <td> 
+              
+            <table width="54%" cellspacing="0" cellpadding="1" border="0" align="center">
+              <tr> 
+                  <td>
+                    
+                  <table width="100%" cellspacing="3" cellpadding="6" border="0">
+                    <tr class="dataheader"> 
+                      <td colspan="2" valign="middle">[LNG_MAIL_PROG_PERF_TEST_RESULTS]</td>
+                    </tr>
+                    <tr class="data"> 
+                      <td colspan="2" valign="middle"><b>{messcount} </b>[LNG_MAIL_PROG_PERF_TEST_RESULTS1]<b>{emailtest}</b>.</td>
+                    </tr>
+                    <tr class="data"> 
+                      <td colspan="2" valign="middle">[LNG_MAIL_PROG_PERF_TEST_RESULTS2] 
+                        <b>{seconds} </b>[LNG_MAIL_PROG_PERF_TEST_RESULTS3].</td>
+                    </tr>
+                    <tr class="data"> 
+                      <td colspan="2" valign="middle">[LNG_MAIL_PROG_PERF_TEST_RESULTS4]<b> 
+                        {conf_mail}</b> [LNG_MAIL_PROG_PERF_TEST_RESULTS5]</td>
+                    </tr>
+                    <tr class="data"> 
+                      <td valign="middle" align="right" width="37%">[LNG_MAIL_PROG_PERF_TEST_RESULTS6]</td>
+                      <td valign="middle" align="left" width="63%"><b>{mess_min}</b></td>
+                    </tr>
+                    <tr class="data"> 
+                      <td valign="middle" align="right" width="37%">[LNG_MAIL_PROG_PERF_TEST_RESULTS7]</td>
+                      <td valign="middle" align="left" width="63%"><b>{mess_hour}</b></td>
+                    </tr>
+                  </table>
+                  </td>
+                </tr>
+              </table>
+           </td>
+        </tr>
+      </table>
+      #end#testresult </td>
+  </tr>
+</table>
+<h1>&nbsp; </h1>
+</body>
+</html>
+

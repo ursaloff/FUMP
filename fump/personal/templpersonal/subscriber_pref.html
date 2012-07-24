@@ -1,0 +1,141 @@
+<html>
+<head>
+<title>[LNG_CHANGE_YOUR_PREF]</title>
+<style type="text/css">
+<!--
+{CSS}
+-->
+</style>
+<!--hide-->
+<link rel="stylesheet" href="style.css" type="text/css">
+<!--endhide-->
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- hide from old browsers
+
+function selectAllCheckBoxes(formName, checkBoxName, value) {
+
+    var frm;
+    frm = document.forms[formName];
+    
+    if (frm != null) {
+        var elementsCount = frm.elements.length;
+        var currElement;
+        
+        for (currElement = 0; currElement < elementsCount; currElement++) {
+
+            if (frm.elements[currElement].name.substring(0, checkBoxName.length) == checkBoxName) {
+
+                if (frm.elements[currElement].type == "checkbox") {
+                    frm.elements[currElement].checked = value;
+                }
+            }
+        }
+    }
+}
+
+// done: hide from old browsers -->
+</SCRIPT>
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+<h1>[LNG_CHANGE_YOUR_PREF]</h1>
+      <hr size="4" noshade>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="80%">
+  <tr>
+    <td valign="top">
+	<!--FIRST_STEP-->
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+        <tr> 
+          <td> 
+            <form name="form1" method="get" action="{ME}" target="_self">
+              <P>{error} 
+                <input type="hidden" name="issubmit" value="1">
+                {fm_hidden_u} </P>
+              <P>Hello, <STRONG>[FIRSTNAME]</STRONG>.</P>
+              <P>Here you can modify your contact information.</P>
+              <table width="50%" border="0" cellspacing="3" cellpadding="4" align="center">
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_YOUR_CONTACT_INFO]</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="50%" align="right" class="data"><b>[LNG_NAME]:</b></td>
+                  <td width="54%"> 
+                    <div align="left">{fm_text_name}</div>
+                  </td>
+                </tr>
+                <tr class="data" > 
+                  <td align="right"><b>[LNG_EMAIL]</b></td>
+                  <td align="left">{fm_text_email}</td>
+                </tr>
+				<!--ALLOWCHANGEFORMAT-->
+                <tr class="data" > 
+                  <td align="right"><b>[LNG_DEFAULT_MESSAGE_TYPE]</b></td>
+                  <td align="left">{fm_select_messageformat}</td>
+                </tr>	
+				<!--ALLOWCHANGEFORMAT-->			
+                <tr class="data" align="center"> 
+                  <td colspan="2"> 
+                    <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                      <tr align="center" valign="middle"> 
+                        <td width="50%" align="center"> 
+                          <input type="submit" value="[LNG_SAVE_CONTACT_INFO]" class="BUTTONmy">
+                        </td>
+                        <td width="50%" align="center"> 
+                          <input type="button" value="[LNG_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <P>Please <A href="[UNSUBSCRIBE_LINK]">click here</A> to unsubscribe 
+                from my newsletter. (You address will be immediately removed from 
+                our database)</P>
+            </form>
+          </td>
+        </tr>
+      </table>
+      <!--FIRST_STEP-->
+      <!--SECOND_STEP--><div align="center">
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+      <FONT color="red" size="+3"><STRONG><U>Thank you! <BR>Your settings has been updated.</U></STRONG></FONT>
+	  </div>
+	          <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P align="center">Please check your email <STRONG>{email}</STRONG> to confirm updating 
+          your preferences</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+      <!--SECOND_STEP-->
+     <!--THIRD_STEP-->
+	  <div align="center">
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+      <FONT color="red" size="+3"><STRONG><U>Thank you! <BR>Your settings have been updated.</U></STRONG></FONT>
+	  </div>
+	          <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+        <P>&nbsp;</P>
+     <!--THIRD_STEP-->
+	  
+	  </td>
+  </tr>
+</table>
+<h1>&nbsp; </h1>
+</body>
+</html>

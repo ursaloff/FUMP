@@ -1,0 +1,205 @@
+<html>
+<head>
+<title>Follow Up Mailing List Processor Installation</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+<!--CHARSET-->
+</head>
+<body>
+<table width="100%" height="100%" cellpadding="5" cellspacing="0"
+border="0" style="border:1pt solid #FF0000">
+  <tr>
+					<td valign="top">
+	<BR>
+      <h2 class="mess"><b>Follow Up Mailing List Processor {VERSION}<br>
+        </b><b> Installation </b> </p> </h2>
+      <p align="center"></p>
+<form name="form1" method="post" action="{ME}">
+<!--START--> <!--START1-->
+        <h2> Step 1 - Database connection</h2>
+        <div align="center">Enter your database name, login and password.<br><br> {error}
+          <input type="hidden" name="step" value="2"></div>
+        <div align="center"><center>
+            <table width="55%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td class="line">
+            <table border="0" cellPadding="3" cellSpacing="1" width="100%">
+              <tr class="data">
+                <td align="right" width="42%">Database Server:</td>
+                <td width="58%">{fm_text_host}</td>
+              </tr>
+              <tr class="data">
+                <td align="right" width="42%">Database Name:</td>
+                <td width="58%">{fm_text_db}</td>
+              </tr>
+              <tr class="data">
+                <td align="right" width="42%">Database Username:</td>
+                <td width="58%">{fm_text_user}</td>
+              </tr>
+              <tr class="data">
+                <td align="right" width="42%">Database Password:</td>
+                <td width="58%">{fm_text_password}</td>
+              </tr>
+              <tr class="data">
+                <td align="right" width="42%">Database Prefix:</td>
+                <td width="58%">{fm_text_prefix}</td>
+              </tr>
+              <tr class="data">
+                <td colspan="2" align="right">
+                  <div align="center">
+                    <center>
+                      <p>
+                        <input type="submit"
+          value="NEXT[2]&gt;&gt;" class="BUTTONmy">
+                    </center>
+                  </div>
+                </td>
+              </tr>
+            </table>
+		</td>
+              </tr>
+            </table>
+      <div align="center"><center>
+<table border="0" cellpadding="7" cellspacing="0" width="500">
+  <tr>
+                    <td width="500">
+                      <p> If you do not have or do not know the <u>database server</u>,
+                        <u>database name</u>, <u>database username</u>, <u>database
+                        password</u>,&nbsp; please check with your hosting provider.</p>
+                      <p>&nbsp;</p>
+                      <p> The database server is typically <b>localhost</b> but this
+                        is not always the case.</p>
+                      <p>&nbsp;</p>
+                      <p> The <u>database prefix</u> allows you to enter a few
+                        characters, short name, etc. which all tables will be prefixed
+						with. The default (swd_) is usually fine.
+                      <p>&nbsp;
+                      <p> However, if you have more than one copy of Follow Up
+                        Mailing List Processor using the same database be sure
+                        to alter it.
+                    </td>
+  </tr>
+</table>
+</center></div>
+</center></div>
+<!--END1-->
+<!--START2-->
+        <h2> Step 2 - Database installation:</h2>
+        <input type="hidden" name="step" value="3">
+        {error}
+        <div align="center">
+              <h2>Looking for existing tables. </h2>
+          <table width="55%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td class="line">
+<table border="0" cellpadding="3" cellspacing="1" width="100%">
+                  <tr class="dataheader">
+                    <td width="50%"><b>Installing tables:</b></td>
+              <td align="center" width="50%"><b>exists in database &quot;{DATA}&quot;?</b></td>
+            </tr>
+{tables}
+                  <tr align="center" class="data">
+                    <td>
+<!--HIDE-->
+                      <p>
+                      <input type="submit"    value="Skip Install&gt;&gt;" class="BUTTONmy" name="Scip install">
+                        <br>
+                      Click here if you want to keep database installation and
+                      use previous installed tables.
+<!--ENDHIDE-->
+&nbsp;</td>
+                    <td align="center">
+                      <input type="submit"
+          value="Install DB&gt;&gt;" class="BUTTONmy" name="install">
+                <br>
+                <b>Attention</b><b>!!!</b>
+                If some of these tables exist in your database <b>&quot;{DATA}&quot;</b>,
+                they will be <b>removed!</b></td>
+            </tr>
+          </table>
+			  </td>
+            </tr>
+          </table>
+            <div align="center"><center>
+<table border="0" cellpadding="7" cellspacing="0" width="500">
+ <tr>
+                   <td width="500">
+                    <div align="center">If some tables exist you can
+                      skip table installation or you can go <a href="JavaScript:history.back();">&lt;&lt;&lt;back</a>
+                      and change the table prefix.</div>
+                   </td>
+  </tr>
+</table>
+</center></div>
+       </div>
+<!--END2-->
+<!--START3-->
+        <h2>Step 3 - Create password to access to administration page</h2>
+<br><br>
+        <div align="center"> {error}
+          <input type="hidden" name="step" value="4"></div>
+        <div align="center">
+		  <table width="218" border="0" cellpadding="0" cellspacing="0">
+            <tr><td class="line">
+             <table border="0" cellpadding="3" cellspacing="1" width="100%">
+                  <tr class="data">
+                <td align="right"><b>Password:</b></td>
+                <td>{fm_password_newpass1}</td>
+              </tr>
+              <tr class="data">
+                <td align="right"><NOBR><b>Retype password:</b></NOBR></td>
+                <td>{fm_password_newpass2}</td>
+              </tr>
+              <tr class="data">
+                <td align="right" colspan="2">
+                  <div align="center">
+                    <center>
+                      <p>
+                        <input type="submit"
+          value="FINISH" class="BUTTONmy" name="submit">
+                    </center>
+                  </div>
+                </td>
+              </tr>
+            </table>
+</td></tr>
+		</table>
+          <div align="center">
+<table border="0" cellpadding="7" cellspacing="0" width="500">
+ <tr>
+                   <td width="500">
+                     <div align="center">You will need to enter a <u>password</u>
+                       for the initial administration account.</div>
+        </td>
+  </tr>
+</table>
+</div>
+       </div>
+<!--END3-->
+<!--START4-->
+  <br><br>
+            <h2>Step 4 - Database is ready - Finalize CRON setup</h2><br><br>
+  <table width="100%" height="100%" cellpadding="5" cellspacing="0"
+  border="0" style="border:1pt solid #FF0000">
+    <tr><td valign="top">
+        <h1 class="mess"><center>
+            <p> INSTALLATION SUCCESSFUL! </p>
+            <p><BR>
+              CRON installation helper will show you how to setup the <b>startercron</b>
+              file. This is a critical component, without it FUMP will not process any emails. <a href="{ME}?showpath=1" target="_blank">Click here&gt;&gt;&gt;</a>
+            </p>
+            <p>&nbsp;</p>
+            <p>To log in to the Follow Up Mailing Processor <a href="responder.cgi">Click here&gt;&gt;&gt;</a></p>
+          </center></h1>
+        </td></tr></table>
+     <div align="center"></div>
+<!--END4-->
+<!--END-->
+      </form>
+    <p align="center"><br>
+    <br>
+    <br>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

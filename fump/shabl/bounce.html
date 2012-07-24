@@ -1,0 +1,559 @@
+<html>
+<head>
+<title>Bounced email handling</title>
+<!--CHARSET-->
+<link rel="stylesheet" href="style.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript">
+<!-- hide from old browsers
+
+function selectAllCheckBoxes(formName, checkBoxName, value) {
+
+    var frm;
+    frm = document.forms[formName];
+    
+    if (frm != null) {
+        var elementsCount = frm.elements.length;
+        var currElement;
+        
+        for (currElement = 0; currElement < elementsCount; currElement++) {
+
+            if (frm.elements[currElement].name.substring(0, checkBoxName.length) == checkBoxName) {
+
+                if (frm.elements[currElement].type == "checkbox") {
+                    frm.elements[currElement].checked = value;
+                }
+            }
+        }
+    }
+}
+
+// done: hide from old browsers -->
+</SCRIPT>
+
+<style type="text/css">
+<!--
+.Stil1 {
+	color: black;
+	font-weight: bold;
+}
+.Stil3 {color: #CE5E0B; font-weight: bold; }
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" height="90%" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+					<td valign="top"><p align="left" class="Stil1"><font face="Verdana" size="4">[LNG_HANDLING_TOOL]</font></p>
+                      <hr size="4" noshade>
+                      <table width="70%" border="0" cellspacing="1" cellpadding="0" align="center">
+        <tr> 
+          <td align="center"><a  href="{ME}?ses={ses}" class="Stil3">[LNG_POP_ACCS]</a></td>
+          <td align="center"><a  href="{ME}?ses={ses}&act=totals" class="Stil3">[LNG_TOTALS]</a></td>
+          <td align="center"><a  href="{ME}?ses={ses}&act=messages" class="Stil3">[LNG_BOUNC_MSGS]</a></td>
+          <td align="center"><a  href="{ME}?ses={ses}&act=blacklist" class="Stil3">[LNG_BLACKLIST]</a></td>
+        </tr>
+      </table> 
+                      <br>
+                      ###DATA### 
+      <!--HideBody-->
+	  <!--ACCOUNTS-->
+      <table width="100%" border="0" cellspacing="0" cellpadding="5">
+        <tr> 
+          <td> <h2>[LNG_YOUR_POP_ACCS]<br>
+              </h2>
+            <a href="{ME}?ses={ses}&act=accountpref"><b> 
+            <h1>[LNG_ADD_NEW_ACC]</h1>
+            </b> </a> 
+            <!--rep_start-->
+            <!--rep_empty_start-->
+            <h3 class="mess">[LNG_NO_POP_ACCS_FOUND]</h3>
+            <!--rep_empty_end-->
+            <!--rep_header_start-->
+            <form name="form1" method="post" action="{ME}">
+              <input name="issubmit" type="hidden" value="1">
+              {fm_hidden_ses} {fm_hidden_act} 
+              <table width="100%" border="0" align="center" cellpadding="4" cellspacing="0">
+                <tr> 
+                  <td> <h3>[LNG_TOTAL_ACCS] {RP_ALLRECORDS}</h3>
+                    {RP_PAGE_LINE} 
+                    <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td bgcolor="#000000" class="line"> 
+                          <table width="100%" height="0%" border="0" align="center" cellpadding="2" cellspacing="1">
+                            <tr class="dataheader" > 
+                              <td colspan="2" rowspan="2" align="center">[LNG_POP_SERVER]</td>
+                              <td width="25%" rowspan="2" align="center">[LNG_POP_USER]</td>
+                              <td height="18%" colspan="2">[LNG_REM_PROSPS_AFTER]</td>
+                              <td width="8%" rowspan="2">[LNG_DEL_BOUNC_MSGS]</td>
+                              <td width="8%" rowspan="2">[LNG_TEST_CONN]</td>
+                              <td width="8%" rowspan="2">[LNG_EDIT]</td>
+                              <td width="8%" rowspan="2">[LNG_STATUS]</td>
+                            </tr>
+                            <tr class="dataheader" > 
+                              <td width="10%" height="18%">[LNG_BOUNC_HARD]</td>
+                              <td width="10%">[LNG_BOUNC_SOFT]</td>
+                            </tr>
+                            <!--rep_header_end-->
+                            <!--rep_row_start-->
+                            <tr valign="middle" bgcolor="#F0F0F0" class="data"> 
+                              <td width="2%" height="18%" align="left">{fm_check_id(value={r_pk_bounce_account})}</td>
+                              <td width="25%" align="left"><strong>{r_pop3server}</strong></td>
+                              <td width="25%" align="left"><strong>{r_pop3user}</strong></td>
+                              <td width="10%" align="center">{r_hardcount}</td>
+                              <td width="10%" align="center">{r_softcount}</td>
+                              <td width="8%" align="center">{r_deleteemails}</td>
+                              <td width="8%" align="center"><a  href="{ME}?ses={ses}&act=test&pk_bounce_account={r_pk_bounce_account}">[LNG_TEST]</a></td>
+                              <td width="8%" align="center"><a  href="{ME}?ses={ses}&act=accountpref&pk_bounce_account={r_pk_bounce_account}">[LNG_EDIT]</a></td>
+                              <td width="8%" align="center">{r_status}</td>
+                            </tr>
+                            <!--ROW_DELMITTER-->
+                            <tr valign="middle" class="data2"> 
+                              <td width="2%" height="18%" align="left">{fm_check_id(value={r_pk_bounce_account})}</td>
+                              <td width="25%" align="left"><strong>{r_pop3server}</strong></td>
+                              <td width="25%" align="left"><strong>{r_pop3user}</strong></td>
+                              <td width="10%" align="center">{r_hardcount}</td>
+                              <td width="10%" align="center">{r_softcount}</td>
+                              <td width="8%" align="center">{r_deleteemails}</td>
+                              <td width="8%" align="center"><a  href="{ME}?ses={ses}&act=test&pk_bounce_account={r_pk_bounce_account}">[LNG_TEST]</a></td>
+                              <td width="8%" align="center"><a  href="{ME}?ses={ses}&act=accountpref&pk_bounce_account={r_pk_bounce_account}">[LNG_EDIT]</a></td>
+                              <td width="8%" align="center">{r_status}</td>
+                            </tr>
+                            <!--rep_row_end-->
+                            <!--rep_footer_start-->
+                          </table>                        </td>
+                      </tr>
+                    </table> 
+                    <table width="55%" border="0" align="center" cellpadding="10" cellspacing="0">
+                      <tr align="center"> 
+                        <td width="38%">[LNG_WITH_SEL]
+						<input name="delete" type="submit"  value="[LNG_DELETE]" class="BUTTONmySmall"  onClick="return confirm('Are you sure you want to delete selected accounts?');"></td>
+                        <td width="31%"> 
+                          <input name="activate" type="submit"  value="[LNG_ACTIVATE]" class="BUTTONmySmall" ></td>
+                        <td width="31%"> 
+                          <input name="deactivate" type="submit"  value="[LNG_DEACTIV]" class="BUTTONmySmall" ></td>
+                      </tr>
+                    </table> </td>
+                </tr>
+              </table>
+            </form>
+            <!--rep_footer_end-->
+            <!--rep_end-->
+            <table width="100%" border="0" cellpadding="0" cellspacing="0" class="comment">
+              <tr> 
+                <td>
+				[LNG_BOUNCE_HELP]                </td>
+              </tr>
+            </table></td>
+        </tr>
+      </table> 
+<!--ACCOUNTS-->
+<!--TOTALS-->
+      <table width="100%" border="0" cellspacing="0" cellpadding="5">
+        <tr> 
+          <td> <h2>[LNG_TOTALS]</h2>
+              
+            <!--rep_start-->
+            <!--rep_empty_start-->
+            <h3 class="mess">[LNG_NO_MSGS_FOUND]</h3>
+            <!--rep_empty_end-->
+            <!--rep_header_start-->
+            <form name="form1" method="post" action="{ME}">
+              <input name="issubmit" type="hidden" value="1">
+              {fm_hidden_ses} {fm_hidden_act} 
+              <table width="100%" border="0" align="center" cellpadding="4" cellspacing="0">
+                <tr> 
+                  <td> <h3>[LNG_TOTAL_DATES] {RP_ALLRECORDS}</h3>
+                    {RP_PAGE_LINE} 
+                    <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td bgcolor="#000000" class="line"> 
+                          <table width="100%" height="0%" border="0" align="center" cellpadding="2" cellspacing="1">
+                            <tr class="dataheader" > 
+                              <td width="25%" rowspan="2" align="center">[LNG_DATE]</td>
+                              <td width="8%" rowspan="2">[LNG_TOTAL]</td>
+                              <td height="18%" colspan="5">[LNG_HARD]</td>
+                              <td height="18%" colspan="5">[LNG_SOFT]</td>
+                            </tr>
+                            <tr class="dataheader" > 
+                              <td width="8%" height="18%">[LNG_TOTAL_HARD]</td>
+                              <td width="8%">[LNG_WAITING]</td>
+                              <td width="8%">[LNG_PROSPS_REMOVED]</td>
+                              <td width="8%">[LNG_PROSPS_INACT]</td>
+                              <td width="8%">[LNG_PROSP_NOT_FOUND]</td>
+                              <td width="8%" height="18%">[LNG_TOTAL_SOFT]</td>
+                              <td width="8%">[LNG_WAITING]</td>
+                              <td width="8%">[LNG_PROSPS_REMOVED]</td>
+                              <td width="8%">[LNG_PROSPS_INACT]</td>
+                              <td width="8%">[LNG_PROSP_NOT_FOUND]</td>
+                            </tr>
+                            <!--rep_header_end-->
+                            <!--rep_row_start-->
+                            <tr valign="middle" bgcolor="#F0F0F0" class="data"> 
+                              <td width="25%" height="18%" align="left"><strong>{r_date}</strong></td>
+                              <td width="8%" align="center"><strong>{r_total}</strong></td>
+                              <td width="8%" align="center"><strong>{r_1_total}</strong></td>
+                              <td width="8%" align="center">{r_1_0}</td>
+                              <td width="8%" align="center">{r_1_1}</td>
+                              <td width="8%" align="center">{r_1_2}</td>
+                              <td width="8%" align="center">{r_1_3}</td>
+                              <td width="8%" align="center"><strong>{r_2_total}</strong></td>
+                              <td width="8%" align="center">{r_2_0}</td>
+                              <td width="8%" align="center">{r_2_1}</td>
+                              <td width="8%" align="center">{r_2_2}</td>
+                              <td width="8%" align="center">{r_2_3}</td>
+                            </tr>
+                            <!--ROW_DELMITTER-->
+                            <tr valign="middle" class="data2"> 
+                              <td width="25%" height="18%" align="left"><strong>{r_date}</strong></td>
+                              <td width="8%" align="center"><strong>{r_total}</strong></td>
+                              <td width="8%" align="center"><strong>{r_1_total}</strong></td>
+                              <td width="8%" align="center">{r_1_0}</td>
+                              <td width="8%" align="center">{r_1_1}</td>
+                              <td width="8%" align="center">{r_1_2}</td>
+                              <td width="8%" align="center">{r_1_3}</td>
+                              <td width="8%" align="center"><strong>{r_2_total}</strong></td>
+                              <td width="8%" align="center">{r_2_0}</td>
+                              <td width="8%" align="center">{r_2_1}</td>
+                              <td width="8%" align="center">{r_2_2}</td>
+                              <td width="8%" align="center">{r_2_3}</td>
+                            </tr>
+                            <!--rep_row_end-->
+                            <!--rep_footer_start-->
+                          </table>                        </td>
+                      </tr>
+                    </table>                  </td>
+                </tr>
+              </table>
+            </form>
+            <!--rep_footer_end-->
+            <!--rep_end-->          </td>
+        </tr>
+      </table> 
+ 	  <!--TOTALS-->	  
+ 	  <!--EDIT-->
+	  <table width="95%" border="0" cellspacing="0" cellpadding="5" align="center">
+  <tr>
+          <td><h3>{header}</h3>
+		  
+        <form name="form1" method="post" action="{ME}">
+              <input name="issubmit" type="hidden" value="1">
+              {fm_hidden_ses} {fm_hidden_act} {fm_hidden_pk_bounce_account} 
+              <table width="75%" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td class="line"><table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_POP_SERV_SETTS]</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="33%"><strong>[LNG_POP_SERVER]</strong></td>
+                  <td width="57%">{fm_text_pop3server}</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="33%"><strong>[LNG_POP_PORT]</strong></td>
+                  <td width="57%">{fm_text_pop3port}</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="33%"><strong>[LNG_POP_USER]</strong></td>
+                  <td width="57%">{fm_text_pop3user}</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="33%"><strong>[LNG_POP_PASS]</strong></td>
+                  <td width="57%">{fm_password_pop3pass}</td>
+                </tr>
+                <tr class="data"> 
+                  <td colspan="2">{fm_check_deleteemails} <strong>[LNG_DEL_BNC_ML_SERV]</strong></td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_DEF_COUNT_BOUNC]</td>
+                </tr>
+                <tr class="data"> 
+                  <td><strong>[LNG_REM_AFTER_HARD]</strong></td>
+                  <td>{fm_text_hardcount}</td>
+                </tr>
+                <tr class="data"> 
+                  <td><strong>[LNG_REM_AFTER_SOFT]</strong></td>
+                  <td>{fm_text_softcount}</td>
+                </tr>
+                <tr class="dataheader"> 
+                  <td colspan="2">[LNG_ACT_WITH_BOUNC]</td>
+                </tr>
+                <tr class="data"> 
+                  <td align="left">[LNG_ACT_WITH_PROSP]</td>
+                  <td align="left">{fm_select_bounceaction}</td>
+                </tr>
+                <tr align="left" class="data"> 
+                  <td colspan="2">{fm_check_isaddtoban} [LNG_ADD_BNC_MAILS_BLACKL]</td>
+                </tr>
+                <tr class="data"> 
+                  <td width="33%" align="center"> <input name="save" type="submit"  value="[LNG_SAV_ACC]" class="BUTTONmySmall"  ></td>
+                  <td width="57%" align="center"><input name="save2" type="reset"  value="[LNG_RESET]" class="BUTTONmySmall"  ></td>
+                </tr>
+              </table></td>
+                </tr>
+              </table>
+            </form>		  </td>
+  </tr>
+</table>
+
+ 	  <table width="100%" border="0" cellpadding="0" cellspacing="0" class="comment">
+        <tr> 
+          <td>
+		  [LNG_BOUNCE_HELP]          </td>
+        </tr>
+      </table>
+      <!--EDIT-->
+      <!--TEST-->
+      {TEST} 
+      <!--TEST-->
+      <!--MESSAGESREPORT-->
+<form name="form1" method="post" action="{ME}">
+      <table width="100%" border="0" cellspacing="0" cellpadding="5">
+        <tr> 
+            <td> <h2>[LNG_BOUNC_MSGS]</h2>
+                <input name="issubmit2" type="hidden" value="1">
+                {fm_hidden_ses} {fm_hidden_act} 
+              <table width="90%" border="0" cellspacing="0" cellpadding="5">
+                <tr> 
+                  <td width="59%"><table width="100%" border="0" cellspacing="0" cellpadding="2">
+                      <tr> 
+                        <td><strong>[LNG_ACCOUNT]</strong></td>
+                        <td>{fm_select_fk_bounce_account}</td>
+                      </tr>
+                      <tr> 
+                        <td><strong>[LNG_EMAIL]</strong></td>
+                        <td>{fm_text_email}</td>
+                      </tr>
+                      <tr> 
+                        <td><strong>[LNG_BOUNC_CODE]</strong></td>
+                        <td>{fm_text_status}</td>
+                      </tr>
+                      <tr> 
+                        <td><strong>[LNG_HARD_SOFT]</strong></td>
+                        <td>{fm_select_hardsoft}</td>
+                      </tr>
+                      <tr> 
+                        <td><strong>[LNG_PROC_STAT]</strong></td>
+                        <td>{fm_select_action}</td>
+                      </tr>
+                      <tr> 
+                        <td><strong>[LNG_BOUNC_REASON]</strong></td>
+                        <td>{fm_text_reason}</td>
+                      </tr>
+                    </table></td>
+                  <td width="41%" valign="top"> <table width="100%" border="0" cellspacing="0" cellpadding="5">
+                      <tr> 
+                        <td><strong>[LNG_ORDER_BY]</strong></td>
+                        <td>{fm_select_orderby}</td>
+                        <td>{fm_select_ordertype}</td>
+                      </tr>
+                    </table>
+                    <p>{fm_check_withprospects}<strong>[LNG_SHOW_EMAILS_EXIST_PROS]</strong></p>
+                    <p><strong> 
+                      <input name="show" type="submit" class="BUTTONmySmall" id="show"   value="[LNG_DISPLAY]">
+                      </strong></p></td>
+                </tr>
+              </table>
+              <!--rep_start-->
+              <!--rep_empty_start-->
+              <h3 class="mess">[LNG_NO_COL_BNC_MSGS_FOUND]</h3>
+              <!--rep_empty_end-->
+              <!--rep_header_start-->
+              <p> <a href="{ME}?{exportrule}" target="_blank">[LNG_EXP_MAIL_TXT]</a> </p>
+              <table width="100%" border="0" align="center" cellpadding="4" cellspacing="0">
+                <tr> 
+                  <td> <h3>[LNG_TOTAL_MSGS] {RP_ALLRECORDS}</h3>
+                    {RP_PAGE_LINE} </td>
+                </tr>
+              </table>
+<table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        
+                  <td bgcolor="#000000" class="line"> 
+                    <table width="100%" height="0%" border="0" align="center" cellpadding="2" cellspacing="1">
+                      <tr class="dataheader" > 
+                        <td rowspan="2" align="center"><input type="checkbox" name="checkbox" value="SelectAll"    onClick="selectAllCheckBoxes('form1', 'id', this.checked)" ></td>
+                        <td rowspan="2" align="center">[LNG_BOUNC_MAIL]</td>
+                        <td colspan="2" align="center">[LNG_PROSPS]</td>
+                        <td width="11%" rowspan="2" align="center">[LNG_RECVD]</td>
+                        <td width="11%" rowspan="2" align="center">[LNG_PROC_STAT2]</td>
+                        <td height="18%" colspan="2">[LNG_BNC_STATUS]</td>
+                        <td width="28%" rowspan="2">[LNG_BNC_REASON]</td>
+                      </tr>
+                      <tr class="dataheader" > 
+                        <td align="center">&nbsp;[LNG_ACTIVE]&nbsp;</td>
+                        <td align="center">[LNG_INACT]</td>
+                        <td width="7%" height="18%">[LNG_CODE]</td>
+                        <td width="11%">[LNG_HARD_SOFT2]</td>
+                      </tr>
+                      <!--rep_header_end-->
+                      <!--rep_row_start-->
+                      <tr valign="middle" bgcolor="#F0F0F0" class="data"> 
+                        <td width="2%" align="left">{fm_check_id(value={r_pk_bounce_message})}</td>
+                        <td width="7%" align="left"><strong><NOBR>{r_email}</NOBR></strong></td>
+                        <td width="7%" align="center">{r_act}</td>
+                        <td width="7%" align="center">{r_inact}</td>
+                        <td width="11%" align="center"><NOBR>{r_date_str}</NOBR></td>
+                        <td width="11%" align="left"><strong>{r_action_str}</strong></td>
+                        <td width="7%" align="center"><a href="{ME}?ses={ses}&act=errorcode&code={r_status}">{r_status}</a></td>
+                        <td width="11%" align="center">{r_hardsoft_str}</td>
+                        <td width="28%" align="left"><font size="1">{r_reason}</font></td>
+                      </tr>
+                      <!--ROW_DELMITTER-->
+                      <tr valign="middle" class="data2"> 
+                        <td width="2%"  align="left">{fm_check_id(value={r_pk_bounce_message})}</td>
+                        <td width="7%" align="left"><strong><NOBR>{r_email}</NOBR></strong></td>
+                        <td width="7%" align="center">{r_act}</td>
+                        <td width="7%" align="center">{r_inact}</td>
+                        <td width="11%" align="center"><NOBR>{r_date_str}</NOBR></td>
+                        <td width="11%" align="left"><strong>{r_action_str}</strong></td>
+                        <td width="7%" align="center"><a href="{ME}?ses={ses}&act=errorcode&code={r_status}">{r_status}</a></td>
+                        <td width="11%" align="center">{r_hardsoft_str}</td>
+                        <td width="28%" align="left"><font size="1">{r_reason}</font></td>
+                      </tr>
+                      <!--rep_row_end-->
+                      <!--rep_footer_start-->
+                    </table>                  </td>
+                      </tr>
+              </table>			  
+              <table width="95%" border="0" align="center" cellpadding="10" cellspacing="0">
+                <tr align="center"> 
+                  <td>[LNG_WITH_SEL]</td>
+                  <td><input name="deletemessages" type="submit"  value="[LNG_BTN_DEL_MSGS]" class="BUTTONmySmall"  onClick="return confirm('Are you sure that you want to delete the selected messages?');"></td>
+                  <td> <input name="removeprospect" type="submit"  value="[LNG_BTN_REM_PROSP]" class="BUTTONmySmall"  onClick="return confirm('Are you sure that you want to remove the selected prospects?');"></td>
+                  <td><input name="activateprospect" type="submit"  value="[LNG_BTN_ACT_PROSP]" class="BUTTONmySmall" onClick="return confirm('Are you sure that you want to activate the selected prospects?');"></td>
+                  <td> <input name="inactivateprospect" type="submit"  value="[LNG_BTN_INACT_PROSP]" class="BUTTONmySmall" onClick="return confirm('Are you sure that you want to deactivate the selected prospects?');"></td>
+                </tr>
+                <tr align="center"> 
+                  <td colspan="5"><input name="deleteallmessages" type="submit"  value="[LNG_BTN_DEL_ALL_MSGS]" class="BUTTONmySmall"  onClick="return confirm('Are you sure that you want delete all messages?');"></td>
+                </tr>
+              </table>
+            
+            <!--rep_footer_end-->
+            <!--rep_end-->          </td>
+        </tr>
+      </table>
+</form>	  
+      <!--MESSAGESREPORT-->
+      <!--ERRORCODE-->
+      <h3>[LNG_RFC_ERR_DESCR]</h3>
+	  <Div align="center"> 
+        <p>[LNG_CODE2]<strong><U>{code}</U></strong></p>
+        <p>&nbsp;</p>
+      </Div>
+      <table width="75%" border="0" align="center" cellpadding="15" cellspacing="0" class="comment">
+        <tr> 
+          <td><p>
+		  <PRE>{DESCRIPTION}</PRE>
+		  <div align="center">
+              <button onClick="history.back()" >[LNG_BACK_2_BNC_MSGS]</button>
+            </div>
+		  <p></p></td>
+        </tr>
+      </table>	  
+        <!--ERRORCODE-->
+        <!--BLACKLIST-->
+            <form name="form1" method="post" action="{ME}">
+              <input name="issubmit" type="hidden" value="1">
+              {fm_hidden_ses} {fm_hidden_act} 		
+              <hr noshade size="4">
+        {mess} 
+        <h3>[LNG_REG_SETTS]</h3>
+        {fm_check_useblacklist} <strong>[LNG_REJECT_SUBSCR]</strong><br>
+        <strong>[LNG_REG_ERR_MSG]</strong>{fm_text_blacklist_error} 
+        <input name="save" type="submit"  value="[LNG_SAV_SETTS]" class="BUTTONmySmall"  >
+              <hr noshade size="4">
+      <table width="100%" border="0" cellspacing="0" cellpadding="5">
+        <tr> 
+            <td> <h2>[LNG_BNC_MAIL_BLACK]</h2>
+              <table width="50%" border="0" align="center" cellpadding="5" cellspacing="0">
+                <tr align="center"> 
+                  <td><a href="#import">[LNG_IMP_MAILS]</a></td>
+                  <td><a href="{ME}?ses={ses}&act=blacklist&email={email}&act2=export" target="_blank">[LNG_EXP_MAILS]</a></td>
+                  <td><a href="#bulk">[LNG_BULK_REM]</a></td>
+  </tr>
+</table>
+
+              <p><strong>Search by email:</strong> {fm_text_email} 
+                <input name="search" type="submit"  value="Search" class="BUTTONmySmall"  >
+                <!--rep_start-->
+                <!--rep_empty_start-->
+              </p>
+              <h3 class="mess">[LNG_NO_MAIL_FOUND]</h3>
+            <!--rep_empty_end-->
+            <!--rep_header_start-->
+              <table width="100%" border="0" align="center" cellpadding="4" cellspacing="0">
+                <tr> 
+                  <td> <h3>[LNG_TOTAL_EMAILS] {RP_ALLRECORDS}</h3>
+                    <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr align="center"> 
+                        <td> {RP_PAGE_LINE}</td>
+                      </tr>
+                    </table>
+                    <table width="50%" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td bgcolor="#000000" class="line"> 
+                          <table width="100%" height="0%" border="0" align="center" cellpadding="2" cellspacing="1">
+                            <tr class="dataheader" > 
+                              <td height="18%" colspan="2" align="center">[LNG_BLACKLIST]</td>
+                            </tr>
+                            <!--rep_header_end-->
+                            <!--rep_row_start-->
+                            <tr valign="middle" bgcolor="#F0F0F0" class="data"> 
+                              <td width="2%" height="18%" align="left">{fm_check_id(value={r_email})}</td>
+                              <td width="98%" align="left"><strong>{r_email}</strong></td>
+                            </tr>
+                            <!--ROW_DELMITTER-->
+                            <tr valign="middle" class="data2"> 
+                              <td width="2%" height="18%" align="left">{fm_check_id(value={r_email})}</td>
+                              <td width="98%" align="left"><strong>{r_email}</strong></td>
+                            </tr>
+                            <!--rep_row_end-->
+                            <!--rep_footer_start-->
+                          </table>                        </td>
+                      </tr>
+                    </table> 
+                    <table width="50%" border="0" align="center" cellpadding="10" cellspacing="0">
+                      <tr align="center"> 
+                        <td>[LNG_WITH_SEL] 
+                          <input name="delete" type="submit"  value="[LNG_DELETE]" class="BUTTONmySmall"  onClick="return confirm('Are you sure you want to delete the selected emails?');"></td>
+                      </tr>
+                    </table> </td>
+                </tr>
+              </table>
+            
+            <!--rep_footer_end-->
+            <!--rep_end-->          </td>
+        </tr>
+      </table> 
+	  </form>
+	  
+        
+      <hr noshade size="4">
+      <h2><a name="import"></a> [LNG_IMP_PROSPS]</h2>
+              <form name="form1" method="post" action="{ME}">
+              <input name="process" type="hidden" value="import">
+        {fm_hidden_ses} {fm_hidden_act} [LNG_IMP_PROSPS_DESC] 
+        <div align="center">
+		{fm_textarea_importlist} <br>
+        <input name="import" type="submit"  value="[LNG_BTN_IMPORT]" class="BUTTONmySmall"  >
+		</div>
+      </form>
+  
+  <hr noshade size="4">
+      <h2><a name="bulk"></a> [LNG_BULK_REM]</h2>
+      <form name="form1" method="post" action="{ME}">
+        <input name="process" type="hidden" id="process" value="remove">
+        {fm_hidden_ses} {fm_hidden_act} [LNG_BULK_REM_DESC1] <br>
+        [LNG_BULK_REM_DESC2]<br>
+        [LNG_BULK_REM_DESC3] 
+        <p><em>[LNG_BULK_REM_DESC4]</em></p>
+        <div align="center"> {fm_textarea_bulklist} <br>
+          <input name="remove" type="submit"  value="[LNG_BTN_REMOVE]" class="BUTTONmySmall"  >
+        </div>
+      </form>
+      <!--BLACKLIST-->
+      <!--HideBody-->    </td>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+######################################################################
+# Follow Up Mailing List Processor                                   #
+# Version 5.01                                                       #
+# Last modified 08/29/2006                                           #
+######################################################################
+use lib('lib');
+#use POSIX qw(strftime);
+require "func.cgi";
+$COUNT_PROC=shift(@ARGV);  
+unless($COUNT_PROC){
+	#warn "$$ COUNT_PROC is null";
+	$COUNT_PROC=8;
+}
+foreach $PROC_NOW(1..$COUNT_PROC){
+	unless(my $child=fork){
+		#i'm children
+		#local $db=&db_prepare;
+		die "Can not fork $_" unless defined $child;
+		#waitpid($child,0);
+		Broadcast($PROC_NOW);
+		print ("$PROC_NOW i'm $$\n");
+		exit;
+	}else{
+			
+	}
+} 
+#&Broadcast;
+###################################
+
+

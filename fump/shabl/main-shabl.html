@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>[LNG_ACCOUNT_BIG]: {account_nm}</title>
+{__META__}
+<link rel="stylesheet" href="style.css" type="text/css">
+<!--Selectbox-->
+<SCRIPT LANGUAGE="JavaScript" SRC="content.cgi?get=selectbox"></SCRIPT>
+<!--Calendar-->
+<SCRIPT LANGUAGE="JavaScript" SRC="content.cgi?get=calendar"></SCRIPT>
+<!--End calendar-->
+<!--HtmlToText-->
+<SCRIPT LANGUAGE="JavaScript" SRC="content.cgi?get=htmltotext"></SCRIPT>
+<!--End HtmlToText-->
+
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- hide from old browsers
+
+function selectAllCheckBoxes(formName, checkBoxName, value) {
+
+    var frm;
+    frm = document.forms[formName];
+    
+    if (frm != null) {
+        var elementsCount = frm.elements.length;
+        var currElement;
+        
+        for (currElement = 0; currElement < elementsCount; currElement++) {
+
+            if (frm.elements[currElement].name.substring(0, checkBoxName.length) == checkBoxName) {
+
+                if (frm.elements[currElement].type == "checkbox") {
+                    frm.elements[currElement].checked = value;
+                }
+            }
+        }
+    }
+}
+
+// done: hide from old browsers -->
+</SCRIPT>
+</head>
+<body>
+      <h1>[LNG_ACCOUNT_BIG]: {account_name}</h1>
+	  <hr size="4" noshade>
+{main_menu} 
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="85%">
+  <tr>
+    <td valign="top">{body}</td>
+  </tr>
+</table>
+</body>
+</html>

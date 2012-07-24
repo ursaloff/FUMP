@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>{header}</title>
+<!--CHARSET-->
+<link rel="stylesheet" href="style.css" type="text/css">
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1"></head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" >
+<table width="100%" height="95%" cellpadding="5" cellspacing="0"
+border="0" style="border:1pt solid #FF0000">
+
+  <tr>
+    <td valign="top"> <h2 align="center">{header}<BR>
+        {subject}</h2>
+		<!--SENDFORM-->
+      <FORM name="form1" method="post" action="{ME}">
+	  <INPUT type="hidden" name="issubmit" value="1">
+        {fm_hidden_ses} {fm_hidden_act} {fm_hidden_account} {fm_hidden_mess} 
+        <TABLE width="100%" border="0" cellspacing="0" cellpadding="5">
+          <TR> 
+            <TD width="32%"><STRONG>[LNG_TEST_SEND_FORMAT]:</STRONG> </TD>
+            <TD width="68%">{fm_select_type}</FONT> </TD>
+          </TR>
+          <TR> 
+            <TD><strong>[LNG_TEST_SEND_RCPT]: </strong></TD>
+            <TD>{fm_text_email} </TD>
+          </TR>
+          <TR> 
+            <TD colspan="2"><table width="100%" border="0" cellpadding="2" cellspacing="0" class="comment">
+                <tr>
+                  <td>[LNG_NOTE_MESSAGES_WILL_NOT_BE PERSONALIZED]</td>
+                </tr>
+              </table> </TD>
+          </TR>
+        </TABLE>
+   
+<p align="center">  <input type="submit"  value="[LNG_TEST_SEND_BUTTON]" class="BUTTONmy"> </p>
+      </FORM>
+	<!--SENDFORM-->
+	<!--MESSAGESENT-->
+	<h2 class="mess">[LNG_MESSAGE_WAS_SENT] <STRONG>{email}</STRONG></h2>
+    <!--MESSAGESENT-->
+<p align="center">    <INPUT name="closeme" value="[LNG_CLOSE_WINDOW]" type="button" onClick="window.close()" class="BUTTONmy"></p>
+      </td>
+  </tr>
+</table>
+</body>
+</html>

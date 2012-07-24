@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>Login to Follow Up Mailing List Processor</title>
+<!--CHARSET-->
+<link rel="stylesheet" href="style.css" type="text/css">
+<SCRIPT LANGUAGE="JavaScript">
+<!-- hide from old browsers
+if (self==top){
+//do not do nothing
+}else{
+ top.location=self.location;
+}
+
+// done: hide from old browsers -->
+</SCRIPT>
+<style type="text/css">
+<!--
+.Stil1 {color: #000000}
+-->
+</style>
+</head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="document.form1.pwd.focus();">
+<table width="100%" height="93%" cellpadding="0" cellspacing="0" > 
+  <tr>
+  <td valign="top" ><BR>
+
+<h1 align="center" class="Stil1" style="text-align : center;">Follow Up Mailing List Processor v{VERSION}<BR>
+    [LNG_ADMIN_CONTROL_PANEL]</h1>
+<BR><BR><h2>[LNG_LOGO]</h2><BR><BR>
+       <h3> [LNG_AUTHOR_LINE1]<BR>
+        [LNG_AUTHOR_LINE2]</h3>
+
+      <form name="form1" method="post" action="{ME}">
+      <input type="hidden" name="enter" value="1"><div align="center">{error}</div>
+	 <table border="0" cellPadding="0" cellSpacing="0" align="center"> 
+	 <tr>
+	 <td class="line">
+ 	  <table border="0" cellPadding="5" cellSpacing="1" align="center">
+        <tr class="data">
+                <td align="right">[LNG_PASSWORD]</td>
+          <td>{fm_password_pwd}</td>
+        </tr>
+        <tr  class="data">
+          <td align="center" colspan="2"><input type="submit" value="[LNG_ENTER]" class="BUTTONmy"></td></tr>
+      </table></td></tr></table>
+   </form>
+    </td>
+  </tr>
+</table>
+</body>
+</html>

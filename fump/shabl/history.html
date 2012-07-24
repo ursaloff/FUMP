@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>[LNG_YOUR_WEB_HISTORY]</title>
+<!--CHARSET-->
+<style type="text/css">
+<!--
+{CSS}
+-->
+</style>
+<!--hide-->
+<link rel="stylesheet" href="style.css" type="text/css">
+<!--endhide-->
+</head>
+
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+<h1>[LNG_YOUR_WEB_HISTORY]</h1>
+      <hr size="4" noshade>
+<table width="100%" border="0" cellspacing="0" cellpadding="0" height="80%">
+  <tr>
+    <td valign="top"> 
+      <!--rep_start-->
+      <STRONG> Hello, [FIRSTNAME]!</STRONG> 
+      <!--rep_empty_start-->
+      <h3 class="mess">[LNG_NO_MSGS_HISTORY_FOUND]</h3>
+      <!--rep_empty_end-->
+      You have <STRONG>{RP_ALLRECORDS}</STRONG> messages 
+      <!--rep_header_start-->
+      {RP_PAGE_LINE} 
+      <!--rep_header_end-->
+      <!--rep_row_start-->
+      <TABLE width="90%" border="0" align="center" cellpadding="6" cellspacing="0" class="comment">
+        <TR>
+          <TD bgcolor="#FFFFFF"> 
+            <TABLE width="100%" border="0" cellspacing="0" cellpadding="5">
+              <TR> 
+                <TD width="10%"><EM>{r_date}</EM></TD>
+                <TD width="90%"><STRONG>{r_subject}</STRONG></TD>
+              </TR>
+              <TR> 
+                <TD colspan="2">
+				{r_messrss}
+				</TD>
+              </TR>
+              <TR> 
+                <TD colspan="2"><A href="{r_visit_link}" target="_blank"onClick="window.open('{r_visit_link}','','scrollbars=yes,resizable=yes,width=550,height=500'); return false;">[LNG_READ_MORE]</a></TD>
+				
+              </TR>
+            </TABLE> 
+          </TD>
+  </TR>
+</TABLE>
+      <BR>
+      <!--rep_row_end-->
+      <!--rep_footer_start-->
+      {RP_PAGE_LINE} 
+      <!--rep_footer_end-->
+      <!--rep_end-->
+    </td>
+  </tr>
+</table>
+<h1>&nbsp; </h1>
+</body>
+</html>

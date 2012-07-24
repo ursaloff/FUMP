@@ -1,0 +1,58 @@
+<html>
+<head>
+<!--CHARSET-->
+<link rel="stylesheet" href="style.css" type="text/css">
+<title>Xinha online HTML editor</title>
+<script language="JavaScript" type="text/JavaScript">
+function GetParentTextarea(){
+	var parentdocument=opener.document;
+	return	 parentdocument.getElementById('messhtml');
+	
+}
+function GetCurrentTextarea(){
+	return	 document.getElementById('messhtml2');
+	
+}
+function onLoadPage(){
+	parentarea=GetParentTextarea();
+	thisarea=GetCurrentTextarea();
+	thisarea.value = parentarea.value;
+	areaedit_init();	
+}
+function onSave(){
+	parentarea=GetParentTextarea();
+	thisarea=GetCurrentTextarea();
+	parentarea.value = thisarea.value;	
+	window.close();
+}
+</script>
+{HTMLEDITORSCRIPT}
+</head>
+<body bgcolor="#FFFFFF" onLoad="onLoadPage()" >
+<table width="100%" height="100%" cellpadding="5" cellspacing="0"
+border="0" style="border:1pt solid #FF0000">
+
+  <tr>
+    <td valign="top">
+	    <form action="#" onsubmit="onSave()" name="xinhaform">
+        <table width="100%" border="0" cellpadding="6" cellspacing="0" class="comment">
+          <tr class="data"> 
+            <td> 
+              <div align="center"> 
+                <P><B><u>[LNG_MSG_HTML_FORMAT]:</u></B></P>
+              </div>
+              <STRONG>[LNG_INSERT_SPECIAL_TAG]<BR>
+              </STRONG>{personal_links_html}<BR>
+              {fm_textarea_messhtml2} </td>
+          </tr>
+        </table>
+		<div align="center">
+	  <input name="submit" type="submit" value="Save">
+	  </div>
+	  </form>
+	  
+      </td>
+  </tr>
+</table>
+</body>
+</html>

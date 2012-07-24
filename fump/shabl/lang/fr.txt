@@ -1,0 +1,1002 @@
+French	iso-8859-1
+#First line must have format:
+#LANGNAME<TAB>ENCODING
+###################################################
+#Created by Monnier Svetlana
+#Follow Up Mailing List Processor PRO 4.21.01
+#Lang file version: 1.1
+#Last modified 02/10/2006
+###################################################
+#Version 4.21
+LINK_CLEAN	clean
+REG_ERROR_NAME	Votre nom:
+TEMPLATES_LOCATED_IN	Répertoire des templates - 
+PREFERENCES_PAGE_TEMPLATE	Page de préférences de template
+SENDING_DELAY_DESCR	Attention: Utilisez la valeur différente de zero à condition d’avoir des problèmes de performances de votre serveur ou la limite pour l’envoi des messages. Ce script va attendre avant d’envoyer chaque message de votre liste d’attente. Par exemple, votre serveur peut envoyer 10 messages par seconde (3600 messages/heure), si le délai est 1 seconde/message, le délai sera 3600 secondes = 10 heures et le script finira le mailing dans 11 heures. 
+SENDING_DELAY	Délai entre envoi de chaque message en secondes 
+REDIR_ALREADYREMOVED_DISCR	Cette valeur sera utilisée pour tous vos comptes 
+REDIR_ALREADYREMOVED_TO	"Déjà désabonné" URL de la page
+REDIR_ALREADYSUSCR_TO	"Déjà abonné" URL de la page
+READ_MORE	Plus d’informations...
+NO_MSGS_HISTORY_FOUND	Aucun message n’a été trouvé dans votre historique.
+YOUR_WEB_HISTORY	Historique de vos messages.
+RSS_DEF_ENC	Default – préféré 
+RSS_SCRIPT_PARAM	Entrez les paramètres du script 
+RSS_SCRIPT_URL	Entrez URL du script
+RSS_TEXTINPUT	Entrez les paramètres du texte 
+RSS_USETEXT_INPUT	Utilisez la section du texte 
+RSS_ENCODING	Encodez les canaux
+RSS_LANG	Langue du canal 
+RSS_COPYLINE	Copyright texte
+RSS_TITLE	Titre
+RSS_DISCR	Description
+RSS_URL	Votre URL du site
+PERSONAL_RSS_LINK	En cliquant sur ce lien, votre prospect pourra s’abonner à RSS-feed personnel de vos messages 
+PERSONAL_HTML_LINK	En cliquant sur ce lien, votre prospect pourra voir l’archive personnalisé de vos messages au format HTML 
+TAGS_RSS_LINK_DISCR	Liens pour RSS personnalisé et l’archive des messages au format HTML 
+TAGS_RSS_LINK	Liens RSS 
+TAGS_HTML_LINK	lien vers archive HTML
+SAVE_MESSAGE_IN_USER_HISTORY	Enregistrez le message en cours dans les RSS-feed personnalisés 
+RSS_LINK	Lien vers votre page d’accueil
+RSS_MAIN_SETTINGS	Configuration principale de RSS 
+RSS_SETTINGS	RSS 2.0 Configuration du canal 
+ACCOUNTMENU_HTML_RSS	RSS Canal
+ACCOUNTMENU_HTML_RSS_DESCR	Ici vous pouvez installer votre RSS canal.
+NOTIFY_ABOUT_MODIFICATIONS	Activez la notification d’admin:
+ERROR_CONFIRM_SUBJ_NOT_DEFINED	Erreur: l’objet du message de confirmation n’est pas défini – SVP, vérifiez les options de votre compte 
+ERROR_CONFIRM_BODY_NOT_DEFINED	Erreur: le texte du message de confirmation n’est pas défini - SVP, vérifiez les options de votre compte 
+ERROR_NOT_ALLOWED_TO_MODIFY	Désolé, mais vous n’avait pas la permission de modifier les informations de contact 
+ERROR_TAG_CONFIRM_REQUIRED	<B>[CONFIRM_URL]</B> tag requis
+CONFIRMATION_MESSAGE_SUBJECT	Objet du message de confirmation
+CONFIRMATION_MESSAGE_TEXT	Texte du message de confirmation
+DISABLE_MODIFY_SERVICE	Restreindre l’accès des utilisateurs à la page de préférences:
+DISABLE_MODIFY_SERVICE_DISCR	Accès permettant de modifier l’information de contact sera restreint  
+ALLOW_MODIFY_MESSAGES_FORMAT	Permet de changer le format de message:
+MODIFY_CONTACT_INFORMATION	Modification de l’information de contact par les abonnés 
+SAVE_CONTACT_INFO	Mettre à jour vos paramètres 
+NAME	Votre nom
+YOUR_CONTACT_INFO	Vos préférences
+CHANGE_YOUR_PREF	Changer Vos préférences 
+HTML_ONLY	uniquement HTML 
+TEXT_ONLY	uniquement TEXT 
+HTML_AND_TEXT	HTML et TEXT
+MSG_TEXT_FORMAT	Votre message au format TEXT 
+MSG_HTML_FORMAT	Votre message au format HTML 
+MSG_RSS_FORMAT	Votre texte de description de RSS-feed (500 caractères max.)
+DEFAULT_MESSAGE_TYPE	Le format de message par défaut 
+DEFAULT_MESSAGE_TYPE_DISCR	Si vos abonnés n’ont pas sélectionne le format de message préféré, ils vont recevoir les messages au format défini par défaut  
+INSERT_SPECIAL_TAG	<br>Cliquez sur le lien ci-dessous pour insérer les tags personnalisés 
+CLICK_HERE_TO_INSERT	Cliquez ici pour insérer le tag spécial
+TAGS_CHANGE_CONTACT_INFO	Modifier l’info de contact 
+TAGS_UNSUBSCRIBE_LINK	Lien pour se désabonner 
+TAGS_FNAME	Prénom
+TAGS_FULLNAME	Nom complet 
+TAGS_DATE	Date
+TAGS_REGDATE	Date d’enregistrement 
+TAGS_EMAIL	Email
+TAGS_PERSONAL_INFO	Information personnelle 
+TAGS_CUSTOM_FIELDS	Champs personnalisés 
+TAGS_TEMPLATES	Templates
+TAGS_LINKTRACK	Statistiques du nombres des cliques sur le lien 
+TAGS_ONE_CLICK_SUBSCRIBE	Lien pour s’abonner à un autre compte en un seul clique 
+TAGS_ONE_CLICK_SUBSCRIBE_LINK	S’abonner à
+HTML_EDIT_DISABLE	Cliquer ici pour <B>DESACTIVER</B> un éditeur HTML en ligne 
+HTML_EDIT_ENABLE	Cliquer ici pour <B>ACTIVER</B> un éditeur HTML en ligne 
+HTML_EDITOR_ENABLED	Votre éditeur HTML en ligne est <B>activé</B>. SVP, enregistrez votre message et rafraîchissez la page d’édition du message afin de mettre le contenu à jour.<br>
+HTML_EDITOR_DISABLED	Votre éditeur HTML en ligne est <B>désactivé</B>. SVP, enregistrez votre message et rafraîchissez la page d’édition du message afin de mettre le contenu à jour..<br>
+TEST_SEND_LINK	Test a été envoyé
+PLEASE_CHOICE_FOFMAT	Sélectionnez le format du message 
+TYPE_MESS	Format	Format
+MESS_ACTIVE	Activé
+MESS_INACTIVE	Desactivé
+TEST_SEND_HEADER	Envoi du test de votre message 
+TEST_SEND_BUTTON	Envoyez votre message 
+TEST_SEND_FORMAT	le format du message 
+TEST_SEND_RCPT	Email du recepteur 
+MESSAGE_WAS_SENT	Merci!<BR>Votre message a été envoyé à 
+CLOSE_WINDOW	Fermer cette fenêtre
+ENABLE_HTML_CHOISE	Ajouter la case de sélection pour choisir le format du message 
+ENABLE_HTML_CHOISE_DISCR	Cochez cette option pour ajouter une case de sélection du format des message au formulaire d’abonnement  (Text or HTML)
+HTML_FORM_MESSFORMAT	Format du Message 
+DATE_FORMAT_SETTINGS	Configurez le format de la date
+DATE_FORMAT_LINE	Votre <i>strftime</i> ligne du format 
+DATE_FORMAT_DISCR	Configurer le format pour <B>[DATE]</B> tags dans vos messages.<BR>Le format par défaut est:  <B>%m/%d/%Y</B> <BR><a href="http://se.php.net/manual/sv/function.strftime.php" target="_blank">Plus d’ info sur ce format...</a>
+CURRENT_FORMATTED_DATE	Date du format en cours 
+USR_BROWSER_HEAD_FORMAT	Format
+USR_BROWSER_DEFAULT_FORMAT	Défaut
+USR_BROWSER_HTML_USER_FORMAT	HTML
+USR_BROWSER_TEXT_USER_FORMAT	Text
+PERSONAL_REG_DATE	va imprimer la date de l’enregistrement de l’abonné 
+PERSONAL_SUBSCRIBER_ID	ID de l’abonné
+PERSONAL_SUBSCRIBER_ID_DISCR	ID de l’abonné(Primary key can be used to integrate FUMP with other applications)
+PERSONAL_MODIFY_CONTACT_INFO	Lien vers le script où l’abonné peut modifier son nom, son email et le format préféré des messages 
+PERSONAL_SUBSCRIBER_UUI	Abonné UUI
+PERSONAL_SUBSCRIBER_UUI_DISCR	Abonné UUI (Identification Unique de l’Utilisateur peut être utilisé pour intégrer FUMP aux autres applications)
+PERSONAL_REG_DATE_CORRECTED	va imprimer la date correcte de l’enregistrement de l’abonné.
+ADD_UNSUBSCRIBE_LINK	Ajouter automatiquement un lien de désabonnement en bas de page d’email 
+RSSMESS_DISCR	Astuce: Utilisez comme RSS-feed texte un message court, en un paragraphe. Rss-feed va redirigez votre prospect vers le message en ligne. 
+DUBLICATES	Dupliquer la vérification du message 
+USE_MES_LOG_NEW	Ne pas envoyer les messages dupliquer aux abonnés:
+THANK_YOU_PAGE_SETTINGS	Configuration du page des remerciements:
+OR	Où
+GENARATE_PERSONALIZED_PAGE	Générer la page personnalisée du template 
+DOI_PAGE_SETTINGS	Configuration de la confirmation du double opt-in:
+UNSUBSCRIBE_PAGE_SETTINGS	Configuration du désabonnement 
+NOTIFICATION_HEADER	Configuration de la notification d’Admin 
+#End Version 4.21
+#########################	
+#file account_shabl.dat	
+##########################
+ACCOUNT_BIG	Compte
+TOTAL_PROSPECTS	Total des abonnés:
+ACTIVE	Active
+INACTIVE	Inactive:
+HTML_CODE_FORM	HTML code du formulaire:
+FORM_PREVIEW	Aperçu du formulaire:
+CUSTOM_FIELD	Champs personnalisés 
+CUSTOM_FIELD_NAME	Nom du champ personnalisé:
+ONLY_CHARS	3...20 caractères [A-Za-z0-9_] seulement
+IS_REQUIRED	Est requis?
+FIELD_FORMAT	Format du champ:
+ADD_FIELD	Ajouter le champ 
+CANCEL	Annuler 
+ACC_SETTINGS	Configuration du compte 
+PERSONAL	Personnel:
+FROM_NAME	De (nom):
+FROM_EMAIL	De (email):
+DEF_SUBSCRIB_NAME	Nom de l’abonné (recepteur) par défaut:
+REPLY_HEADER	Répondre à header:
+SUBSCRIB_OPTS	Options d’abonnement 
+REDIR_SUSCR_TO	Redirigez les abonnés à:
+REDIR_REMOV_TO	Redirigez après le désabonnement à:
+NOTIFY_ME_SUSCR	Notifiez quand quelqu’un s’abonne:
+NOTIFY_ME_UNSUB	Notifiez quand quelqu’un se désabonne:
+ACC_ADMIN_NAME	Nom du compte d’administrateur:
+ACC_ADMIN_MAIL	Email du compte d’administrateur:
+USE_DOI	Utilisez double opt-in:
+DOICONFURL	Double opt-in, la page de confirmation:
+LOGGING	Connexion
+USE_MES_LOG	Utiliser le message de connexion (vérifier la duplication des emails):
+LOCALIZ	Localisation:
+NO_UPPERCASE	Ne pas mettre en majuscule la première lettre du nom des abonnés:
+DEF_CHARSET	Configuration des caractères par défaut:
+SAV_ALL_SET	Enregistrer toute la configuration 
+POP_SET	Configuration du POP3 
+IS_POP	Autoriser l’abonnement en envoyant un email vide:
+SUBSCR_EMAIL	Email d’abonnement:
+POP_SERVER2	POP3 Serveur:
+POP_USER2	POP3 Nom d’utilisateur:
+POP_PASS	POP3 Mot de passe:
+POP_PORT	POP3 Port du Serveur:
+BAN_MAILS	Ban emails
+BAN_LIST	Ban liste (1 par ligne):
+CUST_ERR_MSG	Message d’erreur personnalisé:
+SORTFILTER	Trier ou filtrer par:
+SORTFILTER_SEARCH	Rechercher:
+SORTFILTER_ORDER	Commande:
+USE_DATE_RANGE	Utiliser la date:
+REC_PER_PAGE	Enregistrement par page:
+REC_PER_PAGE_SHOW	Show:
+REC_PER_PAGE_RECORDS	enregistrements
+SF_DISPLAY	Afficher!
+SF_SAVETEXT	Enregistrer comme texte...
+SF_REMOVE	Supprimer
+SF_INV_STATUS	Inverser le statut 
+SF_SEL_ALL	Tout sélectionner 
+SF_DESEL_ALL	Tout désélectionner 
+PROSPECT	Abonné
+PROSPECTS2	abonnés
+PROSP_NAME	Nom:
+PROSP_MAIL	Email:
+PROSP_BEGIN_DAY	Commencer par le jour:
+PROSP_NO_SEQ	Sans les messages consécutifs 
+PROSP_ADD_BEGIN_DAY	Ajouter les prospects dans la liste des messages consécutifs, en commençant par le jour 
+PROSP_UPD_USER	Mettre à jour l’utilisateur 
+BULK_REM	Suppression en masse
+PROSP_REM_DB	supprimé de la base de données 
+PROSP_REMOVE	Supprimer les prospects 
+PROSP_IMPORT	Importer les Prospects
+INSERT_TEXT	Insérer texte:
+OR_UPLOAD_FILE	ou télécharger le fichier:
+SEND_SUBSC_ALL_PROSP	Envoyer le message de confirmation de l’abonnement à tous les prospects importés.
+ADD_NO_SEQ	Ajouter seulement les nouveaux contacts au mailing liste 
+ADD_SEQ	Ajouter les prospects dans la liste des messages consécutifs, en commençant par le jour 
+COPY_PROSPS_FROM_ACC	Copier les prospects des comptes 
+ACCOUNT	Compte:
+FILTER	Filtre:
+IMPORT	Importer
+PROSP_EXPORT_READY	prospects prêts à être exportés.
+FORMAT	Format:
+EXPORT_TO	Exporter à:
+EXPORT	Exporter
+SUB_UNSUB_MSG	Messages S’abonner / Se désabonner 
+EDIT_DOI_CONF_MSG	Envoyer le message de confirmation de double opt-in 
+SEND_SUBSC_MSG	Envoyer le message de confirmation d’abonnement 
+SEND_UNSUB_MSG	Envoyer le message de confirmation de désabonnement 
+EDIT	Editer
+PREVIEW	Aperçu
+UPD_SETTINGS	Mettre à jour la configuration 
+ADD_NEW_MSG	Add new message > Ajouter le nouveau message
+SEQ_MSGS	Messages consécutifs:
+SEQ_MSG_SUBJECT	Objet du message
+ATTACH	Pièce jointe
+SENT	Envoyé
+DAY	Jour
+MANUAL_SHED_MSGS	Manuel/Messages consécutifs:
+SHED_DATE	Date de l’envoi programmé
+IN_PROGRESS	En cours
+BROADCAST	Lancer le mailing
+TERM_PROC	Stopper le processus
+TST_SND_STR1	Envoyer en tant que test les messages sélectionnés 
+TST_SND_STR2	à email suivant:
+BTN_TEST_SEND	Envoyer le Test 
+SUBJECT	Objet:
+TYPE	Type:
+CHARSET	Charset:
+PRIORITY	Priorité:
+MSG	Message:
+ADD_ATTACH	Ajouter les pièces jointes:
+SEL_MSG_TYPE	Sélectionner le type de ce message:
+DAYS_AFTER_REG	Envoyer après (jours):
+SAVE	Enregistrer
+#########################	
+#file accounts.dat	
+#########################	
+LOGOUT	DECONNEXION
+FEEDBACK_FORM	News/Support
+GLOBAL_SETTS	Configuration générale 
+GLOBAL_LENG	Langues
+STATS	Statistiques 
+XML_IMP	XML&nbsp;Importer
+XML_EXP	XML&nbsp;Exporter
+BOUNC_MAILS	Emails retournés
+MANUAL	Manuel en ligne
+ADD_NEW_ACC	Ajouter le nouveau compte
+CLONE	Clone:
+BTN_NEW_ACC	Créer le compte
+#########################	
+#file author.dat	
+#########################	
+AUTHOR_LINE1	Pour accéder au panneau du contrôle,
+AUTHOR_LINE2	vous devez entrer le mot de passe correct.
+PASSWORD	Mot de passe:
+ENTER	ENTRER
+#########################	
+#file bounce.dat	
+#########################	
+HANDLING_TOOL	Gestion des emails retournés 
+POP_ACCS	Comptes POP3 
+BOUNC_MSGS	Messages retournés
+BLACKLIST	Blackliste
+YOUR_POP_ACCS	Vos comptes POP3 
+NO_POP_ACCS_FOUND	Aucun compte POP3 n’a été trouvé
+TOTAL_ACCS	Total des comptes:
+POP_SERVER	POP3 Serveur:
+POP_USER	POP3 Utilisateur:
+REM_PROSPS_AFTER	Supprimer les abonnés après:
+BOUNC_HARD	hard retour 
+BOUNC_SOFT	soft&nbsp;hard
+DEL_BOUNC_MSGS	Supprimer les messages retournés 
+TEST_CONN	la connexion du test
+STATUS	Statut
+TEST	Test
+WITH_SEL	Avec sélectionné:
+DELETE	Supprimer
+ACTIVATE	Activer
+DEACTIV	Désactiver
+TOTALS	Total
+NO_MSGS_FOUND	Aucun message n’a été trouvé
+TOTAL_DATES	Toutes les dates:
+DATE	Date
+TOTAL	Total
+TOTAL_HARD	Total hard
+HARD	Hard
+PROSPS_REMOVED	Prospects supprimés
+PROSPS_INACT	Prospects désactivés
+PROSP_NOT_FOUND	Prospect n’a pas été trouvé
+SOFT	Soft
+TOTAL_SOFT	Total soft
+WAITING	Attente 
+POP_SERV_SETTS	Configuration  de la connexion du serveur POP3 
+DEL_BNC_ML_SERV	Supprimer les emails retournés du serveur POP3 
+DEF_COUNT_BOUNC	Définir le nombre des emails retournés avant de la suppression 
+REM_AFTER_HARD	Supprimer les prospects après hard retours:
+REM_AFTER_SOFT	Supprimer les prospects après soft retours:
+ACT_WITH_BOUNC	Actions concernant les prospects dont les emails ont été retournés:
+ACT_WITH_PROSP	Action concernant les prospects
+ADD_BNC_MAILS_BLACKL	Ajouter les emails à la base de données de la blackliste 
+SAV_ACC	Enregistrer le compte
+RESET	Annuler
+EMAIL	Email:
+BOUNC_CODE	Code du retour:
+HARD_SOFT	Hard/soft:
+PROC_STAT	Etat du processus:
+BOUNC_REASON	Raison du retour:
+ORDER_BY	Classer par:
+SHOW_EMAILS_EXIST_PROS	Monter les emails des prospects existants
+DISPLAY	Afficher
+NO_COL_BNC_MSGS_FOUND	Aucun message retourné n’a été trouvé 
+EXP_MAIL_TXT	Exporter les emails comme le fichier texte
+TOTAL_MSGS	Total des messages:
+BOUNC_MAIL	Email retourné
+PROSPS	Prospects
+INACT	Inactive
+RECVD	Reçu
+PROC_STAT2	Etat du processus 
+BNC_STATUS	Etat du retour
+BNC_REASON	Raison du retour 
+CODE	Code
+HARD_SOFT2	Hard/Soft
+BTN_DEL_MSGS	Messages supprimés
+BTN_REM_PROSP	Retirer le prospect
+BTN_ACT_PROSP	Activer le prospect
+BTN_INACT_PROSP	Désactiver le prospect
+RFC_ERR_DESCR	RFC1893 erreur du code de la description 
+CODE2	Code:
+BACK_2_BNC_MSGS	Retour vers les messages retournés, non envoyés 
+REG_SETTS	Configuration de l’enregistrement 
+REJECT_SUBSCR	Rejeter l’abonnement des emails de la blackliste 
+REG_ERR_MSG	Message d’erreur d’enregistrement:
+SAV_SETTS	Enregistrer la configuration 
+BNC_MAIL_BLACK	Emails retournés de la blackliste
+IMP_MAILS	Importer les emails 
+EXP_MAILS	Exporter les emails 
+NO_MAIL_FOUND	Aucun email n’a été trouvé 
+TOTAL_EMAILS	Total des emails:
+IMP_PROSPS	Importer les emails 
+IMP_PROSPS_DESC	Pour importer les emails vers la blackliste, coller les emails dans l’espace texte ci-dessous (un email par ligne). Avant l’importation, chaque email sera validé  si leur orthographe est correcte. 
+BTN_IMPORT	Importer
+BULK_REM_DESC1	Pour retirer les emails de la blackliste, collez les emails dans l’espace texte ci-dessous (un email par ligne) et cliquez sur « Retirer ». 
+BULK_REM_DESC2	Entrez un email par ligne. Vous pouvez utiliser également un masque. Par exemple, si vous tapez « hotmail » dans l’espace du texte, cela va retirer tous les emails, contenant le mot hotmail. 
+BULK_REM_DESC3	
+BULK_REM_DESC4	Par exemple "hotmail@aol.com", "mike@hotmail.com", "myhotmail@email.com" seront retirés de la liste.
+BTN_REMOVE	Retirer
+#########################	
+#file daylystat.dat	
+#########################	
+BRODC_STARTED	Mailing a été commencé 
+TIMES_THIS_DAY	fois aujourd’hui.
+REPORT_GEN	Ce rapport a été généré 
+#########################	
+#file exportxml.dat	
+#########################	
+STEP1	Etape 1 
+STEP1_DESC1	Sélectionnez un fichier XML du compte et le niveau dans ce fichier XML où vous voulez stocker les données 
+STEP1_DESC2	(Le fichier XML sera enregistré dans le répertoire actuel du FUMP)
+XML_DOC	Document XML:
+WHERE_STORE_XML_DOC	L’emplacement où les documents XML seront enregistrés:
+ENCODING	Encoder:
+CREATE_XSD	Créer le fichier XSD avec le tableau schème pour Access 2002™:
+NEXT2	NEXT[2]&gt;&gt;
+XSD_DESC1	Fichier XSD.
+XSD_DESC2	Si vous créez un fichier schéma XSD, par la suite, vous pourrez l’importer facilement dans le tableau du Microsoft Access 2002™. Le tableau aura le même nom que le nom du fichier.
+XSD_DESC3	Exemples: emails.xml ou emails.xsd.
+STEP2_SEL_FLDS	Etape 2 – Champs sélectionnés 
+STEP2_SEL_FLDS_DESC	SVP sélectionnez les champs où vous voulez importer les données.
+NEXT3	NEXT[3]&gt;&gt;
+STEP4_FINISH	Etape 4 – Fin
+XML_EXP_SUC	XML Exportation a été réussie ! 
+#########################	
+#file importxml.dat	
+#########################	
+IMP_ST1_DESC1	Sélectionner un compte, un fichier XML et le niveau où le fichier XML sera stocké 
+IMP_ST1_DESC2	(Le fichier XML doit être dans votre répertoire FUMP).
+LEVEL_DATA_STORED	Niveau où les données d’utilisateurs seront stockées:
+HERE_IS_SAMPLE	Voici un exemple du fichier XML que vous pouvez importer dans Microsoft Access 2002™
+STEP2_SEL_FLDS_DESC_IMP	SVP sélectionnez les champs que vous voulez utiliser pour importer les données.
+STEP3	Step 3 – Vous cherchez à importer:
+BTN_IMPXML	Importer&gt;&gt;
+XML_IMP_SUC	XML Importation a été réussie!
+PROSPS_WERE_ADD	prospects a été ajoutés à la base de données.
+#########################	
+#file links.dat	
+#########################	
+YOUR_LINKS	Vos liens
+ADD_NEW_LINK	Ajouter le nouveau lien >
+NO_LINKS_FOUND	Aucun lien n’a été trouvé 
+TOTAL_LINKS	Total des liens:
+TEMPLATE	Template
+NAMEE	Nom
+CLICKS	Cliques
+PROSPECTS	Prospects
+ISCLEAN	Purger
+DEL_SELECTED	Supprimer sélectionnés
+TOTALU	Total:
+LINKS_DESC1	Ici vous pouvez éditer les liens, ajouter les tags spécifiques dans vos messages pour pouvoir analyser l’activité des utilisateurs et voir l’efficacité de vos mailings. 
+LINKS_DESC2	Dans vos messages, vous avez juste besoin de placer un tag spécial comme [LINK123] au lieu de mettre le lien direct.
+EDIT_LINK	Editer le lien
+INS_NEW_LINK	Insérer le nouveau lien
+LINK_PROPS	Propriétés des liens 
+UPD_LINK	Mettre à jour le lien 
+SAV_LINK	Enregistrer le nouveau lien 
+BTN_CANCEL	Annuler
+SHOW_REC_FOR	Montrer l’enregistrement pour: 
+BTN_SHOW	Afficher
+DATE2	Date:
+LINK	Lien:
+MESSAGE	Message:
+NO_PROSPS_FOUND	Aucun prospect n’a été trouvé
+NO_CLICKS_FOUND	Aucune clique 
+ACT_UNIQ_PROSPS	Uniques cliques par prospects:
+CLICKS_FOUND	Cliques trouvées:
+CL_NAME	Nom
+CL_MAIL	Email
+CL_PROF	Profil
+TOTAL_CLICKS_U	Total des cliques:
+#########################	
+#file links.dat	
+#########################	
+REGISTRATION_ERROR	ERREUR D’ENREGISTREMENT
+REGISTER	S’enregister
+#########################	
+#file settings_shabl.dat	
+#########################	
+YOUR_PERS_INFO	Votre information personnelle
+YOUR_NAME	Votre nom:
+YOUR_EMAIL	Votre email:
+YOUR_PERS_INFO_DESCR	Cette configuration générale du panneau d’administration peut être utilisé pour tous les comptes par défaut. Vous pouvez également établir individuellement le panneau d’administration pour chaque compte. 
+SEND_ME_BROAD_STAT	Envoyez-moi les statistiques sur l’envoi du mailing 
+SEND_ME_BROAD_STAT2	par email:
+BTN_UPD_SETTS	Mettre à jour la configuration 
+MAIL_PROG_SETTS	Mail configuration
+SENDMAIL_PATH	Sendmail path:
+SEND_THROUGH	Envoyer via:
+SMTP_SERVER	SMTP server:
+SMTP_AUTH	SMTP authentification
+SMTP_REQ_SASL	SMTP serveur nécessite l’authentification SASL (Simple Authentication and Security Layer RFC2554) 
+SMTP_USER	SMTP nom d’utilisateur:
+SMTP_PASS	SMTP mot de passe:
+SEND_SPD	Vitesse d’envoi
+QUANT_PROCS	Nombre des processus concurrents:
+OR_B	OU
+USE_OLD_ALG	Utiliser ancien (processus unique) algorithme de l’envoi (si vous avez n’importe quel problème avec l’envoi des messages par le fichier script « envoyeur »)
+BOUNC_RET_PATH_OPTS	Path d’adresse pour les emails retournés, non-envoyés 
+USE_FOLLOW_UP	Utiliser un email suivant comme envoyeur SMTP:
+1ST_WAY	1ère solution:
+1ST_WAY2	Utiliser sendmail -f flag avec adresse suivante:
+2ND_WAY	2ème solution: Path-Retour du header de message:
+2ND_WAY2	Peut rester vide si vous ne désirez pas d’ajouter ce header.
+2ND_WAY3	Astuce: ce n’est pas une bonne idée d’ajouter manuellement ce header à vos messages, mais parfois cela marche avec Qmail.
+3RD_WAY	3ème solution: "Erreurs-A" header du message:
+3RD_WAY2	Peut rester vide, si vous ne voulez pas ajouter ce header.
+ADMIN_AREA_PASS	Mot de passe pour accéder à l’espace admin 
+ADMIN_AREA_PASS_OLD	Ancien mot de passe:
+ADMIN_AREA_PASS_NEW	Nouveau mot de passe:
+ADMIN_AREA_PASS_RET	Retaper le mot de passe:
+USE_PERIOD	Utiliser la période:
+USE_PERIOD_TO	à
+USE_PERIOD_BTN_SHOW	Afficher
+ENABLE_LOG	Activer connexion
+BTN_OK	OK
+BTN_CLENUP_LOGS_IN_RANGE	Purger le fichier logs par date
+BTN_CLEANUP_ALL_LOGS	Supprimer tout les logs
+BROAD_LOG_TOTAL	Mailing log. Total
+RECORDS	enregistrements.
+CURRENT_OR_PREV_BR_LOG	Mailing en cours ou précédent:
+ROWS_FOUND	lignes trouvés.
+SAVE_LOG_INTO	Enregistrer logs à 
+SAVE_LOG_INTO_FILE	fichier.
+BTN_SAVE_SETTS	Enregistrer la configuration 
+TIME_SYNCH	Temps de Synchronisation
+TIME_SYNCH_SRV_TIME	Temps du Serveur:
+TIME_SYNCH_CORR_TIME	Temps corrigé:
+TIME_SYNCH_COR_TIME	Correction du temps:
+TIME_SYNCH_HHMM	+hh:mm ou -hh:mm
+SETTS_REMOVE	Retirer
+SETTS_NAME	Nom
+SETTS_RESTORE	Restaurer
+SETTS_DATE	Date
+SETTS_SIZE	Taille
+BTN_REM_SEL	Retirer sélectionnés
+BTN_RESTORE	Restaurer
+NEW_BACKUP	Nouveau Backup
+NEW_BACKUP_NAME	Nom du nouveau backup:
+NEW_BACKUP_NAME_CHARS	[a-z_0-9] caractères seulement 
+BTN_BACKUP	Backup
+MAIL_PROG_PERF_TEST	Test de la performance du Mail programme 
+MAIL_PROG_PERF_TEST_DESC1	Ce test vous dira combien du temps faudra à votre serveurs pour envoyer tous les emails. 
+MAIL_PROG_PERF_TEST_DESC2	Entrez votre email ci-dessous et cliquez sur 
+MAIL_PROG_PERF_TEST_DESC3	Test
+MAIL_PROG_PERF_TEST_DESC4	bouton
+MAIL_PROG_PERF_TEST_DESC5	une fois seulement
+MAIL_PROG_PERF_TEST_DESC6	Follow Up Mailing List Processor enverra les emails à l’email indiqué. Ce processus sera temporisé. 
+MAIL_PROG_PERF_TEST_DESC7	Ce test va utiliser 
+ENTER_YOUR_EMAIL_ADDRESS	Entrez votre email 
+BLAST_SIZE	Blast taille (30-300 messages)
+MAIL_PROG_PERF_TEST_BTN_TEST	Test
+MAIL_PROG_PERF_TEST_RESULTS	Résultat du test sur la performance du Mail programme 
+MAIL_PROG_PERF_TEST_RESULTS1	messages ont été envoyés à
+MAIL_PROG_PERF_TEST_RESULTS2	Ce processus a pris 
+MAIL_PROG_PERF_TEST_RESULTS3	secondes
+MAIL_PROG_PERF_TEST_RESULTS4	Votre
+MAIL_PROG_PERF_TEST_RESULTS5	performance affichée ci-dessous: 
+MAIL_PROG_PERF_TEST_RESULTS6	messages par minute
+MAIL_PROG_PERF_TEST_RESULTS7	messages par heure
+#########################	
+#file responder.cgi	
+#########################	
+ACCOUNTMENU_MAIN	Menu du compte
+ACCOUNTMENU_OPTIONS	Options du compte
+ACCOUNTMENU_OPTIONS_DESCR	Ici vous pouvez éditer la configuration importante pour cette liste de mailing spécifique, y compris l’installation de la fonction POP3 s’abonner/se désabonner. Vous pouvez entrer votre « DE » nom et email, indiquer URL, où vos clients seront rediriger après l’abonnement ou le désabonnement, activer la notification d’admin et spécifier quand utiliser le double opt-in. 
+ACCOUNTMENU_HTML_FORM	Formulaire HTML 
+ACCOUNTMENU_HTML_FORM_DESCR	Ici vous pouvez générer et afficher le code html pour le formulaire d’abonnement qui sera placé sur votre site. Vous pouvez également ajouter et supprimer les champs supplémentaires, par exemple, téléphone, fax, adresse, etc. 
+ACCOUNTMENU_SUBSCR_MAN	Gestion des abonnées 
+ACCOUNTMENU_SUBSCR_MAN_DESCR	Ici vous pouvez ajouter, éditer et sauvegarder votre liste des prospects ou copier une liste d’un autre compte. 
+ACCOUNTMENU_EDIT_MESS	Editer Messages
+ACCOUNTMENU_EDIT_MESS_DESCR	Ici vous pouvez ajouter et éditer votre envoi personnalisé du mailing et des messages consécutifs, y compris les messages automatiques de confirmation d’abonnement ou de désabonnement et les fichiers attachés. Ici vous pouvez lancer tous les envois(mailouts).
+ACCOUNTMENU_LINKS	Liens&nbsp;Traqueur
+ACCOUNTMENU_LINK	Lien
+ACCOUNTMENU_LINKS_DESCR	Ici vous pouvez ajouter et éditer vos liens et voir les statistiques de nombre des cliques sur les liens de votre mailing.
+ACCOUNTMENU_LINKS_MESS_STAT	Statistiques
+ACCOUNTMENU_LINKS_ACT_PROSP	Activer prospects
+ACCOUNTMENU_LINKS_CLICKS	Cliques
+SETTINGSMENU_MAIN	Principal
+SETTINGSMENU_PERSONAL	Personnel
+SETTINGSMENU_PERSONAL_DESCR	Entrer votre nom d’utilisateur et votre email pour recevoir les rapports de mailings et les notifications quand quelqu’un s’abonne ou se désabonne.
+SETTINGSMENU_SENDING_OPTIONS	Options d’envoi
+SETTINGSMENU_SENDING_OPTIONS_DESCR	Installation de la méthode du Mailing. Sélectionner et installer votre web serveur mail programme et path ou l’adresse de votre serveur SMTP. En plus, vous pouvez ajouter les headers comme <i>"Retour-Path"</i> or <i>"Erreurs-A"</i> et définir mailbox pour les messages retournés, non envoyés. 
+SETTINGSMENU_ACCESS	Accès
+SETTINGSMENU_ACCESS_DESCR	Ici vous pouvez changer votre mot de passe pour votre espace admin.
+SETTINGSMENU_TIME_SYNC	Configuration du temps 
+SETTINGSMENU_TIME_SYNC_DESCR	Ici vous pouvez synchroniser l’heure du serveur et votre heure locale. C’est utile pour l’envoi des messages consécutifs. 
+SETTINGSMENU_PERFOM	Performance
+SETTINGSMENU_PERFOM_DESCR	C’est un outil pour tester la performance de votre serveur quand vous envoyer les mailings.
+SETTINGSMENU_BACUP_RESTORE	Sauvegarder/Restaurer
+SETTINGSMENU_BACUP_RESTORE_DESCR	Sauvegarder et restaurer la base de données.
+STATMENU_MAIN	Prinicpal
+STATMENU_ACT_LOGS	Logs d’activités
+STATMENU_ACT_LOGS_DESCR	Voir les logs des envois et logs s’abonner/se désabonner pour la date indiquée. Cela montre les enregistrements et la période quand le programme a exécuté vos commandes.
+STATMENU_CURRENT_BROADCAST	Log de l’envoi en cours
+STATMENU_CURRENT_BROADCAST_DESCR	Information sur le progrès de l’envoi en cours.
+STATMENU_TOTALS	Total
+STATMENU_TOTALS_DESCR	Le nombre total des messages envoyés pour ce compte, y compris les messages s’abonner/se désabonner.
+STATMENU_TOTALS_SENT_MESS	Messages envoyés
+STATMENU_TOTALS_SUBSCRIBERS	Abonnés
+STATMENU_TOTALS_PROSPECTS	Prospects
+PROSPMENU_ADD_PROSP	Ajouter le nouveau prospect >
+PROSPMENU_IMPORT	Importer la liste
+PROSPMENU_EXPORT	Exporter la liste
+PROSPMENU_COPY	Copier du compte 
+PROSPMENU_BULK_REMOVE	Retirer en masse 
+ERROR_NOT_CHANGE_URL	Merci de ne pas changer cet URL 
+ERROR	Erreur
+MENU_GO	Commencer
+ERROR_YOUR_NAME_REQUIRED	Votre nom est requis 
+ERROR_EMAIL_INCORRECT	Email est incorrect
+ERROR_EMAIL_REQUIRED	Email est requis 
+ERROR_REQUIRED	Requis
+ERROR_DUBL	Duplication
+ERROR_CANT_LOCK_FILE	Impossible de enclore le fichier pour l’écriture 
+ERROR_REQUIRED_SMALL	requis
+MESS_SETTINGS_UPDATED	Configuration a été mise à jour
+ERROR_FILENAME_INCORRECT	Le nom du fichier est incorrect 
+ERROR_INCORRECT	Incorrect
+ERROR_NOT_EQUAL	Non équivalent 
+ERROR_NOT_SELECTED	Non sélectionné
+ERROR_REQUIRED_SENDMAIL	Sendmail requis
+ERROR_INCORRECT_SENDMAIL_PATH	Path vers sendmail est incorrect 
+ERROR_INCORRECT_SENDMAIL_NOT_EXISTS	Sendmail n’existe pas sur ce serveur
+ERROR_REQUIRED_SMTP	Le nom du serveur SMTP est requis
+ERROR_INCORRECT_FORMAT	Format incorrect
+MESS_LOGOUT_TO_CHECK	Se déconnecter pour vérifer 
+ERROR_CANT_OPEN_DIR	Impossible d’ouvrir le répertoire 
+ERROR_CANT_UNLINK_FILE	Impossible de supprimer le fichier 
+ERROR_CANT_CREATE_DIR	Impossible de créer le répertoire 
+ERROR_CANT_OPEN_FILE	Impossible d’ouvrir le fichier 
+ERROR_CANT_WRITE	pour l’écriture 
+ERROR_NEED_TO_CREATE	Vous avez besoin de créer le fichier 
+ERROR_NEED_TO_CREATE2	et installer ses permissions à CHMOD 666 
+ERROR_SHORTER_THEN_3	Doit comporter plus de 3 caractères
+MONTH_1	Janvier 
+MONTH_2	Février 
+MONTH_3	Mars
+MONTH_4	Avril
+MONTH_5	Mai
+MONTH_6	Juin
+MONTH_7	Juiller
+MONTH_8	Août
+MONTH_9	Septembre
+MONTH_10	Octobre
+MONTH_11	Novembre
+MONTH_12	Décembre
+MESS_NO_BROADCAST_LOG	Aucun log trouvé sur l’envoi en cours ou l’envoi précédent 
+BROADCAST_LOG_PROC	Proc #
+BROADCAST_LOG_TIME	Heure
+BROADCAST_LOG_STATUS	Etat
+BROADCAST_LOG_MAIN	principal
+STAT_NO_MESS	Aucun message n’a été trouvé pour la date indiquée 
+STAT_STATISTICS	Statistiques
+STAT_TOTAL_PROSP	Nombre Total des prospects
+STAT_ACCOUNT	Compte
+STAT_SEQUNTIAL	Consécutif
+STAT_ACT_PROSP	Activer des prospects
+STAT_INACT_PROSP	Désactiver des prospects
+STAT_TOTAL	Total
+STAT_NO_LOGS_FOUND	Aucun logs n’a été trouvé 
+STAT_SHEDULED	Consécutifs, périodiques
+STAT_MANUAL	Manuel
+STAT_DOI	Double opt-in
+STAT_SUBSCRIBE	S’abonner
+STAT_UNSUBSCRIBE	Se désabonner
+STAT_SUBSCRIBERS	Abonnés
+STAT_UNSUBSCRIBERS	Désabonnés
+STAT_SENT_MESS_STAT	Statistiques des messages envoyés 
+STAT_SUBSCRIBERS_STAT	Statistiques des abonnés 
+STAT_PERIOD_FOR	pour
+STAT_PERIOD_FROM	de
+STAT_PERIOD_TILL	jusqu’à
+TXT_EMAIL_ADDRESS	Email
+TXT_NAME	Nom
+ERROR_IS_ALREADY_EXISTS	déjà dans notre base de données
+ERROR_NUMBER_REQUIRED	Doit contenir des chiffres 
+ERROR_TO_BIG	Nombre trop grand 
+ERROR_ALREADY_USED	déjà utilisé 
+ERROR_USER_NOT_FOUND	Erreur: Requête échoué, utilisateur n’a été trouvé 
+TXT_MODE_NEW	Nouveau
+TXT_MODE_EDIT	Editer
+USR_SENT_MESS	Messages envoyés
+USR_SENT_RECORDS_IN_LOGS	enregistrements dans le logs
+USR_SENT_MESSAGE	Message
+USR_SENT_DATE	Date
+USR_BROWSER_PAGE	Page
+USR_BROWSER_PROSPECTS	prospects
+USR_BROWSER_PREVIOUSE	Précédent
+USR_BROWSER_NEXT	Suivant
+USR_BROWSER_SHOWING	Affichage
+USR_BROWSER_FROM	de
+USR_BROWSER_NO_RECORDS_FOUND	Aucun enregistrement n’a été trouvé 
+USR_BROWSER_INACTIVE	Inactive
+USR_BROWSER_ACTIVE	Active
+USR_BROWSER_PENDING	Suspendu
+USR_BROWSER_CYCLE_DISABLED	Désactivé
+USR_BROWSER_EDIT_USER	Editer utilisateur
+USR_BROWSER_HEAD_SENT	Envoyé
+USR_BROWSER_HEAD_STATUS	Etat
+USR_BROWSER_HEAD_DATE	Date
+USR_BROWSER_HEAD_CYCLE	Cycle
+USR_BROWSER_HEAD_HOST	Host
+USR_BROWSER_HEAD_USERID	ID d’utilisateurs
+USR_BROWSER_USERS_REMOVED	prospects retirés
+USR_BROWSER_USERS_CHANGED	prospects changés
+USR_BROWSER_USERS_SHOW_FIELDS	Afficher les champs
+USR_BROWSER_USERS_SHOW_EXTRA	Afficher extra
+USR_BROWSER_USERS_SORT_ASC	Montant
+USR_BROWSER_USERS_SORT_DESC	Descendant
+USR_BROWSER_FINISHED	Terminé
+USR_BROWSER_ALL	Tout
+USR_BROWSER_CANT_IMPORT	Impossible d’importer - 0 prospects dans l’autre compte 
+USR_BROWSER_EXPORTED	Exporté
+USR_BROWSER_CANT_EXPORT Impossible d’exporter - prospects dans l’autre compte 
+USR_BROWSER_EXPORT_EMAIL_ONLY	Seulement email 
+USR_BROWSER_EXPORT_EMAIL	EMAIL
+USR_BROWSER_EXPORT_NAME	NOM
+USR_BROWSER_EXPORT_FILE	Fichier
+USR_BROWSER_EXPORT_PAGE	Page
+USR_BROWSER_BULK_QUERY_INCORRECT	Demande de masse est incorrecte 
+USR_BROWSER_BULK_CURRENT_ACCOUNT	Compte en cours 
+USR_BROWSER_BULK_ALL_ACCOUNTS	Tous les comptes 
+USR_BROWSER_IMPORT_PROSPADD	prospects ajoutés
+USR_BROWSER_IMPORT_ERRORS_DETECTED	erreurs detectées
+ERROR_FIELD_NAME_INCORRECT	Nom du champ est incorrect 
+HTML_FORM_FIELD_NAME	Nom du champ
+HTML_FORM_ERR_RESERVED	est réservé
+HTML_FORM_ERR_USED	est déjà utilisé
+HTML_FORM_ERR_EMPTY	est vide
+HTML_FORM_SUBSCRIBE_ACCOUNTS	Sélectionnez les comptes où vous voulez abonner automatiquement des prospects<br>quand ils s’abonnent à ce compte.
+HTML_FORM_SAVE_ACCOUNTS	Enregistrer les comptes
+HTML_FORM_UNSUBSCRIBE_ACCOUNTS	Sélectionnez les comptes où vous voulez automatiquement désabonner des prospects<br>quand ils s’abonnent à ce compte.
+HTML_FORM_UNSUBSCRIBE_ALL	Désabonner de tous les autres comptes 
+HTML_FORM_ADD_NEW	Ajouter un nouveau champ>
+HTML_FORM_NAME	Nom
+HTML_FORM_RESERVED	Réservé
+HTML_FORM_EMAIL	Email
+HTML_FORM_CONFIRM	Vous êtes sûr de vouloir supprimer ce champ ? Toutes les données seront perdues ! 
+HTML_FORM_YOU_HAVE	Vous avez
+HTML_FORM_COSTUM_FIELDS	champ(s) personnalisé (s)
+HTML_FORM_DROP	Supprimer
+HTML_FORM_UP	Monter
+HTML_FORM_DOWN	Descendre
+HTML_FORM_MOVE	Basculer
+HTML_FORM_SUBSCRIBE	S’abonner
+ERROR_URL_INCORRECT	URL n’est pas incorrect
+TXT_DEFAULT	Défaut
+ERROR_CANT_UPLOAD_FILE	Impossible de télécharger le fichier 
+ERROR_CANT_FIND_EMAIL	Impossible de trouver email 
+TXT_LINE	Ligne
+TXT_EMAIL	email
+TXT_ISINCORRECT	est incorrect
+TXT_IS_EXISTS	existe déjà
+TXT_IS_BOUNSED	est une blackliste des emails retournés, non envoyés 
+MESS_ERR_CONFIRM	Le texte du message doit contenir un tag spécial 
+ERROR_DATE_INCORRECT	Date est incorrecte
+MESS_CREATE_NEWMESS	Création du nouveau message pour ce compte 
+MESS_EDIT_MESS	Editer le message
+MESS_DOWNLOAD_ATTACH	Ajouter une pièce attachée 
+MESS_ATTACHMENTS	Pièces jointes
+MESS_TYPE_AUTO	Auto répondeurs
+MESS_TYPE_MANUAL	Manuellement
+MESS_TYPE_SCHEDULED	A telle date
+MESS_BROADCAST_STARTED	Envoi du mailing a été commencé à l’arrière-plan
+MESS_PREVIEW	Afficher
+LINKS_ALL_MONTH	Tous les mois 
+LINKS_ALL_MESS	Tous les messages
+LINKS_ALL_LINKS	Tous les liens
+LINKS_CHANGE	Changer
+LINKS_CHANGE_LINK	Changer le lien 
+MESS_PERS_EXTRA	Fusionner les champs, les mots
+MESS_PERS_LOAD_FROM_FILE	Ajouter le contenu du fichier 
+MESS_PERS_LOAD_FROM_TEMPL	Ajouter le contenu des templates 
+MESS_PERS_REDIR_LINK	lien redirigé
+MESS_PERS_REDIR_LINK_TO	à
+MESS_PERS_TRACK	Liens traqués
+MESS_PERS_NEW	Nouveaux
+TXT_VIEW	Voir
+LINKS_MESSAGES_LINKS_ACT	L’efficacité des liens dans vos messages 
+LINKS_VIEW_PROSP	Voir les prospects
+LINKS_VIEW_CLICKS	Voir les cliques
+ACCOUNT_EXISTS	Compte existe déjà 
+ACCOUNT_INVALID_NAME	Nom du compte est invalide 
+ACCOUNT_NO_ACCOUNTS	Aucun compte
+ACCOUNT_YOUR_ACCOUNTS	Vos comptes
+ACCOUNT_DISABLED	Désactivés
+ACCOUNT_DELETE_QUESTION	Vous êtes sûr de vouloir supprimer les comptes sélectionnés ? 
+ACCOUNT_INVERT_STATUS	Inverser le statut 
+LANG_SELECT_LANG	Sélectionnez la langue pour votre logiciel. 
+LANG_SELECT_LANG_TABHEADER	Sélectionnez votre langue par défaut et l’encodage 
+LANG_LANG	Langue
+#########################	
+#file bounce.cgi	
+#########################
+BOUNCE_ERROR	ERREUR DU PROCESSUS POUR LE RETOUR DES EMAILS 
+BOUNCE_ERROR_HEADER	ERREUR DU PROCESSUS POUR LE RETOUR DES EMAILS – Impossible de télécharger le module 
+Mail::DeliveryStatus::BounceValidator
+BOUNCE_ERROR_DESCR1	Impossible de télécharger le module Mail::DeliveryStatus::BounceValidator
+BOUNCE_ERROR_DESCR2	Merci de vérifier si le fichier <B>BounceValidator.pm</b> existe bien dans lib/Mail/DeliveryStatus/ répertoire ou demander à votre hébergeur d’installe les modules MIME::Tools.
+BOUNCE_ERROR_TXT	Erreur
+BOUNCE_ERROR_ACTION	Action
+BOUNCE_ERROR_ACTION_WAS_NOTFOUND	n’a pas été trouvé
+BOUNCE_ERROR_CANT_OPEN_CONN	Erreur: Impossible de se connecter à 
+BOUNCE_CONNECTED	CONNECTE
+BOUNCE_CONNECTED_AUTH	Authentification de l’utilisateur 
+BOUNCE_CONNECTED_AUTH_AND_PASS	et mot de passe **********
+BOUNCE_CONNECTED_LOGGED	Connecté à
+BOUNCE_CONNECTED_FETCH	Téléchargement des messages
+BOUNCE_CONNECTED_YOU_HAVE	Vous avez
+BOUNCE_CONNECTED_YOU_HAVE_MESS	messages dans votre boîte email
+BOUNCE_CONNECTED_LOADING	Premier téléchargement
+BOUNCE_CONNECTED_LOADING_MESS	messages
+BOUNCE_CONNECTED_LOADING_EMPTY	Votre boîte email est vide
+BOUNCE_ERROR_VALIDATOR	BounceValidator erreur: Impossible de parser le message
+BOUNCE_LOAD_MSG	Téléchargement du message
+BOUNCE_LOAD_MSG_IS_BOUNC	Ce message a été retourné
+BOUNCE_LOAD_MSG_EMAIL_IS	Email retourné est
+BOUNCE_LOAD_MSG_EMAIL_IS_DIAG	Diagnostic
+BOUNCE_LOAD_MSG_CANT_LOAD	Erreur: Impossible de télécharger le message
+BOUNCE_COUNT_TOTAL	Total
+BOUNCE_COUNT_TOTAL_MSGS	messages retournés dans votre boîte email 
+BOUNCE_TEST_OK	Test est OK
+BOUNCE_TEST_ERROR	Erreur: Authentification impossible - Configuration POP3 incorrecte
+BOUNCE_PAGE_REM_MAIL_ALL_ACC	Retirer email de tous vos comptes 
+BOUNCE_PAGE_SET_STATUS_INACT	Mettre l’état des prospects comme inactives 
+BOUNCE_PAGE_ADD_NEW_POP	Ajouter nouveau compte POP3 
+BOUNCE_PAGE_EDIT_POP	Editer compte POP3 
+BOUNCE_STATUS_WAITING	Patientez…
+BOUNCE_STATUS_REMOVED	Prospect retiré
+BOUNCE_STATUS_INACTIV	Prospect désactivé
+BOUNCE_STATUS_NOTFOUND	Prospect n’a pas été trouvé
+BOUNCE_STATUS_PROC_MAN	Procéder manuellement
+BOUNCE_SORT_HARD	Hard
+BOUNCE_SORT_SOFT	Soft
+BOUNCE_SORT_DATE	Date
+BOUNCE_SORT_MAIL	Email
+BOUNCE_SORT_ASC	Monter
+BOUNCE_SORT_DESC	Descendre
+BOUNCE_INPUT_REM_PROSP	Retirer prospects
+BOUNCE_INPUT_REM_PROSP_SURE	Êtes-vous sûr de vouloir supprimer 
+BOUNCE_INPUT_REM_PROSP_SURE_MAILS	emails
+BOUNCE_INPUT_REM_PROSP_CANCEL	Annuler
+BOUNCE_INPUT_BACK_BLACKLIST	Retour vers la Blackliste
+BOUNCE_EMAILS_WERE_REM	emails ont été retirés de la Blackliste
+BOUNCE_EMAILS_WERE_ADD	emails ont été ajoutés à la blackliste
+BOUNCE_ERROR_DELIVER_MSGS	Désolé, mais vous ne pouvez pas ajouter cet email. Merci de réessayer en utilisant un email différent.
+BOUNCE_SETTS_UPDATED	Configuration a été mise à jour
+#########################	
+#file xmlimport.cgi	
+#########################
+XMLI_ERROR_BNC_PROC	ERREUR DE PROCESSING SUR LES EMAILS RETOURNES 
+XMLI_ERROR_BNC_PROC_TXT	XML IMPORT ERREUR – impossible de charger le module XML::Parser
+XMLI_ERROR_BNC_PROC_TXT_DESCR1	Impossible de charger le module 
+XMLI_ERROR_BNC_PROC_TXT_DESCR2	Merci de demander à votre hébergeur d’installer 
+XMLI_ERROR_BNC_PROC_TXT_DESCR2_1	les modules.
+XMLI_ERROR_BNC_PROC_ERROR	Erreur
+XMLI_MSG	Do not change the URL
+XMLI_MSG_PROSPS_WERE_ADDED	prospects ont été ajouté et ont été
+XMLI_MSG_PROSPS_WERE_UPD	mises à jour dans la base de données
+XMLI_MSG_TOTAL_ELMS	Total d’éléments dans le fichier XML 
+XMLI_ERR_ELEMENT	Elément
+XMLI_ERR_ELEMENT_EMAIL	email
+XMLI_ERR_ELEMENT_EMAIL_INCORR	estvincorrect
+XMLI_ERR_ELEMENT_EMAIL_ALR_EX	déjà existe et a été mis à jour 
+XMLI_ERR_ELEMENT_EMAIL_WAS_NOT_ADDED_SQL	n’a pas été ajouté à la base de données SQL erreur
+#########################	
+#file xmlexport.cgi	
+#########################
+XMLE_PAGE_FUMP_DIR	Dans le répertoire FUMP 
+XMLE_PAGE_INTO_BRO	Dans navigateur 
+XMLE_PAGE_SAVE_AS_FILE	Enregistrer comme le fichier
+XMLE_PAGE_ENC_DEF	<default>
+XMLE_FIELDS_REG_DATE	Date d’enregistement
+XMLE_FIELDS_EMAIL	Email
+XMLE_FIELDS_NAME	Nom
+____STARTTEXTS____
+[T_SENDING_TIPS]	
+	<h2>Astuces pour configurer les headers pour les emails retournés. </h2>
+                    <p>Si vous avez l’intention à travailler avec les messages retournés, vous pouvez définir ici les options d’envoi.</p>
+                    <p>&nbsp;</p>
+                    <p><font color="#FF0000"><strong>Attention!</strong></font> 
+                      Messages non envoyés seront retournés selon la configuration par défaut, 
+                      Vous avez besoin de définir ou vérifier les options pour les messages non envoyés, si vous ne pouvez pas trouver le messages retournés dans votre boîte email ou vous avez besoin de spécifier une autre boîte email, différente de celle que vous utilisez dans vos mailings pour « From » ou « Répondre à » .</p>
+                    <p>Habituellement, tous les messages qui n’ont pas pu être distribués, seront retournés à l’email que vous avez indiqué dans le header Retour-path dans vos messages. Vous avez plusieurs solutions pour effectuer cela.</p>
+                    <p><strong><u>Envoi SMTP</u></strong></p>
+                    <p>Si vous utilisez SMTP pour envoyer vos messages, vous pouvez spécifier 
+                      Un différent email de votre headers 'DE' ou 'Répondre à'. 
+                      Vous avez besoin de cocher la case'Utiliser un email suivant pour l’envoi SMTP' 
+                      Et spécifier email. <br>
+                      <br>
+                      <strong><u>Configuration pour l’utilisation de la commande Sendmail</u></strong></p>
+                    <p>Peut-être, les résultats ne seront pas optimaux, mais vous avez quelques bonnes alternatives: </p>
+                    <p><br>
+                      <strong><em>Technique 1:</em></strong> Un -f flag</p>
+                    <p>Vous avez besoin de cocher 'Utiliser sendmail -f flag' et spécifier un email 
+                      ici</p>
+                    <p>Cela permet de configuer le header de Path-Retour.</p>
+                    <p>&nbsp;</p>
+                    <p><em><strong>Technique 2: </strong></em>Retour-Path header</p>
+                    <p>Si cela ne marche pas, vous pouvez essayer de configurer le header du Path-Retour ouvertement.  Ce n’est pas le meilleur moyen, mais Qmail permet de faire cela.</p>
+                    <p>&nbsp;</p>
+                    <p><strong>Technique 3: </strong>”Erreurs-à” header</p>
+                    <p>Un “Erreurs-à” header semble d’avoir être créé uniquement pour cette tâche, mais actuellement c’est un header désapprouvé. Utilisez-le avec précaution. Pour qu’il puisse effectuer le travail, vous devez configurer Sendmail pour voir un header actuel « Erreurs- à ». Si les techniques précédentes ont échoué, vous pouvez essayer de spécifier le header « Erreurs-à ».</p>
+                    <p>&nbsp;</p>
+                    <p>Pour tester une de ces configurations, envoyez-vous un teste message et regarder la source de ce message même dans votre logiciel de la réceptions des emails. Dans votre mail headers, vous devez apercevoir le header de Path-Retour, comme: </p>
+                    <blockquote>
+                      <p><code>Retour-Path: &lt;info-store@sellwide.net&gt;<br>
+                        Envoyé à: helpdesk@sellwide.net<br>
+                        Contenu-Disposition: en ligne<br>
+                        Contenu-Transfert-Encodage: binary<br>
+                        Contenu-Type: text/plain<br>
+                        MIME-Version: 1.0<br>
+                        X-Mailer: MIME::Lite 2.117 (F2.71)<br>
+                        Date: Tue, 14 Jun 2005 15:26:41 UT<br>
+                        From: FUMP Registration &lt;info-store@sellwide.net&gt;<br>
+                        To: Konstantin Ursaloff &lt;info-store@sellwide.net&gt;<br>
+                        Objet: Utilisateur mom_id2000@yahoo.com s’est enregistré au compte dlfumlpl 
+                     </code></p>
+                    </blockquote>
+[/T_SENDING_TIPS]
+[T_BOUNCE_HELP]
+<p>Ici vous pouvez éditer votre compte POP3 pour collecter les messages retournés et définir les règles/actions concernant ces prospects 
+(retirer
+                    ou désactiver les prospects):<br>
+                    <br>
+                    <strong>POP3 serveur</strong> - votre POP3 serveur pour collecter 
+                    Les messages</p>
+                  <p><strong>POP3 port</strong> - POP3 port par défaut est 110</p>
+                  <p><strong>POP3 user</strong> - nom d’utilisateur de l’email </p>
+                  <p><strong>POP3 password</strong> - mot de passe pour cet email<br>
+                  </p>
+                  <p><strong>Retirer&nbsp;les prospects&nbsp;après</strong>:<br>
+                    - <strong>Hard bounces:</strong> C’est le nombre des retours (hard bounces) des messages avant de retirer ou désactiver les prospects 
+(Hard 
+                    Bounces, ce sont les erreurs permanentes comme l’hébergeur ou l’utilisateur n’a pas été trouvé, rejet pour le spam. Cela signifie que votre message ne pourra jamais être envoyé à cet 
+utilisateur). Par défaut, les prospects seront retirés/désactivés après le premier retour du message (hard bounce), mais vous pouvez modifier cette configuration.</p>
+                  <p>- <strong>Soft bounces (retour des  messages soft):</strong> C’est le nombre des messages retournés (soft bounced) avant de retirer ou désactiver les prospects (Soft bounces, 
+                    Ce sont les erreurs temporaires comme la boîte email est pleine, etc.) 
+                    Par défaut, les prospects seront retirés/désactivés après 3 messages retournés, mais vous pouvez changer cette configuration.</p>
+                  <p><strong><br>
+                    Actions: </strong></p>
+                  <p>- <strong>Retirer les prospects de la base de donnés:</strong> vos prospects seront retirés 
+                    De la base de données.</p>
+                  <p>- <strong>Mettre l’état comme inactive:</strong> votre prospect 
+                    Sera désactivé.</p>
+                  <p>- <strong>Ajouter les emails retournés à la base de données blackliste:</strong> 
+                    Vous pouvez utiliser cette option pour automatiquement ajouter les prospects à la blackliste quand ils sont retirés ou désactivés.</p>
+[/T_BOUNCE_HELP]
+[T_ACCOUNT_OPTIONS_SUBSCRIBE]
+
+			  Vous pouvez permettre à vos clients de s’abonner en cliquant sur un lien email. <br>
+                          Tout simplement, créer un nouveau email pour votre nom de domaine ou n’importe quel compte email pop-3. <br>
+                          Ensuite, remplissez le formulaire ci-dessous. <br>
+                          C’est surtout très utile si vous voulez éviter que quelqu’un entre <br>
+                          un faux nom ou un faux email parce que cela va collecter l’information directement de leur compte client email. 
+                          <br>
+                          Regardez le fichier  README.TXT pour plus d’information.
+[/T_ACCOUNT_OPTIONS_SUBSCRIBE]
+[T_ACCOUNT_OPTIONS_SUBSCRIBE2]
+			<u>Autoriser l’abonnement en envoyant un email vide:</u> Cocher cette case si vous voulez autoriser aux gens de s’abonner<br>
+                          A votre mailing liste en cliquant sur un lien email ou en envoyant un email vide.<br> <br> <u>POP3 serveur:</u> 
+                          Un mail serveur de la réception des messages pour votre compte POP3. Votre provider du compte email
+                          POP3<br>
+                          Doit vous donner cette information.<br> <br> 
+                          <u>POP3 username:</u> Votre nom d’utilisateur pour acceder à votre compte 
+                          POP3.<br> <br> <u>POP3 password:</u> Votre mot de passe 
+                          Pour accéder à votre compte POP3.<br> <br> <u>POP3 server 
+                          port:</u> Sur la plupart des serveurs 110. Mais si vous avez un message d’erreur, posez la question à votre administrateur du serveur. 
+[/T_ACCOUNT_OPTIONS_SUBSCRIBE2]
+[T_ACCOUNT_OPTIONS_BLACKLIST]
+		    <p><u>Ban list:</u> Vous pouvez ajouter un email ou des hébergeur que vous voulez interdire, par exemple: <b>&quot;spam@yahoo.com&quot;</b> or 
+                      <b>&quot;hotmail.com&quot;</b>.</p>
+                    <p>&nbsp;</p>
+                    <p><u>Custom error message:</u> Ce message d’erreur sera affiché aux prospects si leurs emails sont interdits dans le formulaire des enregistrements erronés.<br>
+                    </p>
+[/T_ACCOUNT_OPTIONS_BLACKLIST]
+[T_MESSEDIT_PERSONALIZE]
+			<h2>Personnalisation de vos messages</h2><br>
+			<P>Pour ajouter un lien de désabonnement, vous avez besoin de mettre <strong>[UNSUBSCRIBE_LINK]</strong> 
+                    Un champ spécial à n’importe quel endroit de votre message (dans HTML messages 
+                    Vous pouvez ajouter un tag de lien de cette façon : &lt;a href=&quot;<strong>[UNSUBSCRIBE_LINK]</strong>&quot;&gt;Cliquez ici 
+                    Pour vous désabonner&lt;/a&gt;)
+                  <P>&nbsp;
+                  <p>Ce sont les champs des mots existants, vous pouvez les utiliser dans l’Objet ou le texte de votre message afin de le personnaliser.</p>
+                  <ul>
+                    <li><b>[FIRSTNAME]</b> va  extraire et afficher le prénom de votre prospect (i.e. 'Salut <b>[FIRSTNAME]</b>' va afficher 'Salut
+                      Jean!', si le prénom de votre prospect est <i>Jean</i>).</li>
+                    <li><b>[FULLNAME]</b> va extraire et afficher le nom et le prénom de votre prospect (i.e. 'Mr. <b>[FULLNAME]</b>,' va afficher 'Mr. 
+                      Jean Dupont', si le nom complet de votre prospect est <i>Jean Dupont</i>).</li>
+                    <li><b>[EMAIL]</b> va extraire et afficher email de votre prospect (i.e. 'Votre email est <b>[EMAIL]</b>' 
+                      Va afficher 'Votre email est john@aol.com', si email de votre prospect est <i>john@aol.com</i>. <br>
+                      <b>[DATE]</b> va afficher la date courante</li>
+                    <li><b>[DATE+32d] [DATE-32d] [DATE+1m] [DATE-1m] [DATE+1y] 
+                      [DATE-1y] </b>va afficher la date courante corrigée. </li>
+                    <li><b>[IP]</b> va extraire et afficher IP de votre prospect s’il s’est abonné via le formulaire HTML, ou valeur vide</li>
+                    <!--Please do not remove or translate this tag-->
+		    {additional}
+		    <!--Please do not remove or translate this tag-->
+		    </ul>
+[/T_MESSEDIT_PERSONALIZE]
+[T_BULK_REM_HELP]
+		<p>Vous pouvez retirer les prospects de ce compte en collant leurs emails <br>
+		Dans l’espace texte ci-dessous et en cliquant sur "retirer les prospects". </p>
+		<p>&nbsp;</p>
+		<p>Entrez un email par ligne. Vous pouvez utiliser également  un masque. Par exemple, si vous <br>
+		taper "hotmail" dans l’espace texte, cela va retirer tous les emails qui contiennent le mot
+		<br>
+		"hotmail" dans l’adresse email. <br>
+		<br>
+		i.e. hotmail@aol.com, mike@hotmail.com, myhotmail@email.com – vont être tous retirés de la liste </p>
+[/T_BULK_REM_HELP]
+[T_IMPORT_HELP]
+	<p>Ici vous pouvez ajouter les nouveaux contacts à votre liste des « prospects actuels » et les lancer <br>
+	Via votre installation complète de la messagerie. Vous pouvez également les coller dans <br>
+	L’espace texte "Insérer texte" ci-dessous ou les télécharger dans le fichier texte en utilisant le format ci-dessous: <br>
+	<br>
+	<i>John Smith|his@email.com</i><br>
+	or:<br>
+	<i>his@email.com</i><br>
+	or:<br>
+	<i>&lt;his@email.com&gt; </i><br>
+	or:<br>
+	<i>John Smith &lt;his@email.com&gt; </i><br>
+	or:<br>
+	<i>“John Smith” his@email.com</i><br>
+	or:<br>
+	<i>John Smith his@email.com</i><br>
+	<br>
+	Entrez un seul contact par ligne. Quand cela est fait, cliquez sur le bouton “Importer les Prospects”.</p>
+[/T_IMPORT_HELP]
+[T_DOI_MESS]
+Pour confirmer votre abonnement, cliquez sur le lien ci-dessous:
+
+[CONFIRM_URL]
+
+Si vous n’avez pas fait cette demande, vous n’avez pas besoin de faire quoi qu’il en soit, elle ne sera pas prise en compte.
+[/T_DOI_MESS]
+[T_ATTANTIONFILES1]
+<hr size="4" noshade>
+<H1 class="mess">Attention!</H1>
+Ces fichiers sont toujours sur votre serveur:
+<UL>
+[/T_ATTANTIONFILES1]
+[T_ATTANTIONFILES2]
+</UL><h2>Merci de les retirer après l’installation</H2><hr size=\"4\" noshade>
+[/T_ATTANTIONFILES2]
+

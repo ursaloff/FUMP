@@ -1,0 +1,311 @@
+<html>
+	<head>
+		<title>Account</title>
+<!--CHARSET-->
+		<link rel="stylesheet" href="style.css" type="text/css">
+		<script language="JavaScript">
+			<!--
+			function MM_findObj(n, d) { //v4.0  var p,i,x;
+				if(!d) d=document; 
+				if((p=n.indexOf("?"))>0&&parent.frames.length) {
+					d=parent.frames[n.substring(p+1)].document;
+					n=n.substring(0,p);
+				}
+				if(!(x=d[n])&&d.all) x=d.all[n];
+				for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+				for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+				if(!x && document.getElementById) x=document.getElementById(n);
+				return x;
+			}
+			function MM_changeProp(objName,x,theProp,theValue) { 
+				//v3.0  
+				var obj = MM_findObj(objName);
+				if (obj && (theProp.indexOf("style.")==-1 || obj.style)) eval("obj."+theProp+"='"+theValue+"'");
+			}
+			//-->
+		</script>
+	</head>
+	<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+		
+			<tr> 
+				<td class="data"> 
+					<h2>!!! don't edit this page !!!</h2>
+				</td>
+			</tr>
+		</table>
+		#start#links 
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+									<tr> 
+										
+    <td> <h2>[LNG_YOUR_LINKS]</h2>
+									
+      <a href="{ME}?ses={ses}&account={account}&act=mainbody&act2=changelink"><b> 
+      <h1>[LNG_ADD_NEW_LINK]</h1>
+      </b> </a> 
+      <!--rep_start-->
+      <!--rep_empty_start-->
+      <h3 class="mess">[LNG_NO_LINKS_FOUND]</h3>
+              <!--rep_empty_end-->
+              <!--rep_header_start-->
+<form name="form1" method="post" action="{ME}">
+<input name="issubmit" type="hidden" value="1">
+		{fm_hidden_ses} 
+		{fm_hidden_act} 
+		{fm_hidden_act2}     
+		{fm_hidden_account}         
+                  <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                <tr> 
+                  
+            <td> <h3>[LNG_TOTAL_LINKS] {RP_ALLRECORDS}</h3>
+              {RP_PAGE_LINE} 
+              <table width="100%" border="0" cellspacing="0" cellpadding="2" align="center">
+                <tr class="dataheader" > 
+                  <td width="3%">&nbsp;</td>
+                  <td width="15%">[LNG_TEMPLATE]</td>
+                  <td colspan="2"><nobr>[LNG_NAMEE]</nobr></td>
+                  <td width="30%">URL</td>
+                  <td width="7%" align="right"><nobr>[LNG_CLICKS]</nobr></td>
+                  <td width="7%" align="right">[LNG_PROSPECTS]</td>
+                  <td width="7%" align="right">[LNG_ISCLEAN]</td>
+                </tr>
+                <!--rep_header_end-->
+                <!--rep_row_start-->
+                <tr valign="middle" bgcolor="#F0F0F0" class="data"> 
+                  <td width="3%" align="left">{fm_check_id(value={r_id})}</td>
+                  <td width="15%" align="left"><strong>[LINK{r_id}]</strong></td>
+                  <td width="20%" align="left"><u>{r_name}</u></td>
+                  <td width="10%" align="left">{r_link}</td>
+                  <td width="30%" align="left"><a href="{r_url}" target="_blank">{r_url}</a></td>
+                  <td width="7%" align="right">{r_clicks}</td>
+                  <td width="7%" align="right">{r_users}</td>
+                  <td width="7%" align="right">{r_clean}</td>
+                </tr>
+                <!--ROW_DELMITTER-->
+                <tr valign="middle" class="data2"> 
+                  <td width="3%" align="left">{fm_check_id(value={r_id})}</td>
+                  <td width="15%" align="left"><strong>[LINK{r_id}]</strong></td>
+                  <td width="20%" align="left"><u>{r_name}</u></td>
+                  <td width="10%" align="left"><nobr>{r_link}</nobr></td>
+                  <td width="30%" align="left"><a href="{r_url}" target="_blank">{r_url}</a></td>
+                  <td width="7%" align="right"><nobr>{r_clicks}</nobr></td>
+                  <td width="7%" align="right">{r_users}</td>
+                  <td width="7%" align="right">{r_clean}</td>
+                </tr>
+                <!--rep_row_end-->
+                <!--rep_footer_start-->
+                <tr valign="middle" class="data"> 
+                  <td colspan="8" align="left"></td>
+                </tr>
+                <tr valign="middle" class="datafooter"> 
+                  <td colspan="2" align="left"> <input name="delete" type="submit"  value="[LNG_DEL_SELECTED]" class="BUTTONmy"  onClick="return confirm('Are you sure you want to delete selected links?');"
+				  ></td>
+                  <td width="20%" align="left">&nbsp;</td>
+                  <td width="10%" align="left">&nbsp; </td>
+                  <td width="30%" align="right"><strong><u>[LNG_TOTALU]</u></strong></td>
+                  <td width="7%" align="right"><u><strong>{clicks}</strong></u></td>
+                  <td width="7%" align="right"><strong><u>{users}</u></strong></td>
+                  <td width="7%" align="right">&nbsp;</td>
+                </tr>
+              </table>
+                  </td>
+                </tr>
+              </table>
+</form>			  
+              
+      <!--rep_footer_end-->
+      <!--rep_end-->
+      <table width="100%" border="0" cellpadding="0" cellspacing="0" class="comment">
+        <tr> 
+          <td>[LNG_LINKS_DESC1]<br>
+            [LNG_LINKS_DESC2]</td>
+        </tr>
+      </table> </td>
+									</tr>
+								</table>					
+					#end#links <br>
+#start#formlinks<br>
+<!--hideifnew-->
+<h2>[LNG_EDIT_LINK]<u>{name_link}</u></h2>
+<!--hideifnew-->
+<!--hideifedit-->
+<h2>[LNG_INS_NEW_LINK]</h2>
+<!--hideifedit-->
+<form name="form1" method="POST" action="{ME}" target="_self">
+  {error}{fm_hidden_id}{fm_hidden_ses} {fm_hidden_account}{fm_hidden_act} 
+  {fm_hidden_act2} 
+  <input type="hidden" name="issubmit" value="1">
+  <table width="50%" border="0" cellspacing="3" cellpadding="4" align="center">
+    <tr class="dataheader"> 
+      <td colspan="2"><b>[LNG_LINK_PROPS]</b></td>
+    </tr>
+    <tr class="data"> 
+      <td width="48%" align="right" class="data"><b>[LNG_NAMEE]</b></td>
+      <td width="52%"> <div align="left">{fm_text_name(size=40)}</div></td>
+    </tr>
+    <tr class="data" > 
+      <td align="right" width="48%"><b>URL:</b></td>
+      <td align="left" width="52%">{fm_text_url(size=40 maxlength=1024)}</td>
+    </tr>
+    <tr class="data" align="center"> 
+      <td colspan="2"> <table width="100%" border="0" cellspacing="0" cellpadding="4">
+          <tr align="center" valign="middle">
+		   
+            <td> <!--hideifnew--><input type="submit" value="[LNG_UPD_LINK]" class="BUTTONmy" name="submit"><!--hideifnew--> 
+			     <!--hideifedit--><input type="submit" value="[LNG_SAV_LINK]" class="BUTTONmy" name="submit"><!--hideifedit-->
+            </td>
+            <td> <input type="button" value="[LNG_BTN_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button23"> 
+            </td>
+          </tr>
+        </table></td>
+    </tr>
+  </table>
+</form>
+#end#formlinks <br>
+#start#statmess 
+<form name="form1" method="GET" action="{ME}" target="_self">
+  {error}{fm_hidden_ses}{fm_hidden_account}{fm_hidden_act} {fm_hidden_act2}{fm_hidden_modelog} 
+  <br>
+  [LNG_SHOW_REC_FOR]{fm_select_dateselect} 
+  <input type="submit" value="[LNG_BTN_SHOW]" class="BUTTONmy" name="submit">
+  <input type="hidden" name="issubmit" value="1">
+</form>
+{report}<br>
+#end#statmess<br>
+#start#prospects 
+<table width="100%" border="0" cellspacing="0" cellpadding="5">
+									<tr> 
+										<td> 
+	<form name="form1" method="GET" action="{ME}" target="_self">
+  {error}{fm_hidden_ses}{fm_hidden_account}{fm_hidden_act} {fm_hidden_act2}{fm_hidden_modelog} 
+  <br>
+        <input type="hidden" name="issubmit" value="1">
+
+        <table width="90%" border="0" align="center" cellpadding="4" cellspacing="0">
+          <tr> 
+            <td width="9%"><strong>[LNG_DATE2]</strong></td>
+            <td width="30%">{fm_select_dateselect}</td>
+            <td width="7%"><strong>[LNG_LINK]</strong></td>
+            <td width="54%">{fm_select_link}</td>
+          </tr>
+          <tr> 
+            <td><strong>[LNG_MESSAGE]</strong></td>
+            <td>{fm_select_message}</td>
+            <td><strong>[LNG_PROSP_MAIL]</strong></td>
+            <td>{fm_text_emailsearch}</td>
+          </tr>
+          <tr> 
+            <td>&nbsp;</td>
+            <td colspan="3"><input type="submit" value="[LNG_BTN_SHOW]" class="BUTTONmy" name="submit2"></td>
+          </tr>
+        </table>
+</form>									
+      <!--rep_start-->
+      <!--rep_empty_start-->
+      <h3 class="mess"> 
+        <!--IS_PROSPECTS-->
+        [LNG_NO_PROSPS_FOUND] 
+        <!--IS_PROSPECTS-->
+        <!--IS_CLICKS-->
+        [LNG_NO_CLICKS_FOUND] 
+        <!--IS_CLICKS-->
+      </h3>
+              <!--rep_empty_end-->
+              <!--rep_header_start-->
+
+        {fm_hidden_ses} {fm_hidden_act} {fm_hidden_act2} {fm_hidden_account} 
+        <table width="100%" border="0" cellspacing="0" cellpadding="4">
+                <tr> 
+                  
+            
+          <td> <h3> 
+              <!--IS_PROSPECTS-->
+              [LNG_ACT_UNIQ_PROSPS] 
+              <!--IS_PROSPECTS-->
+              <!--IS_CLICKS-->
+              [LNG_CLICKS_FOUND] 
+              <!--IS_CLICKS-->
+              {RP_ALLRECORDS}</h3>
+            {RP_PAGE_LINE} 
+            <!--IS_PROSPECTS-->
+            <table width="80%" border="0" cellspacing="0" cellpadding="2" align="center">
+              <tr class="dataheader" > 
+                <td width="40%"> <div align="left">[LNG_CL_NAME]</div></td>
+                <td width="30%"> <div align="left">[LNG_CL_MAIL]</div></td>
+                <td width="20%"> <div align="left">[LNG_CL_PROF]</div></td>
+                <td width="10%"> <div align="left"><nobr>[LNG_CLICKS]</nobr></div></td>
+              </tr>
+              <!--rep_header_end-->
+              <!--rep_row_start-->
+              <tr valign="middle" bgcolor="#F0F0F0" class="data"> 
+                <td width="40%" align="left">{r_name}</td>
+                <td width="30%" align="left"><a href="mailto:{r_email}">{r_email}</a></td>
+                <td width="20%" align="center">{r_url}</td>
+                <td width="10%" align="left"><div align="right">{r_clicks}<a href="{r_url_search}">...</a></div></td>
+              </tr>
+              <!--ROW_DELMITTER-->
+              <tr valign="middle" class="data2"> 
+                <td width="40%" align="left">{r_name}</td>
+                <td width="30%" align="left"><a href="mailto:{r_email}">{r_email}</a></td>
+                <td width="20%" align="center">{r_url}</td>
+                <td width="10%" align="left"><div align="right">{r_clicks}<a href="{r_url_search}">...</a></div></td>
+              </tr>
+              <!--rep_row_end-->
+              <!--rep_footer_start-->
+              <tr class="dataheader" > 
+                <td colspan="3"> <div align="right"><u>[LNG_TOTAL_CLICKS_U]</u></div></td>
+                <td width="10%"> <div align="right"><nobr><u>{total_clicks}...</u></nobr></div></td>
+              </tr>
+              <tr valign="middle" class="data"> 
+                <td height="2" colspan="4" align="left"></td>
+              </tr>
+            </table>
+            <!--IS_PROSPECTS-->
+            <!--IS_CLICKS-->
+            <table width="95%" border="0" cellspacing="0" cellpadding="2" align="center">
+              <tr class="dataheader" > 
+                <td width="28%">[LNG_DATE]</td>
+                <td width="28%"> <div align="left">[LNG_CL_NAME]</div></td>
+                <td width="24%"> <div align="left">[LNG_CL_MAIL]</div></td>
+                <td width="14%"> <div align="center">[LNG_CL_PROF]</div></td>
+                <td width="6%"> <div align="left"><nobr>[LNG_CLICKS]</nobr></div></td>
+              </tr>
+              <!--rep_header_end-->
+              <!--rep_row_start-->
+              <tr valign="middle" bgcolor="#F0F0F0" class="data"> 
+                <td width="28%" align="left">{r_date}</td>
+                <td width="28%" align="left">{r_name}</td>
+                <td width="24%" align="left"><a href="mailto:{r_email}">{r_email}</a></td>
+                <td width="14%" align="center">{r_url}</td>
+                <td width="6%" align="left"> <div align="right">1</div></td>
+              </tr>
+              <!--ROW_DELMITTER-->
+              <tr valign="middle" class="data2"> 
+                <td width="28%" align="left">{r_date}</td>
+                <td width="28%" align="left">{r_name}</td>
+                <td width="24%" align="left"><a href="mailto:{r_email}">{r_email}</a></td>
+                <td width="14%" align="center">{r_url}</td>
+                <td width="6%" align="left"> <div align="right">1</div></td>
+              </tr>
+              <!--rep_row_end-->
+              <!--rep_footer_start-->
+              <tr class="dataheader" > 
+                <td colspan="4"><div align="right"><u>[LNG_TOTAL_CLICKS_U]</u></div></td>
+                <td width="6%"> <div align="right"><nobr><u>{total_clicks}</u></nobr></div></td>
+              </tr>
+              <tr valign="middle" class="data"> 
+                <td height="2" colspan="5" align="left"></td>
+              </tr>
+            </table> 
+            <!--IS_CLICKS-->
+          </td>
+                </tr>
+              </table>
+      <!--rep_footer_end-->
+      <!--rep_end-->
+    </td>
+									</tr>
+								</table>					
+#end#prospects <br>
+
+</body>
+</html>

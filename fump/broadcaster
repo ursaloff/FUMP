@@ -1,0 +1,498 @@
+#!/usr/bin/perl
+######################################################################
+# Follow Up Mailing List Processor                                   #
+# Version 5.01.03                                                    #
+# Last modified 03/06/2009                                           #
+######################################################################
+use lib('lib');
+use POSIX qw(strftime);
+use Net::POP3;
+#use Mail::DeliveryStatus::BounceValidator;
+require "func.cgi";
+%PAR=();%ACCOUNT=();
+&db_prepare;
+unless ($^O=~/win/i){ #demonize
+	open STDIN, '/dev/null'   or doMonitor(0,"Can't read /dev/null: $!");
+	open STDOUT, '>/dev/null' or doMonitor(0,"Can't write to /dev/null: $!");
+	open STDERR, '>/dev/null' or doMonitor(0,"Can't dup stdout: $!");
+}
+CanIWork(0,1);
+IncreaseBroadcasterCounter('broadcast_starts');
+send_notification();
+$db->do("DELETE FROM ${PREF}brodcastlog");
+$db->do("OPTIMIZE TABLE ${PREF}brodcastlog");
+doMonitor(0,$LNG{BROADCAST_MAIN_PROC_STARTED});
+local @ACCOUNT=@{$db->selectcol_arrayref("Select pk_account from ${PREF}account WHERE  isact=1")};
+eval{require Mail::DeliveryStatus::BounceValidator};
+if ($@){
+	doMonitor(0,"$LNG{BROADCAST_CAN_NOT_LOAD_DELIVERY_MODULE}: $@");
+}else{
+	&UndeliveredMailProcessing;
+}
+&recievePOP3;
+CanIWork(0,0);
+&DeleteOldDOI;
+CanIWork(0,0);
+&preparetosend;
+CanIWork(0,0);
+&StartBroadcast;
+###################
+sub UndeliveredMailProcessing{
+	#Bounced messages status:
+	#0 - not processed (default)
+	#1 - prospect was deleted
+	#2 - prospect was inactivated
+	#3 - prospect was not found in the database
+	#5 - processed manually
+	#
+	#receiving mail from pop3 accounts 
+	my $sql="Select * from ${PREF}bounce_account WHERE isact=1";
+	my $out=$db->prepare($sql);
+	$out->execute();
+	doMonitor(0,$LNG{BROADCAST_BOUNCE_STARTED}) if $out->rows();
+	while(my $bounce_account=$out->fetchrow_hashref){
+		DeleteBouncedMessagesFromServer($bounce_account);
+		ProcessBouncedAccount($bounce_account);
+		DeleteBouncedMessagesFromServer($bounce_account);
+		my $hard_limit=$bounce_account->{hardcount};
+		my $soft_limit=$bounce_account->{softcount};
+		my %hard_soft_limit=(1=>$hard_limit,2=>$soft_limit);
+		doMonitor(0,"$LNG{BROADCAST_BOUNCE_STARTED_2}");
+		my $n;
+		foreach my $hard_soft_now(1..2){
+			my $sql="SELECT COUNT(message_key) as countmails, email FROM ${PREF}bounce_messages WHERE hardsoft=? AND fk_bounce_account=? AND action=0 GROUP BY email HAVING countmails>=? LIMIT 0 , 1";
+			my $out1=$db->prepare($sql);			
+			while(1){
+				$n++;				
+				CanIWork(0,0) if (($n/100) == int($n/100));
+				doMonitor(0,"". int($n/100)*100 . " $LNG{BROADCAST_BOUNCED_MESSAGES_PROCESSED}") if (($n/100) == int($n/100));
+				#print "Hard limit = $hard_limit , account = $bounce_account->{pk_bounce_account}\n";
+				$out1->execute($hard_soft_now,$bounce_account->{pk_bounce_account},$hard_soft_limit{$hard_soft_now});
+				last unless($out1->rows()); 
+				while(my $bounce_mail=$out1->fetchrow_hashref){
+				#print "$hard_soft_now Deleting email $bounce_mail->{email}\n";
+					if(GetSQLCount("SELECT * FROM ${PREF}user WHERE email=?",$bounce_mail->{email})){
+						if($bounce_account->{bounceaction}==2){
+							#Set prospects to inactive
+							#my $countprospects = update_db("${PREF}user",{isact=>0},{email=>$bounce_mail->{email}});
+							my $countprospects=$db->do("UPDATE ${PREF}user SET isact=0 WHERE email=?",undef,$bounce_mail->{email});
+							$countprospects=0 if ($countprospects=~/[^0-9]/);
+							update_db("${PREF}bounce_messages",{action=>2,countprospects=>$countprospects},{email=>$bounce_mail->{email}});
+						}else{						
+							#Delete prospects
+							my $sql="SELECT pk_user FROM ${PREF}user WHERE email=?";
+							my $out2=$db->prepare($sql);
+							$out2->execute($bounce_mail->{email});
+							my $countprospects=0;
+							while(my $prospect=$out2->fetchrow_hashref){
+								DeleteUser($prospect->{pk_user});
+								$countprospects++;
+							}
+							update_db("${PREF}bounce_messages",{action=>1,countprospects=>$countprospects},{email=>$bounce_mail->{email}});	
+						}
+					}else{
+						update_db("${PREF}bounce_messages",{action=>3},{email=>$bounce_mail->{email}});
+					}
+					if($bounce_account->{isaddtoban}){
+						$db->do("REPLACE INTO `${PREF}bounce_banemails` ( `email` ) VALUES (?)",undef,$bounce_mail->{email});
+					}					
+				}
+			}
+			
+		}
+		doMonitor(0,"$LNG{BROADCAST_BOUNCED_FINISHED}");
+	}
+}
+sub ProcessBouncedAccount{
+	my $account=shift;
+	CanIWork(0,0);
+	doMonitor(0,"$LNG{BROADCAST_PROCESSING_BOUNCED_ACCOUNT} $account->{pop3server} for $LNG{BROADCAST_PROCESSING_BOUNCED_ACCOUNT2} $account->{pop3user}\n");
+	#print "Processing bounce $account->{pop3server} for $account->{pop3user}\n";
+	my $pop;
+	unless (defined ($pop = Net::POP3->new($account->{pop3server},Port=>$account->{pop3port}))){
+		doMonitor(0,"$LNG{BROADCAST_BOUNCED_POP3ERROR} $account->{pop3server} $LNG{BROADCAST_BOUNCED_POP3ERROR2}");
+		return;
+	}
+	if(defined ($pop)){
+		if(defined($pop->login($account->{pop3user}, $account->{pop3pass}))){
+			my $messages;
+			return unless (defined ($messages = $pop->list));
+			my $IDlist=$pop->uidl();
+			map{
+				delete($IDlist->{$_}) if (GetSQLCount("SELECT * FROM ${PREF}bounce_allmessages WHERE messageid=?",$IDlist->{$_}))
+			}keys %$IDlist;
+			doMonitor(0,"$LNG{BROADCAST_BOUNCED_WE_HAVE} ".scalar(keys(%$IDlist))." $LNG{BROADCAST_BOUNCED_NEW_MESSAGES}") if scalar(keys(%$IDlist));
+			my $n;
+			foreach my $msgid (sort {$a<=>$b} keys %$IDlist){
+				$n++;
+				#print "Processing message $msgid\n";
+				my $messageID=$IDlist->{$msgid};
+				next unless(length($messageID));
+				#print "Message ID: $messageID\n";
+				next if (GetSQLCount("SELECT * FROM ${PREF}bounce_allmessages WHERE messageid=?",$messageID));
+				my $message = $pop->get($msgid);
+				CanIWork(0,0) if (($n/30) == int($n/30));
+				doMonitor(0,"". int($n/100)*100 . " messages downloaded") if (($n/100) == int($n/100));
+				if (scalar (@$message)){
+					$db->do("INSERT INTO `${PREF}bounce_allmessages` (`messageid`,`date`) VALUES (?,$NOW)",undef,$messageID);
+					#insert_db("${PREF}bounce_allmessages",{messageid=>$messageID});
+					
+					my $bounce = eval { Mail::DeliveryStatus::BounceValidator->new($message, {'log'=> sub{}}) };
+					if ($@){
+						doMonitor(0,"$LNG{BROADCAST_BOUNCED_CANT_PARSE_MESS} $@");
+						next;
+					}
+					next if(GetSQLCount("SELECT * FROM ${PREF}bounce_messages WHERE message_key=?",$messageID));
+					if($bounce->is_bounce()){
+						my $diag=$bounce->diagnostics;
+						$BounceStatus=$diag->{_hardsoft};
+						my $HardSoft="";
+						if($BounceStatus=~/Hard/i){
+							#Hard message
+							$HardSoft=1;
+						}else{
+							#Soft message
+							$HardSoft=2;
+						}
+						my $Action=0;
+						my $sql_insert=
+						qq|
+INSERT INTO `${PREF}bounce_messages` (`message_key` , `date` , `email` , `action` , `status` , `reason` , `fk_bounce_account`,`hardsoft` ) 
+VALUES (?, $NOW , ?, ?, ?, ?, ?,?)
+|;
+						$db->do($sql_insert,undef,
+							$messageID,
+							$bounce->email,
+							$Action,
+							$diag->{Status},
+							"".$diag->{_rule_key}.": ".$diag->{'Diagnostic-Code'},
+							$account->{pk_bounce_account},
+							$HardSoft
+						);
+						doMonitor(0,"SQL error: \n $sql_insert \n : ERROR: $DBI::err - $DBI::errstr") if $DBI::err;
+					}
+				}
+			}
+			$pop->quit();
+
+		}else{
+			doMonitor(0,"$LNG{BROADCAST_BOUNCED_ERR_INCORRECT_LOGIN} $account->{pop3server}");
+			return;
+		}
+	}
+}
+sub DeleteBouncedMessagesFromServer{
+	my $account=shift;
+	CanIWork(0,0);
+	#DELETE BOUNCED EMAILS FROM SERVER;
+	if($account->{deleteemails}){
+		my $pop;
+		doMonitor(0,"$LNG{BROADCAST_BOUNCED_DELETING} $account->{pop3server} $LNG{BROADCAST_PROCESSING_BOUNCED_ACCOUNT2} $account->{pop3user}\n");		
+		unless (defined ($pop = Net::POP3->new($account->{pop3server},Port=>$account->{pop3port}))){
+			doMonitor(0,"$LNG{BROADCAST_BOUNCED_POP3ERROR} $account->{pop3server} $LNG{BROADCAST_BOUNCED_ERR_TODELMESS}");
+			return;
+		}
+		if(defined($pop->login($account->{pop3user}, $account->{pop3pass}))){		
+			doMonitor(0,"$LNG{BROADCAST_BOUNCED_DOWNLOADING_MESSAGES}");		
+			my $IDlist=$pop->uidl();
+			map{
+				#doMonitor(0,"SELECT * FROM ${PREF}bounce_messages WHERE message_key='$IDlist->{$_}'");
+				delete($IDlist->{$_}) unless (
+					GetSQLCount("SELECT * FROM ${PREF}bounce_messages WHERE message_key=?",$IDlist->{$_})
+				);
+			}keys %$IDlist;
+			doMonitor(0,"$LNG{BROADCAST_BOUNCED_NEED_TO_DELETE} ".scalar(keys %$IDlist)." $LNG{BROADCAST_BOUNCED_NEED_TO_DELETE2}");
+			my $n;
+			foreach my $msgid (sort {$a<=>$b} keys %$IDlist){
+				$pop->delete($msgid);					
+				$n++;
+				doMonitor(0,"" . int($n/100)*100 . " messages deleted") if (($n/100) == int($n/100));
+			}
+			$pop->quit();
+			doMonitor(0,"$LNG{BROADCAST_BOUNCED_DELETING_FINISHED}");
+		}else{
+			doMonitor(0,"$LNG{BROADCAST_BOUNCED_ERR_INCORRECT_LOGIN} $account->{pop3server}");
+			return;
+		}
+
+	}	
+}
+
+sub preparetosend{
+	my $account;
+	my $count=0;
+	doMonitor(0,"$LNG{BROADCAST_CHECKING_MANUAL}");
+	foreach $account(@ACCOUNT){
+		my %conf=loadCONF($account);
+		my $sql=<<ALL__;
+		SELECT pk_mess,senddat,UNIX_TIMESTAMP(senddat) AS utime ,repeating,typesend
+		FROM ${PREF}mess WHERE 
+		(fk_account=?) 
+		AND	((typesend='senddat' AND TO_DAYS(senddat)<=TO_DAYS($NOW)) OR 
+			((typesend = 'senddat' OR typesend = 'manual')	AND issendnow=1	))
+ALL__
+		my $out=$db->prepare($sql);
+		
+		$out->execute($account);
+		ErrorDBI(0,$sql);
+		my %output;
+		while (%output=%{$out->fetchrow_hashref}){
+			my $out_user=$db->prepare("select pk_user FROM ${PREF}user WHERE fk_account=? AND isact=1");
+			$out_user->execute($account);
+			ErrorDBI(0,"select pk_user FROM ${PREF}user WHERE fk_account=? AND isact=1");
+			while (my %output_user=%{$out_user->fetchrow_hashref}){
+				if($output{repeating} && $output{typesend} eq 'senddat'){
+					#Message will be repeated not needed dublicates can be sent
+					AddToSend($output_user{pk_user},$output{pk_mess});
+					$count++;
+					CanIWork(0,0) unless ($count % 500);
+				}else{
+					if(CanISendForUser($output_user{pk_user},$output{pk_mess},\%conf)){
+						AddToSend($output_user{pk_user},$output{pk_mess});
+						$count++;
+						CanIWork(0,0) unless ($count % 500);
+					}
+				}
+			}
+			if($output{repeating} && $output{typesend} eq 'senddat'){
+				my %RULES=(1=>"DAY",2=>"DAY",3=>"MONTH",4=>"YEAR");
+				#2 - WEEK but it's working only on Mysql 5.0
+				my $val=1;
+				$val=7 if $output{repeating}==2;
+				my $incr="DATE_ADD( $NOW, INTERVAL $val $RULES{$output{repeating}} )";
+				my $sql="UPDATE ${PREF}mess SET senddat=$incr,issendnow=0,  datesend=$NOW WHERE pk_mess=?";
+				$db->do($sql,undef,$output{pk_mess});
+				doMonitor(0,"SQL error:  $sql  : ERROR: $DBI::err - $DBI::errstr")  if $DBI::err;
+				
+				
+			}else{
+				$db->do("UPDATE ${PREF}mess SET senddat=NULL,issendnow=0, typesend='manual', datesend=$NOW WHERE pk_mess=?",undef,$output{pk_mess});
+			}
+			
+		}
+	}
+	CanIWork(0,0);
+	doMonitor(0,"$LNG{BROADCAST_MANUAL_AND_SCHEDULED}: $LNG{BROADCAST_NEED_TO_SEND} $count $LNG{BROADCAST_NEED_TO_SEND2}") if $count;
+	#SEQUENTIAL MESSAGES
+	my $count=0;	
+	my $repeated;
+	doMonitor(0,"$LNG{BROADCAST_CHECKING_SEQUENTIAL}");
+	foreach $account(@ACCOUNT){
+		my %conf=loadCONF($account);
+		my $sql="select pk_mess,days from ${PREF}mess WHERE fk_account=? AND typesend='auto' ORDER BY days ASC";
+		my $out=$db->prepare($sql);
+		$out->execute($account);
+		my $prev_days=0;
+		my %messages;
+		my $max_message_id;
+		while (my $mess=$out->fetchrow_hashref){
+			my $mess_now_days=$mess->{days};
+			$messages{$mess->{pk_mess}}=$mess;
+			$max_message_id=$mess->{pk_mess};
+			my $dif_days=$mess_now_days-$prev_days;
+			my $sql;
+			my @WHERE;
+			push(@WHERE,"fk_account=$account");
+			push(@WHERE,"isact=1");
+			push(@WHERE,"IFNULL(TO_DAYS(IFNULL(datelastsend,datereg)),0)+$dif_days <= TO_DAYS($NOW)");
+			push(@WHERE,"days<>-1");			
+			push(@WHERE,"days<$mess_now_days+1");
+			if($prev_days){
+				push(@WHERE,"days>=$prev_days");
+			}
+			$sql="SELECT pk_user,days  FROM ${PREF}user WHERE ".join(" AND ",map{"( $_ )"}@WHERE);
+			#doMonitor(0,$sql);
+			my $out1=$db->prepare($sql);
+			$out1->execute();
+			#&Error; 
+			while (my %output_user=%{$out1->fetchrow_hashref}){
+				if($conf{seqcycle_enabled} || CanISendForUser($output_user{pk_user},$mess->{pk_mess},\%conf) ){
+					AddToSend($output_user{pk_user},$mess->{pk_mess});
+					$db->do("UPDATE ${PREF}user SET days=?, messlastsend=?, datelastsend=$NOW WHERE pk_user=?",undef,$mess_now_days+1,$mess->{pk_mess},$output_user{pk_user});
+					#doMonitor(0,"Update error:".$DBI::errstr) if $DBI::errstr;
+					$count++;
+					CanIWork(0,0) unless ($count % 500);
+				}
+			}
+			$prev_days=$mess->{days};
+		}
+		if($conf{seqcycle_enabled}){
+			if(exists $messages{$conf{seqcycle_startmess}} and $max_message_id){
+				$conf{seqcycle_days}=1 unless $conf{seqcycle_days}=~/^\d+$/;
+				my $repeat_query="";
+				if(length $conf{seqcycle_maxrepeat} and $conf{seqcycle_maxrepeat}=~/^\d+$/){
+					$repeat_query=" AND sequence_repeat<$conf{seqcycle_maxrepeat}"
+				}
+				my $sql=qq|SELECT * FROM ${PREF}user WHERE fk_account=? AND  messlastsend=? AND DATE_ADD(datelastsend,INTERVAL $conf{seqcycle_days} DAY) >= $NOW $repeat_query|;
+				my $out1=$db->prepare($sql);
+				$out1->execute($account,$max_message_id);
+				my $mess_now_days=$messages{$conf{seqcycle_startmess}}->{days};
+				while (my $hr=$out1->fetchrow_hashref){
+					AddToSend($hr->{pk_user},$conf{seqcycle_startmess});
+					$db->do("UPDATE ${PREF}user SET days=?, messlastsend=?, datelastsend=$NOW, sequence_repeat=sequence_repeat+1 WHERE pk_user=?",undef,$mess_now_days+1,$conf{seqcycle_startmess},$hr->{pk_user});
+					$count++;
+					$repeated++;
+					CanIWork(0,0) unless ($count % 500);
+				}				
+			}else{
+				doMonitor(0,"$LNG{BROADCAST_SEQUENCE_REPEAT_ERR} $conf{seqcycle_startmess} $LNG{BROADCAST_SEQUENCE_REPEAT_ERR2} $ACCOUNT{$account}") ;
+			}
+		}
+	}#end foreach
+	doMonitor(0,"$LNG{BROADCAST_FOLLOWUP}: $LNG{BROADCAST_NEED_TO_SEND} $count $LNG{BROADCAST_NEED_TO_SEND2}") if $count;
+	doMonitor(0,"$LNG{BROADCAST_FOLLOWUP}: $LNG{BROADCAST_SEQ_WAS_RESTARTED} $repeated $LNG{BROADCAST_SEQ_WAS_RESTARTED2}") if $repeated;
+}
+###################################
+sub send_notification{
+	my %conf=loadCONF(0);
+	return unless $conf{statbyemail};
+	my $br_log=select_one_db("SELECT * FROM ${PREF}stat_dayly WHERE date = CURDATE() - INTERVAL 1 DAY");
+	return unless $br_log->{date};
+	return if $br_log->{is_adm_notif};
+	my $html=GetStatDailyPage();	
+	$msg = new MIME::Lite 	
+		From    =>"$LNG{DAILY_REPORT_FROM_NAME} <$conf{adminemail}>",
+		To      =>"$conf{adminname} <$conf{adminemail}>",	
+		Subject =>"$LNG{DAILY_REPORT_SUBJ}: $br_log->{date}",
+		Type     =>'text/html',
+		Data    =>$html;
+	MIMEsendto($conf{adminemail},$msg);
+	$db->do("UPDATE ${PREF}stat_dayly SET is_adm_notif=1 WHERE date = CURDATE() - INTERVAL 1 DAY");
+}
+#####################
+sub pop3adduser{
+	my $user=shift;
+	my $account=shift;
+	my $conf=shift;
+	return unless $user;
+	if (($user=~/MAILER-DAEMON/i)||($user=~/AUTOREPLY/i)||($user=~/$conf->{subscribeemail}/i)){
+		return;
+	}
+	my $i;
+	$user=~s/=\?.*?\?=//g; #ignoring encoded names
+	$user=~s/([a-zA-Z0-9_.\-]+@[a-zA-Z0-9_.\-]+)//; #extract email
+	my $mail = lc($1);
+	$user=~s/[<>)("]/ /g;
+	$user=~s/\s+/ /g;
+	unless ($mail){
+		doMonitor(0,"$LNG{BROADCAST_CANT_FIND_EMAIL} [ $user ]");
+		return;
+	}
+	unless (checkemail($mail)){
+		doMonitor(0,"$LNG{BROADCAST_INCORRECT_EMAIL} $mail");
+		return;
+	}
+	if (is_email_banned($mail, $conf->{banmails})){
+		doMonitor(0,"$LNG{BROADCAST_EMAIL_BANNED} $mail");
+		return;
+	}
+	if(lc($mail) eq lc($conf->{subscribeemail})){
+		doMonitor(0,"$LNG{BROADCAST_IS_SUBSCRIBE_ADDR} $mail : $LNG{BROADCAST_IS_SUBSCRIBE_ADDR2}");
+		return;
+	}
+	if (GetSQLCount("SELECT * FROM ${PREF}user WHERE email=? AND fk_account=?",$mail,$account)){
+		doMonitor(0,"$LNG{BROADCAST_ALREADY_SUBSCRIBED}: $mail");
+		return;
+	}
+	doMonitor(0,"$LNG{BROADCAST_ADDING_NEW_SUBSCRIBER} $mail ($user)  $LNG{BROADCAST_ADDING_NEW_SUBSCRIBER2} $ACCOUNT{$account}");
+	doLog("$LNG{BROADCAST_ADDING_NEW_SUBSCRIBER} $mail ($user)  $LNG{BROADCAST_ADDING_NEW_SUBSCRIBER2} $ACCOUNT{$account}");
+	&registerUSER($account,$mail,$user,{},{});
+}
+###################
+sub recievePOP3{
+	my $account;
+	my $mail_server,$username,$password,$Port;
+	foreach my $account(@ACCOUNT){
+		my %conf=loadCONF($account);
+		next unless $conf{ispop3};
+		doMonitor(0,"$LNG{BROADCAST_POP3_PROCESS_STARTED} $ACCOUNT{$account}");
+		$mail_server=$conf{pop3server};	
+		$username=$conf{pop3user};
+		$password=$conf{pop3pass};
+		$Port=$conf{pop3port} || 'pop3(110)'; 
+		my $pop;
+		unless (defined ($pop = Net::POP3->new($mail_server,Port=>$Port))){
+			doMonitor(0,"$LNG{BROADCAST_POP3_ERROR} $ACCOUNT{$account}: $LNG{BROADCAST_POP3_ERROR2} $mail_server : $!");
+			next;
+		}
+		unless(defined ($pop->login($username, $password))){
+			doMonitor(0,"$LNG{BROADCAST_POP3_ERROR} $ACCOUNT{$account}: $LNG{BROADCAST_POP3_ERROR3} $mail_server , $LNG{BROADCAST_POP3_ERROR4} $username): $! $LNG{BROADCAST_POP3_ERROR5}");
+			$pop->quit();
+			next;
+		}
+		unless (defined ($messages = $pop->list)){
+			$pop->quit();
+			next;
+		}
+		foreach $msgid (keys %$messages) {
+			$message = $pop->top($msgid);
+			unless (defined $message) {
+				doMonitor(0, "$LNG{BROADCAST_POP3_CANT_FETCH}: $msgid $!");
+				$pop->quit();
+				next;
+			}
+			foreach (@$message){
+				if (/^from:(.*)/i){
+					pop3adduser($1,$account,\%conf);
+					last;
+				}
+			}
+			$pop->delete($msgid);
+		}
+		$pop->quit();
+		doMonitor(0,"$LNG{BROADCAST_POP3_FINISHED} $ACCOUNT{$account} ");
+	}
+}
+
+sub DeleteOldDOI{
+	my $sql="select fk_user, fk_doi, ${PREF}user.fk_account as account  from ${PREF}doiaccounts, ${PREF}user WHERE  pk_user=fk_user AND ${PREF}user.isact=0 AND ${PREF}user.datereg<DATE_SUB($NOW,INTERVAL 7 DAY)";
+	my $out=$db->prepare($sql);
+	$out->execute();
+	my %output;
+	my %doikeys;
+	while (%output=%{$out->fetchrow_hashref}){
+		$user=loaduser($output{fk_user});
+		doLog("$LNG{BROADCAST_DELETE_DOI} $user->{name} ($user->{email}) $LNG{BROADCAST_DELETE_DOI2} $ACCOUNT{$output{account}} $LNG{BROADCAST_DELETE_DOI3}");
+		DeleteUser($output{fk_user});
+		#$db->do("Delete from ${PREF}user WHERE pk_user=?",undef,$output{fk_user});
+		#$db->do("Delete from ${PREF}doiaccount WHERE fk_user=?",undef,$output{fk_user});		
+		$doikeys{$output{fk_doi}}=1;
+	}
+	if (%doikeys){
+		$db->do("DELETE FROM ${PREF}doi WHERE pk_doi IN(".join(",",keys %doikeys).")");
+	}
+}
+sub StartBroadcast{
+	my %conf=loadCONF(0);
+	my $COUNT_PROC=$conf{COUNT_PROC} || 1;
+	$COUNT_PROC=10 if ($COUNT_PROC>10);
+	$COUNT_PROC=1 if $COUNT_PROC=~/[^\d]/;
+	my $count=GetSQLCount("SELECT * FROM ${PREF}tosend");
+	unless($count){
+		doMonitor(0,"$LNG{BROADCAST_NO_MESS}");
+		exit;
+	}
+	unless($conf{OLD_ALGORITHM_PROC}){
+		doMonitor(0,"$LNG{BROADCAST_DISTRIBUTION_STARTED}") if ($COUNT_PROC>1);	
+		$db->do("UPDATE ${PREF}tosend SET proc=0 WHERE 1");
+		if($COUNT_PROC==1){
+			$db->do("UPDATE ${PREF}tosend SET proc=1 WHERE 1");
+		}else{
+			my $mess_for_process=int($count/$COUNT_PROC) || 1;
+			my $start=0;
+			foreach(1..$COUNT_PROC-1){
+				$db->do("UPDATE ${PREF}tosend SET proc=? WHERE proc=0  LIMIT  $mess_for_process",undef,$_);
+				$start=$start+$mess_for_process;
+			}
+			$db->do("UPDATE ${PREF}tosend SET proc=$COUNT_PROC WHERE proc=0");		
+		}
+		doMonitor(0,"$LNG{BROADCAST_DISTRIBUTION_FINISHED}");
+		CanIWork(0,0);
+		exec("$^X sender ".$COUNT_PROC);
+	}else{
+		$db->do("UPDATE ${PREF}tosend SET proc=1");		
+		CanIWork(0,0);
+		Broadcast(1,1);
+	}
+}
+

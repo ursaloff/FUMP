@@ -1,0 +1,153 @@
+<html>
+	<head>
+		<title>Account</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+		
+			<tr> 
+				<td class="data"> 
+					<h2>!!! don't edit this page !!!</h2>
+				</td>
+			</tr>
+		</table>
+		#start_report
+<!--IFRELOAD-->
+<SCRIPT LANGUAGE="JavaScript">
+		<!-- hide from old browsers
+parent.frames['left'].location.reload();
+// done: hide from old browsers -->
+</SCRIPT>
+<!--IFRELOAD-->
+<!--rep_start-->
+      <!--rep_empty_start-->
+      <h3 class="mess">[LNG_ACCOUNT_BROWSER_NO_ACCOUNTS_FOUND]</h3>
+              <!--rep_empty_end-->
+              <!--rep_header_start-->
+			  {RP_PAGE_LINE} 
+ <table width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        
+            <td class="line"> 
+              <table width="100%" height="0%" border="0" align="center" cellpadding="2" cellspacing="1">
+        <tr class="dataheader" > 
+          <td>&nbsp; </td>
+          <td width="3%">[LNG_ACCOUNT_ID]</td>
+          <td width="50%">[LNG_ACCOUNT_NAME]</td>
+          <td >[LNG_DESCRIPTION]</td>
+          <td >[LNG_ORDER]</td>
+        </tr>
+        <!--rep_header_end-->
+        <!--rep_row_start-->
+        <tr valign="middle" class="data"> 
+          <td width="16"  align="left"> <table width="100%"  border="0" cellspacing="0" cellpadding="1">
+              <tr> 
+                <td><a href="{ME}?ses={ses}&act=manageaccount&modify=chstatus&id={r_pk_account}" onClick="return confirm('{r_confirm_activation}')" title="{r_statustitle}"><img src="{r_img}" width="16" height="16" border="0" alt="{r_status}"></a></td>
+                <td><a href="{ME}?ses={ses}&act=manageaccount&act2=accountpref&id={r_pk_account}"   title="[LNG_ACCOUNT_EDIT_ACCOUNT_DESCR]"><img src="img/b_props.png" width="16" height="16" border="0"></a></td>
+                <td><a href="{ME}?ses={ses}&act=manageaccount&act2=accountpref&clone={r_pk_account}"   title="[LNG_ACCOUNT_CLONE_ACCOUNT_DESCR]"><img src="img/editcopy.png" width="16" height="16" border="0"></a></td>
+                <td><a href="{ME}?ses={ses}&act=manageaccount&modify=delete&id={r_pk_account}" onClick="return confirm('[LNG_ACCOUNT_DELETE_CONFIRM]')" title="{r_statustitle}"><img src="img/b_drop.png" width="16" height="16" border="0"></a></td>
+              </tr>
+            </table></td>
+          <td width="3%" align="center">{r_pk_account}</td>
+          <td width="50%" align="left"><a href="{ME}?ses={ses}&act=mainbody&account={r_pk_account}" target="main">{r_name}</a></td>
+          <td width="40%" align="left">{r_descr}</td>
+          <td width="3%" align="left"> <table width="100%"  border="0" align="center" cellpadding="1" cellspacing="0">
+              <tr> 
+                <td width="16">{r_moveup}</td>
+                <td width="10"><img src="img/sp.gif" width="10" height="16" border="0"></td>
+                <td width="16">{r_movedown}</td>
+              </tr>
+            </table></td>
+        </tr>
+        <!--ROW_DELMITTER-->
+        <tr valign="middle" class="data2"> 
+          <td width="16"  align="left"> <table width="100%"  border="0" cellspacing="0" cellpadding="1">
+              <tr> 
+                <td><a href="{ME}?ses={ses}&act=manageaccount&modify=chstatus&id={r_pk_account}" onClick="return confirm('{r_confirm_activation}')" title="{r_statustitle}"><img src="{r_img}" width="16" height="16" border="0" alt="{r_status}"></a></td>
+                <td><a href="{ME}?ses={ses}&act=manageaccount&act2=accountpref&id={r_pk_account}"   title="[LNG_ACCOUNT_EDIT_ACCOUNT_DESCR]"><img src="img/b_props.png" width="16" height="16" border="0"></a></td>
+                <td><a href="{ME}?ses={ses}&act=manageaccount&act2=accountpref&clone={r_pk_account}"   title="[LNG_ACCOUNT_CLONE_ACCOUNT_DESCR]"><img src="img/editcopy.png" width="16" height="16" border="0"></a></td>
+                <td><a href="{ME}?ses={ses}&act=manageaccount&modify=delete&id={r_pk_account}" onClick="return confirm('[LNG_ACCOUNT_DELETE_CONFIRM]')" title="{r_statustitle}"><img src="img/b_drop.png" width="16" height="16" border="0"></a></td>
+              </tr>
+            </table></td>
+          <td width="3%" align="center">{r_pk_account}</td>
+          <td width="50%" align="left"><a href="{ME}?ses={ses}&act=mainbody&account={r_pk_account}" target="main">{r_name}</a></td>
+          <td width="40%" align="left">{r_descr}</td>
+          <td width="3" align="center"> <table width="100%"  border="0" align="center" cellpadding="1" cellspacing="0">
+              <tr> 
+                <td width="16">{r_moveup}</td>
+                <td width="10"><img src="img/sp.gif" width="10" height="16" border="0"></td>
+                <td width="16">{r_movedown}</td>
+              </tr>
+            </table></td>
+        </tr>
+        <!--rep_row_end-->
+        <!--rep_footer_start-->
+      </table>
+                  </td>
+                      </tr>
+ </table>			  
+<!--rep_footer_end-->
+<!--rep_end-->
+<table width="60%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr>
+    <td align="center"><form action="{ME}" method="get" target="_self"   >{fm_hidden_ses}{fm_hidden_act}<input type="hidden" name="act2"  value="accountpref"> <input type="submit" class="BUTTONmy" value="[LNG_CREATE_NEW_ACCOUNT]"></form></td>
+  </tr>
+</table>
+<br>
+<table width="60%" border="0" align="center" cellpadding="2" cellspacing="0">
+  <tr>
+    <td width="16"><img src="img/active.gif" width="16" height="16"></td>
+    <td width="99%" align="left" valign="middle">- [LNG_ACCOUNT_STATUS_ACTIV_DESCR]</td>
+  </tr>
+  <tr>
+    <td width="16"><img src="img/inact.gif" width="16" height="16"></td>
+    <td width="99%" align="left" valign="middle">- [LNG_ACCOUNT_STATUS_INACTIV_DESCR]</td>
+  </tr>
+  <tr>
+    <td width="16"><img src="img/b_props.png" width="16" height="16"></td>
+    <td width="99%" align="left" valign="middle">- [LNG_ACCOUNT_EDIT_ACCOUNT_DESCR]</td>
+  </tr>
+  <tr>
+    <td width="16"><img src="img/editcopy.png" width="16" height="16"></td>
+    <td width="99%" align="left" valign="middle">- [LNG_ACCOUNT_CLONE_ACCOUNT_DESCR]</td>
+  </tr>
+  <tr>
+    <td width="16"><img src="img/b_drop.png" width="16" height="16"></td>
+    <td width="99%" align="left" valign="middle">- [LNG_ACCOUNT_DELETE_ACCOUNT_DESCR]</td>
+  </tr>
+</table>
+#end_report<br>
+#start_account_pref 
+<form action="{ME}" method="post" target="_self"   >
+{fm_hidden_ses}
+{fm_hidden_act}
+{fm_hidden_act2}
+{fm_hidden_id}
+{fm_hidden_clone}
+<input type="hidden" value="1" name="issubmit">
+<table width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="line">
+<table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
+          <tr class="dataheader"> 
+            <td colspan="2" align="center">{ACTION_VALUE}</td>
+        </tr>
+        <tr class="data"> 
+            <td width="40%" align="right"><strong>[LNG_ACCOUNT_NAME]:</strong></td>
+            <td width="60%">{fm_text_name} <font color="red"><strong>*</strong></font></td>
+        </tr>
+        <tr class="data"> 
+            <td width="40%" align="right"><strong>[LNG_ACCOUNT_DESCR]:</strong></td>
+            <td width="60%">{fm_text_descr(size=40)} </td>
+        </tr>
+          <tr class="data"> 
+            <td width="40%" align="center" ><input type="button" value="[LNG_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button"></td>
+            <td width="60%" align="center"><input type="submit" value="[LNG_UPD_SETTINGS]" class="BUTTONmy" name="submit42"></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+</form>
+#end_account_pref 
+</body>
+</html>

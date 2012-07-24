@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Follow Up Mailing List Processor Upgrade Installation</title>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<table width="100%" height="100%" cellpadding="5" cellspacing="0"
+border="0" style="border:1pt solid #FF0000">
+  <tr>
+	<td valign="top">
+<BR><BR>
+    <h2  class="mess">Follow Up Mailing List Processor<br>
+        Upgrade to ###VERSION###</h2>
+<BR><BR><BR>      
+    
+<form name="form1" method="post" action="{ME}">
+<!--START--><!--START1-->
+        <h2> Step 1 </h2>
+        <div align="center"> {error} </div>
+          <input type="hidden" name="step" value="3">
+          {fm_hidden_licence}  
+        
+            <table border="0" cellpadding="5" cellspacing="0"
+       width="70%" align="center">
+              <tr class="data">  
+                <td align="center" colspan="2"> 
+                  <p><b>Thank you for using FUMP</b>
+              <p><b>Checking previous version:</b> 
+ 					<br>
+                {message}
+                </td>
+              </tr>
+            </table>
+			<!--UPG-->
+<table border="0" cellpadding="7" cellspacing="0" width="55%" align="center">
+                      <tr >
+                        <td align="center"> 
+   						Now additional fields and tables will be created in the database.<br>
+                        Click <strong>&quot;FINISH&quot;</strong> to upgrade and finish installation.<br>
+                  <br>
+                           <input name="submit" type="submit" class="BUTTONmy"  value="FINISH">
+                        </td>
+                      </tr>
+                    </table>	
+<!--UPG-->							
+        <!--END1-->
+        <!--START2-->
+        <h2> Step 2</h2>
+		<BR>
+          <h2 class="mess" align="center">UPGRADE IN PROGRESS...</h2>
+            
+        <table border="0" cellpadding="5" cellspacing="0"    width="70%" align="center">
+          <tr class="data"> 
+              <td align="center" colspan="2"> 
+                <p><b>Upgrading database:</b> 
+  				<br>
+                  {message}
+	                &nbsp;
+                </td>
+              </tr>
+            </table>
+            <h2 class="mess" align="center">To log in <a href="responder.cgi">Click here&gt;&gt;&gt;</a></h2>
+          <!--END2-->
+        <!--END-->
+      </form>
+    <p align="center"><br>
+    <br>
+    <br>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+

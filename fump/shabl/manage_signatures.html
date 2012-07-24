@@ -1,0 +1,131 @@
+<html>
+	<head>
+		<title>Account</title>
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FFFFFF">
+		
+			<tr> 
+				<td class="data"> 
+					<h2>!!! don't edit this page !!!</h2>
+				</td>
+			</tr>
+		</table>
+		#start_report
+<!--rep_start-->
+      <!--rep_empty_start-->
+      <h3 class="mess">[LNG_SIGNATURES_NOT_FOUND]</h3>
+              <!--rep_empty_end-->
+              <!--rep_header_start-->
+			  {RP_PAGE_LINE} 
+ <table width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
+                      <tr> 
+                        
+            <td class="line"> 
+              <table width="100%" height="0%" border="0" align="center" cellpadding="2" cellspacing="1">
+        <tr class="dataheader" > 
+          <td>&nbsp; </td>
+          <td width="170">[LNG_SIGNATURE_NAME]</td>
+          <td >[LNG_USED_IN_MESSAGES]</td>
+        </tr>
+        <!--rep_header_end-->
+        <!--rep_row_start-->
+        <tr valign="middle" class="data"> 
+          <td width="59"  align="left"> <table width="100%"  border="0" cellspacing="0" cellpadding="1">
+              <tr> 
+			    <td><a href="{ME}?ses={ses}&act=signatures&act2=pref&id={r_pk_signature}"   title="[LNG_SIGNATURE_EDIT_DESCR]"><img src="img/b_props.png" width="16" height="16" border="0"></a></td>
+                <td><a href="{ME}?ses={ses}&act=signatures&act2=pref&clone={r_pk_signature}"   title="[LNG_SIGNATURE_CLONE_DESCR]"><img src="img/editcopy.png" width="16" height="16" border="0"></a></td>
+                <td>{r_delete_signature}</td>
+              </tr>
+            </table></td>
+          <td width="170" align="left">{r_name}</td>
+          <td width="387" align="left">{r_descr}</td>
+        </tr>
+        <!--ROW_DELMITTER-->
+        <tr valign="middle" class="data"> 
+          <td width="59"  align="left"> <table width="100%"  border="0" cellspacing="0" cellpadding="1">
+              <tr> 
+			    <td><a href="{ME}?ses={ses}&act=signatures&act2=pref&id={r_pk_signature}"   title="[LNG_SIGNATURE_EDIT_DESCR]"><img src="img/b_props.png" width="16" height="16" border="0"></a></td>
+                <td><a href="{ME}?ses={ses}&act=signatures&act2=pref&clone={r_pk_signature}"   title="[LNG_SIGNATURE_CLONE_DESCR]"><img src="img/editcopy.png" width="16" height="16" border="0"></a></td>
+                <td>{r_delete_signature}</td>
+              </tr>
+            </table></td>
+          <td width="170" align="left">{r_name}</td>
+          <td width="387" align="left">{r_descr}</td>
+        </tr>
+        <!--rep_row_end-->
+        <!--rep_footer_start-->
+      </table>
+                  </td>
+                      </tr>
+ </table>			  
+<!--rep_footer_end-->
+<!--rep_end-->
+<table width="60%" border="0" align="center" cellpadding="5" cellspacing="0">
+  <tr>
+    <td align="center"><form action="{ME}" method="get" target="_self"   >{fm_hidden_ses}{fm_hidden_act}<input type="hidden" name="act2"  value="pref"> 
+        <input type="submit" class="BUTTONmy" value="[LNG_CREATE_NEW_SIGNATURE]">
+      </form></td>
+  </tr>
+</table>
+<br>
+<table width="60%" border="0" align="center" cellpadding="2" cellspacing="0">
+  <tr> 
+    <td width="16"><img src="img/b_props.png" width="16" height="16"></td>
+    <td width="99%" align="left" valign="middle">- [LNG_SIGNATURE_EDIT_DESCR]</td>
+  </tr>
+  <tr> 
+    <td width="16"><img src="img/editcopy.png" width="16" height="16"></td>
+    <td width="99%" align="left" valign="middle">- [LNG_SIGNATURE_CLONE_DESCR]</td>
+  </tr>
+  <tr> 
+    <td width="16"><img src="img/b_drop.png" width="16" height="16"></td>
+    <td width="99%" align="left" valign="middle">- [LNG_SIGNATURE_DELETE_DESCR]</td>
+  </tr>
+</table>
+#end_report<br>
+#start_account_pref 
+<form action="{ME}" method="post" target="_self"   >
+{fm_hidden_ses}
+{fm_hidden_act}
+{fm_hidden_act2}
+{fm_hidden_id}
+{fm_hidden_clone}
+<input type="hidden" value="1" name="issubmit">
+<table width="60%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="line">
+<table width="100%" border="0" align="center" cellpadding="3" cellspacing="1">
+          <tr class="dataheader"> 
+            <td colspan="2" align="center">{ACTION_VALUE}</td>
+          </tr>
+          <tr class="data"> 
+            <td width="40%" align="right"><strong>[LNG_SIGNATURE_NAME]:</strong></td>
+            <td width="60%"><!--SHOW_IF_NEW-->{fm_text_name} <font color="red"><strong>*</strong></font><!--SHOW_IF_NEW--><!--SHOW_IF_EDIT-->{fm_hidden_name}{name}<!--SHOW_IF_EDIT--></td>
+          </tr>
+          <tr class="data"> 
+            <td align="right"><strong>[LNG_TEXT_SIGNATURE]:</strong></td>
+            <td>{fm_textarea_sig_text}</td>
+          </tr>
+          <tr class="data"> 
+            <td align="right"><strong>[LNG_HTML_SIGNATURE]:</strong></td>
+            <td>{fm_textarea_sig_html}</td>
+          </tr>
+          <tr align="left" class="data"> 
+            <td colspan="2" ><table width="100%" border="0" cellpadding="0" cellspacing="0" class="smallcomment">
+                <tr> 
+                  <td class="smallcomment"> [LNG_SIGNATURES_EDIT_DESCR] </td>
+                </tr>
+              </table></td>
+          </tr>
+          <tr class="data"> 
+            <td width="40%" align="center" ><input type="button" value="[LNG_CANCEL]" class="BUTTONmy" onClick="history.back(1)" name="button"></td>
+            <td width="60%" align="center"><input type="submit" value="[LNG_UPD_SETTINGS]" class="BUTTONmy" name="submit42"></td>
+          </tr>
+        </table></td>
+  </tr>
+</table>
+</form>
+#end_account_pref 
+</body>
+</html>

@@ -8,6 +8,8 @@ use CGI;
 $q=new CGI;
 my %PAR=();
 map{$PAR{$_}=$q->param($_)}$q->param();
+
+
 if($PAR{get} eq 'calendar' or $PAR{get} eq 'selectbox' or $PAR{get} eq 'htmltotext'){
 	open(FILE,"shabl/$PAR{get}.js");
 	print $q->header('text/plain');

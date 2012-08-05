@@ -259,7 +259,7 @@ CREATE TABLE `swd_account` (
   `name` varchar(30) NOT NULL ,
   `isact` tinyint(4) NOT NULL default '1',
   PRIMARY KEY (`pk_account`)
-) TYPE=MyISAM AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM AUTO_INCREMENT=2 ;
 
 #
 # Dumping data for table `swd_account`
@@ -284,7 +284,7 @@ CREATE TABLE `swd_attach` (
   `fk_mess` int(11) NOT NULL default '0',
   `len` int(11) NOT NULL default '0',
   PRIMARY KEY (`pk_attach`)
-) TYPE=MyISAM AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM AUTO_INCREMENT=1 ;
 
 #
 # Dumping data for table `swd_attach`
@@ -303,13 +303,13 @@ CREATE TABLE `swd_attach` (
 DROP TABLE IF EXISTS `swd_brodcastlog`;
 CREATE TABLE `swd_brodcastlog` (
   `pk_broadcastlog` int(11) default NULL auto_increment,
-  `date` timestamp(14) ,
+  `date` timestamp,
   `procnomber` tinyint(4) NOT NULL default '0',
   `pid` varchar(6) NOT NULL default '',
   `log` text NOT NULL,
   PRIMARY KEY (`pk_broadcastlog`),
   KEY `procnomber`(`procnomber`)
-) TYPE=MyISAM AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM AUTO_INCREMENT=1 ;
 
 #
 # Dumping data for table `swd_brodcastlog`
@@ -333,7 +333,7 @@ CREATE TABLE `swd_conf` (
   `fk_account` int(11) NOT NULL default '0',
   KEY `pk_conf`(`pk_conf`),
   PRIMARY KEY (`pk_conf`,`fk_account`)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 #
 # Dumping data for table `swd_conf`
@@ -393,7 +393,7 @@ CREATE TABLE `swd_doi` (
   `pk_doi` int(11) default NULL auto_increment,
   `ran` char(10) NOT NULL default '',
   PRIMARY KEY (`pk_doi`)
-) TYPE=MyISAM AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM AUTO_INCREMENT=1 ;
 
 #
 # Dumping data for table `swd_doi`
@@ -416,7 +416,7 @@ CREATE TABLE `swd_doiaccounts` (
   `fk_user` int(11) NOT NULL default '0',
   PRIMARY KEY (`fk_doi`,`fk_account`),
   KEY `fk_user`(`fk_user`)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 #
 # Dumping data for table `swd_doiaccounts`
@@ -438,7 +438,7 @@ CREATE TABLE `swd_doppar` (
   `fk_user` int(11) NOT NULL default '0',
   `value` text,
   PRIMARY KEY (`fk_fields`,`fk_user`)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 #
 # Dumping data for table `swd_doppar`
@@ -464,7 +464,7 @@ CREATE TABLE `swd_fields` (
   `type` enum('text','textarea') NOT NULL default 'text',
   PRIMARY KEY (`pk_fields`),
   KEY `fieldaddr`(`fieldname`,`fk_account`,`pk_fields`)
-) TYPE=MyISAM AUTO_INCREMENT=16 ;
+) ENGINE=MyISAM AUTO_INCREMENT=16 ;
 
 #
 # Dumping data for table `swd_fields`
@@ -497,11 +497,11 @@ CREATE TABLE `swd_link_clicks` (
   `fk_link` int(11) default '0',
   `fk_user` int(11) default '0',
   `fk_mess` int(11) default '0',
-  `timestamp` timestamp(14) ,
+  `timestamp` timestamp ,
   PRIMARY KEY (`pk_link_click`),
   KEY `fk_account`(`fk_user`,`fk_mess`,`fk_link`),
   KEY `timestamp`(`timestamp`)
-) TYPE=MyISAM AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM AUTO_INCREMENT=1 ;
 
 #
 # Dumping data for table `swd_link_clicks`
@@ -526,7 +526,7 @@ CREATE TABLE `swd_links` (
   `fk_account` int(11) NOT NULL default '0',
   PRIMARY KEY (`pk_link`),
   KEY `fk_account`(`fk_account`)
-) TYPE=MyISAM AUTO_INCREMENT=3 ;
+) ENGINE=MyISAM AUTO_INCREMENT=3 ;
 
 #
 # Dumping data for table `swd_links`
@@ -550,7 +550,7 @@ CREATE TABLE `swd_log` (
   `date` datetime NOT NULL default '0000-00-00 00:00:00',
   `log` text,
   PRIMARY KEY (`pk_log`)
-) TYPE=MyISAM AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM AUTO_INCREMENT=1 ;
 
 #
 # Dumping data for table `swd_log`
@@ -577,13 +577,13 @@ CREATE TABLE `swd_mess` (
   `days` int(11) default NULL,
   `senddat` date default NULL,
   `sent` int(11) default '0',
-  `datesend` timestamp(14) ,
+  `datesend` timestamp ,
   `priority` int(11) default NULL,
   `encoding` varchar(15) default NULL,
   `issendnow` tinyint(4) NOT NULL default '0',
   PRIMARY KEY (`pk_mess`),
   KEY `typesend`(`typesend`)
-) TYPE=MyISAM AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM AUTO_INCREMENT=6 ;
 
 #
 # Dumping data for table `swd_mess`
@@ -612,7 +612,7 @@ CREATE TABLE `swd_process_loc` (
   `procnomber` tinyint(4) NOT NULL default '0',
   PRIMARY KEY (`pk_process_loc`),
   KEY `procnomber`(`procnomber`)
-) TYPE=MyISAM AUTO_INCREMENT=1 ;
+) ENGINE=MyISAM AUTO_INCREMENT=1 ;
 
 #
 # Dumping data for table `swd_process_loc`
@@ -634,7 +634,7 @@ CREATE TABLE `swd_sentlog` (
   `fk_mess` int(11) NOT NULL default '0',
   `date` datetime default NULL,
   PRIMARY KEY (`fk_user`,`fk_mess`)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 #
 # Dumping data for table `swd_sentlog`
@@ -658,7 +658,7 @@ CREATE TABLE `swd_ses` (
   `date` datetime default NULL,
   `host` varchar(14) NOT NULL default '',
   PRIMARY KEY (`pk_ses`)
-) TYPE=MyISAM AUTO_INCREMENT=5 ;
+) ENGINE=MyISAM AUTO_INCREMENT=5 ;
 
 #
 # Dumping data for table `swd_ses`
@@ -688,7 +688,7 @@ CREATE TABLE `swd_stat_account_dayly` (
   `sent_unsubscribe` int(11) NOT NULL default '0',
   `sent_doubleoptin` int(11) NOT NULL default '0',
   PRIMARY KEY (`fk_account`,`date`)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 #
 # Dumping data for table `swd_stat_account_dayly`
@@ -710,7 +710,7 @@ CREATE TABLE `swd_stat_dayly` (
   `broadcast_starts` int(11) NOT NULL default '0',
   `is_adm_notif` tinyint(4) NOT NULL default '0',
   PRIMARY KEY (`date`)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 #
 # Dumping data for table `swd_stat_dayly`
@@ -735,7 +735,7 @@ CREATE TABLE `swd_tosend` (
   PRIMARY KEY (`fk_mess`,`fk_user`),
   KEY `proc`(`proc`),
   KEY `procpaused`(`proc`,`paused`)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 #
 # Dumping data for table `swd_tosend`
@@ -772,7 +772,7 @@ CREATE TABLE `swd_user` (
   KEY `fk_account`(`fk_account`,`isact`),
   KEY `actaccountdays`(`fk_account`,`isact`,`days`),
   KEY `sequential`(`fk_account`,`messlastsend`,`datelastsend`,`days`,`isact`)
-) TYPE=MyISAM AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM AUTO_INCREMENT=2 ;
 
 #
 # Dumping data for table `swd_user`
@@ -793,20 +793,20 @@ CREATE TABLE `swd_bounce_account` (
   `bounceaction` tinyint(4) NOT NULL default '1',
   `isaddtoban` char(2) default NULL,
   PRIMARY KEY (`pk_bounce_account`)
-) TYPE=MyISAM ;
+) ENGINE=MyISAM ;
 
 DROP TABLE IF EXISTS `swd_bounce_allmessages`;
 CREATE TABLE `swd_bounce_allmessages` (
   `messageid` varchar(150) NOT NULL default '',
   `date` datetime default NULL,
   PRIMARY KEY (`messageid`)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 DROP TABLE IF EXISTS `swd_bounce_banemails`;
 CREATE TABLE `swd_bounce_banemails` (
   `email` varchar(150) NOT NULL default '',
   PRIMARY KEY (`email`)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 
 DROP TABLE IF EXISTS `swd_bounce_messages`;
 CREATE TABLE `swd_bounce_messages` (
@@ -824,5 +824,5 @@ CREATE TABLE `swd_bounce_messages` (
   KEY `email`(`email`,`action`),
   UNIQUE KEY `message_key`(`message_key`),
   KEY `fk_bounce_account`(`fk_bounce_account`)
-) TYPE=MyISAM;
+) ENGINE=MyISAM;
 

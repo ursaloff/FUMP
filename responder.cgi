@@ -4710,7 +4710,7 @@ ALL__
 sub print_main{
 	unless(exists($ACCOUNT{$PAR{account}})){
 		if($PAR{shownews}){
-			print $q->redirect("http://www.sellwide.net/remote/fump$VERSION/news.shtml");
+			print $q->redirect("http://fump.biz");
 		}elsif($CONF{splashsettings} eq 'daily_stats'){
 			print $q->redirect("$ME?ses=$PAR{ses}&act=statdaily");
 		}elsif($CONF{splashsettings} eq 'activity'){
@@ -4727,7 +4727,7 @@ sub print_main{
 			if($CONF{splashsettings}=~/^account_(\d+)/ and exists($ACCOUNT{$1})){
 				print $q->redirect("$ME?ses=$PAR{ses}&act=mainbody&account=$1");
 			}else{
-				print $q->redirect("http://www.sellwide.net/remote/fump$VERSION/news.shtml");
+				print $q->redirect("http://fump.biz/");
 			}
 		}
 		exit;

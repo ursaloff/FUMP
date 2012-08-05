@@ -1,4 +1,4 @@
-German	iso-8859-1
+German	utf-8
 #First line must have format:
 #LANGNAME<TAB>ENCODING
 ###################################################
@@ -131,22 +131,22 @@ ACCOUNT_BIG	ACCOUNT
 TOTAL_PROSPECTS	Total User:
 ACTIVE	Aktive
 INACTIVE	Inaktive:
-HTML_CODE_FORM	HTML-Code für ihr Formular:
+HTML_CODE_FORM	HTML-Code fÃ¼r ihr Formular:
 FORM_PREVIEW	Formular Vorschau:
 CUSTOM_FIELD	Benutzerfeld
 CUSTOM_FIELD_NAME	Benutzerfeld-Name:
 ONLY_CHARS	3..20 Zeichen nur [A-Za-z0-9_]
 IS_REQUIRED	Pflichtfeld?
 FIELD_FORMAT	Feldformat:
-ADD_FIELD	Feld einfügen
-CANCEL	Zurücksetzen
+ADD_FIELD	Feld einfÃ¼gen
+CANCEL	ZurÃ¼cksetzen
 ACC_SETTINGS	Account Einstellungen
 PERSONAL	Personal:
 FROM_NAME	Absender Name:
 FROM_EMAIL	Absender Email:
 DEF_SUBSCRIB_NAME	Standard Username (Recipient) :
 REPLY_HEADER	Reply-to header:
-SUBSCRIB_OPTS	Optionen für User-Eintrag:
+SUBSCRIB_OPTS	Optionen fÃ¼r User-Eintrag:
 REDIR_SUSCR_TO	Weiterleitung nach Eintrag:
 REDIR_REMOV_TO	Weiterleitung nach Austrag:
 NOTIFY_ME_SUSCR	Emailnachricht bei Eintrag?
@@ -156,48 +156,48 @@ ACC_ADMIN_MAIL	Account Administrator-Email:
 USE_DOI	Benutze double opt-in?
 DOICONFURL	Double opt-in Konfirmationsseite:
 LOGGING	Protokoll:
-USE_MES_LOG	Protokollierung (Logging) verwenden (Überprüfung auf Duplikate von Emailadressen)
+USE_MES_LOG	Protokollierung (Logging) verwenden (ÃœberprÃ¼fung auf Duplikate von Emailadressen)
 LOCALIZ	Lokalisation:
 NO_UPPERCASE	Do not uppercase first letter of prospects names:
 DEF_CHARSET	Standard-Zeichensatz:
 SAV_ALL_SET	Alle Einstellungen speichern
 POP_SET	POP3 Einstellung
-IS_POP	Direkteintrag ohne Bestätigung:
+IS_POP	Direkteintrag ohne BestÃ¤tigung:
 SUBSCR_EMAIL	Subscribe email:
 POP_SERVER2	POP3-Server:
 POP_USER2	POP3-Username:
 POP_PASS	POP3-Passwort:
 POP_PORT	POP3-Server-Port:
-BAN_MAILS	Sperrliste für Emails
+BAN_MAILS	Sperrliste fÃ¼r Emails
 BAN_LIST	Sperrliste (1 Eintrag pro Zeile):
-CUST_ERR_MSG	Fehlermeldung an Absender/Grund für Eintrag:
+CUST_ERR_MSG	Fehlermeldung an Absender/Grund fÃ¼r Eintrag:
 SORTFILTER	Sortieren / Filter nach:
 SORTFILTER_SEARCH	Suche:
 SORTFILTER_ORDER	Order:
 USE_DATE_RANGE	Ausgabe nach Datumsbereich:
-REC_PER_PAGE	Datensätze pro Seite:
+REC_PER_PAGE	DatensÃ¤tze pro Seite:
 REC_PER_PAGE_SHOW	Zeige:&nbsp;
-REC_PER_PAGE_RECORDS	&nbsp;Datensätze
+REC_PER_PAGE_RECORDS	&nbsp;DatensÃ¤tze
 SF_DISPLAY	Zeigen!!!
 SF_SAVETEXT	Speichern als text...
-SF_REMOVE	Auswahl löschen
-SF_INV_STATUS	Status ändern
-SF_SEL_ALL	Alle wählen
-SF_DESEL_ALL	Alle abwählen
+SF_REMOVE	Auswahl lÃ¶schen
+SF_INV_STATUS	Status Ã¤ndern
+SF_SEL_ALL	Alle wÃ¤hlen
+SF_DESEL_ALL	Alle abwÃ¤hlen
 PROSPECT	User
 PROSPECTS2	User
 PROSP_NAME	Name:
 PROSP_MAIL	Email:
 PROSP_BEGIN_DAY	Beginne mit Tag :
 PROSP_NO_SEQ	Ohne Ablaufsequenz
-PROSP_ADD_BEGIN_DAY	In AblaufSequens einfügen - beginnend ab Tag
+PROSP_ADD_BEGIN_DAY	In AblaufSequens einfÃ¼gen - beginnend ab Tag
 PROSP_UPD_USER	Update User
-BULK_REM	Mehrere User löschen
-PROSP_REM_DB	aus Datenbank gelöscht
-PROSP_REMOVE	User löschen
+BULK_REM	Mehrere User lÃ¶schen
+PROSP_REM_DB	aus Datenbank gelÃ¶scht
+PROSP_REMOVE	User lÃ¶schen
 PROSP_IMPORT	User importieren
-INSERT_TEXT	Text einfügen:
-OR_UPLOAD_FILE	oder aus Datei:
+INSERT_TEXT	Text einfÃ¼gen:
+OR_UPLOAD_FILE	oderÂ aus Datei:
 SEND_SUBSC_ALL_PROSP	Send subscribe message for all imported prospects.
 ADD_NO_SEQ	Add new contacts to mailing list only (without adding to the message set sequence)
 ADD_SEQ	Add prospects into sequence beginning with day
@@ -210,33 +210,33 @@ FORMAT	Format:
 EXPORT_TO	Export nach:
 EXPORT	Export
 SUB_UNSUB_MSG	Nachrichten bei Eintrag / Austrag
-EDIT_DOI_CONF_MSG	Bearbeite Double-Opt-In Bestätigung
+EDIT_DOI_CONF_MSG	Bearbeite Double-Opt-In BestÃ¤tigung
 SEND_SUBSC_MSG	Sende Nachricht bei Eintrag
 SEND_UNSUB_MSG	Sende Nachricht bei Austrag
 EDIT	Bearbeiten
 PREVIEW	Vorschau
 UPD_SETTINGS	Einstellung speichern
-ADD_NEW_MSG	Neue Nachricht einfügen>>>
+ADD_NEW_MSG	Neue Nachricht einfÃ¼gen>>>
 SEQ_MSGS	Sequentielle Nachricht:
 SEQ_MSG_SUBJECT	Nachrichten Subject
 ATTACH	Datei-Anhang
 SENT	Senden
 DAY	Tag
 MANUAL_SHED_MSGS	Manuelle/Termin Nachrichten:
-SHED_DATE	Termin Datum
-IN_PROGRESS	In Ausführung
+SHED_DATE	TerminÂ Datum
+IN_PROGRESS	InÂ AusfÃ¼hrung
 BROADCAST	Broadcast
-TERM_PROC	Ausführung abbrechen
-TST_SND_STR1	Ausgewählte Nachricht an
+TERM_PROC	AusfÃ¼hrung abbrechen
+TST_SND_STR1	AusgewÃ¤hlte Nachricht an
 TST_SND_STR2	folgende Emailadresse senden:
 BTN_TEST_SEND	Testsendung starten
 SUBJECT	Subject:
 TYPE	Type:
 CHARSET	Zeichensatz:
-PRIORITY	Priorität:
+PRIORITY	PrioritÃ¤t:
 MSG	Nachricht:
-ADD_ATTACH	Dateianhang wählen:
-SEL_MSG_TYPE	Wähle Typ der Nachricht:
+ADD_ATTACH	Dateianhang wÃ¤hlen:
+SEL_MSG_TYPE	WÃ¤hle Typ der Nachricht:
 DAYS_AFTER_REG	Tage nach Registrierung:
 SAVE	Speichern
 #########################
@@ -273,15 +273,15 @@ NO_POP_ACCS_FOUND	Keine POP3-Accounts gefunden
 TOTAL_ACCS	Total Accounts:
 POP_SERVER	POP3-Server
 POP_USER	POP3-User
-REM_PROSPS_AFTER	Remove prospects after:
-BOUNC_HARD	Hard Bounces
+REM_PROSPS_AFTER	RemoveÂ prospectsÂ after:
+BOUNC_HARD	HardÂ Bounces
 BOUNC_SOFT	Soft&nbsp;Bounces
-DEL_BOUNC_MSGS	Lösche Bounced Nachricht
+DEL_BOUNC_MSGS	LÃ¶sche Bounced Nachricht
 TEST_CONN	Test Verbindung
 STATUS	Status
 TEST	Test
-WITH_SEL	Mit gewählter:
-DELETE	Löschen
+WITH_SEL	Mit gewÃ¤hlter:
+DELETE	LÃ¶schen
 ACTIVATE	Aktivieren
 DEACTIV	Deaktivieren
 TOTALS	Totals
@@ -298,7 +298,7 @@ SOFT	Soft
 TOTAL_SOFT	Total soft
 WAITING	Warten
 POP_SERV_SETTS	POP3 server Verbindungseinstellungen:
-DEL_BNC_ML_SERV	Lösche Bounced-Emails vom Server
+DEL_BNC_ML_SERV	LÃ¶sche Bounced-Emails vom Server
 DEF_COUNT_BOUNC	Zugelassene Anzahl von Bounced-Emails vor weiteren Aktionen:
 REM_AFTER_HARD	Remove prospects after hard bounces:
 REM_AFTER_SOFT	Remove prospects after soft bounces:
@@ -327,13 +327,13 @@ BNC_STATUS	Bounce Status
 BNC_REASON	Bounce Ursache
 CODE	Code
 HARD_SOFT2	Hard/Soft
-BTN_DEL_MSGS	Lösche Nachricht
-BTN_REM_PROSP	Lösche User
+BTN_DEL_MSGS	LÃ¶sche Nachricht
+BTN_REM_PROSP	LÃ¶sche User
 BTN_ACT_PROSP	Aktive User
 BTN_INACT_PROSP	Inaktive User
 RFC_ERR_DESCR	RFC1893 Fehlercode Beschreibung
 CODE2	Code:
-BACK_2_BNC_MSGS	Zurück zu Bounced-Mails
+BACK_2_BNC_MSGS	ZurÃ¼ck zu Bounced-Mails
 REG_SETTS	Registrations Einstellungen:
 REJECT_SUBSCR	Eintrag in BlackList abweisen
 REG_ERR_MSG	Registrations Fehlermeldung:
@@ -344,13 +344,13 @@ EXP_MAILS	Export Emails
 NO_MAIL_FOUND	Keine Emails gefunden
 TOTAL_EMAILS	Total Emails:
 IMP_PROSPS	Import User
-IMP_PROSPS_DESC	Hier können sie Emailadressen in die Blackliste importieren. Kopieren sie die Emailadressen einfach in die Textbox (eine Emailadresse pro Zeile). Vor dem Eintrag bitte die Syntax auf Fehler überprüfen ( email@domain.com).
+IMP_PROSPS_DESC	Hier kÃ¶nnen sie Emailadressen in die Blackliste importieren. Kopieren sie die Emailadressen einfach in die Textbox (eine Emailadresse pro Zeile). Vor dem Eintrag bitte die Syntax auf Fehler Ã¼berprÃ¼fen ( email@domain.com).
 BTN_IMPORT	Import
-BULK_REM_DESC1	Sie können Emailadressen aus der Blackliste löschen indem sie diese in die Textbox eintrgaen und auf "Löschen" klicken.
-BULK_REM_DESC2	Eine Mailadresse pro Zeile. Sie können also auch eine Schablone / Stichwörter verwenden. Ein Beispiel: Sie wollen alle Adreesen löschen die "hotmail" beinhalten, sogeben sie in die Textbox "hotmail" ein und alle Adressen mit dem Begriff
-BULK_REM_DESC3	"hotmail" in der Emailadresse werden gelöscht.  
-BULK_REM_DESC4	i.e. hotmail@aol.com, mike@hotmail.com, myhotmail@email.com - werden alle von der Liste gelöscht
-BTN_REMOVE	Löschen
+BULK_REM_DESC1	Sie kÃ¶nnen Emailadressen aus der Blackliste lÃ¶schen indem sie diese in die Textbox eintrgaen und auf "LÃ¶schen" klicken.
+BULK_REM_DESC2	Eine Mailadresse pro Zeile. Sie kÃ¶nnen also auch eine Schablone / StichwÃ¶rter verwenden. Ein Beispiel: Sie wollen alle Adreesen lÃ¶schen die "hotmail" beinhalten, sogeben sie in die Textbox "hotmail" ein und alle Adressen mit dem Begriff
+BULK_REM_DESC3	"hotmail" in der Emailadresse werden gelÃ¶scht.  
+BULK_REM_DESC4	i.e. hotmail@aol.com, mike@hotmail.com, myhotmail@email.com - werden alle von der Liste gelÃ¶scht
+BTN_REMOVE	LÃ¶schen
 #########################
 #file daylystat.dat
 #########################
@@ -361,33 +361,33 @@ REPORT_GEN	This report was generated
 #file exportxml.dat
 #########################
 STEP1	Schritt 1
-STEP1_DESC1	Wählen Sie einen Account, XML-Dateinamen und Zeichensatz<br>aus, und geben sie an wo die  XML-Datei gespeichert werden soll.
+STEP1_DESC1	WÃ¤hlen Sie einen Account, XML-Dateinamen und Zeichensatz<br>aus, und geben sie an wo die  XML-Datei gespeichert werden soll.
 STEP1_DESC2	(XML-Datei ist auf Ihrem aktuellen FUMP-Verzeichnis)
 XML_DOC	XML Dateiname:
 WHERE_STORE_XML_DOC	Wo soll die XML-Datei gespeichert werden?
 ENCODING	Zeichensatz:
-CREATE_XSD	XSD-Datei zur Nutzung von Access 2002™ erstellen:
-NEXT2	Nächster Schritt [2]&gt;&gt;
+CREATE_XSD	XSD-Datei zur Nutzung von Access 2002Â™ erstellen:
+NEXT2	NÃ¤chster Schritt [2]&gt;&gt;
 XSD_DESC1	XSD-Datei.
-XSD_DESC2	Mit der Erstellung einer XSD-Datei können ihre Daten einfach in Microsoft Access 2002™ importiert werden.
+XSD_DESC2	Mit der Erstellung einer XSD-Datei kÃ¶nnen ihre Daten einfach in Microsoft Access 2002Â™ importiert werden.
 XSD_DESC3	Diese Datei hat den selben Dateinamen wie die XML-Datei: emails.xml - emails.xsd
-STEP2_SEL_FLDS	Schritt 2 - Felder wählen
-STEP2_SEL_FLDS_DESC	Bitte Felder auswählen und Feldnamen zum Export angeben.
-NEXT3	Nächster Schritt [3]&gt;&gt;
+STEP2_SEL_FLDS	Schritt 2 - Felder wÃ¤hlen
+STEP2_SEL_FLDS_DESC	Bitte Felder auswÃ¤hlen und Feldnamen zum Export angeben.
+NEXT3	NÃ¤chster Schritt [3]&gt;&gt;
 STEP4_FINISH	Schritt 4 - ENDE:
 XML_EXP_SUC	XML EXPORT ERFOLGREICH ABGESCHLOSSEN!
 #########################
 #file importxml.dat
 #########################
-IMP_ST1_DESC1	Wählen sie einen Account, die XML-Datei and level where in XML file data about users are stored
+IMP_ST1_DESC1	WÃ¤hlen sie einen Account, die XML-Datei and level where in XML file data about users are stored
 IMP_ST1_DESC2	(XML-Datei muss im FUMP-Verzeichnis liegen)
 LEVEL_DATA_STORED	Level where users data was stored:
-HERE_IS_SAMPLE	Hier das Beispiel einer XML Datei, die sie von Microsoft Access 2002™ exportieren können.
-STEP2_SEL_FLDS_DESC_IMP	Bitte Felder wählen die importiert werden sollen.
+HERE_IS_SAMPLE	Hier das Beispiel einer XML Datei, die sie von Microsoft Access 2002Â™ exportieren kÃ¶nnen.
+STEP2_SEL_FLDS_DESC_IMP	Bitte Felder wÃ¤hlen die importiert werden sollen.
 STEP3	Schritt 3 - You are attempting to import :
 BTN_IMPXML	IMPORT&gt;&gt;
 XML_IMP_SUC	IMPORT ERFOLGREICH ABGESCHLOSSEN!
-PROSPS_WERE_ADD	User in Datenbank hinzugefügt.
+PROSPS_WERE_ADD	User in Datenbank hinzugefÃ¼gt.
 #########################
 #file links.dat
 #########################
@@ -400,12 +400,12 @@ NAMEE	Name
 CLICKS	Klicks
 PROSPECTS	User
 ISCLEAN	Clean?
-DEL_SELECTED	Markierte löschen
+DEL_SELECTED	Markierte lÃ¶schen
 TOTALU	Total:
-LINKS_DESC1	Hier können sie spezielle Links erstellen und bearbeiten. Diese Links können sie in Nachrichten einfügen. Die Klicks auf die einzelnen Links werden in der Statistik protokolliert.
-LINKS_DESC2	In ihren Nachrichten fügen sie die Links mit diesem Tag  <b>[LINK123]</b> in den Text ein.
+LINKS_DESC1	Hier kÃ¶nnen sie spezielle Links erstellen und bearbeiten. Diese Links kÃ¶nnen sie in Nachrichten einfÃ¼gen. Die Klicks auf die einzelnen Links werden in der Statistik protokolliert.
+LINKS_DESC2	In ihren Nachrichten fÃ¼gen sie die Links mit diesem Tag  <b>[LINK123]</b> in den Text ein.
 EDIT_LINK	Link bearbeiten
-INS_NEW_LINK	Neuen Link einfügen
+INS_NEW_LINK	Neuen Link einfÃ¼gen
 LINK_PROPS	Link Eigenschaften
 UPD_LINK	Update Link
 SAV_LINK	Neuen Link speichern
@@ -431,10 +431,10 @@ REGISTER	Registrieren
 #########################
 #file settings_shabl.dat
 #########################
-YOUR_PERS_INFO	Ihre persönlichen Daten
+YOUR_PERS_INFO	Ihre persÃ¶nlichen Daten
 YOUR_NAME	Ihr Name:
 YOUR_EMAIL	Ihre Email:
-YOUR_PERS_INFO_DESCR	Diese globale Einstellung wird vorab für alle Konten als Standardeinstellung benutzt.  Die Daten können jedoch in jedem angelegten Account neu zugeordnet werden.
+YOUR_PERS_INFO_DESCR	Diese globale Einstellung wird vorab fÃ¼r alle Konten als Standardeinstellung benutzt.  Die Daten kÃ¶nnen jedoch in jedem angelegten Account neu zugeordnet werden.
 SEND_ME_BROAD_STAT	Sendestatistiken per
 SEND_ME_BROAD_STAT2	Email zusenden:
 BTN_UPD_SETTS	Einstellung speichern
@@ -450,15 +450,15 @@ SEND_SPD	Sendegeschwindigkeit
 QUANT_PROCS	Anzahl gleichzeitiger Sendungen:
 OR_B	ODER
 USE_OLD_ALG	verwenden Sie alten Algorithmus (Einzelprozess) zum Senden (wenn Sie irgendwelche Probleme mit dem Senden der Nachrichten durch 'Senderscript' haben)
-BOUNC_RET_PATH_OPTS	Optionenfür Bounce-Mail Rücklauf-Pfad:
+BOUNC_RET_PATH_OPTS	OptionenfÃ¼r Bounce-Mail RÃ¼cklauf-Pfad:
 USE_FOLLOW_UP	Folgende Mailadresse als SMTP-Sender nutzen
 1ST_WAY	1. Option:
 1ST_WAY2	Sendmailzusatz -f an folgende Emailadresse:
 2ND_WAY	2. Option: Return-Path message header:
-2ND_WAY2	Kann leer bleiben, wenn Sie diese Option nicht hinzufügen möchten.
+2ND_WAY2	Kann leer bleiben, wenn Sie diese Option nicht hinzufÃ¼gen mÃ¶chten.
 2ND_WAY3	This is not good idea to add this header to messages manually, but somteimes with Qmail it is works.
 3RD_WAY	3. Option: Errors-To message header:
-3RD_WAY2	Kann leer bleiben, wenn Sie diese Option nicht hinzufügen möchten.
+3RD_WAY2	Kann leer bleiben, wenn Sie diese Option nicht hinzufÃ¼gen mÃ¶chten.
 ADMIN_AREA_PASS	Passwort zum Schutz des Adminbereiches
 ADMIN_AREA_PASS_OLD	Altes Passwort:
 ADMIN_AREA_PASS_NEW	Neues Passwort:
@@ -468,11 +468,11 @@ USE_PERIOD_TO	bis
 USE_PERIOD_BTN_SHOW	Anzeigen
 ENABLE_LOG	Protokollierung aktivieren
 BTN_OK	OK
-BTN_CLENUP_LOGS_IN_RANGE	Lösche Protokoleinträge im Datumsbereich
-BTN_CLEANUP_ALL_LOGS	Lösche alle Protokoleinträge
+BTN_CLENUP_LOGS_IN_RANGE	LÃ¶sche ProtokoleintrÃ¤ge im Datumsbereich
+BTN_CLEANUP_ALL_LOGS	LÃ¶sche alle ProtokoleintrÃ¤ge
 BROAD_LOG_TOTAL	Broadcaster log. Total
-RECORDS	Einträge.
-CURRENT_OR_PREV_BR_LOG	Aktuelle oder vorherige Protokolleinträge wurden
+RECORDS	EintrÃ¤ge.
+CURRENT_OR_PREV_BR_LOG	Aktuelle oder vorherige ProtokolleintrÃ¤ge wurden
 ROWS_FOUND	Zeilen gefunden
 SAVE_LOG_INTO	Speichere Protokoll in die
 SAVE_LOG_INTO_FILE	Datei
@@ -487,19 +487,19 @@ SETTS_NAME	Name
 SETTS_RESTORE	Restore
 SETTS_DATE	Datum
 SETTS_SIZE	Size
-BTN_REM_SEL	Auswahl löschen
+BTN_REM_SEL	Auswahl lÃ¶schen
 BTN_RESTORE	Restore
 NEW_BACKUP	Neues Backup erstellen
 NEW_BACKUP_NAME	Neuer Backup-Name:
 NEW_BACKUP_NAME_CHARS	Nur [a-z_0-9] verwenden
 BTN_BACKUP	Backup starten
-MAIL_PROG_PERF_TEST	Leistungstest für Mailprogramm
+MAIL_PROG_PERF_TEST	Leistungstest fÃ¼r Mailprogramm
 MAIL_PROG_PERF_TEST_DESC1	Dieser Test zeigt Ihnen, wie lange Ihr Server genutzt wird, um die angegebene Menge von Emails zu senden.
 MAIL_PROG_PERF_TEST_DESC2	Bitte tragen sie die Emailadresse die genutzt werden soll ein und klicken den
 MAIL_PROG_PERF_TEST_DESC3	'Test starten'
 MAIL_PROG_PERF_TEST_DESC4	Button
 MAIL_PROG_PERF_TEST_DESC5	nur einmal
-MAIL_PROG_PERF_TEST_DESC6	FollowUp Mailing List Processor sendet die Testmails an die eingetragene Emailaddresse. Dabei wird die benötigte Zeit ermittelt.
+MAIL_PROG_PERF_TEST_DESC6	FollowUp Mailing List Processor sendet die Testmails an die eingetragene Emailaddresse. Dabei wird die benÃ¶tigte Zeit ermittelt.
 MAIL_PROG_PERF_TEST_DESC7	Dieser Test benutzt: &nbsp;
 ENTER_YOUR_EMAIL_ADDRESS	Emailadresse eintragen
 BLAST_SIZE	Anzahl der Testmails (30-300 Nachrichten)
@@ -515,41 +515,41 @@ MAIL_PROG_PERF_TEST_RESULTS7	messages per hour
 #########################
 #file responder.cgi
 #########################
-ACCOUNTMENU_MAIN	Account-Menü
+ACCOUNTMENU_MAIN	Account-MenÃ¼
 ACCOUNTMENU_OPTIONS	Grundeinstellung
-ACCOUNTMENU_OPTIONS_DESCR	Hier legen Sie die wichtigen Grundinstellungen für diesen Account (Mailliste) fest. Es werden die POP3 Konten bei Ein- und Austrag von Usern festgelegt, ihr Absendername und Absender-Mailadresse eingetragen und verschiedene Weiterleitungsadressen bei Ein- und Austrag angegeben. Zudem können sie bestimmen ob das double-opt-in Verfahren genutzt werden soll.
+ACCOUNTMENU_OPTIONS_DESCR	Hier legen Sie die wichtigen Grundinstellungen fÃ¼r diesen Account (Mailliste) fest. Es werden die POP3 Konten bei Ein- und Austrag von Usern festgelegt, ihr Absendername und Absender-Mailadresse eingetragen und verschiedene Weiterleitungsadressen bei Ein- und Austrag angegeben. Zudem kÃ¶nnen sie bestimmen ob das double-opt-in Verfahren genutzt werden soll.
 ACCOUNTMENU_HTML_FORM	HTML-Formular
-ACCOUNTMENU_HTML_FORM_DESCR	Hier können Sie das HTML-Formular für den Eintrag ihrer User festlegen und als Vorschau prüfen. Diesen HTML-Code fügen sie dann per 'kopieren' und 'einfügen' in ihre Webseite ein. Sie können beliebig viele Extrafelder wie Telefon, Telefax, Straßenadresse, etc. hinzufügen und löschen.
+ACCOUNTMENU_HTML_FORM_DESCR	Hier kÃ¶nnen Sie das HTML-Formular fÃ¼r den Eintrag ihrer User festlegen und als Vorschau prÃ¼fen. Diesen HTML-Code fÃ¼gen sie dann per 'kopieren' und 'einfÃ¼gen' in ihre Webseite ein. Sie kÃ¶nnen beliebig viele Extrafelder wie Telefon, Telefax, StraÃŸenadresse, etc. hinzufÃ¼gen und lÃ¶schen.
 ACCOUNTMENU_SUBSCR_MAN	Eintrag-Manager
-ACCOUNTMENU_SUBSCR_MAN_DESCR	Hier können Sie User neu hinzufügen, bearbeiten, importieren, exportieren, oder direkt aus anderen Accounts übernehmen.
+ACCOUNTMENU_SUBSCR_MAN_DESCR	Hier kÃ¶nnen Sie User neu hinzufÃ¼gen, bearbeiten, importieren, exportieren, oder direkt aus anderen Accounts Ã¼bernehmen.
 ACCOUNTMENU_EDIT_MESS	Nachrichten-Manager
-ACCOUNTMENU_EDIT_MESS_DESCR	Dies ist das Sendezentrum: Hier erstellen Sie ihre personifizierten Emailnachrichten und sequentiellen Autorespondermeldungen, einschließlich der automatischen Bestätigungsnachrichten und Dateianhänge.  Hier starten und versenden sie ihre Mailaktionen.
+ACCOUNTMENU_EDIT_MESS_DESCR	Dies ist das Sendezentrum: Hier erstellen Sie ihre personifizierten Emailnachrichten und sequentiellen Autorespondermeldungen, einschlieÃŸlich der automatischen BestÃ¤tigungsnachrichten und DateianhÃ¤nge.  Hier starten und versenden sie ihre Mailaktionen.
 ACCOUNTMENU_LINKS	Links
 ACCOUNTMENU_LINK	Link
-ACCOUNTMENU_LINKS_DESCR	Hier können Sie Ihre Links hinzufügen und bearbeiten. Diese Links können sie in  den Statistiken Ihres Mailing sehen.
+ACCOUNTMENU_LINKS_DESCR	Hier kÃ¶nnen Sie Ihre Links hinzufÃ¼gen und bearbeiten. Diese Links kÃ¶nnen sie in  den Statistiken Ihres Mailing sehen.
 ACCOUNTMENU_LINKS_MESS_STAT	Messages statistics
 ACCOUNTMENU_LINKS_ACT_PROSP	Aktive User
 ACCOUNTMENU_LINKS_CLICKS	Klicks
-SETTINGSMENU_MAIN	Übersicht
+SETTINGSMENU_MAIN	Ãœbersicht
 SETTINGSMENU_PERSONAL	Pers.Daten
-SETTINGSMENU_PERSONAL_DESCR	Hier können Sie Ihren Usernamen und Emailaddresse eintragen, die Sie für Sendereports und -mitteilungen für Nachrichten beim Eintrag und Austrag (subscribes/unsubscribes) von Kunden nutzen.
+SETTINGSMENU_PERSONAL_DESCR	Hier kÃ¶nnen Sie Ihren Usernamen und Emailaddresse eintragen, die Sie fÃ¼r Sendereports und -mitteilungen fÃ¼r Nachrichten beim Eintrag und Austrag (subscribes/unsubscribes) von Kunden nutzen.
 SETTINGSMENU_SENDING_OPTIONS	Sendeoptionen
-SETTINGSMENU_SENDING_OPTIONS_DESCR	Hier müssen Sie entweder Ihr Server-Mailprogramm und Pfad, oder die Adresse Ihres SMTP-Servers eintragen. Ebenfalls können Sie  Zusatzeinstellungen wie <i>Return-Path</i> oder <i>Erorrs-To</i> und Mailboxen für Fehlermails (bounce) definieren.
+SETTINGSMENU_SENDING_OPTIONS_DESCR	Hier mÃ¼ssen Sie entweder Ihr Server-Mailprogramm und Pfad, oder die Adresse Ihres SMTP-Servers eintragen. Ebenfalls kÃ¶nnen Sie  Zusatzeinstellungen wie <i>Return-Path</i> oder <i>Erorrs-To</i> und Mailboxen fÃ¼r Fehlermails (bounce) definieren.
 SETTINGSMENU_ACCESS	Sicherheit
-SETTINGSMENU_ACCESS_DESCR	Wechseln des Passwortes zum Login für den Adminbereich.
+SETTINGSMENU_ACCESS_DESCR	Wechseln des Passwortes zum Login fÃ¼r den Adminbereich.
 SETTINGSMENU_TIME_SYNC	Zeit Synchron.
-SETTINGSMENU_TIME_SYNC_DESCR	Hier können Sie Ihre Serveruhrzeit mit Ihrer lokalen Uhrzeit synchronisieren.  Erforderlich für zeitlich genau geplante Mailaktionen.
+SETTINGSMENU_TIME_SYNC_DESCR	Hier kÃ¶nnen Sie Ihre Serveruhrzeit mit Ihrer lokalen Uhrzeit synchronisieren.  Erforderlich fÃ¼r zeitlich genau geplante Mailaktionen.
 SETTINGSMENU_PERFOM	Performance
-SETTINGSMENU_PERFOM_DESCR	Hier können sie die Serverleistung beim Versenden von Emails prüfen.
+SETTINGSMENU_PERFOM_DESCR	Hier kÃ¶nnen sie die Serverleistung beim Versenden von Emails prÃ¼fen.
 SETTINGSMENU_BACUP_RESTORE	Backup/Restore
-SETTINGSMENU_BACUP_RESTORE_DESCR	Erstellen einer Sicherungskopie ihrer Datenbank. Ebenfalls kann die Wiederherstellung ihrer Datenbank ausgeführt werden.
-STATMENU_MAIN	Übersicht
-STATMENU_ACT_LOGS	Aktivitäten - Logs
-STATMENU_ACT_LOGS_DESCR	Hier sehen sie die Aktivitäten von subscribe/unsubscribe und anderer Aktionen. Die Anzeige erfolgt nach den von ihnen gewählten Datumszeiträumen in Datensätzen zu den erfolgten ausgeführten Kommandos.
+SETTINGSMENU_BACUP_RESTORE_DESCR	Erstellen einer Sicherungskopie ihrer Datenbank. Ebenfalls kann die Wiederherstellung ihrer Datenbank ausgefÃ¼hrt werden.
+STATMENU_MAIN	Ãœbersicht
+STATMENU_ACT_LOGS	AktivitÃ¤ten - Logs
+STATMENU_ACT_LOGS_DESCR	Hier sehen sie die AktivitÃ¤ten von subscribe/unsubscribe und anderer Aktionen. Die Anzeige erfolgt nach den von ihnen gewÃ¤hlten DatumszeitrÃ¤umen in DatensÃ¤tzen zu den erfolgten ausgefÃ¼hrten Kommandos.
 STATMENU_CURRENT_BROADCAST	Aktuelle Mail-Logs
 STATMENU_CURRENT_BROADCAST_DESCR	Hier sehen sie die Informationen zu den laufenden Mail-Prozessen.
 STATMENU_TOTALS	Totals
-STATMENU_TOTALS_DESCR	Hier sehen sie dei gesammten subscribers/unsubscribers und Nachrichten die in allen Accounts ausgeführt wurden.
+STATMENU_TOTALS_DESCR	Hier sehen sie dei gesammten subscribers/unsubscribers und Nachrichten die in allen Accounts ausgefÃ¼hrt wurden.
 STATMENU_TOTALS_SENT_MESS	Gesendete Nachrichten
 STATMENU_TOTALS_SUBSCRIBERS	Subscribers
 STATMENU_TOTALS_PROSPECTS	User
@@ -557,7 +557,7 @@ PROSPMENU_ADD_PROSP	Neuen User eintragen
 PROSPMENU_IMPORT	Import Liste
 PROSPMENU_EXPORT	Export Liste
 PROSPMENU_COPY	Kopie aus Account
-PROSPMENU_BULK_REMOVE	Mehrere Emails löschen
+PROSPMENU_BULK_REMOVE	Mehrere Emails lÃ¶schen
 ERROR_NOT_CHANGE_URL	Bitte nicht die URL wechseln
 ERROR	Fehler
 MENU_GO	Go
@@ -579,17 +579,17 @@ ERROR_INCORRECT_SENDMAIL_NOT_EXISTS	Sendmail kann auf diesem Server nicht gefund
 ERROR_REQUIRED_SMTP	SMTP server name is required now
 ERROR_INCORRECT_FORMAT	Falsches Format
 MESS_LOGOUT_TO_CHECK	LogOut to check
-ERROR_CANT_OPEN_DIR	Kann Verzeichnis nicht öffnen
-ERROR_CANT_UNLINK_FILE	Kann Datei nicht löschen
+ERROR_CANT_OPEN_DIR	Kann Verzeichnis nicht Ã¶ffnen
+ERROR_CANT_UNLINK_FILE	Kann Datei nicht lÃ¶schen
 ERROR_CANT_CREATE_DIR	Kann Verzeichnis nicht erstellen
-ERROR_CANT_OPEN_FILE	Kann Datei nicht öffnen
+ERROR_CANT_OPEN_FILE	Kann Datei nicht Ã¶ffnen
 ERROR_CANT_WRITE	for writing
 ERROR_NEED_TO_CREATE	You need to create file
 ERROR_NEED_TO_CREATE2	and set CHMOD 666 permisions
 ERROR_SHORTER_THEN_3	Must be more then 3 character
 MONTH_1	Januar
 MONTH_2	Februar
-MONTH_3	März
+MONTH_3	MÃ¤rz
 MONTH_4	April
 MONTH_5	Mai
 MONTH_6	Juni
@@ -599,11 +599,11 @@ MONTH_9	September
 MONTH_10	Oktober
 MONTH_11	November
 MONTH_12	Dezember
-MESS_NO_BROADCAST_LOG	Keine Protokolleinträge gefunden
+MESS_NO_BROADCAST_LOG	Keine ProtokolleintrÃ¤ge gefunden
 BROADCAST_LOG_PROC	Proc #
 BROADCAST_LOG_TIME	Zeit
 BROADCAST_LOG_STATUS	Status
-BROADCAST_LOG_MAIN	Übersicht
+BROADCAST_LOG_MAIN	Ãœbersicht
 STAT_NO_MESS	Keine Nachricht mit diesem Datum
 STAT_STATISTICS	Statistik
 STAT_TOTAL_PROSP	Total  account's prospects
@@ -612,7 +612,7 @@ STAT_SEQUNTIAL	Sequentiell
 STAT_ACT_PROSP	Aktive User
 STAT_INACT_PROSP	Inaktive User
 STAT_TOTAL	Total
-STAT_NO_LOGS_FOUND	Keine Protokolleinträge gefunden
+STAT_NO_LOGS_FOUND	Keine ProtokolleintrÃ¤ge gefunden
 STAT_SHEDULED	Sheduled
 STAT_MANUAL	Manuell
 STAT_DOI	Double opt in
@@ -641,13 +641,13 @@ USR_SENT_DATE	Datum
 USR_BROWSER_PAGE	Seite
 USR_BROWSER_PROSPECTS	prospects
 USR_BROWSER_PREVIOUSE	Vorherige
-USR_BROWSER_NEXT	Nächste
+USR_BROWSER_NEXT	NÃ¤chste
 USR_BROWSER_SHOWING	Showing
 USR_BROWSER_FROM	von
-USR_BROWSER_NO_RECORDS_FOUND	Keine Datensätze gefunden
+USR_BROWSER_NO_RECORDS_FOUND	Keine DatensÃ¤tze gefunden
 USR_BROWSER_INACTIVE	inaktive
 USR_BROWSER_ACTIVE	aktiv
-USR_BROWSER_PENDING	unbestätigte
+USR_BROWSER_PENDING	unbestÃ¤tigte
 USR_BROWSER_CYCLE_DISABLED	deaktiviert
 USR_BROWSER_EDIT_USER	User bearbeiten
 USR_BROWSER_HEAD_SENT	Send
@@ -656,7 +656,7 @@ USR_BROWSER_HEAD_DATE	Datum
 USR_BROWSER_HEAD_CYCLE	Zyklus
 USR_BROWSER_HEAD_HOST	Host
 USR_BROWSER_HEAD_USERID	User-ID
-USR_BROWSER_USERS_REMOVED	User gelöscht
+USR_BROWSER_USERS_REMOVED	User gelÃ¶scht
 USR_BROWSER_USERS_CHANGED	User bearbeitet
 USR_BROWSER_USERS_SHOW_FIELDS	Anzeige FormularFelder
 USR_BROWSER_USERS_SHOW_EXTRA	Anzeige Extrafelder
@@ -675,7 +675,7 @@ USR_BROWSER_EXPORT_PAGE	Seite
 USR_BROWSER_BULK_QUERY_INCORRECT	Bulk query is incorrect
 USR_BROWSER_BULK_CURRENT_ACCOUNT	Aktueller Account
 USR_BROWSER_BULK_ALL_ACCOUNTS	Alle Accounts
-USR_BROWSER_IMPORT_PROSPADD	User eingefügt
+USR_BROWSER_IMPORT_PROSPADD	User eingefÃ¼gt
 USR_BROWSER_IMPORT_ERRORS_DETECTED	Fehler aufgetreten
 ERROR_FIELD_NAME_INCORRECT	Feldname nicht korrekt
 HTML_FORM_FIELD_NAME	Feldname
@@ -686,14 +686,14 @@ HTML_FORM_SUBSCRIBE_ACCOUNTS	Select accounts where do you whant automaticly <B>s
 HTML_FORM_SAVE_ACCOUNTS	Account speichern
 HTML_FORM_UNSUBSCRIBE_ACCOUNTS	Select accounts where do you whant automaticly <B>unsubscribe</B> prospects when they are subscribed on this account
 HTML_FORM_UNSUBSCRIBE_ALL	Unsubscribe from all other accounts
-HTML_FORM_ADD_NEW	Klick - Feld einfügen
+HTML_FORM_ADD_NEW	Klick - Feld einfÃ¼gen
 HTML_FORM_NAME	Name
 HTML_FORM_RESERVED	Reserviertes Standardfeld
 HTML_FORM_EMAIL	Email
-HTML_FORM_CONFIRM	Sind Sie sicher das Sie dieses Feld löschen möchten?  Die Daten können dabei verloren gehen!
+HTML_FORM_CONFIRM	Sind Sie sicher das Sie dieses Feld lÃ¶schen mÃ¶chten?  Die Daten kÃ¶nnen dabei verloren gehen!
 HTML_FORM_YOU_HAVE	Sie haben
 HTML_FORM_COSTUM_FIELDS	Zusatzfelder
-HTML_FORM_DROP	Löschen
+HTML_FORM_DROP	LÃ¶schen
 HTML_FORM_UP	Oben
 HTML_FORM_DOWN	Unten
 HTML_FORM_MOVE	Nach
@@ -739,10 +739,10 @@ ACCOUNT_INVALID_NAME	Fehlerhafter Accountname
 ACCOUNT_NO_ACCOUNTS	Keine Accounts
 ACCOUNT_YOUR_ACCOUNTS	Ihre Accounts
 ACCOUNT_DISABLED	deaktiviert
-ACCOUNT_DELETE_QUESTION	Wollen sie den ausgewählten Account tatsächlich löschen ?
+ACCOUNT_DELETE_QUESTION	Wollen sie den ausgewÃ¤hlten Account tatsÃ¤chlich lÃ¶schen ?
 ACCOUNT_INVERT_STATUS	Status wechseln
-LANG_SELECT_LANG	Bitte wählen sie ihre Sprache.
-LANG_SELECT_LANG_TABHEADER	Wählen sie ihre Standardsprache und Codierung.
+LANG_SELECT_LANG	Bitte wÃ¤hlen sie ihre Sprache.
+LANG_SELECT_LANG_TABHEADER	WÃ¤hlen sie ihre Standardsprache und Codierung.
 LANG_LANG	Sprache
 #########################
 #file bounce.cgi
@@ -774,13 +774,13 @@ BOUNCE_LOAD_MSG_CANT_LOAD	Error: Kann Nachricht nicht laden
 BOUNCE_COUNT_TOTAL	Total
 BOUNCE_COUNT_TOTAL_MSGS	Bounced-Nachrichten in ihrer Mailbox
 BOUNCE_TEST_OK	Test ist OK
-BOUNCE_TEST_ERROR	Error: Keine Bestätigung - Inkorrekte POP3 Einstellungen
-BOUNCE_PAGE_REM_MAIL_ALL_ACC	Lösche Emailadresse aus allen Accounts
+BOUNCE_TEST_ERROR	Error: Keine BestÃ¤tigung - Inkorrekte POP3 Einstellungen
+BOUNCE_PAGE_REM_MAIL_ALL_ACC	LÃ¶sche Emailadresse aus allen Accounts
 BOUNCE_PAGE_SET_STATUS_INACT	User deaktivieren
-BOUNCE_PAGE_ADD_NEW_POP	Neues POP3-Konto hinzufügen
+BOUNCE_PAGE_ADD_NEW_POP	Neues POP3-Konto hinzufÃ¼gen
 BOUNCE_PAGE_EDIT_POP	Vorhanden POP3-Konten bearbeiten
 BOUNCE_STATUS_WAITING	Eingegangen
-BOUNCE_STATUS_REMOVED	User löschen
+BOUNCE_STATUS_REMOVED	User lÃ¶schen
 BOUNCE_STATUS_INACTIV	User inactivated
 BOUNCE_STATUS_NOTFOUND	User nicht gefunden
 BOUNCE_STATUS_PROC_MAN	Processed manuell
@@ -790,12 +790,12 @@ BOUNCE_SORT_DATE	Datum
 BOUNCE_SORT_MAIL	Email
 BOUNCE_SORT_ASC	Aufsteigend
 BOUNCE_SORT_DESC	Absteigend
-BOUNCE_INPUT_REM_PROSP	Lösche User
+BOUNCE_INPUT_REM_PROSP	LÃ¶sche User
 BOUNCE_INPUT_REM_PROSP_SURE	Sind Sie sicher das Sie diese 
-BOUNCE_INPUT_REM_PROSP_SURE_MAILS	Emails löschen möchten ?
-BOUNCE_INPUT_REM_PROSP_CANCEL	Löschen
-BOUNCE_INPUT_BACK_BLACKLIST	Zurück zur BlackList
-BOUNCE_EMAILS_WERE_REM	Emails wurden von BlackList gelöscht
+BOUNCE_INPUT_REM_PROSP_SURE_MAILS	Emails lÃ¶schen mÃ¶chten ?
+BOUNCE_INPUT_REM_PROSP_CANCEL	LÃ¶schen
+BOUNCE_INPUT_BACK_BLACKLIST	ZurÃ¼ck zur BlackList
+BOUNCE_EMAILS_WERE_REM	Emails wurden von BlackList gelÃ¶scht
 BOUNCE_EMAILS_WERE_ADD	Emails wurden in die BlackList eingetragen
 BOUNCE_ERROR_DELIVER_MSGS	Sorry, aber es entstehen Probleme beim Senden der Nachricht an diese Emailaddresse  
 BOUNCE_SETTS_UPDATED	Einstellung speichern
@@ -809,9 +809,9 @@ XMLI_ERROR_BNC_PROC_TXT_DESCR2	Bitten sie ihren Hoster die fehlenden
 XMLI_ERROR_BNC_PROC_TXT_DESCR2_1	Module zu installieren.
 XMLI_ERROR_BNC_PROC_ERROR	Fehler
 XMLI_MSG	Do not change the URL
-XMLI_MSG_PROSPS_WERE_ADDED	User hinzugefügt und
+XMLI_MSG_PROSPS_WERE_ADDED	User hinzugefÃ¼gt und
 XMLI_MSG_PROSPS_WERE_UPD	Eintrag in Datenbank erneuert
-XMLI_MSG_TOTAL_ELMS	Ges. Einträge in XML Datei
+XMLI_MSG_TOTAL_ELMS	Ges. EintrÃ¤ge in XML Datei
 XMLI_ERR_ELEMENT	Eintrag
 XMLI_ERR_ELEMENT_EMAIL	Email
 XMLI_ERR_ELEMENT_EMAIL_INCORR	ist inkorrekt
@@ -829,29 +829,29 @@ XMLE_FIELDS_EMAIL	Email
 XMLE_FIELDS_NAME	Name
 ____STARTTEXTS____
 [T_SENDING_TIPS]
-	<h2>Infos für Einstellungen u. Steuerung der Bounced-Mail-Header. </h2>
-                    <p>Zur Bearbeitung von Bounced-Meldung können sie hier die Einstellung festlegen. </p>
+	<h2>Infos fÃ¼r Einstellungen u. Steuerung der Bounced-Mail-Header. </h2>
+                    <p>Zur Bearbeitung von Bounced-Meldung kÃ¶nnen sie hier die Einstellung festlegen. </p>
                     <p>&nbsp;</p>
                     <p><font color="#FF0000"><strong>ACHTUNG!</strong></font>
-                      Bounced-Nachrichten (Rücklauf-Nachrichten Sendefehler) können sie mit Einstellungen steuern. Sie müssen hier die Optionen definieren um die Nachrichten an die gewollte Mailbox zu senden, wobei die Einstellung ihrer FROM oder Reply-To Vorsätze unterschiedlich sein muß. Viel Erfolg!<br><br>
-<p>Normalerweise gehen alle Rückmeldungen an die Emailadresse die als Reply-To eingetragen ist zurück.  Nutzen sie hier die Optionen um dies zu verändern.</p>
+                      Bounced-Nachrichten (RÃ¼cklauf-Nachrichten Sendefehler) kÃ¶nnen sie mit Einstellungen steuern. Sie mÃ¼ssen hier die Optionen definieren um die Nachrichten an die gewollte Mailbox zu senden, wobei die Einstellung ihrer FROM oder Reply-To VorsÃ¤tze unterschiedlich sein muÃŸ. Viel Erfolg!<br><br>
+<p>Normalerweise gehen alle RÃ¼ckmeldungen an die Emailadresse die als Reply-To eingetragen ist zurÃ¼ck.  Nutzen sie hier die Optionen um dies zu verÃ¤ndern.</p>
                     <p><strong><u>Mit SMTP senden</u></strong></p>
-                    <p>Wenn Sie SMTP benutzen, um Ihre Emailnachrichten zu senden, können die Einträge  'FROM' oder 'Reply-To' eine spezielle Emailadresse zuordnen. Dazu müssen Sie die Checkbox vor 'Folgende Mailadresse als SMTP-Absender nutzen' aktivieren und die gewünschte Emailadresse eintragen.   <br>
+                    <p>Wenn Sie SMTP benutzen, um Ihre Emailnachrichten zu senden, kÃ¶nnen die EintrÃ¤ge  'FROM' oder 'Reply-To' eine spezielle Emailadresse zuordnen. Dazu mÃ¼ssen Sie die Checkbox vor 'Folgende Mailadresse als SMTP-Absender nutzen' aktivieren und die gewÃ¼nschte Emailadresse eintragen.   <br>
                       <br>
                       <strong><u>Einstellungen zur Nutzung von Sendmail</u></strong></p>
-                    <p>Ihre Resultate können mit verschiedenen Methoden (Optionen) gemischt werden. Testen sie verschiedene Variationen: </p>
+                    <p>Ihre Resultate kÃ¶nnen mit verschiedenen Methoden (Optionen) gemischt werden. Testen sie verschiedene Variationen: </p>
                     <p><br>
                       <strong><em>Option 1:</em></strong> Sendmail-Anhang -f </p>
-                    <p>Aktivieren sie die Checkbox vor 'Sendmailzusatz -f an folgende Emailadresse' und                                     tragen sie die gewünschte Emailadresse ein.</p>
+                    <p>Aktivieren sie die Checkbox vor 'Sendmailzusatz -f an folgende Emailadresse' und                                     tragen sie die gewÃ¼nschte Emailadresse ein.</p>
                     <p>Damit legen sie den 'Return-Path' fest.</p>
                     <p>&nbsp;</p>
                     <p><em><strong>Option 2: </strong></em>Return-Path header</p>
-                    <p>Wenn das nicht arbeitet, können Sie versuchen, den Return-Path Header direkt einzustellen.  Dieses ist nicht die beste Weise, aber Qmail erlaubt Ihnen, dies zu tun.</p>
+                    <p>Wenn das nicht arbeitet, kÃ¶nnen Sie versuchen, den Return-Path Header direkt einzustellen.  Dieses ist nicht die beste Weise, aber Qmail erlaubt Ihnen, dies zu tun.</p>
                     <p>&nbsp;</p>
                     <p><strong>Option 3: </strong>Errors-To header</p>
-                    <p>Der 'Errors-To' Header scheint, gerade für diese Aufgabe hergestellt worden zu sein, aber es ist wirklich ein mißbilligter Eintrag, also Gebrauch mit Vorsicht.  Damit es funktioniert, müssen Sie Sendmail konfigurieren, um den 'Errors-To Header' wirklich zu sehen. Wir empfehlen nicht, diesen Eintrag zu verwenden, aber wenn alles andere nicht funktioniert, können Sie diesen Fehlervorsatz spezifizieren. </p>
+                    <p>Der 'Errors-To' Header scheint, gerade fÃ¼r diese Aufgabe hergestellt worden zu sein, aber es ist wirklich ein miÃŸbilligter Eintrag, also Gebrauch mit Vorsicht.  Damit es funktioniert, mÃ¼ssen Sie Sendmail konfigurieren, um den 'Errors-To Header' wirklich zu sehen. Wir empfehlen nicht, diesen Eintrag zu verwenden, aber wenn alles andere nicht funktioniert, kÃ¶nnen Sie diesen Fehlervorsatz spezifizieren. </p>
                     <p>&nbsp;</p>
-                    <p>Um ihre Konfigurationen zu prüfen, senden Sie sich eine Testmail und prüfen den Quelltext der Nachricht in ihrem Mailprogramm.  Im Mail-Header können sie dann den  Return-Pfad sehen:</p>
+                    <p>Um ihre Konfigurationen zu prÃ¼fen, senden Sie sich eine Testmail und prÃ¼fen den Quelltext der Nachricht in ihrem Mailprogramm.  Im Mail-Header kÃ¶nnen sie dann den  Return-Pfad sehen:</p>
                     <blockquote>
                       <p><code>Return-Path: &lt;info-store@sellwide.net&gt;<br>
                         Delivered-To: helpdesk@sellwide.net<br>
@@ -868,41 +868,41 @@ ____STARTTEXTS____
                     </blockquote>
 [/T_SENDING_TIPS]
 [T_BOUNCE_HELP]
-<p>Hier können sie POP3 Accounts für aufgelaufene Bounce-Mails einrichten und bearbeiten.
-                    Ebenfalls werden Regeln für die Behandlung und Aktionen von Bounced-Mails und den  Usern eingestellt (z. Bsp. löschen oder User deaktivieren):<br>
+<p>Hier kÃ¶nnen sie POP3 Accounts fÃ¼r aufgelaufene Bounce-Mails einrichten und bearbeiten.
+                    Ebenfalls werden Regeln fÃ¼r die Behandlung und Aktionen von Bounced-Mails und den  Usern eingestellt (z. Bsp. lÃ¶schen oder User deaktivieren):<br>
                     <br>
-                    <strong>POP3 Server</strong> - ihr POP3 Server für die Emailnachrichten</p>
+                    <strong>POP3 Server</strong> - ihr POP3 Server fÃ¼r die Emailnachrichten</p>
                   <p><strong>POP3 Port</strong> - standard POP3 Port ist 110</p>
                   <p><strong>POP3 User</strong> - Username zum Zugriff auf die Mailbox</p>
                   <p><strong>POP3 Passwort</strong> - Passwort zum Zugriff auf die Mailbox<br>
                   </p>
-                  <p><strong>Lösche&nbsp;User&nbsp;nach</strong>:<br>
+                  <p><strong>LÃ¶sche&nbsp;User&nbsp;nach</strong>:<br>
                     - <strong>hard bounces:</strong> Hier ist die Anzahl wieviel der hard bounced
-                    Nachrichten angenommen werden, bevor der User gelöscht oder deaktiviert wird. (Hard
+                    Nachrichten angenommen werden, bevor der User gelÃ¶scht oder deaktiviert wird. (Hard
                     bounces sind permanente Fehler die entstehen weil der Host nicht gefunden wird,
-                    die Nachricht durch SPAM-Filter zurückgewiesen wird, dies bedeutet dann auch das ihre Nachricht nicht ausgeliert werden kann). Die Grundeinstellung erlaubt 1 hard bounced Nachricht bevor gelöscht/deaktiviert wird. Diese Einstellung können sie jederzeit ändern.</p>
+                    die Nachricht durch SPAM-Filter zurÃ¼ckgewiesen wird, dies bedeutet dann auch das ihre Nachricht nicht ausgeliert werden kann). Die Grundeinstellung erlaubt 1 hard bounced Nachricht bevor gelÃ¶scht/deaktiviert wird. Diese Einstellung kÃ¶nnen sie jederzeit Ã¤ndern.</p>
                   <p>- <strong>soft bounces:</strong> Hier ist die Anzahl wieviel der soft bounced Nachrichten zugelassen werden bevor
-                    der User gelöscht oder deaktiviert wird. (Soft bounces
-                    sind temporäre Fehler die entstehen wenn zum Beispiel die Mailbox des Empfängers voll ist (over quota)
-                    etc). Die Grundeinstellung erlaubt 3 soft bounced Nachrichten bevor gelöscht/deaktiviert wird. Diese Einstellung können sie jederzeit ändern.</p>
+                    der User gelÃ¶scht oder deaktiviert wird. (Soft bounces
+                    sind temporÃ¤re Fehler die entstehen wenn zum Beispiel die Mailbox des EmpfÃ¤ngers voll ist (over quota)
+                    etc). Die Grundeinstellung erlaubt 3 soft bounced Nachrichten bevor gelÃ¶scht/deaktiviert wird. Diese Einstellung kÃ¶nnen sie jederzeit Ã¤ndern.</p>
                   <p><strong><br>
                     Aktionen: </strong></p>
-                  <p>- <strong>User aus Datenbank löschen:</strong> Der User wird endgültig aus der Datenbank gelöscht.</p>
+                  <p>- <strong>User aus Datenbank lÃ¶schen:</strong> Der User wird endgÃ¼ltig aus der Datenbank gelÃ¶scht.</p>
                   <p>- <strong>Status inaktiv setzen:</strong> Der User wird deaktiviert</p>
                   <p>- <strong>User in die BlackList eintragen:</strong>
-                    Ist diese Option gewählt werden User automatisch in die BlackListe eingetragen wenn sie gelöscht oder deaktiviert werden.</p>
+                    Ist diese Option gewÃ¤hlt werden User automatisch in die BlackListe eingetragen wenn sie gelÃ¶scht oder deaktiviert werden.</p>
 [/T_BOUNCE_HELP]
 [T_ACCOUNT_OPTIONS_SUBSCRIBE]
 
 			  Sie erhalten Teilnehmer indem dieser nur auf den Emaillink klickt.<br>
 Erstellen Sie einfach eine neue Email-Adresse und tragen Sie dann die Einstellungen unten ein.
-Dieses ist besonders nützlich, <br>wenn sie vermeiden möchten das ein
+Dieses ist besonders nÃ¼tzlich, <br>wenn sie vermeiden mÃ¶chten das ein
 falscher Name und Email-Adresse erfasst wird, weil sie ihre Informationen direkt von ihrem Email-Client sammeln.<br>
 Mehr Infos finden sie in der README.TXT.
 
 [/T_ACCOUNT_OPTIONS_SUBSCRIBE]
 [T_ACCOUNT_OPTIONS_SUBSCRIBE2]
-			<u>Direkteintrag ohne Bestätigung:</u> Bei aktivierter Checkbox werden bei einem Klick auf den Email-Link oder das Senden <br>von unbestätigten Mails, Einträge direkt und ohne Bestätigung durchgeführt.
+			<u>Direkteintrag ohne BestÃ¤tigung:</u> Bei aktivierter Checkbox werden bei einem Klick auf den Email-Link oder das Senden <br>von unbestÃ¤tigten Mails, EintrÃ¤ge direkt und ohne BestÃ¤tigung durchgefÃ¼hrt.
                           <br> <br> <u>POP3 Server:</u>
                           Diese Info erhalten sie beim Anlegen eines POP3 Kontos.<br>
                           Oder fragen sie ihren Provider.<br> <br>
@@ -910,11 +910,11 @@ Mehr Infos finden sie in der README.TXT.
                           Port:</u> Meistens wird Port 110 genutzt. Bei Fehlermeldungen fragen sie bitte ihren Administrator.
 [/T_ACCOUNT_OPTIONS_SUBSCRIBE2]
 [T_ACCOUNT_OPTIONS_BLACKLIST]
-		    <p><u>Sperrliste für Emails:</u> Hier können sie einzelne Emailadressen oder den
+		    <p><u>Sperrliste fÃ¼r Emails:</u> Hier kÃ¶nnen sie einzelne Emailadressen oder den
                       Absender-Host eintragen. Bsp.: <b>&quot;spam@yahoo.com&quot;</b> or
                       <b>&quot;hotmail.com&quot;</b></p>
                     <p>&nbsp;</p>
-                    <p><u>Fehlermeldung an Absender/Grund für Eintrag:</u> Diese Meldung erhalten User
+                    <p><u>Fehlermeldung an Absender/Grund fÃ¼r Eintrag:</u> Diese Meldung erhalten User
 					 deren Emailadresse in dei Sperrliste eingetragen wurde,
                       oder Absender die mit Emailadressen senden die bereits in der Sperrliste
 					   stehen.<br>
@@ -924,8 +924,8 @@ Mehr Infos finden sie in der README.TXT.
 			<h2>PERSONALISIEREN SIE IHRE NACHRICHTEN</h2>
 			<P><span class="ERROR_ELEMENT"><U><B>NEU!</B></U></span> Den Link zum  Austragen 
 			<strong>[UNSUBSCRIBE_LINK]</strong>
-			können sie nun an jeder Stelle ihrer Nachricht einfügen.
-			  In HTML Nachrichten können sie den Austragungslink so einfügen: &lt;a href=&quot; 
+			kÃ¶nnen sie nun an jeder Stelle ihrer Nachricht einfÃ¼gen.
+			  In HTML Nachrichten kÃ¶nnen sie den Austragungslink so einfÃ¼gen: &lt;a href=&quot; 
 					<strong>[UNSUBSCRIBE_LINK]</strong>&quot;&gt;
                    Klick hier zum AUSTRAGEN&lt;/a&gt;
                   <P>&nbsp;
@@ -946,21 +946,21 @@ Mehr Infos finden sie in der README.TXT.
                     <b>[DATE+32d] [DATE-32d] [DATE+1m] [DATE-1m] [DATE+1y]
                       [DATE-1y] </b>ergibt das entsprechende Datum im Format <i>dd/mm/yyyy</i>.
                     <li><b>[IP]</b> extrahiert und druckt IP-Adresse des Users 
-, wenn er über das HTML-Formular eingetragen wurde.</li>
+, wenn er Ã¼ber das HTML-Formular eingetragen wurde.</li>
                     <!--Please do not remove or translate this tag-->
 		    {additional}
 		    <!--Please do not remove or translate this tag-->
 		    </ul>
 [/T_MESSEDIT_PERSONALIZE]
 [T_BULK_REM_HELP]
-		<p>Sie können mehrere User auf einmal aus diesem Account löschen, indem Sie die Emailadressen in<br>
-		das Textfeld unten einfügen und auf den Button  "User löschen" klicken. </p>
+		<p>Sie kÃ¶nnen mehrere User auf einmal aus diesem Account lÃ¶schen, indem Sie die Emailadressen in<br>
+		das Textfeld unten einfÃ¼gen und auf den Button  "User lÃ¶schen" klicken. </p>
 		<p>&nbsp;</p>
 		<p>Bitte nur eine Emailadresse pro Zeile. Im Beispiel geben sie <br>
-		"hotmail" in die Textbox ein. damit werden alle User gelöscht deren Emailadresse "hotmail"<br> beinhaltet.
+		"hotmail" in die Textbox ein. damit werden alle User gelÃ¶scht deren Emailadresse "hotmail"<br> beinhaltet.
 		 <br>
 		<br>
-		Ergebnis: hotmail@aol.com, mike@hotmail.com, myhotmail@email.com - werden alle von der Liste gelöscht </p>
+		Ergebnis: hotmail@aol.com, mike@hotmail.com, myhotmail@email.com - werden alle von der Liste gelÃ¶scht </p>
 [/T_BULK_REM_HELP]
 [T_IMPORT_HELP]
 	<p>Here you can add new contacts to your "current prospects" list and run <br>
@@ -976,7 +976,7 @@ Mehr Infos finden sie in der README.TXT.
 	or:<br>
 	<i>John Smith &lt;his@email.com&gt; </i><br>
 	or:<br>
-	<i>“John Smith” his@email.com</i><br>
+	<i>Â“John SmithÂ” his@email.com</i><br>
 	or:<br>
 	<i>John Smith his@email.com</i><br>
 	<br>

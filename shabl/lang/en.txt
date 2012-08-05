@@ -1,4 +1,4 @@
-English	iso-8859-1
+English	utf-8
 #First line must have format:
 #LANGNAME<TAB>ENCODING
 ###################################################
@@ -17,7 +17,7 @@ HTML_FORM_LOCK_ACCOUNTS	Select accounts where you automatically want to lock pro
 HTML_FORM_LOCK_ALL	Lock on all other accounts
 MAIN_MENU	Main Menu
 ADMIN_CONTROL_PANEL	Admin Control Panel
-LOGO	<img src=logo.png>
+LOGO	<img src="content.cgi?get=image&f=logo&mode=png">
 #Version 5.01.03
 PHP_INTEGRATION	PHP Integration
 PHP_INTEGRATION_DESCR	This PHP code will help you emulate posting to the account registration code. You can use this function in your PHP scripts to post information to FUMP.
@@ -513,8 +513,8 @@ BULK_REM	Bulk Removal
 PROSP_REM_DB	removed from database
 PROSP_REMOVE	Remove Prospects
 PROSP_IMPORT	Import Prospects
-INSERT_TEXT	Insert text:
-OR_UPLOAD_FILE	or upload file:
+INSERT_TEXT	Insert text:
+OR_UPLOAD_FILE	or upload file:
 SEND_SUBSC_ALL_PROSP	Send subscribe confirmation message to all imported prospects.
 ADD_NO_SEQ	Only add new contacts to the mailing list
 ADD_SEQ	Add prospects into sequence starting with day
@@ -540,8 +540,8 @@ ATTACH	Attach
 SENT	Sent
 DAY	Day
 MANUAL_SHED_MSGS	Manual/Scheduled messages:
-SHED_DATE	Schedule date
-IN_PROGRESS	In progress
+SHED_DATE	Schedule date
+IN_PROGRESS	In progress
 BROADCAST	Broadcast
 TERM_PROC	Terminate process
 TST_SND_STR1	Test send selected messages
@@ -552,7 +552,7 @@ TYPE	Type:
 CHARSET	Charset:
 PRIORITY	Priority:
 MSG	Message:
-ADD_ATTACH	Add attachment:
+ADD_ATTACH	Add attachment:
 SEL_MSG_TYPE	Select the type of this message:
 DAYS_AFTER_REG	Send after (days):
 SAVE	Save
@@ -561,7 +561,7 @@ SAVE	Save
 #########################	
 LOGOUT	LOGOUT
 FEEDBACK_FORM	News/Support
-GLOBAL_SETTS	System settings
+GLOBAL_SETTS	System settings
 GLOBAL_LENG	Languages
 STATS	Statistics
 XML_IMP	XML&nbsp;Import

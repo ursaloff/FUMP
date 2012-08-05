@@ -1,4 +1,4 @@
-Portuguese iso-8859-1
+Portuguese utf-8
 #First line must have format:
 #LANGNAME<TAB>ENCODING
 ###################################################
@@ -131,41 +131,41 @@ ACCOUNT_BIG	ACCOUNT
 TOTAL_PROSPECTS	Total de assinantes:
 ACTIVE	Ativos:
 INACTIVE	Inativos:
-HTML_CODE_FORM	Abaixo o cÛdigo HTML do seu formul·rio:
-FORM_PREVIEW	VisualizaÁ„o do Formul·rio:
+HTML_CODE_FORM	Abaixo o c√≥digo HTML do seu formul√°rio:
+FORM_PREVIEW	Visualiza√ß√£o do Formul√°rio:
 CUSTOM_FIELD	Campo personalizado
 CUSTOM_FIELD_NAME	Nome do campo personalizado:
-ONLY_CHARS	Apenas 3 a 20 caractÈres [A-Za-z0-9_]
-IS_REQUIRED	… requerido?
+ONLY_CHARS	Apenas 3 a 20 caract√©res [A-Za-z0-9_]
+IS_REQUIRED	√â requerido?
 FIELD_FORMAT	Formato do campo:
 ADD_FIELD	Adicionar campo
 CANCEL	Cancelar
-ACC_SETTINGS	ConfiguraÁıes da conta
+ACC_SETTINGS	Configura√ß√µes da conta
 PERSONAL	Pessoal:
 FROM_NAME	Nome do remetente:
 FROM_EMAIL	E-mail do remetente:
-DEF_SUBSCRIB_NAME	Nome do Assinante Padr„o (Destinat·rio):
+DEF_SUBSCRIB_NAME	Nome do Assinante Padr√£o (Destinat√°rio):
 REPLY_HEADER	Responder para:
-SUBSCRIB_OPTS	OpÁıes de assinatura:
+SUBSCRIB_OPTS	Op√ß√µes de assinatura:
 REDIR_SUSCR_TO	Redirecionar assinantes para:
-REDIR_REMOV_TO	ApÛs cancelamento redirecionar para:
-NOTIFY_ME_SUSCR	Notificar-me quando alguÈm assinar?
-NOTIFY_ME_UNSUB	Notificar-me quando alguÈm cancelar?
+REDIR_REMOV_TO	Ap√≥s cancelamento redirecionar para:
+NOTIFY_ME_SUSCR	Notificar-me quando algu√©m assinar?
+NOTIFY_ME_UNSUB	Notificar-me quando algu√©m cancelar?
 ACC_ADMIN_NAME	Nome do administrador da conta:
 ACC_ADMIN_MAIL	E-mail do administrador da conta:
 USE_DOI	Usar opt-in duplo?
-DOICONFURL	P·gina de confirmaÁ„o do duplo opt-in:
-LOGGING	RelatÛrio:
-USE_MES_LOG	Usar relatÛrio de mensagens (verificar e-mails duplicados)
-LOCALIZ	LocalizaÁ„o:
-NO_UPPERCASE	N„o converter a primeira letra do nome do assinante para mai˙scula:
-DEF_CHARSET	Definir caractÈre padr„o:
-SAV_ALL_SET	Salvar configuraÁıes
-POP_SET	ConfiguraÁıes POP3
-IS_POP	Permitir assinatura atravÈs de envio de e-mail em branco:
+DOICONFURL	P√°gina de confirma√ß√£o do duplo opt-in:
+LOGGING	Relat√≥rio:
+USE_MES_LOG	Usar relat√≥rio de mensagens (verificar e-mails duplicados)
+LOCALIZ	Localiza√ß√£o:
+NO_UPPERCASE	N√£o converter a primeira letra do nome do assinante para mai√∫scula:
+DEF_CHARSET	Definir caract√©re padr√£o:
+SAV_ALL_SET	Salvar configura√ß√µes
+POP_SET	Configura√ß√µes POP3
+IS_POP	Permitir assinatura atrav√©s de envio de e-mail em branco:
 SUBSCR_EMAIL	E-mail para aasinatura:
 POP_SERVER2	Servidor POP3:
-POP_USER2	Nome de usu·rio POP3:
+POP_USER2	Nome de usu√°rio POP3:
 POP_PASS	Senha POP3:
 POP_PORT	Porta do servidor POP3:
 BAN_MAILS	Banir e-mails
@@ -174,8 +174,8 @@ CUST_ERR_MSG	Mensagem de erro personalizada:
 SORTFILTER	Mostrar ou filtrar por:
 SORTFILTER_SEARCH	Procurar:
 SORTFILTER_ORDER	Pedido:
-USE_DATE_RANGE	Definir perÌodo:
-REC_PER_PAGE	Registros por p·gina:
+USE_DATE_RANGE	Definir per√≠odo:
+REC_PER_PAGE	Registros por p√°gina:
 REC_PER_PAGE_SHOW	Mostrar:
 REC_PER_PAGE_RECORDS	registros
 SF_DISPLAY	Mostrar!!!
@@ -188,10 +188,10 @@ PROSPECT	Assinantes
 PROSPECTS2	assinantes
 PROSP_NAME	Nome:
 PROSP_MAIL	E-mail:
-PROSP_BEGIN_DAY	ComeÁar com o dia:
-PROSP_NO_SEQ	Sem sequÍncia
-PROSP_ADD_BEGIN_DAY	Adicionar assinates na sequÍncia comeÁando com o dia
-PROSP_UPD_USER	Atualizar usu·rio
+PROSP_BEGIN_DAY	Come√ßar com o dia:
+PROSP_NO_SEQ	Sem sequ√™ncia
+PROSP_ADD_BEGIN_DAY	Adicionar assinates na sequ√™ncia come√ßando com o dia
+PROSP_UPD_USER	Atualizar usu√°rio
 BULK_REM	Remover em Quantidade
 PROSP_REM_DB	removido do banco de dados
 PROSP_REMOVE	Remover Assinantes
@@ -199,8 +199,8 @@ PROSP_IMPORT	Importar Assinantes
 INSERT_TEXT	Inserir texto:
 OR_UPLOAD_FILE	ou importar arquivo:
 SEND_SUBSC_ALL_PROSP	Enviar mensagem de cadastramento para os assinantes importados.
-ADD_NO_SEQ	Adicionar contatos somente a lista de assinantes (sem adicionar a sequÍncia)
-ADD_SEQ	Adicionar assinantes na sequÍnmcia comeÁando com o dia
+ADD_NO_SEQ	Adicionar contatos somente a lista de assinantes (sem adicionar a sequ√™ncia)
+ADD_SEQ	Adicionar assinantes na sequ√™nmcia come√ßando com o dia
 COPY_PROSPS_FROM_ACC	Copiar assinantes das contas
 ACCOUNT	Conta:
 FILTER	Filtrar:
@@ -210,12 +210,12 @@ FORMAT	Formato:
 EXPORT_TO	Exportar para:
 EXPORT	Exportar
 SUB_UNSUB_MSG	Mensagem de cadastramento / descadastramento
-EDIT_DOI_CONF_MSG	Editar mensagem de confirmaÁ„o do opt in duplo
+EDIT_DOI_CONF_MSG	Editar mensagem de confirma√ß√£o do opt in duplo
 SEND_SUBSC_MSG	Enviar mensagem de cadastramento
 SEND_UNSUB_MSG	Enviar mensagem de descadastramento
 EDIT	Editar
 PREVIEW	Visualisar
-UPD_SETTINGS	Atualizar configuraÁıes
+UPD_SETTINGS	Atualizar configura√ß√µes
 ADD_NEW_MSG	Adicionar nova mensagem>>>
 SEQ_MSGS	Mensagens sequenciais:
 SEQ_MSG_SUBJECT	Assunto da Mensagem
@@ -228,7 +228,7 @@ IN_PROGRESS	Em andamento
 BROADCAST	Enviar mensagem
 TERM_PROC	Terminar processo
 TST_SND_STR1	Testar o envio das mensagens selecionadas
-TST_SND_STR2	para o seguinte endereÁo de e-mail:
+TST_SND_STR2	para o seguinte endere√ßo de e-mail:
 BTN_TEST_SEND	Teste de Envio
 SUBJECT	Assunto:
 TYPE	Tipo:
@@ -237,16 +237,16 @@ PRIORITY	Prioridade:
 MSG	Mensagem:
 ADD_ATTACH	Adionar anexo:
 SEL_MSG_TYPE	Selecionar o tipo desta mensagem:
-DAYS_AFTER_REG	Dias apÛs a inscriÁ„o:
+DAYS_AFTER_REG	Dias ap√≥s a inscri√ß√£o:
 SAVE	Salvar
 #########################	
 #file accounts.dat	
 #########################	
 LOGOUT	SAIR
-FEEDBACK_FORM	Formul·rio de Feedback
-GLOBAL_SETTS	ConfiguraÁıes Globais
+FEEDBACK_FORM	Formul√°rio de Feedback
+GLOBAL_SETTS	Configura√ß√µes Globais
 GLOBAL_LENG	Idiomas
-STATS	EstatÌsticas
+STATS	Estat√≠sticas
 XML_IMP	IMPORTAR&nbsp;XML
 XML_EXP	EXPORTAR&nbsp;XML
 BOUNC_MAILS	E-mails devolvidos
@@ -258,26 +258,26 @@ BTN_NEW_ACC	Nova conta
 #file author.dat	
 #########################	
 AUTHOR_LINE1	Para acessar o painel de controle,
-AUTHOR_LINE2	vocÍ deve informar a senha correta.
+AUTHOR_LINE2	voc√™ deve informar a senha correta.
 PASSWORD	Senha:
 ENTER	ENTRAR
 #########################	
 #file bounce.dat	
 #########################	
-HANDLING_TOOL	ferramenta de manipulaÁ„o de e-mails devolvidos.
+HANDLING_TOOL	ferramenta de manipula√ß√£o de e-mails devolvidos.
 POP_ACCS	Contas POP3
 BOUNC_MSGS	Mensagens devolvidas
 BLACKLIST	Lista Negra
 YOUR_POP_ACCS	Suas contas POP3
-NO_POP_ACCS_FOUND	Contas POP3 n„o encontradas
+NO_POP_ACCS_FOUND	Contas POP3 n√£o encontradas
 TOTAL_ACCS	Total de contas:
 POP_SERVER	Servidor POP3
-POP_USER	Usu·rio POP3
-REM_PROSPS_AFTER	Remover assinantes apÛs:
-BOUNC_HARD	devoluÁıes fortes
-BOUNC_SOFT	devoluÁıes&nbsp;fracas
+POP_USER	Usu√°rio POP3
+REM_PROSPS_AFTER	Remover assinantes ap√≥s:
+BOUNC_HARD	devolu√ß√µes fortes
+BOUNC_SOFT	devolu√ß√µes&nbsp;fracas
 DEL_BOUNC_MSGS	Excluir mensagens devolvidas
-TEST_CONN	Testar conex„o
+TEST_CONN	Testar conex√£o
 STATUS	Status
 TEST	Testar
 WITH_SEL	Com selecionda:
@@ -293,25 +293,25 @@ TOTAL_HARD	Total de fortes
 HARD	Forte
 PROSPS_REMOVED	Assinantes removidos
 PROSPS_INACT	Assinantes inativados
-PROSP_NOT_FOUND	Assinante n„o encontrado
+PROSP_NOT_FOUND	Assinante n√£o encontrado
 SOFT	Fraca
 TOTAL_SOFT	Total fraca
 WAITING	Esperando
-POP_SERV_SETTS	ConfiguraÁıes de conex„o do servidor POP3:
-DEL_BNC_ML_SERV	E-mails devolvidos excluÌdos do servidor
-DEF_COUNT_BOUNC	Definir contagem de e-mails devolvidos antes do processamento das aÁıes: 
-REM_AFTER_HARD	Remover assinantes apÛs devoluÁıes fortes:
-REM_AFTER_SOFT	Remover assinantes apÛs devoluÁıes fracas:
-ACT_WITH_BOUNC	AÁıes com assinantes com e-mails devolvidos:
-ACT_WITH_PROSP	AcÁ„o com assinantes:
-ADD_BNC_MAILS_BLACKL	adicionar e-mails devolvidos ‡ lista negra
+POP_SERV_SETTS	Configura√ß√µes de conex√£o do servidor POP3:
+DEL_BNC_ML_SERV	E-mails devolvidos exclu√≠dos do servidor
+DEF_COUNT_BOUNC	Definir contagem de e-mails devolvidos antes do processamento das a√ß√µes: 
+REM_AFTER_HARD	Remover assinantes ap√≥s devolu√ß√µes fortes:
+REM_AFTER_SOFT	Remover assinantes ap√≥s devolu√ß√µes fracas:
+ACT_WITH_BOUNC	A√ß√µes com assinantes com e-mails devolvidos:
+ACT_WITH_PROSP	Ac√ß√£o com assinantes:
+ADD_BNC_MAILS_BLACKL	adicionar e-mails devolvidos √† lista negra
 SAV_ACC	Salvar conta
 RESET	Ressetar
 EMAIL	E-mail:
-BOUNC_CODE	CÛdigo de devoluÁ„o:
+BOUNC_CODE	C√≥digo de devolu√ß√£o:
 HARD_SOFT	Forte/fraca:
 PROC_STAT	Status do processamento:
-BOUNC_REASON	Motivo da devoluÁ„o:
+BOUNC_REASON	Motivo da devolu√ß√£o:
 ORDER_BY	Pedido por:
 SHOW_EMAILS_EXIST_PROS	Mostre-me e-mails com assinantes existentes nas contas
 DISPLAY	Mostrar
@@ -323,70 +323,70 @@ PROSPS	Assinantes
 INACT	Inativos
 RECVD	Recebidos
 PROC_STAT2	Status do processamento 
-BNC_STATUS	Status da devoluÁ„o
-BNC_REASON	Motivo da devoluÁ„o
+BNC_STATUS	Status da devolu√ß√£o
+BNC_REASON	Motivo da devolu√ß√£o
 CODE	Code
 HARD_SOFT2	Forte/Fraca
 BTN_DEL_MSGS	Excluir mensagens
 BTN_REM_PROSP	Excluir assinante
 BTN_ACT_PROSP	Ativar assinante
 BTN_INACT_PROSP	Inativar assinante
-RFC_ERR_DESCR	DescriÁ„o do cÛdigo de erro RFC1893 
-CODE2	CÛdigo:
+RFC_ERR_DESCR	Descri√ß√£o do c√≥digo de erro RFC1893 
+CODE2	C√≥digo:
 BACK_2_BNC_MSGS	Voltar as mensagens devolvidas
-REG_SETTS	ConfiguraÁıes de cadastramento:
+REG_SETTS	Configura√ß√µes de cadastramento:
 REJECT_SUBSCR	Rejeitar cadastramentos de e-mails da lista negra
 REG_ERR_MSG	Mensagem de erro de cadastramento:
-SAV_SETTS	Salvar configuraÁıes
+SAV_SETTS	Salvar configura√ß√µes
 BNC_MAIL_BLACK	Lista negra de e-mails devolvidos.
 IMP_MAILS	Importar e-mails 
 EXP_MAILS	Exportar e-mails 
-NO_MAIL_FOUND	E-mails n„o encontrados
+NO_MAIL_FOUND	E-mails n√£o encontrados
 TOTAL_EMAILS	Total de e-mails:
 IMP_PROSPS	Importar assinantes
-IMP_PROSPS_DESC	Aqui vocÍ pode importar e-mail para a lista negra. Por favor cole os e-mails na caixa de texto below (one email per row). Os e-mails ser„o validados antes da importaÁ„o.
+IMP_PROSPS_DESC	Aqui voc√™ pode importar e-mail para a lista negra. Por favor cole os e-mails na caixa de texto below (one email per row). Os e-mails ser√£o validados antes da importa√ß√£o.
 BTN_IMPORT	Importar
-BULK_REM_DESC1	VocÍ pode excluir e-mails da lista negra informado os mesmos na caixa de texto below and clicking "Excluir"
-BULK_REM_DESC2	um e-mail por linha. VocÍ pode usar um termo. Por exemplo: se vocÍ digitar hotmail na caixa de texto todos os e-mails que contÈm
-BULK_REM_DESC3	o termo hotmail em qualquer parte do endereÁo.
-BULK_REM_DESC4	ex: hotmail@aol.com, jose@hotmail.com, meuhotmail@email.com - ser„o removidos da lista
+BULK_REM_DESC1	Voc√™ pode excluir e-mails da lista negra informado os mesmos na caixa de texto below and clicking "Excluir"
+BULK_REM_DESC2	um e-mail por linha. Voc√™ pode usar um termo. Por exemplo: se voc√™ digitar hotmail na caixa de texto todos os e-mails que cont√©m
+BULK_REM_DESC3	o termo hotmail em qualquer parte do endere√ßo.
+BULK_REM_DESC4	ex: hotmail@aol.com, jose@hotmail.com, meuhotmail@email.com - ser√£o removidos da lista
 BTN_REMOVE	Excluir
 #########################	
 #file daylystat.dat	
 #########################	
 BRODC_STARTED	O envio de mensagem foi iniciado
 TIMES_THIS_DAY	vezes hoje
-REPORT_GEN	Este relatÛrio foi gerado
+REPORT_GEN	Este relat√≥rio foi gerado
 #########################	
 #file exportxml.dat	
 #########################	
 STEP1	Passo 1 
-STEP1_DESC1	Selecione uma conta, um arquivo XML file e o nÌvel aonde este arquivo ser· guardado
-STEP1_DESC2	(O arquivo XML deve estar no diretÛrio FUMP)
+STEP1_DESC1	Selecione uma conta, um arquivo XML file e o n√≠vel aonde este arquivo ser√° guardado
+STEP1_DESC2	(O arquivo XML deve estar no diret√≥rio FUMP)
 XML_DOC	Documento XML:
 WHERE_STORE_XML_DOC	Documento XML guardado aonde?
 ENCODING	Codificando:
-CREATE_XSD	Criar arquivo XSD com esquema de tabela para Access 2002ô:
-NEXT2	PR”XIMO[2]&gt;&gt;
+CREATE_XSD	Criar arquivo XSD com esquema de tabela para Access 2002¬ô:
+NEXT2	PR√ìXIMO[2]&gt;&gt;
 XSD_DESC1	Arquivo XSD.
-XSD_DESC2	Se vocÍ criar um arquivo XSD com esquema de tabela, ent„o vocÍ poder· importar facilmente os dados para uma tabela do Microsoft Access 2002ô. Ela ter· o mesmo nome do arquivo 
-XSD_DESC3	que vocÍ pode definir como emails.xml - emails.xsd
+XSD_DESC2	Se voc√™ criar um arquivo XSD com esquema de tabela, ent√£o voc√™ poder√° importar facilmente os dados para uma tabela do Microsoft Access 2002¬ô. Ela ter√° o mesmo nome do arquivo 
+XSD_DESC3	que voc√™ pode definir como emails.xml - emails.xsd
 STEP2_SEL_FLDS	Passo 2 - Selecione os campos
-STEP2_SEL_FLDS_DESC	Por favor selecione os campos dos quais vocÍ quer importar os dados.
-NEXT3	PR”XIMO[3]&gt;&gt;
+STEP2_SEL_FLDS_DESC	Por favor selecione os campos dos quais voc√™ quer importar os dados.
+NEXT3	PR√ìXIMO[3]&gt;&gt;
 STEP4_FINISH	Passo 4 - FINALIZAR:
-XML_EXP_SUC	EXPORTA«√O XML BEM SUCEDIDA!
+XML_EXP_SUC	EXPORTA√á√ÉO XML BEM SUCEDIDA!
 #########################	
 #file importxml.dat	
 #########################	
-IMP_ST1_DESC1	Selecione uma conta, arquivo XML e o nÌvel do arquivo XML aonde os assinantes est„o guardados
-IMP_ST1_DESC2	(O arquivo XML deve estar no diretÛrio FUMP)
-LEVEL_DATA_STORED	NÌvel aonde os dados dos assinantes estavam guardados:
-HERE_IS_SAMPLE	Aqui est· um exemplo de arquivo XML que vocÍ poder· exportar de seu banco de dados Microsoft Access 2002ô
-STEP2_SEL_FLDS_DESC_IMP	Por favor selecione os campos dos quais vocÍ quer importar os dados.
-STEP3	Passo 3 - VocÍ est· tentando importar:
+IMP_ST1_DESC1	Selecione uma conta, arquivo XML e o n√≠vel do arquivo XML aonde os assinantes est√£o guardados
+IMP_ST1_DESC2	(O arquivo XML deve estar no diret√≥rio FUMP)
+LEVEL_DATA_STORED	N√≠vel aonde os dados dos assinantes estavam guardados:
+HERE_IS_SAMPLE	Aqui est√° um exemplo de arquivo XML que voc√™ poder√° exportar de seu banco de dados Microsoft Access 2002¬ô
+STEP2_SEL_FLDS_DESC_IMP	Por favor selecione os campos dos quais voc√™ quer importar os dados.
+STEP3	Passo 3 - Voc√™ est√° tentando importar:
 BTN_IMPXML	IMPORTAR&gt;&gt;
-XML_IMP_SUC	IMPORTA«√O BEM SUCEDIDA!
+XML_IMP_SUC	IMPORTA√á√ÉO BEM SUCEDIDA!
 PROSPS_WERE_ADD	assinantes foram adicionados ao banco de dados.
 #########################	
 #file links.dat	
@@ -395,15 +395,15 @@ YOUR_LINKS	Seus links
 ADD_NEW_LINK	Adicionar novo link&gt;&gt;&gt;
 NO_LINKS_FOUND	Nenhum link encontrado
 TOTAL_LINKS	Total de links:
-TEMPLATE	CÛdigo
+TEMPLATE	C√≥digo
 NAMEE	Nome
 CLICKS	Cliques
 PROSPECTS	Assinantes
 ISCLEAN	Apagar?
 DEL_SELECTED	Excluir selecionados
 TOTALU	Total:
-LINKS_DESC1	Aqui vocÍ pode editar links para adicionar cÛdigos especiais em suas mensagens para ter uma estatÌstica de cliques dos assinantes e conferir a eficiÍncia de suas mensagens. 
-LINKS_DESC2	Nas mensagens vocÍ sÛ precisar· colocar o cÛdigo especial como este [LINK123]
+LINKS_DESC1	Aqui voc√™ pode editar links para adicionar c√≥digos especiais em suas mensagens para ter uma estat√≠stica de cliques dos assinantes e conferir a efici√™ncia de suas mensagens. 
+LINKS_DESC2	Nas mensagens voc√™ s√≥ precisar√° colocar o c√≥digo especial como este [LINK123]
 EDIT_LINK	Editar link
 INS_NEW_LINK	Inserir novo link
 LINK_PROPS	Propriedade do Link
@@ -417,7 +417,7 @@ LINK	Link:
 MESSAGE	Mensagem:
 NO_PROSPS_FOUND	Nenhum assinante encontrado
 NO_CLICKS_FOUND	Nenhum clique encontrado
-ACT_UNIQ_PROSPS	Cliques ˙nicos de assinantes:
+ACT_UNIQ_PROSPS	Cliques √∫nicos de assinantes:
 CLICKS_FOUND	Cliques encontrados:
 CL_NAME	Nome
 CL_MAIL	E-mail
@@ -431,44 +431,44 @@ REGISTER	Cadastrar
 #########################	
 #file settings_shabl.dat	
 #########################	
-YOUR_PERS_INFO	Suas informaÁıes pessoais
+YOUR_PERS_INFO	Suas informa√ß√µes pessoais
 YOUR_NAME	Seu nome:
 YOUR_EMAIL	Seu e-mail:
-YOUR_PERS_INFO_DESCR	Estas configuraÁıes administrativas globais s„o usadas em todas as contas. VocÍ tambÈm pode configurar cada conta individualmente.
-SEND_ME_BROAD_STAT	Enviar estatÌsticas
+YOUR_PERS_INFO_DESCR	Estas configura√ß√µes administrativas globais s√£o usadas em todas as contas. Voc√™ tamb√©m pode configurar cada conta individualmente.
+SEND_ME_BROAD_STAT	Enviar estat√≠sticas
 SEND_ME_BROAD_STAT2	de envio por e-mail:
-BTN_UPD_SETTS	Atualizar configuraÁıes
-MAIL_PROG_SETTS	ConfiguraÁıes do Program de E-mail
+BTN_UPD_SETTS	Atualizar configura√ß√µes
+MAIL_PROG_SETTS	Configura√ß√µes do Program de E-mail
 SENDMAIL_PATH	Caminho do Sendmail:
-SEND_THROUGH	Enviar atravÈs de:
+SEND_THROUGH	Enviar atrav√©s de:
 SMTP_SERVER	Servidor SMTP:
-SMTP_AUTH	AutenticaÁ„o SMTP
-SMTP_REQ_SASL	Servidor SMTP requer autenticaÁ„o SASL (Simple Authentication and Security Layer RFC2554)
+SMTP_AUTH	Autentica√ß√£o SMTP
+SMTP_REQ_SASL	Servidor SMTP requer autentica√ß√£o SASL (Simple Authentication and Security Layer RFC2554)
 SMTP_USER	SMTP username:
 SMTP_PASS	SMTP password:
 SEND_SPD	Velocidade de envio
 QUANT_PROCS	Quantidade de processos concorrentes:
 OR_B	OU
-USE_OLD_ALG	Usar antigo (processo individual) algoritmo de envio (se vocÍ enfrentar problemas no sistema de envio pelo 'remetente')
-BOUNC_RET_PATH_OPTS	OpÁıes de caminho para mensagens devolovidas:
-USE_FOLLOW_UP	Usar o seguinte endereÁo de e-mail como remetente SMTP 
-1ST_WAY	1∫ caminho:
-1ST_WAY2	Usar sendmail -f flag com o seguinte endereÁo:
-2ND_WAY	2∫ caminho: Caminho de Retorno no cabeÁalho da mensagem:
-2ND_WAY2	Pode ser em branco se vocÍ n„o quiser adicionar este cabeÁalho.
-2ND_WAY3	N„o È uma boa idÈia adicionar este cabeÁalho manualmente as mensagens, mas em alguns casos pode funcionar com Qmail.
-3RD_WAY	3∫ caminho: Erros-Para cabeÁalho da mensagem:
-3RD_WAY2	Pode ser em branco se vocÍ n„o quiser adicionar este cabeÁalho. 
-ADMIN_AREA_PASS	Senha para acessar a ·rea administrativa
+USE_OLD_ALG	Usar antigo (processo individual) algoritmo de envio (se voc√™ enfrentar problemas no sistema de envio pelo 'remetente')
+BOUNC_RET_PATH_OPTS	Op√ß√µes de caminho para mensagens devolovidas:
+USE_FOLLOW_UP	Usar o seguinte endere√ßo de e-mail como remetente SMTP 
+1ST_WAY	1¬∫ caminho:
+1ST_WAY2	Usar sendmail -f flag com o seguinte endere√ßo:
+2ND_WAY	2¬∫ caminho: Caminho de Retorno no cabe√ßalho da mensagem:
+2ND_WAY2	Pode ser em branco se voc√™ n√£o quiser adicionar este cabe√ßalho.
+2ND_WAY3	N√£o √© uma boa id√©ia adicionar este cabe√ßalho manualmente as mensagens, mas em alguns casos pode funcionar com Qmail.
+3RD_WAY	3¬∫ caminho: Erros-Para cabe√ßalho da mensagem:
+3RD_WAY2	Pode ser em branco se voc√™ n√£o quiser adicionar este cabe√ßalho. 
+ADMIN_AREA_PASS	Senha para acessar a √°rea administrativa
 ADMIN_AREA_PASS_OLD	Senha antiga:
 ADMIN_AREA_PASS_NEW	Senha nova:
 ADMIN_AREA_PASS_RET	Confirmar senha:
-USE_PERIOD	PerÌodo de uso:
+USE_PERIOD	Per√≠odo de uso:
 USE_PERIOD_TO	para
 USE_PERIOD_BTN_SHOW	mostrar
 ENABLE_LOG	Acionar registro de atividades
 BTN_OK	OK
-BTN_CLENUP_LOGS_IN_RANGE	Limpar registro de atividades popr perÌodo
+BTN_CLENUP_LOGS_IN_RANGE	Limpar registro de atividades popr per√≠odo
 BTN_CLEANUP_ALL_LOGS	Limpar todos os registros de atividades
 BROAD_LOG_TOTAL	Registrar Total de envio de Mensagens
 RECORDS	registros.
@@ -476,11 +476,11 @@ CURRENT_OR_PREV_BR_LOG	Registro atual ou anterior de envio de mensagens
 ROWS_FOUND	linhas encontradas
 SAVE_LOG_INTO	Salvar registros de atividades em
 SAVE_LOG_INTO_FILE	arquivo
-BTN_SAVE_SETTS	Salvar configuraÁıes
-TIME_SYNCH	SincronizaÁ„o de hor·rio
-TIME_SYNCH_SRV_TIME	Hor·rio do servidor:
-TIME_SYNCH_CORR_TIME	Hor·rio correto:
-TIME_SYNCH_COR_TIME	CorreÁ„o do hor·rio:
+BTN_SAVE_SETTS	Salvar configura√ß√µes
+TIME_SYNCH	Sincroniza√ß√£o de hor√°rio
+TIME_SYNCH_SRV_TIME	Hor√°rio do servidor:
+TIME_SYNCH_CORR_TIME	Hor√°rio correto:
+TIME_SYNCH_COR_TIME	Corre√ß√£o do hor√°rio:
 TIME_SYNCH_HHMM	+hh:mm ou -hh:mm
 SETTS_REMOVE	Remover
 SETTS_NAME	Nome
@@ -491,17 +491,17 @@ BTN_REM_SEL	Remover selecionados
 BTN_RESTORE	Restaurar
 NEW_BACKUP	Novo Backup
 NEW_BACKUP_NAME	Nome do novo backup:
-NEW_BACKUP_NAME_CHARS	apenas caractÈres [a-z_0-9]
+NEW_BACKUP_NAME_CHARS	apenas caract√©res [a-z_0-9]
 BTN_BACKUP	Backup
 MAIL_PROG_PERF_TEST	Teste de performance do programa de e-mail
-MAIL_PROG_PERF_TEST_DESC1	Este teste dir· quanto tempo leva para seu servidor enviar e-mails. 
-MAIL_PROG_PERF_TEST_DESC2	Entre com seu endereÁo de e-mail no campo abaixo e clique no
-MAIL_PROG_PERF_TEST_DESC3	bot„o
+MAIL_PROG_PERF_TEST_DESC1	Este teste dir√° quanto tempo leva para seu servidor enviar e-mails. 
+MAIL_PROG_PERF_TEST_DESC2	Entre com seu endere√ßo de e-mail no campo abaixo e clique no
+MAIL_PROG_PERF_TEST_DESC3	bot√£o
 MAIL_PROG_PERF_TEST_DESC4	Testar
 MAIL_PROG_PERF_TEST_DESC5	apenas uma vez
-MAIL_PROG_PERF_TEST_DESC6	FollowUp Mailing List Processor enviar· mensagens para o e-mail informado e o tempo de envio ser· medido.
-MAIL_PROG_PERF_TEST_DESC7	Este teste usar· 
-ENTER_YOUR_EMAIL_ADDRESS	Entre com seu endereÁo de e-mail
+MAIL_PROG_PERF_TEST_DESC6	FollowUp Mailing List Processor enviar√° mensagens para o e-mail informado e o tempo de envio ser√° medido.
+MAIL_PROG_PERF_TEST_DESC7	Este teste usar√° 
+ENTER_YOUR_EMAIL_ADDRESS	Entre com seu endere√ßo de e-mail
 BLAST_SIZE	Quantidade (30-300 mensagens)
 MAIL_PROG_PERF_TEST_BTN_TEST	Testar
 MAIL_PROG_PERF_TEST_RESULTS	Resultado do teste de performance
@@ -516,40 +516,40 @@ MAIL_PROG_PERF_TEST_RESULTS7	mensagens por hora
 #file responder.cgi	
 #########################	
 ACCOUNTMENU_MAIN	Menu da Conta
-ACCOUNTMENU_OPTIONS	OpÁıes da Conta
-ACCOUNTMENU_OPTIONS_DESCR	Aqui vocÍ pode editar configuraÁıes importantes desta lista especÌfica incluindo o cadastramento/descadastramento via POP3. VocÍ pode definir o "Nome do Remetente" e o endereÁo de e-mail, URL de redirecionamento apÛs cadastramento/descadastramento, notificaÁ„o ao adiministrador e quando usar o sistema de opt-in duplo. 
-ACCOUNTMENU_HTML_FORM	Formul·rio HTML
-ACCOUNTMENU_HTML_FORM_DESCR	Aqui vocÍ pode gerar e visualizar o cÛdigo HTML que ser· colado nas p·ginas de seu site. VocÍ tambÈm pode adicionar campos extras, tais como telefone, fax, endereÁo, etc. 
+ACCOUNTMENU_OPTIONS	Op√ß√µes da Conta
+ACCOUNTMENU_OPTIONS_DESCR	Aqui voc√™ pode editar configura√ß√µes importantes desta lista espec√≠fica incluindo o cadastramento/descadastramento via POP3. Voc√™ pode definir o "Nome do Remetente" e o endere√ßo de e-mail, URL de redirecionamento ap√≥s cadastramento/descadastramento, notifica√ß√£o ao adiministrador e quando usar o sistema de opt-in duplo. 
+ACCOUNTMENU_HTML_FORM	Formul√°rio HTML
+ACCOUNTMENU_HTML_FORM_DESCR	Aqui voc√™ pode gerar e visualizar o c√≥digo HTML que ser√° colado nas p√°ginas de seu site. Voc√™ tamb√©m pode adicionar campos extras, tais como telefone, fax, endere√ßo, etc. 
 ACCOUNTMENU_SUBSCR_MAN	Gerenciador de Assinantes
-ACCOUNTMENU_SUBSCR_MAN_DESCR	Aqui vocÍ pode adicionar, editar e fazer backup dos assinantes da sua lista, ou copiar uma lista para outra conta. 
+ACCOUNTMENU_SUBSCR_MAN_DESCR	Aqui voc√™ pode adicionar, editar e fazer backup dos assinantes da sua lista, ou copiar uma lista para outra conta. 
 ACCOUNTMENU_EDIT_MESS	Editar Mensagens
-ACCOUNTMENU_EDIT_MESS_DESCR	Aqui vocÍ pode configurar suas mensagens extras e as mensagens sequenciais, incluindo a confirmaÁıes de cadastramento e descadastramento e arquivos anexos. … aqui hque vocÍ ativa o envio das mensagens extras.
+ACCOUNTMENU_EDIT_MESS_DESCR	Aqui voc√™ pode configurar suas mensagens extras e as mensagens sequenciais, incluindo a confirma√ß√µes de cadastramento e descadastramento e arquivos anexos. √â aqui hque voc√™ ativa o envio das mensagens extras.
 ACCOUNTMENU_LINKS	Links
 ACCOUNTMENU_LINK	Link
-ACCOUNTMENU_LINKS_DESCR	Aqui vocÍ pode adicionar e editar links para contagem de cliques e estatÌsticas de envio de mensagens.
-ACCOUNTMENU_LINKS_MESS_STAT	EstatÌsticas de Mensagens
-ACCOUNTMENU_LINKS_ACT_PROSP	Cliques ⁄nicos
+ACCOUNTMENU_LINKS_DESCR	Aqui voc√™ pode adicionar e editar links para contagem de cliques e estat√≠sticas de envio de mensagens.
+ACCOUNTMENU_LINKS_MESS_STAT	Estat√≠sticas de Mensagens
+ACCOUNTMENU_LINKS_ACT_PROSP	Cliques √önicos
 ACCOUNTMENU_LINKS_CLICKS	Cliques
 SETTINGSMENU_MAIN	Principal
 SETTINGSMENU_PERSONAL	Pessoal
-SETTINGSMENU_PERSONAL_DESCR	Aqui vocÍ pode definir o username e o endereÁo de e-mail onde vocÍ receber· os relatÛrios e as notificaÁıes de cadastramento/descadastramento de assinantes.
-SETTINGSMENU_SENDING_OPTIONS	OpÁıes de envio
-SETTINGSMENU_SENDING_OPTIONS_DESCR	ConfiguraÁ„o do MÈtodo de Envio. Aqui vocÍ define o mÈtodo de envio de mensagens e caminho do programa de envio ou o servidor de SMTP. VocÍ pode ainda configurar os cabeÁalhos como <i>Return-Path</i> ou <i>Errors-To</i> para definir o endereÁo para onde as mensagens devolvidas devem seguir.
+SETTINGSMENU_PERSONAL_DESCR	Aqui voc√™ pode definir o username e o endere√ßo de e-mail onde voc√™ receber√° os relat√≥rios e as notifica√ß√µes de cadastramento/descadastramento de assinantes.
+SETTINGSMENU_SENDING_OPTIONS	Op√ß√µes de envio
+SETTINGSMENU_SENDING_OPTIONS_DESCR	Configura√ß√£o do M√©todo de Envio. Aqui voc√™ define o m√©todo de envio de mensagens e caminho do programa de envio ou o servidor de SMTP. Voc√™ pode ainda configurar os cabe√ßalhos como <i>Return-Path</i> ou <i>Errors-To</i> para definir o endere√ßo para onde as mensagens devolvidas devem seguir.
 SETTINGSMENU_ACCESS	Acesso
-SETTINGSMENU_ACCESS_DESCR	VocÍ pode alterar sua senha de login aqui.
-SETTINGSMENU_TIME_SYNC	SincronizaÁ„o de Hor·rio
-SETTINGSMENU_TIME_SYNC_DESCR	Aqui vocÍ pode sincronizar o hor·rio do seu servidor com seu hor·rio local. ⁄til para mensagens agendadas e mensagens sensÌveis a tempo. 
+SETTINGSMENU_ACCESS_DESCR	Voc√™ pode alterar sua senha de login aqui.
+SETTINGSMENU_TIME_SYNC	Sincroniza√ß√£o de Hor√°rio
+SETTINGSMENU_TIME_SYNC_DESCR	Aqui voc√™ pode sincronizar o hor√°rio do seu servidor com seu hor√°rio local. √ötil para mensagens agendadas e mensagens sens√≠veis a tempo. 
 SETTINGSMENU_PERFOM	Performance
-SETTINGSMENU_PERFOM_DESCR	Esta È uma facilidade para testar a performance do seu servidor para o envio de mensagens.
+SETTINGSMENU_PERFOM_DESCR	Esta √© uma facilidade para testar a performance do seu servidor para o envio de mensagens.
 SETTINGSMENU_BACUP_RESTORE	Backup/Restaurar
-SETTINGSMENU_BACUP_RESTORE_DESCR	Aqui vocÍ pode fazer um backup e restaurar seu banco de dados.
+SETTINGSMENU_BACUP_RESTORE_DESCR	Aqui voc√™ pode fazer um backup e restaurar seu banco de dados.
 STATMENU_MAIN	Prinicpal
-STATMENU_ACT_LOGS	RelatÛrio de Atividades
-STATMENU_ACT_LOGS_DESCR	Aqui vocÍ pode monitorar as atividades de envio de mensagens, cadastramento e descadastramento em um determinado perÌodo de tempo. Ele mostra registros e o hor·rio que o programa foi executado.
-STATMENU_CURRENT_BROADCAST	HistÛrico de envio de mensagens
-STATMENU_CURRENT_BROADCAST_DESCR	Aqui vocÍ encontra informaÁıes sobre o progresso do envio de mensagens.
+STATMENU_ACT_LOGS	Relat√≥rio de Atividades
+STATMENU_ACT_LOGS_DESCR	Aqui voc√™ pode monitorar as atividades de envio de mensagens, cadastramento e descadastramento em um determinado per√≠odo de tempo. Ele mostra registros e o hor√°rio que o programa foi executado.
+STATMENU_CURRENT_BROADCAST	Hist√≥rico de envio de mensagens
+STATMENU_CURRENT_BROADCAST_DESCR	Aqui voc√™ encontra informa√ß√µes sobre o progresso do envio de mensagens.
 STATMENU_TOTALS	Totais
-STATMENU_TOTALS_DESCR	Aqui vocÍ ver· quantos cadastramentos / descadastramentos e quantas mensagens foram enviadas pelas suas contas.
+STATMENU_TOTALS_DESCR	Aqui voc√™ ver√° quantos cadastramentos / descadastramentos e quantas mensagens foram enviadas pelas suas contas.
 STATMENU_TOTALS_SENT_MESS	Mensagens enviadas
 STATMENU_TOTALS_SUBSCRIBERS	Cadastros
 STATMENU_TOTALS_PROSPECTS	Assinantes
@@ -557,39 +557,39 @@ PROSPMENU_ADD_PROSP	Adicionar novo assinante
 PROSPMENU_IMPORT	Importar lista
 PROSPMENU_EXPORT	Exportar lista
 PROSPMENU_COPY	Copiar da conta
-PROSPMENU_BULK_REMOVE	RemoÁ„o em grupos
-ERROR_NOT_CHANGE_URL	Por favor n„o altere a url
+PROSPMENU_BULK_REMOVE	Remo√ß√£o em grupos
+ERROR_NOT_CHANGE_URL	Por favor n√£o altere a url
 ERROR	Erro
 MENU_GO	Processar
-ERROR_YOUR_NAME_REQUIRED	Seu nome È requerido
+ERROR_YOUR_NAME_REQUIRED	Seu nome √© requerido
 ERROR_EMAIL_INCORRECT	E-mail incorreto
 ERROR_EMAIL_REQUIRED	E-mail requerido
 ERROR_REQUIRED	Requerido
 ERROR_DUBL	Duplicando
-ERROR_CANT_LOCK_FILE	N„o È possÌvel bloquear o aquivo para escrever
+ERROR_CANT_LOCK_FILE	N√£o √© poss√≠vel bloquear o aquivo para escrever
 ERROR_REQUIRED_SMALL	requerido
-MESS_SETTINGS_UPDATED	ConfiguraÁıes atualizadas
+MESS_SETTINGS_UPDATED	Configura√ß√µes atualizadas
 ERROR_FILENAME_INCORRECT	Nome de arquivo incorreto
 ERROR_INCORRECT	Incorreto
 ERROR_NOT_EQUAL	Diferente
-ERROR_NOT_SELECTED	N„o selecionado
+ERROR_NOT_SELECTED	N√£o selecionado
 ERROR_REQUIRED_SENDMAIL	Sendmail requerido
 ERROR_INCORRECT_SENDMAIL_PATH	Caminho do sendmail incorreto
-ERROR_INCORRECT_SENDMAIL_NOT_EXISTS	Sendmail n„o instalado neste servidor
-ERROR_REQUIRED_SMTP	O servidor SMTP È requerido agora
+ERROR_INCORRECT_SENDMAIL_NOT_EXISTS	Sendmail n√£o instalado neste servidor
+ERROR_REQUIRED_SMTP	O servidor SMTP √© requerido agora
 ERROR_INCORRECT_FORMAT	Formato incorreto
 MESS_LOGOUT_TO_CHECK	Sair para verificar
-ERROR_CANT_OPEN_DIR	N„o È possÌvel abrir o diretÛrio
-ERROR_CANT_UNLINK_FILE	N„o È possi¥vel excluir o arquivo
-ERROR_CANT_CREATE_DIR	N„o È possÌvel criar o diretÛrio
-ERROR_CANT_OPEN_FILE	N„o È possÌvel abrir o arquivo
+ERROR_CANT_OPEN_DIR	N√£o √© poss√≠vel abrir o diret√≥rio
+ERROR_CANT_UNLINK_FILE	N√£o √© possi¬¥vel excluir o arquivo
+ERROR_CANT_CREATE_DIR	N√£o √© poss√≠vel criar o diret√≥rio
+ERROR_CANT_OPEN_FILE	N√£o √© poss√≠vel abrir o arquivo
 ERROR_CANT_WRITE	para escrever
-ERROR_NEED_TO_CREATE	VocÍ precisa criar o arquivo
-ERROR_NEED_TO_CREATE2	e definir as permissıes de escrita para CHMOD 666
-ERROR_SHORTER_THEN_3	Deve ser mais de 3 caractÈres
+ERROR_NEED_TO_CREATE	Voc√™ precisa criar o arquivo
+ERROR_NEED_TO_CREATE2	e definir as permiss√µes de escrita para CHMOD 666
+ERROR_SHORTER_THEN_3	Deve ser mais de 3 caract√©res
 MONTH_1	Janeiro
 MONTH_2	Fevereiro
-MONTH_3	MarÁo
+MONTH_3	Mar√ßo
 MONTH_4	Abril
 MONTH_5	Maio
 MONTH_6	Junho
@@ -599,20 +599,20 @@ MONTH_9	Setembro
 MONTH_10 Outubro
 MONTH_11 Novembro
 MONTH_12 Dezembro
-MESS_NO_BROADCAST_LOG	Nenhum histÛrico de envio de mensagens encontrado
-BROADCAST_LOG_PROC	Proc n∫
+MESS_NO_BROADCAST_LOG	Nenhum hist√≥rico de envio de mensagens encontrado
+BROADCAST_LOG_PROC	Proc n¬∫
 BROADCAST_LOG_TIME	Tempo
 BROADCAST_LOG_STATUS	Status
 BROADCAST_LOG_MAIN	principal
 STAT_NO_MESS	Nenhuma mensagem para esta data
-STAT_STATISTICS	EstatÌsticas
+STAT_STATISTICS	Estat√≠sticas
 STAT_TOTAL_PROSP	Total de asssinantes na conta
 STAT_ACCOUNT	Conta
 STAT_SEQUNTIAL	Sequencial
 STAT_ACT_PROSP	Assinantes ativos
 STAT_INACT_PROSP	Assinantes inativos
 STAT_TOTAL	Total
-STAT_NO_LOGS_FOUND	Nenhum histÛrico encontrado
+STAT_NO_LOGS_FOUND	Nenhum hist√≥rico encontrado
 STAT_SHEDULED	Agendado
 STAT_MANUAL	Manual
 STAT_DOI	Duplo opt in
@@ -620,28 +620,28 @@ STAT_SUBSCRIBE	Dadastrar
 STAT_UNSUBSCRIBE	Descadastrar
 STAT_SUBSCRIBERS	Cadastradados
 STAT_UNSUBSCRIBERS	Descadastrados
-STAT_SENT_MESS_STAT	EstatÌsticas de mensagens enviadas
-STAT_SUBSCRIBERS_STAT	EstatÌticas de cadastrados
+STAT_SENT_MESS_STAT	Estat√≠sticas de mensagens enviadas
+STAT_SUBSCRIBERS_STAT	Estat√≠ticas de cadastrados
 STAT_PERIOD_FOR	em
 STAT_PERIOD_FROM	de
-STAT_PERIOD_TILL	atÈ
+STAT_PERIOD_TILL	at√©
 TXT_EMAIL_ADDRESS	E-mail
 TXT_NAME	Nome
-ERROR_IS_ALREADY_EXISTS	j· existe
-ERROR_NUMBER_REQUIRED	Deve ser um n˙mero
-ERROR_TO_BIG	N˙mero muito grande
-ERROR_ALREADY_USED	j· utilizado
-ERROR_USER_NOT_FOUND	ERRO: USU¡RIO n„o encontrado
+ERROR_IS_ALREADY_EXISTS	j√° existe
+ERROR_NUMBER_REQUIRED	Deve ser um n√∫mero
+ERROR_TO_BIG	N√∫mero muito grande
+ERROR_ALREADY_USED	j√° utilizado
+ERROR_USER_NOT_FOUND	ERRO: USU√ÅRIO n√£o encontrado
 TXT_MODE_NEW	Novo
 TXT_MODE_EDIT	Editar
 USR_SENT_MESS	Mensagens enviadas
-USR_SENT_RECORDS_IN_LOGS	registros nos histÛricos
+USR_SENT_RECORDS_IN_LOGS	registros nos hist√≥ricos
 USR_SENT_MESSAGE	Mensagem
 USR_SENT_DATE	Data
-USR_BROWSER_PAGE	P·gina
+USR_BROWSER_PAGE	P√°gina
 USR_BROWSER_PROSPECTS	assinantes
 USR_BROWSER_PREVIOUSE	Anterior
-USR_BROWSER_NEXT	PrÛxima
+USR_BROWSER_NEXT	Pr√≥xima
 USR_BROWSER_SHOWING	Mostrando
 USR_BROWSER_FROM	de
 USR_BROWSER_NO_RECORDS_FOUND	NENHUM REGISTRO ENCONTRADO
@@ -649,13 +649,13 @@ USR_BROWSER_INACTIVE	inativos
 USR_BROWSER_ACTIVE	ativos
 USR_BROWSER_PENDING	pendentes
 USR_BROWSER_CYCLE_DISABLED	desabilitado
-USR_BROWSER_EDIT_USER	Editar usu·rio
+USR_BROWSER_EDIT_USER	Editar usu√°rio
 USR_BROWSER_HEAD_SENT	Enviado
 USR_BROWSER_HEAD_STATUS	Status
 USR_BROWSER_HEAD_DATE	Data
 USR_BROWSER_HEAD_CYCLE	Ciclo
 USR_BROWSER_HEAD_HOST	Provedor
-USR_BROWSER_HEAD_USERID	ID de usu·rio
+USR_BROWSER_HEAD_USERID	ID de usu√°rio
 USR_BROWSER_USERS_REMOVED	assinantes removidos
 USR_BROWSER_USERS_CHANGED	assinantes alterados
 USR_BROWSER_USERS_SHOW_FIELDS	Mostrar campos
@@ -664,51 +664,51 @@ USR_BROWSER_USERS_SORT_ASC	Ascendente
 USR_BROWSER_USERS_SORT_DESC	Descrescente
 USR_BROWSER_FINISHED	finalizados
 USR_BROWSER_ALL	todos
-USR_BROWSER_CANT_IMPORT	N„o È possÌvel importar - nenhum assinante encontrado em outras contas
+USR_BROWSER_CANT_IMPORT	N√£o √© poss√≠vel importar - nenhum assinante encontrado em outras contas
 USR_BROWSER_EXPORTED	Exportados
-USR_BROWSER_CANT_EXPORT	N„o È possÌvel exportar - nenhum assinante
+USR_BROWSER_CANT_EXPORT	N√£o √© poss√≠vel exportar - nenhum assinante
 USR_BROWSER_EXPORT_EMAIL_ONLY   Apenas E-MAIL
 USR_BROWSER_EXPORT_EMAIL	E-MAIL
 USR_BROWSER_EXPORT_NAME	NOME
 USR_BROWSER_EXPORT_FILE	arquivo
-USR_BROWSER_EXPORT_PAGE	p·gina
-USR_BROWSER_BULK_QUERY_INCORRECT	SolicitaÁ„o incorreta
+USR_BROWSER_EXPORT_PAGE	p√°gina
+USR_BROWSER_BULK_QUERY_INCORRECT	Solicita√ß√£o incorreta
 USR_BROWSER_BULK_CURRENT_ACCOUNT	Conta atual
 USR_BROWSER_BULK_ALL_ACCOUNTS	Todas as contas
 USR_BROWSER_IMPORT_PROSPADD	assinantes adicionados
 USR_BROWSER_IMPORT_ERRORS_DETECTED	erros detectados
-ERROR_FIELD_NAME_INCORRECT	Nome do campo est· incorreto
+ERROR_FIELD_NAME_INCORRECT	Nome do campo est√° incorreto
 HTML_FORM_FIELD_NAME	Nome do campo
-HTML_FORM_ERR_RESERVED	È reservado
-HTML_FORM_ERR_USED	j· È utilizado
-HTML_FORM_ERR_EMPTY	È vazio
-HTML_FORM_SUBSCRIBE_ACCOUNTS	Selecione as contas nas quais vocÍ quer automaticamante <b>cadastrar</b> assinantes que se cadastram nesta conta.
+HTML_FORM_ERR_RESERVED	√© reservado
+HTML_FORM_ERR_USED	j√° √© utilizado
+HTML_FORM_ERR_EMPTY	√© vazio
+HTML_FORM_SUBSCRIBE_ACCOUNTS	Selecione as contas nas quais voc√™ quer automaticamante <b>cadastrar</b> assinantes que se cadastram nesta conta.
 HTML_FORM_SAVE_ACCOUNTS	Salvar contas
-HTML_FORM_UNSUBSCRIBE_ACCOUNTS	Selecione as contas nas quais vocÍ quer automaticamente <B>descadastrar</B> assinantes que se descadastram desta conta.
+HTML_FORM_UNSUBSCRIBE_ACCOUNTS	Selecione as contas nas quais voc√™ quer automaticamente <B>descadastrar</B> assinantes que se descadastram desta conta.
 HTML_FORM_UNSUBSCRIBE_ALL	Descadastrar de todas as demais contas
 HTML_FORM_ADD_NEW	Clique aqui para adicionar outro campo
 HTML_FORM_NAME	Nome
 HTML_FORM_RESERVED	Reservado
 HTML_FORM_EMAIL	E-mail
-HTML_FORM_CONFIRM	VocÍ est· certo que deseja excluir este campo? Alguns dados ser„o perdidos!
-HTML_FORM_YOU_HAVE	VocÍ tem
+HTML_FORM_CONFIRM	Voc√™ est√° certo que deseja excluir este campo? Alguns dados ser√£o perdidos!
+HTML_FORM_YOU_HAVE	Voc√™ tem
 HTML_FORM_COSTUM_FIELDS	campos personalizados
 HTML_FORM_DROP	Mover
 HTML_FORM_UP	CIMA
 HTML_FORM_DOWN	BAIXO
 HTML_FORM_MOVE	para
 HTML_FORM_SUBSCRIBE	Cadastrar
-ERROR_URL_INCORRECT	A URL est· incorreta
-TXT_DEFAULT	padr„o
-ERROR_CANT_UPLOAD_FILE	N„o È possÌvel fazer o upload do arquivo
-ERROR_CANT_FIND_EMAIL	N„o ¥possÌvel encontrar o e-mail
+ERROR_URL_INCORRECT	A URL est√° incorreta
+TXT_DEFAULT	padr√£o
+ERROR_CANT_UPLOAD_FILE	N√£o √© poss√≠vel fazer o upload do arquivo
+ERROR_CANT_FIND_EMAIL	N√£o ¬¥poss√≠vel encontrar o e-mail
 TXT_LINE	Linha
 TXT_EMAIL	e-mail
-TXT_ISINCORRECT	est· incorreto
-TXT_IS_EXISTS	j· existe
-TXT_IS_BOUNSED	est· na lista negra de e-mails devolvidos
-MESS_ERR_CONFIRM	A Mensagem deve conter cÛdigos especiais
-ERROR_DATE_INCORRECT	A data est· incorreta
+TXT_ISINCORRECT	est√° incorreto
+TXT_IS_EXISTS	j√° existe
+TXT_IS_BOUNSED	est√° na lista negra de e-mails devolvidos
+MESS_ERR_CONFIRM	A Mensagem deve conter c√≥digos especiais
+ERROR_DATE_INCORRECT	A data est√° incorreta
 MESS_CREATE_NEWMESS	Criar nova mensagem para a conta
 MESS_EDIT_MESS	Editar mensagem
 MESS_DOWNLOAD_ATTACH	Fazer Download do arquivo anexo
@@ -717,15 +717,15 @@ MESS_TYPE_AUTO	Autorespondendo
 MESS_TYPE_MANUAL	Manualmente
 MESS_TYPE_SCHEDULED	Na data
 MESS_BROADCAST_STARTED	Envio de mensagens iniciado no fundo
-MESS_PREVIEW	PrÈ-visualizaÁ„o
+MESS_PREVIEW	Pr√©-visualiza√ß√£o
 LINKS_ALL_MONTH	Todos os meses
 LINKS_ALL_MESS	Todas as mensagens
 LINKS_ALL_LINKS	Todos os links
 LINKS_CHANGE	Alterar
 LINKS_CHANGE_LINK	Alterar link
 MESS_PERS_EXTRA	Campos extras de mesclagem
-MESS_PERS_LOAD_FROM_FILE	Carregar conte˙do do arquivo
-MESS_PERS_LOAD_FROM_TEMPL	Carregar conte˙do de modelos
+MESS_PERS_LOAD_FROM_FILE	Carregar conte√∫do do arquivo
+MESS_PERS_LOAD_FROM_TEMPL	Carregar conte√∫do de modelos
 MESS_PERS_REDIR_LINK	redirecionar link
 MESS_PERS_REDIR_LINK_TO	para
 MESS_PERS_TRACK	Tracking links
@@ -734,47 +734,47 @@ TXT_VIEW	Ver
 LINKS_MESSAGES_LINKS_ACT	Atividades dos links das mensagens
 LINKS_VIEW_PROSP	Ver assinantes
 LINKS_VIEW_CLICKS	Ver clicks
-ACCOUNT_EXISTS	Conta j· existe
-ACCOUNT_INVALID_NAME	Nome de conta inv·lido
+ACCOUNT_EXISTS	Conta j√° existe
+ACCOUNT_INVALID_NAME	Nome de conta inv√°lido
 ACCOUNT_NO_ACCOUNTS	Nenhuma conta
 ACCOUNT_YOUR_ACCOUNTS	Suas contas
 ACCOUNT_DISABLED	Desabilitado
-ACCOUNT_DELETE_QUESTION	VocÍ est· certo que deseja excluir as contas selecionadas?
+ACCOUNT_DELETE_QUESTION	Voc√™ est√° certo que deseja excluir as contas selecionadas?
 ACCOUNT_INVERT_STATUS	Inverter status
 LANG_SELECT_LANG	Por favor selecione o idioma.
-LANG_SELECT_LANG_TABHEADER	Selecione seu idioma padr„o e a codificaÁ„o.
+LANG_SELECT_LANG_TABHEADER	Selecione seu idioma padr√£o e a codifica√ß√£o.
 LANG_LANG	Idioma
 #########################	
 #file bounce.cgi	
 #########################
 BOUNCE_ERROR	ERRO NO PROCESSAMENTO DE E-MAILS DEVOLVIDOS
-BOUNCE_ERROR_HEADER	ERRO NO PROCESSAMENTO DE E-MAILS DEVOLVIDOS - n„o È possÌvel carregar o mÛdulo Mail::DeliveryStatus::BounceValidator
-BOUNCE_ERROR_DESCR1	N„o È possÌvel carregar o mÛdulo Mail::DeliveryStatus::BounceValidator
-BOUNCE_ERROR_DESCR2	Por favor verifique se o arquivo criado <B>BounceValidator.pm</b> existe no diretÛrio lib/Mail/DeliveryStatus/ ou solicite ao provedor para instalar os mÛdulos MIME::Tools
+BOUNCE_ERROR_HEADER	ERRO NO PROCESSAMENTO DE E-MAILS DEVOLVIDOS - n√£o √© poss√≠vel carregar o m√≥dulo Mail::DeliveryStatus::BounceValidator
+BOUNCE_ERROR_DESCR1	N√£o √© poss√≠vel carregar o m√≥dulo Mail::DeliveryStatus::BounceValidator
+BOUNCE_ERROR_DESCR2	Por favor verifique se o arquivo criado <B>BounceValidator.pm</b> existe no diret√≥rio lib/Mail/DeliveryStatus/ ou solicite ao provedor para instalar os m√≥dulos MIME::Tools
 BOUNCE_ERROR_TXT	Erro
-BOUNCE_ERROR_ACTION	AÁ„o
-BOUNCE_ERROR_ACTION_WAS_NOTFOUND	n„o foi encontrado
-BOUNCE_ERROR_CANT_OPEN_CONN	Erro: N„o È possÌvel abrir a conex„o para
+BOUNCE_ERROR_ACTION	A√ß√£o
+BOUNCE_ERROR_ACTION_WAS_NOTFOUND	n√£o foi encontrado
+BOUNCE_ERROR_CANT_OPEN_CONN	Erro: N√£o √© poss√≠vel abrir a conex√£o para
 BOUNCE_CONNECTED	CONECTADO
-BOUNCE_CONNECTED_AUTH	Autenticando com o usu·rio
+BOUNCE_CONNECTED_AUTH	Autenticando com o usu√°rio
 BOUNCE_CONNECTED_AUTH_AND_PASS	e senha **********
 BOUNCE_CONNECTED_LOGGED	Logado em
 BOUNCE_CONNECTED_FETCH	Buscando mensagens
-BOUNCE_CONNECTED_YOU_HAVE	VocÍ tem
+BOUNCE_CONNECTED_YOU_HAVE	Voc√™ tem
 BOUNCE_CONNECTED_YOU_HAVE_MESS	mensagens em sua caixa postal
 BOUNCE_CONNECTED_LOADING	Carregando primeira
 BOUNCE_CONNECTED_LOADING_MESS	mensagens
-BOUNCE_CONNECTED_LOADING_EMPTY	Sua caixa postal est· vazia
-BOUNCE_ERROR_VALIDATOR	Erro no Validador de devoluÁıes: N„o È possÌvel dividir a mensagem
+BOUNCE_CONNECTED_LOADING_EMPTY	Sua caixa postal est√° vazia
+BOUNCE_ERROR_VALIDATOR	Erro no Validador de devolu√ß√µes: N√£o √© poss√≠vel dividir a mensagem
 BOUNCE_LOAD_MSG	Carregando mensagem
-BOUNCE_LOAD_MSG_IS_BOUNC	Esta mensagem È devolvida
-BOUNCE_LOAD_MSG_EMAIL_IS	O e-mail devolvido È
-BOUNCE_LOAD_MSG_EMAIL_IS_DIAG	DiagnÛstico
-BOUNCE_LOAD_MSG_CANT_LOAD	Erro: N„o È possÌvel carregar a mensagem
+BOUNCE_LOAD_MSG_IS_BOUNC	Esta mensagem √© devolvida
+BOUNCE_LOAD_MSG_EMAIL_IS	O e-mail devolvido √©
+BOUNCE_LOAD_MSG_EMAIL_IS_DIAG	Diagn√≥stico
+BOUNCE_LOAD_MSG_CANT_LOAD	Erro: N√£o √© poss√≠vel carregar a mensagem
 BOUNCE_COUNT_TOTAL	Total
 BOUNCE_COUNT_TOTAL_MSGS	mensagens devolvidas em sua caixa postal
-BOUNCE_TEST_OK	O teste est· OK
-BOUNCE_TEST_ERROR	Erro: N„o È possÌvel autenticar - ConfiguraÁıes POP3 incorretas
+BOUNCE_TEST_OK	O teste est√° OK
+BOUNCE_TEST_ERROR	Erro: N√£o √© poss√≠vel autenticar - Configura√ß√µes POP3 incorretas
 BOUNCE_PAGE_REM_MAIL_ALL_ACC	Remover e-mail de todas as contas
 BOUNCE_PAGE_SET_STATUS_INACT	Alterar o status dos assinantes para inativo
 BOUNCE_PAGE_ADD_NEW_POP	Adicionar nova conta pop3
@@ -782,7 +782,7 @@ BOUNCE_PAGE_EDIT_POP	Editar conta pop3 existente
 BOUNCE_STATUS_WAITING	Aguardando
 BOUNCE_STATUS_REMOVED	Assinante removido
 BOUNCE_STATUS_INACTIV	Assinante inativado
-BOUNCE_STATUS_NOTFOUND	Assinante n„o encontrado
+BOUNCE_STATUS_NOTFOUND	Assinante n√£o encontrado
 BOUNCE_STATUS_PROC_MAN	Processado manualmente
 BOUNCE_SORT_HARD	Duro
 BOUNCE_SORT_SOFT	Suave
@@ -791,69 +791,69 @@ BOUNCE_SORT_MAIL	E-mail
 BOUNCE_SORT_ASC	Ascendente
 BOUNCE_SORT_DESC	Descrescente
 BOUNCE_INPUT_REM_PROSP	Remover assinantes
-BOUNCE_INPUT_REM_PROSP_SURE	VocÍ est· certo que quer remover
+BOUNCE_INPUT_REM_PROSP_SURE	Voc√™ est√° certo que quer remover
 BOUNCE_INPUT_REM_PROSP_SURE_MAILS	e-mails
 BOUNCE_INPUT_REM_PROSP_CANCEL	Cancelar
 BOUNCE_INPUT_BACK_BLACKLIST	Voltar a lista negra
 BOUNCE_EMAILS_WERE_REM	e-mails foram removidos da lista negra
 BOUNCE_EMAILS_WERE_ADD	e-mails foram adicionados a lista negra
-BOUNCE_ERROR_DELIVER_MSGS	Desculpe mas tivemos problemas ao enviar mensagens para este endereÁo
-BOUNCE_SETTS_UPDATED	ConfiguraÁıes atualizadas
+BOUNCE_ERROR_DELIVER_MSGS	Desculpe mas tivemos problemas ao enviar mensagens para este endere√ßo
+BOUNCE_SETTS_UPDATED	Configura√ß√µes atualizadas
 #########################	
 #file xmlimport.cgi	
 #########################
 XMLI_ERROR_BNC_PROC	ERRO NO PROCESSAMENTOS DE MENSAGENS DEVOLVIDAS
-XMLI_ERROR_BNC_PROC_TXT	XML ERRO DE IMPORTA«√O - n„o È possÌvel carregar o mÛdulo XML::Parser
-XMLI_ERROR_BNC_PROC_TXT_DESCR1	N„o È possÌvel carregar o mÛdulo
-XMLI_ERROR_BNC_PROC_TXT_DESCR2	Por favor peÁa ao seu provedor para instalar
+XMLI_ERROR_BNC_PROC_TXT	XML ERRO DE IMPORTA√á√ÉO - n√£o √© poss√≠vel carregar o m√≥dulo XML::Parser
+XMLI_ERROR_BNC_PROC_TXT_DESCR1	N√£o √© poss√≠vel carregar o m√≥dulo
+XMLI_ERROR_BNC_PROC_TXT_DESCR2	Por favor pe√ßa ao seu provedor para instalar
 XMLI_ERROR_BNC_PROC_TXT_DESCR2_1	modulos
 XMLI_ERROR_BNC_PROC_ERROR	Erro
-XMLI_MSG	N„o altere a URL
+XMLI_MSG	N√£o altere a URL
 XMLI_MSG_PROSPS_WERE_ADDED	assinantes foram adicionados e
 XMLI_MSG_PROSPS_WERE_UPD	atualizados no banco de dados
 XMLI_MSG_TOTAL_ELMS	Total de registros no arquivo XML
 XMLI_ERR_ELEMENT	Registro
 XMLI_ERR_ELEMENT_EMAIL	e-mail
-XMLI_ERR_ELEMENT_EMAIL_INCORR	est· incorreto
-XMLI_ERR_ELEMENT_EMAIL_ALR_EX	j· existe e foi atualizado
-XMLI_ERR_ELEMENT_EMAIL_WAS_NOT_ADDED_SQL	n„o foi adicionado ao banco de dados - erro SQL
+XMLI_ERR_ELEMENT_EMAIL_INCORR	est√° incorreto
+XMLI_ERR_ELEMENT_EMAIL_ALR_EX	j√° existe e foi atualizado
+XMLI_ERR_ELEMENT_EMAIL_WAS_NOT_ADDED_SQL	n√£o foi adicionado ao banco de dados - erro SQL
 #########################	
 #file xmlexport.cgi	
 #########################
-XMLE_PAGE_FUMP_DIR	Para o diretÛrio FUMP
+XMLE_PAGE_FUMP_DIR	Para o diret√≥rio FUMP
 XMLE_PAGE_INTO_BRO	No navegado
 XMLE_PAGE_SAVE_AS_FILE	Salavar como arquivo
-XMLE_PAGE_ENC_DEF	<padr„o>
+XMLE_PAGE_ENC_DEF	<padr√£o>
 XMLE_FIELDS_REG_DATE	Data de cadastramento
 XMLE_FIELDS_EMAIL	E-mail
 XMLE_FIELDS_NAME	Nome
 ____STARTTEXTS____
 [T_SENDING_TIPS]	
-	<h2>Dicas para configuraÁ„o do cabeÁalho e mensagens devolvidas. </h2>
-                    <p>Se vocÍ vai processar mensagens devolvidas, vocÍ pode configurar as opÁıes de emvio aqui.</p>
+	<h2>Dicas para configura√ß√£o do cabe√ßalho e mensagens devolvidas. </h2>
+                    <p>Se voc√™ vai processar mensagens devolvidas, voc√™ pode configurar as op√ß√µes de emvio aqui.</p>
                     <p>&nbsp;</p>
-                    <p><font color="#FF0000"><strong>AtenÁ„o!</strong></font> 
-                      Mensagens devolvidas podem retornar de forma padr„o, se vocÍ precisa definir opÁıes de devoluÁ„o, se vocÍ n„o condegue encontrar mensagens devolvidas em sua caixa postal ou se vocÍ precisa definir uma caixa postal diferente da ro remetente. Ent„o boa sorte!</p>
-                    <p>Usualmente todas as mensagens devolvidas retornam para o e-mail definido no cabeÁalho da mensagem. Existem algumas formas de realizar isto, algumas mais preferÌveis que outras.</p>
+                    <p><font color="#FF0000"><strong>Aten√ß√£o!</strong></font> 
+                      Mensagens devolvidas podem retornar de forma padr√£o, se voc√™ precisa definir op√ß√µes de devolu√ß√£o, se voc√™ n√£o condegue encontrar mensagens devolvidas em sua caixa postal ou se voc√™ precisa definir uma caixa postal diferente da ro remetente. Ent√£o boa sorte!</p>
+                    <p>Usualmente todas as mensagens devolvidas retornam para o e-mail definido no cabe√ßalho da mensagem. Existem algumas formas de realizar isto, algumas mais prefer√≠veis que outras.</p>
                     <p><strong><u>Envio por SMTP</u></strong></p>
-                    <p>Se vocÍ estpa usando SMTP para enviar suas mensagens, vocÍ pode especificar um e-mail diferente do remetente' ou do 'responder para' configurados. 
-                      VocÍ deve marcar a caixa 'Use o seguinte e-mail como remetente SMTP' e especificar o endereÁo de e-mail. <br>
+                    <p>Se voc√™ estpa usando SMTP para enviar suas mensagens, voc√™ pode especificar um e-mail diferente do remetente' ou do 'responder para' configurados. 
+                      Voc√™ deve marcar a caixa 'Use o seguinte e-mail como remetente SMTP' e especificar o endere√ßo de e-mail. <br>
                       <br>
-                      <strong><u>ConfiguraÁ„o usando o Comando Sendmail</u></strong></p>
-                    <p>Seus resultados ser„o mesclados com estes, mas vale a pena: </p>
+                      <strong><u>Configura√ß√£o usando o Comando Sendmail</u></strong></p>
+                    <p>Seus resultados ser√£o mesclados com estes, mas vale a pena: </p>
                     <p><br>
-                      <strong><em>TÈcnica 1:</em></strong> A bandeira -f</p>
-                    <p>VocÍprecisa marcar 'Usar bandeira sendmail -f' e especificar um endereÁo de e-mail l·</p>
-                    <p>Isto deveria definir o cabeÁalho Return-Path.</p>
+                      <strong><em>T√©cnica 1:</em></strong> A bandeira -f</p>
+                    <p>Voc√™precisa marcar 'Usar bandeira sendmail -f' e especificar um endere√ßo de e-mail l√°</p>
+                    <p>Isto deveria definir o cabe√ßalho Return-Path.</p>
                     <p>&nbsp;</p>
-                    <p><em><strong>TÈcnica 2: </strong></em>CabeÁalho Return-Path</p>
-                    <p>Se isto n„o funcionar, vocÍ pode tentar configurar o cabeÁalho Return-Path 
-explicitamente. Esta n„o È a melhor forma de todas, mas Qmail permite a vocÍ fazer isto.</p>
+                    <p><em><strong>T√©cnica 2: </strong></em>Cabe√ßalho Return-Path</p>
+                    <p>Se isto n√£o funcionar, voc√™ pode tentar configurar o cabe√ßalho Return-Path 
+explicitamente. Esta n√£o √© a melhor forma de todas, mas Qmail permite a voc√™ fazer isto.</p>
                     <p>&nbsp;</p>
-                    <p><strong>TÈcnica 3: </strong>CabeÁalho Errors-To</p>
-                    <p>O cabeÁalho Errors-To parece ter sido criado apenas para esta funÁ„o, mas È atualmente um cabeÁalho desprezado, ent„o use com cuidado. Para fazer qualquer coisa, vocÍ deve configurar o Sendmail para ver o cabeÁalho Errors-To atualmente. N„o recomendamos usar este cabeÁalho, mas se tudo o mais falhar vocÍ pode tentar esta opÁ„o.</p>
+                    <p><strong>T√©cnica 3: </strong>Cabe√ßalho Errors-To</p>
+                    <p>O cabe√ßalho Errors-To parece ter sido criado apenas para esta fun√ß√£o, mas √© atualmente um cabe√ßalho desprezado, ent√£o use com cuidado. Para fazer qualquer coisa, voc√™ deve configurar o Sendmail para ver o cabe√ßalho Errors-To atualmente. N√£o recomendamos usar este cabe√ßalho, mas se tudo o mais falhar voc√™ pode tentar esta op√ß√£o.</p>
                     <p>&nbsp;</p>
-                    <p>Para testar estas configuraÁıes, envie a si mesmo uma  mensagem de teste e abra esta mensagem no seu programa de e-mail. No cabeÁalho Return-Path da mensagem vocÍ dever· ver algo como:<p><code>Return-Path: &lt;info-store@sellwide.net&gt;<br>
+                    <p>Para testar estas configura√ß√µes, envie a si mesmo uma  mensagem de teste e abra esta mensagem no seu programa de e-mail. No cabe√ßalho Return-Path da mensagem voc√™ dever√° ver algo como:<p><code>Return-Path: &lt;info-store@sellwide.net&gt;<br>
                         Delivered-To: helpdesk@sellwide.net<br>
                         Content-Disposition: inline<br>
                         Content-Transfer-Encoding: binary<br>
@@ -868,73 +868,73 @@ explicitamente. Esta n„o È a melhor forma de todas, mas Qmail permite a vocÍ faz
                     </blockquote>
 [/T_SENDING_TIPS]
 [T_BOUNCE_HELP]
-<p>Aqui vocÍ pode editar suas contas POP3 de e-mails devolvidos para coletar mensagens devolvidas e definir regras/aÁıes para os assinantes (remover ou inativar assinantes):<br>
+<p>Aqui voc√™ pode editar suas contas POP3 de e-mails devolvidos para coletar mensagens devolvidas e definir regras/a√ß√µes para os assinantes (remover ou inativar assinantes):<br>
                     <br>
                     <strong>Servidor POP3</strong> - seu servidor POP3 para coletar as mensagens</p>
-                  <p><strong>Porta POP3</strong> - a porta padr„o POP3 È a 110</p>
-                  <p><strong>Usu·rio POP3</strong> - usu·rio para acessar a caixa postal</p>
+                  <p><strong>Porta POP3</strong> - a porta padr√£o POP3 √© a 110</p>
+                  <p><strong>Usu√°rio POP3</strong> - usu√°rio para acessar a caixa postal</p>
                   <p><strong>Senha POP3</strong> - senha para acessar a caixa postal<br>
                   </p>
-                  <p><strong>Remover&nbsp;assinantes&nbsp;apÛs</strong>:<br>
-                    - <strong>devoluÁıes duras:</strong> Este È o n˙mero de devoluÁıes duras antes do assinante ser removido ou inativado (DevoluÁıes Duras s„o erros permanentes tipo  usu·rio ou provedor n„o encontrado, filtro de spam, e significa que sua mensagem n„o ser· entregue ao destinat·rio). Por padr„o os assinantes ser„o removidos/inativados apÛs uma DevoluÁ„o Dura, mas vocÍ pode alterar esta regra.</p>
-                  <p>- <strong>DevoluÁıes Suaves:</strong> este È o n˙mero de devoluÁıes suaves antes do assinante ser removido ou inativado (DevoluÁıes Suaves s„o erros tempor·rios como caixa postal cheia, etc). Por padr„o os assinantes ser„o removidos/inativados apÛs 3 devoluÁıes suaves, mas vocÍ pode alterar esta regra.</p>
+                  <p><strong>Remover&nbsp;assinantes&nbsp;ap√≥s</strong>:<br>
+                    - <strong>devolu√ß√µes duras:</strong> Este √© o n√∫mero de devolu√ß√µes duras antes do assinante ser removido ou inativado (Devolu√ß√µes Duras s√£o erros permanentes tipo  usu√°rio ou provedor n√£o encontrado, filtro de spam, e significa que sua mensagem n√£o ser√° entregue ao destinat√°rio). Por padr√£o os assinantes ser√£o removidos/inativados ap√≥s uma Devolu√ß√£o Dura, mas voc√™ pode alterar esta regra.</p>
+                  <p>- <strong>Devolu√ß√µes Suaves:</strong> este √© o n√∫mero de devolu√ß√µes suaves antes do assinante ser removido ou inativado (Devolu√ß√µes Suaves s√£o erros tempor√°rios como caixa postal cheia, etc). Por padr√£o os assinantes ser√£o removidos/inativados ap√≥s 3 devolu√ß√µes suaves, mas voc√™ pode alterar esta regra.</p>
                   <p><strong><br>
-                    AÁıes: </strong></p>
-                  <p>- <strong>remover assinantes do banco de dados:</strong> seu assinante ser· removido do banco</p>
-                  <p>- <strong>alterar o status para inativo:</strong> seu assinante ser· inativado</p>
+                    A√ß√µes: </strong></p>
+                  <p>- <strong>remover assinantes do banco de dados:</strong> seu assinante ser√° removido do banco</p>
+                  <p>- <strong>alterar o status para inativo:</strong> seu assinante ser√° inativado</p>
                   <p>- <strong>adicionar assinante a lista negra de e-mails:</strong> 
-                    vocÍ pode escolher esta opÁ„o para adicionar os assinantes automaticamente a lista negra quando eles s„o  removidos/inativados.</p>
+                    voc√™ pode escolher esta op√ß√£o para adicionar os assinantes automaticamente a lista negra quando eles s√£o  removidos/inativados.</p>
 [/T_BOUNCE_HELP]
 [T_ACCOUNT_OPTIONS_SUBSCRIBE]
 
-			  VocÍ pode cadastrar assinantes que enviam um e-mail a vocÍ. <br>
-                          Simplesmente crie um endereÁo de e-mail em seu domÌnio ou qualquer conta de e-mail pop3. <br>
-                          Ent„o edite as configuraÁıes abaixo. <br>
-                          Isto È especialmente ˙til para evitar a possibilidade de alguÈm cadastrar<br> um e-mail inv·lido porque coletar· informaÁıes diretamente do e-mail do assinante. 
+			  Voc√™ pode cadastrar assinantes que enviam um e-mail a voc√™. <br>
+                          Simplesmente crie um endere√ßo de e-mail em seu dom√≠nio ou qualquer conta de e-mail pop3. <br>
+                          Ent√£o edite as configura√ß√µes abaixo. <br>
+                          Isto √© especialmente √∫til para evitar a possibilidade de algu√©m cadastrar<br> um e-mail inv√°lido porque coletar√° informa√ß√µes diretamente do e-mail do assinante. 
                           <br>
-                          Veja o arquivo README.TXT para mais informaÁıes.
+                          Veja o arquivo README.TXT para mais informa√ß√µes.
 [/T_ACCOUNT_OPTIONS_SUBSCRIBE]
 [T_ACCOUNT_OPTIONS_SUBSCRIBE2]
-			<u>Permitir cadastramento enviando e-mail em branco:</u> Marque esta caixa se deseja permitir o cadastramento de assinantes<br>atravÈs de um link de e-mail ou pelo envio de um e-mail em branco.<br> <br> <u>Servidor POP3:</u> 
-                          O servidor de entrada da sua conta pop3. Seu provedor<br>deve ter fornecido esta informaÁ„o a vocÍ.<br> <br> 
-                          <u>Usu·rio POP3:</u> Seu nome de usu·rio para acessar a conta pop3.<br> <br> <u>Senha POP3:</u> Sua senha para acessar sua conta pop3.<br> <br> <u>Porta do Servidor POP3 :</u> Na maioria dos servidores a porta È a 110. Se vocÍ receber mensagens de erro contate seu provedor. 
+			<u>Permitir cadastramento enviando e-mail em branco:</u> Marque esta caixa se deseja permitir o cadastramento de assinantes<br>atrav√©s de um link de e-mail ou pelo envio de um e-mail em branco.<br> <br> <u>Servidor POP3:</u> 
+                          O servidor de entrada da sua conta pop3. Seu provedor<br>deve ter fornecido esta informa√ß√£o a voc√™.<br> <br> 
+                          <u>Usu√°rio POP3:</u> Seu nome de usu√°rio para acessar a conta pop3.<br> <br> <u>Senha POP3:</u> Sua senha para acessar sua conta pop3.<br> <br> <u>Porta do Servidor POP3 :</u> Na maioria dos servidores a porta √© a 110. Se voc√™ receber mensagens de erro contate seu provedor. 
 [/T_ACCOUNT_OPTIONS_SUBSCRIBE2]
 [T_ACCOUNT_OPTIONS_BLACKLIST]
-		    <p><u>Lista de Banidos:</u> VocÍ pode adicionar endereÁos de e-mail ou provedores que quer banir, tais como <b>&quot;spam@yahoo.com&quot;</b> ou 
+		    <p><u>Lista de Banidos:</u> Voc√™ pode adicionar endere√ßos de e-mail ou provedores que quer banir, tais como <b>&quot;spam@yahoo.com&quot;</b> ou 
                       <b>&quot;hotmail.com&quot;</b></p>
                     <p>&nbsp;</p>
-                    <p><u>Mensagem de erro personalizada:</u> Esta È a mensagem que os assinantes ver„o ao informar um e-mail banido no formul·rio de cadastro.<br>
+                    <p><u>Mensagem de erro personalizada:</u> Esta √© a mensagem que os assinantes ver√£o ao informar um e-mail banido no formul√°rio de cadastro.<br>
                     </p>
 [/T_ACCOUNT_OPTIONS_BLACKLIST]
 [T_MESSEDIT_PERSONALIZE]
 			<h2>PERSONALIZANDO SUAS MENSAGENS</h2>
-			<P><span class="ERROR_ELEMENT"><U><B>Novo!</B></U></span> Para inserir o link de descadastramento vocÍ precisa o cÛdigo especial <strong>[UNSUBSCRIBE_LINK]</strong> em qualquer parte de sua mensagem (em mensagens HTML vocÍ pode adicionar o cÛdigo &lt;a href=&quot;<strong>[UNSUBSCRIBE_LINK]</strong>&quot;&gt;Clique aqui para descadastrar-se&lt;/a&gt;)
+			<P><span class="ERROR_ELEMENT"><U><B>Novo!</B></U></span> Para inserir o link de descadastramento voc√™ precisa o c√≥digo especial <strong>[UNSUBSCRIBE_LINK]</strong> em qualquer parte de sua mensagem (em mensagens HTML voc√™ pode adicionar o c√≥digo &lt;a href=&quot;<strong>[UNSUBSCRIBE_LINK]</strong>&quot;&gt;Clique aqui para descadastrar-se&lt;/a&gt;)
                   <P>&nbsp;
-                  <p>Existem  quatro campos de mesclagem prÈ-definidos para personalizar o campo assunto e o corpo de suas mensagens.</p>
+                  <p>Existem  quatro campos de mesclagem pr√©-definidos para personalizar o campo assunto e o corpo de suas mensagens.</p>
                   <ul>
-                    <li><b>[FIRSTNAME]</b> extrair· e mostrar· o primeiro nome do assinante (ex: 'Ol· <b>[FIRSTNAME]</b>' mostrar· 'Ol· John!', se o primeiro nome do assinante for <i>John</i>).</li>
-                    <li><b>[FULLNAME]</b> extrair· e mostrar· o nome completo do assinante (ex: 'Sr. <b>[FULLNAME]</b>,' mostrar· 'Sr. John Doe', se o nome completo do assinante for <i>John Doe</i>).</li>
-                    <li><b>[EMAIL]</b> extrair· e mostrar· o e-mail do assinante (ex: 'Seu e-mail È <b>[EMAIL]</b>' mostrar· 'Seu e-mail È john@aol.com', se o e-mail do assinante for <i>john@aol.com</i>. <br>
-                      <b>[DATE]</b> mostrar· a data atual no formato <i>dd/mm/yyyy</i>. </li>
+                    <li><b>[FIRSTNAME]</b> extrair√° e mostrar√° o primeiro nome do assinante (ex: 'Ol√° <b>[FIRSTNAME]</b>' mostrar√° 'Ol√° John!', se o primeiro nome do assinante for <i>John</i>).</li>
+                    <li><b>[FULLNAME]</b> extrair√° e mostrar√° o nome completo do assinante (ex: 'Sr. <b>[FULLNAME]</b>,' mostrar√° 'Sr. John Doe', se o nome completo do assinante for <i>John Doe</i>).</li>
+                    <li><b>[EMAIL]</b> extrair√° e mostrar√° o e-mail do assinante (ex: 'Seu e-mail √© <b>[EMAIL]</b>' mostrar√° 'Seu e-mail √© john@aol.com', se o e-mail do assinante for <i>john@aol.com</i>. <br>
+                      <b>[DATE]</b> mostrar√° a data atual no formato <i>dd/mm/yyyy</i>. </li>
                     <li><b>[DATE+32d] [DATE-32d] [DATE+1m] [DATE-1m] [DATE+1y] 
-                      [DATE-1y] </b>mostrar· a data atual corrigida no formato <i>dd/mm/yyyy</i>.</li>
-                    <li><b>[IP]</b> mostrar· o IP do assinante se ele tiver se cadastrado via formul·rio HTML, ou valor vazio</li>
+                      [DATE-1y] </b>mostrar√° a data atual corrigida no formato <i>dd/mm/yyyy</i>.</li>
+                    <li><b>[IP]</b> mostrar√° o IP do assinante se ele tiver se cadastrado via formul√°rio HTML, ou valor vazio</li>
                     <!--Please do not remove or translate this tag-->
 		    {additional}
 		    <!--Please do not remove or translate this tag-->
 		    </ul>
 [/T_MESSEDIT_PERSONALIZE]
 [T_BULK_REM_HELP]
-		<p>VocÍ pode remover assinantes desta conta informado os e-mails deles <br>
+		<p>Voc√™ pode remover assinantes desta conta informado os e-mails deles <br>
 		na caixa de texto e clicando em "remover assinantes" </p>
 		<p>&nbsp;</p>
-		<p>um e-mail por linha. VocÍ tambÈm pode usar uma m·scara. Por exemplo, se vocÍ <br>digitar "hotmail" na caixa de texto, todos os e-mails que contÈm "hotmail"<br>em qualquer parte ser„o removidos. <br>
+		<p>um e-mail por linha. Voc√™ tamb√©m pode usar uma m√°scara. Por exemplo, se voc√™ <br>digitar "hotmail" na caixa de texto, todos os e-mails que cont√©m "hotmail"<br>em qualquer parte ser√£o removidos. <br>
 		<br>
-		ex: hotmail@aol.com, mike@hotmail.com, myhotmail@email.com - ser„o todos removidos da lista</p>
+		ex: hotmail@aol.com, mike@hotmail.com, myhotmail@email.com - ser√£o todos removidos da lista</p>
 [/T_BULK_REM_HELP]
 [T_IMPORT_HELP]
-	<p>Aqui vocÍ pode adicionar novos assinantes a sua lista atual e fazer <br>
-	com que recebam todas as suas mensagens configuradas. VocÍ deve informar os e-mails<br>
+	<p>Aqui voc√™ pode adicionar novos assinantes a sua lista atual e fazer <br>
+	com que recebam todas as suas mensagens configuradas. Voc√™ deve informar os e-mails<br>
 	na caixa de texto "Inserir texto" abaixo ou fazer o upload de um arquivo de texto usando um dos seguintes formatos abaixo: <br>
 	<br>
 	<i>John Smith|his@email.com</i><br>
@@ -945,25 +945,25 @@ explicitamente. Esta n„o È a melhor forma de todas, mas Qmail permite a vocÍ faz
 	ou:<br>
 	<i>John Smith &lt;his@email.com&gt; </i><br>
 	ou:<br>
-	<i>ìJohn Smithî his@email.com</i><br>
+	<i>¬ìJohn Smith¬î his@email.com</i><br>
 	ou:<br>
 	<i>John Smith his@email.com</i><br>
 	<br>
-	um assinante por linha. Quando estiver pronto, clique no bot„o Importar Assinantes.</p>
+	um assinante por linha. Quando estiver pronto, clique no bot√£o Importar Assinantes.</p>
 [/T_IMPORT_HELP]
 [T_DOI_MESS]
-Para confirmar seu cadastro clique no link abaixo (vocÍ deve estar conectado a internet para isto):
+Para confirmar seu cadastro clique no link abaixo (voc√™ deve estar conectado a internet para isto):
 
 [CONFIRM_URL]
 
-Se vocÍ n„o solicitou cadastramento, n„o È preciso fazer nada.
+Se voc√™ n√£o solicitou cadastramento, n√£o √© preciso fazer nada.
 [/T_DOI_MESS]
 [T_ATTANTIONFILES1]
 <hr size="4" noshade>
-<H1 class="mess">AtenÁ„o!</H1>
-Estes arquivos j· existem no servidor:
+<H1 class="mess">Aten√ß√£o!</H1>
+Estes arquivos j√° existem no servidor:
 <UL>
 [/T_ATTANTIONFILES1]
 [T_ATTANTIONFILES2]
-</UL><h2>Por favor remova-os do servidor apÛs a instalaÁ„o.</H2><hr size=\"4\" noshade>
+</UL><h2>Por favor remova-os do servidor ap√≥s a instala√ß√£o.</H2><hr size=\"4\" noshade>
 [/T_ATTANTIONFILES2]

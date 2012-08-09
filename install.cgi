@@ -43,8 +43,8 @@ print $q->header;
 		print FILE <<ALL__;
 ######################################################################
 # Follow Up Mailing List Processor                                   #
-# Version 5.01.04                                                    #
-# Last modified 09/01/2009                                           #
+# Version 5.01.06                                                    #
+# Last modified 09/08/2012                                           #
 ######################################################################
 #Put here absolute to your broadcaster directory 
 \$yourdir='$maillist_dir';
@@ -107,6 +107,10 @@ sub print_step1{
 			}
 			unless($page->is_error){
 				unless($db = DBI->connect("DBI:mysql:database=$PAR{db};host=$PAR{host}",$PAR{user},$PAR{password})){
+					#enable UTF support	
+					$db->{'mysql_enable_utf8'} = 1;
+				    	$db->do('SET NAMES utf8');
+
 					#$page->set_error("GLOBAL","Not connected to database $PAR{db}: <BR> Error: $DBI::err : $DBI::errstr ");
 					$page->set_error("host"," ");
 					$page->set_error("db","Not connected to database $PAR{db}: <BR> Error: $DBI::err : $DBI::errstr ");
@@ -247,584 +251,501 @@ sub print_step4{
 	return $page->as_string;
 }
 __DATA__
-# Database : `fump418`
 
-# Table structure for table `swd_account`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:11 PM
-#
-
-DROP TABLE IF EXISTS `swd_account`;
-CREATE TABLE `swd_account` (
-  `pk_account` int(11) default NULL auto_increment,
-  `name` varchar(30) NOT NULL ,
-  `isact` tinyint(4) NOT NULL default '1',
+CREATE TABLE IF NOT EXISTS `swd_account` (
+  `pk_account` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
+  `isact` tinyint(4) NOT NULL DEFAULT '1',
+  `descr` varchar(150) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `position` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`pk_account`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
 
-#
-# Dumping data for table `swd_account`
-#
+--
+-- Dumping data for table `swd_account`
+--
 
-INSERT INTO `swd_account` VALUES (1, 'sample', 0);
+INSERT INTO `swd_account` (`pk_account`, `name`, `isact`, `descr`, `position`) VALUES
+(1, 'sample', 0, NULL, 0);
 
-# --------------------------------------------------------
+-- --------------------------------------------------------
 
-#
-# Table structure for table `swd_attach`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:07 PM
-#
+--
+-- Table structure for table `swd_attach`
+--
 
-DROP TABLE IF EXISTS `swd_attach`;
-CREATE TABLE `swd_attach` (
-  `pk_attach` int(11) default NULL auto_increment,
-  `filename` varchar(80) NOT NULL default '',
+CREATE TABLE IF NOT EXISTS `swd_attach` (
+  `pk_attach` int(11) NOT NULL AUTO_INCREMENT,
+  `filename` varchar(80) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `data` longblob NOT NULL,
-  `fk_mess` int(11) NOT NULL default '0',
-  `len` int(11) NOT NULL default '0',
+  `fk_mess` int(11) NOT NULL DEFAULT '0',
+  `len` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`pk_attach`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 ;
-
-#
-# Dumping data for table `swd_attach`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_brodcastlog`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:07 PM
-#
-
-DROP TABLE IF EXISTS `swd_brodcastlog`;
-CREATE TABLE `swd_brodcastlog` (
-  `pk_broadcastlog` int(11) default NULL auto_increment,
-  `date` timestamp,
-  `procnomber` tinyint(4) NOT NULL default '0',
-  `pid` varchar(6) NOT NULL default '',
-  `log` text NOT NULL,
-  PRIMARY KEY (`pk_broadcastlog`),
-  KEY `procnomber`(`procnomber`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 ;
-
-#
-# Dumping data for table `swd_brodcastlog`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_conf`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:11 PM
-#
-
-DROP TABLE IF EXISTS `swd_conf`;
-CREATE TABLE `swd_conf` (
-  `pk_conf` varchar(30) NOT NULL default '',
-  `conf_value` text NULL,
-  `discr` text,
-  `fk_account` int(11) NOT NULL default '0',
-  KEY `pk_conf`(`pk_conf`),
-  PRIMARY KEY (`pk_conf`,`fk_account`)
-) ENGINE=MyISAM;
-
-#
-# Dumping data for table `swd_conf`
-#
-
-INSERT INTO `swd_conf` VALUES ('VERSION', '5.1',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('defname', 'Friend',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('subscribeemail', 'subscribe@domain.com',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('pop3server', 'pop3.yourdomain.com',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('pop3user', 'johndoe',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('pop3pass', '12345',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('pop3port', '110',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('fromname', 'Your Name',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('fromemail', 'noreply@yourdomain.com',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('isaddunsubscrlink', 'on',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('isnotifsubscr', 'on',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('isnotifunsubscr', 'on',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('isdoi', 'on',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('doiconfurl', 'http://www.yourdomain.com',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('ispop3', '',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('redirsub', 'http://www.yourdomain.com',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('redirrem', 'http://www.yourdomain.com',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('PID', '0',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('timebroadcast', '1053972878',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('sendmail', '/usr/sbin/sendmail',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('modsend', 'sendmail',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('smtp', 'localhost',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('adminname', 'Admin',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('adminemail', 'yourname@yourdomain.com',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('statbyemail', 'on',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('enablelog', 'on',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('sendsubscr', 'on',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('sendunsubscr', 'on',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('maxlim', '23',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('timecorr', '+00:00',  NULL, 0);
-INSERT INTO `swd_conf` VALUES ('replyto', 'noreply@yourdomain.com',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('uppercase', '',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('messlogging', 'on',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('ispurge', '',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('banmails', '',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('banmailserror', '',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('defcharset', '',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('no_uppercase', '',  NULL, 1);
-INSERT INTO `swd_conf` VALUES ('adminpwd', '',  NULL, 0);
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_doi`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:07 PM
-#
-
-DROP TABLE IF EXISTS `swd_doi`;
-CREATE TABLE `swd_doi` (
-  `pk_doi` int(11) default NULL auto_increment,
-  `ran` char(10) NOT NULL default '',
-  PRIMARY KEY (`pk_doi`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 ;
-
-#
-# Dumping data for table `swd_doi`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_doiaccounts`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:07 PM
-#
-
-DROP TABLE IF EXISTS `swd_doiaccounts`;
-CREATE TABLE `swd_doiaccounts` (
-  `fk_doi` int(11) NOT NULL default '0',
-  `fk_account` int(11) NOT NULL default '0',
-  `fk_user` int(11) NOT NULL default '0',
-  PRIMARY KEY (`fk_doi`,`fk_account`),
-  KEY `fk_user`(`fk_user`)
-) ENGINE=MyISAM;
-
-#
-# Dumping data for table `swd_doiaccounts`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_doppar`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:07 PM
-#
-
-DROP TABLE IF EXISTS `swd_doppar`;
-CREATE TABLE `swd_doppar` (
-  `fk_fields` int(11) NOT NULL default '0',
-  `fk_user` int(11) NOT NULL default '0',
-  `value` text,
-  PRIMARY KEY (`fk_fields`,`fk_user`)
-) ENGINE=MyISAM;
-
-#
-# Dumping data for table `swd_doppar`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_fields`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:11 PM
-#
-
-DROP TABLE IF EXISTS `swd_fields`;
-CREATE TABLE `swd_fields` (
-  `pk_fields` int(11) default NULL auto_increment,
-  `fieldname` varchar(40) NOT NULL default '',
-  `fk_account` int(11) NOT NULL default '0',
-  `is_req` int(11) NOT NULL default '0',
-  `rang` tinyint(4) NOT NULL default '1',
-  `type` enum('text','textarea') NOT NULL default 'text',
-  PRIMARY KEY (`pk_fields`),
-  KEY `fieldaddr`(`fieldname`,`fk_account`,`pk_fields`)
-) ENGINE=MyISAM AUTO_INCREMENT=16 ;
-
-#
-# Dumping data for table `swd_fields`
-#
-
-INSERT INTO `swd_fields` VALUES (7, 'Date', 1, 0, 4, 'text');
-INSERT INTO `swd_fields` VALUES (6, 'City', 1, 0, 3, 'text');
-INSERT INTO `swd_fields` VALUES (5, 'Address', 1, 0, 2, 'text');
-INSERT INTO `swd_fields` VALUES (8, 'Date2', 1, 0, 5, 'text');
-INSERT INTO `swd_fields` VALUES (9, 'sex', 1, 0, 6, 'text');
-INSERT INTO `swd_fields` VALUES (10, 'sname', 1, 0, 7, 'text');
-INSERT INTO `swd_fields` VALUES (11, 'state', 1, 0, 8, 'text');
-INSERT INTO `swd_fields` VALUES (12, 'url1', 1, 0, 9, 'text');
-INSERT INTO `swd_fields` VALUES (13, 'url2', 1, 0, 10, 'text');
-INSERT INTO `swd_fields` VALUES (14, 'Zip', 1, 0, 11, 'text');
-INSERT INTO `swd_fields` VALUES (15, 'Country', 1, 0, 1, 'text');
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_link_clicks`
-#
-# Creation: Dec 04, 2004 at 07:09 PM
-# Last update: Dec 04, 2004 at 07:09 PM
-#
-
-DROP TABLE IF EXISTS `swd_link_clicks`;
-CREATE TABLE `swd_link_clicks` (
-  `pk_link_click` int(11) default NULL auto_increment,
-  `fk_link` int(11) default '0',
-  `fk_user` int(11) default '0',
-  `fk_mess` int(11) default '0',
-  `timestamp` timestamp ,
-  PRIMARY KEY (`pk_link_click`),
-  KEY `fk_account`(`fk_user`,`fk_mess`,`fk_link`),
-  KEY `timestamp`(`timestamp`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 ;
-
-#
-# Dumping data for table `swd_link_clicks`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_links`
-#
-# Creation: Dec 04, 2004 at 07:09 PM
-# Last update: Dec 04, 2004 at 07:09 PM
-# patch 001 changed redirect_link from varchar to text type
-#
-
-DROP TABLE IF EXISTS `swd_links`;
-CREATE TABLE `swd_links` (
-  `pk_link` int(11) default NULL auto_increment,
-  `name` varchar(100) NOT NULL default '',
-  `redirect_link` TEXT NOT NULL default '',
-  `fk_account` int(11) NOT NULL default '0',
-  PRIMARY KEY (`pk_link`),
-  KEY `fk_account`(`fk_account`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 ;
-
-#
-# Dumping data for table `swd_links`
-#
-
-INSERT INTO `swd_links` VALUES (1, 'Test1', 'http://www.yahoo.com', 1);
-INSERT INTO `swd_links` VALUES (2, 'Test 2', 'http://www.microsoft.com', 1);
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_log`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:07 PM
-#
-
-DROP TABLE IF EXISTS `swd_log`;
-CREATE TABLE `swd_log` (
-  `pk_log` int(11) default NULL auto_increment,
-  `date` datetime NOT NULL default '0000-00-00 00:00:00',
-  `log` text,
-  PRIMARY KEY (`pk_log`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 ;
-
-#
-# Dumping data for table `swd_log`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_mess`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:11 PM
-#
-
-DROP TABLE IF EXISTS `swd_mess`;
-CREATE TABLE `swd_mess` (
-  `pk_mess` int(11) default NULL auto_increment,
-  `fk_account` int(11) NOT NULL default '0',
-  `subject` varchar(100) NOT NULL default '',
-  `mess` text NULL,
-  `type` enum('text','html') NOT NULL default 'text',
-  `typesend` enum('manual','doi','auto','senddat','subscribe','unsubscribe') NOT NULL default 'manual',
-  `days` int(11) default NULL,
-  `senddat` date default NULL,
-  `sent` int(11) default '0',
-  `datesend` timestamp ,
-  `priority` int(11) default NULL,
-  `encoding` varchar(15) default NULL,
-  `issendnow` tinyint(4) NOT NULL default '0',
-  PRIMARY KEY (`pk_mess`),
-  KEY `typesend`(`typesend`)
-) ENGINE=MyISAM AUTO_INCREMENT=6 ;
-
-#
-# Dumping data for table `swd_mess`
-#
-
-INSERT INTO `swd_mess` VALUES (2, 1, 'Test sequential message for [FULLNAME]', '[FULLNAME] will extract and print your prospect\'s whole name (i.e. \'Mr. [FULLNAME],\' will print \'Mr. John Doe\', if your prospect\'s name is John Doe). \r\n[EMAIL] will extract and print your prospect\'s e-mail address (i.e. \'Your e-mail address is [EMAIL]\' will output \'Your e-mail address is john@domain.com\', if your prospect\'s e-mail address is john@domain.com. \r\n[DATE] will print current date in dd/mm/yyyy format. \r\n[DATE+32d] [DATE-32d] [DATE+1m] [DATE-1m] [DATE+1y] [DATE-1y] will print corrected current date in dd/mm/yyyy format. \r\nExtra merge field words\r\n[ADD15] - Country \r\n[ADD5] - Address \r\n[ADD6] - City \r\n[ADD7] - Date \r\n[ADD8] - Date2 \r\n[ADD9] - sex \r\n[ADD10] - sname \r\n[ADD11] - state \r\n[ADD12] - url1 \r\n[ADD13] - url2 \r\n[ADD14] - Zip\r\n', 'text', 'auto', 1,  NULL, 0, 20030607165021,  NULL,  NULL, 0);
-INSERT INTO `swd_mess` VALUES (5, 1, 'Sample manual message  for [FULLNAME]', 'This is the Sample manual message  for [FULLNAME]', 'text', 'manual', 0,  NULL, 0, 20030607165002,  NULL,  NULL, 0);
-INSERT INTO `swd_mess` VALUES (3, 1, 'Subscribe message', 'Put your subscribe message here', 'text', 'subscribe', 0,  NULL, 0, 20030211215818,  NULL,  NULL, 0);
-INSERT INTO `swd_mess` VALUES (4, 1, 'Unsubscribe message', 'Your message', 'text', 'unsubscribe', 0,  NULL, 0, 20021202234251,  NULL,  NULL, 0);
-INSERT INTO `swd_mess` VALUES (1, 1, 'Please confirm your subscription', 'To confirm your subscription, click on the link below \r\n(you must be connected to the internet at the time):\r\n\r\n[CONFIRM_URL]\r\n\r\nIf you did not make the request, there is no need\r\nto take any further action.\r\n', 'text', 'doi', 0,  NULL, 0, 20030607164945, 2,  NULL, 0);
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_process_loc`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:07 PM
-#
-
-DROP TABLE IF EXISTS `swd_process_loc`;
-CREATE TABLE `swd_process_loc` (
-  `pk_process_loc` int(11) default NULL auto_increment,
-  `date` datetime NOT NULL default '0000-00-00 00:00:00',
-  `PID` varchar(8) NOT NULL default '',
-  `procnomber` tinyint(4) NOT NULL default '0',
-  PRIMARY KEY (`pk_process_loc`),
-  KEY `procnomber`(`procnomber`)
-) ENGINE=MyISAM AUTO_INCREMENT=1 ;
-
-#
-# Dumping data for table `swd_process_loc`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_sentlog`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:07 PM
-#
-
-DROP TABLE IF EXISTS `swd_sentlog`;
-CREATE TABLE `swd_sentlog` (
-  `fk_user` int(11) NOT NULL default '0',
-  `fk_mess` int(11) NOT NULL default '0',
-  `date` datetime default NULL,
-  PRIMARY KEY (`fk_user`,`fk_mess`)
-) ENGINE=MyISAM;
-
-#
-# Dumping data for table `swd_sentlog`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_ses`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 07, 2004 at 11:38 AM
-# Last check: Dec 07, 2004 at 11:38 AM
-#
-
-DROP TABLE IF EXISTS `swd_ses`;
-CREATE TABLE `swd_ses` (
-  `pk_ses` int(11) default NULL auto_increment,
-  `ran` varchar(25) NOT NULL default '0',
-  `date` datetime default NULL,
-  `host` varchar(14) NOT NULL default '',
-  PRIMARY KEY (`pk_ses`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 ;
-
-#
-# Dumping data for table `swd_ses`
-#
-
-INSERT INTO `swd_ses` VALUES (4, 'ihSBifrvFXEGfX5c0oMYKPuXV', '2004-12-07 11:42:22', '127.0.0.1');
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_stat_account_dayly`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:07 PM
-#
-
-DROP TABLE IF EXISTS `swd_stat_account_dayly`;
-CREATE TABLE `swd_stat_account_dayly` (
-  `fk_account` tinyint(4) NOT NULL default '0',
-  `date` date NOT NULL default '0000-00-00',
-  `subscribers` int(11) NOT NULL default '0',
-  `unsubscribers` int(11) NOT NULL default '0',
-  `sent_manual` int(11) NOT NULL default '0',
-  `sent_sheduled` int(11) NOT NULL default '0',
-  `sent_sequential` int(11) NOT NULL default '0',
-  `sent_subscribe` int(11) NOT NULL default '0',
-  `sent_unsubscribe` int(11) NOT NULL default '0',
-  `sent_doubleoptin` int(11) NOT NULL default '0',
-  PRIMARY KEY (`fk_account`,`date`)
-) ENGINE=MyISAM;
-
-#
-# Dumping data for table `swd_stat_account_dayly`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_stat_dayly`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:07 PM
-#
-
-DROP TABLE IF EXISTS `swd_stat_dayly`;
-CREATE TABLE `swd_stat_dayly` (
-  `date` date NOT NULL default '0000-00-00',
-  `broadcast_starts` int(11) NOT NULL default '0',
-  `is_adm_notif` tinyint(4) NOT NULL default '0',
-  PRIMARY KEY (`date`)
-) ENGINE=MyISAM;
-
-#
-# Dumping data for table `swd_stat_dayly`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_tosend`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:07 PM
-#
-
-DROP TABLE IF EXISTS `swd_tosend`;
-CREATE TABLE `swd_tosend` (
-  `fk_mess` int(11) NOT NULL default '0',
-  `fk_user` int(11) NOT NULL default '0',
-  `proc` tinyint(4) NOT NULL default '0',
-  `paused` tinyint(4) NOT NULL default '0',
-  PRIMARY KEY (`fk_mess`,`fk_user`),
-  KEY `proc`(`proc`),
-  KEY `procpaused`(`proc`,`paused`)
-) ENGINE=MyISAM;
-
-#
-# Dumping data for table `swd_tosend`
-#
-
-
-# --------------------------------------------------------
-
-#
-# Table structure for table `swd_user`
-#
-# Creation: Dec 04, 2004 at 07:07 PM
-# Last update: Dec 04, 2004 at 07:11 PM
-#
-
-DROP TABLE IF EXISTS `swd_user`;
-CREATE TABLE `swd_user` (
-  `pk_user` int(11) default NULL auto_increment,
-  `fk_account` int(11) NOT NULL default '0',
-  `email` varchar(80) NOT NULL,
-  `name` varchar(60) default NULL,
-  `isact` tinyint(4) NOT NULL default '1',
-  `datereg` date default NULL,
-  `days` tinyint(4) default '0',
-  `datelastsend` date default NULL,
-  `messlastsend` int(11) default NULL,
-  `countsend` int(11) NOT NULL default '0',
-  `undelivered` tinyint(4) default NULL,
-  `ip` varchar(15) default NULL,
-  `unsubscribe` varchar(12) binary default NULL,
-  PRIMARY KEY (`pk_user`),
-  KEY `email`(`email`),
-  KEY `unsubscribe`(`unsubscribe`),
-  KEY `fk_account`(`fk_account`,`isact`),
-  KEY `actaccountdays`(`fk_account`,`isact`,`days`),
-  KEY `sequential`(`fk_account`,`messlastsend`,`datelastsend`,`days`,`isact`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 ;
-
-#
-# Dumping data for table `swd_user`
-#
-INSERT INTO `swd_user` VALUES (1, 1, 'first@hotmail.com', 'First Subscriber', 0, '2005-05-03', 0,  NULL,  NULL, 0,  NULL,  NULL,  NULL);
-
-DROP TABLE IF EXISTS `swd_bounce_account`;
-CREATE TABLE `swd_bounce_account` (
-  `pk_bounce_account` int(11) auto_increment,
-  `pop3server` varchar(100) NOT NULL default '',
-  `pop3user` varchar(100) NOT NULL default '',
-  `pop3pass` varchar(50) NOT NULL default '',
-  `pop3port` int(11) NOT NULL default '110',
-  `isact` tinyint(4) NOT NULL default '1',
-  `hardcount` tinyint(4) NOT NULL default '1',
-  `softcount` tinyint(4) NOT NULL default '3',
-  `deleteemails` char(2) default NULL,
-  `bounceaction` tinyint(4) NOT NULL default '1',
-  `isaddtoban` char(2) default NULL,
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_bounce_account`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_bounce_account` (
+  `pk_bounce_account` int(11) NOT NULL AUTO_INCREMENT,
+  `pop3server` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `pop3user` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `pop3pass` varchar(50) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `pop3port` int(11) NOT NULL DEFAULT '110',
+  `isact` tinyint(4) NOT NULL DEFAULT '1',
+  `hardcount` tinyint(4) NOT NULL DEFAULT '1',
+  `softcount` tinyint(4) NOT NULL DEFAULT '3',
+  `deleteemails` char(2) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `bounceaction` tinyint(4) NOT NULL DEFAULT '1',
+  `isaddtoban` char(2) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`pk_bounce_account`)
-) ENGINE=MyISAM ;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
-DROP TABLE IF EXISTS `swd_bounce_allmessages`;
-CREATE TABLE `swd_bounce_allmessages` (
-  `messageid` varchar(150) NOT NULL default '',
-  `date` datetime default NULL,
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_bounce_allmessages`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_bounce_allmessages` (
+  `messageid` varchar(150) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `date` datetime DEFAULT NULL,
   PRIMARY KEY (`messageid`)
-) ENGINE=MyISAM;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-DROP TABLE IF EXISTS `swd_bounce_banemails`;
-CREATE TABLE `swd_bounce_banemails` (
-  `email` varchar(150) NOT NULL default '',
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_bounce_banemails`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_bounce_banemails` (
+  `email` varchar(150) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`email`)
-) ENGINE=MyISAM;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
-DROP TABLE IF EXISTS `swd_bounce_messages`;
-CREATE TABLE `swd_bounce_messages` (
-  `pk_bounce_message` int(11) NOT NULL auto_increment,
-  `message_key` varchar(80) NOT NULL default '',
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_bounce_messages`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_bounce_messages` (
+  `pk_bounce_message` int(11) NOT NULL AUTO_INCREMENT,
+  `message_key` varchar(80) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `date` datetime NOT NULL,
-  `email` varchar(80) NOT NULL default '',
-  `action` tinyint(4) NOT NULL default '0',
-  `status` varchar(9) default NULL,
-  `reason` text,
-  `fk_bounce_account` int(11) default NULL,
-  `hardsoft` tinyint(4) NOT NULL default '0',
-  `countprospects` int(11) NOT NULL default '0',
+  `email` varchar(80) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `action` tinyint(4) NOT NULL DEFAULT '0',
+  `status` varchar(9) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `reason` text COLLATE utf8_unicode_ci,
+  `fk_bounce_account` int(11) DEFAULT NULL,
+  `hardsoft` tinyint(4) NOT NULL DEFAULT '0',
+  `countprospects` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`pk_bounce_message`),
-  KEY `email`(`email`,`action`),
-  UNIQUE KEY `message_key`(`message_key`),
-  KEY `fk_bounce_account`(`fk_bounce_account`)
-) ENGINE=MyISAM;
+  UNIQUE KEY `message_key` (`message_key`),
+  KEY `email` (`email`,`action`),
+  KEY `fk_bounce_account` (`fk_bounce_account`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_brodcastlog`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_brodcastlog` (
+  `pk_broadcastlog` int(11) NOT NULL AUTO_INCREMENT,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `procnomber` tinyint(4) NOT NULL DEFAULT '0',
+  `pid` varchar(6) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `log` text COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`pk_broadcastlog`),
+  KEY `procnomber` (`procnomber`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_conf`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_conf` (
+  `pk_conf` varchar(30) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `conf_value` text COLLATE utf8_unicode_ci,
+  `discr` text COLLATE utf8_unicode_ci,
+  `fk_account` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`pk_conf`,`fk_account`),
+  KEY `pk_conf` (`pk_conf`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `swd_conf`
+--
+
+INSERT INTO `swd_conf` (`pk_conf`, `conf_value`, `discr`, `fk_account`) VALUES
+('VERSION', '5.1', NULL, 0),
+('defname', 'Friend', NULL, 1),
+('subscribeemail', 'subscribe@domain.com', NULL, 1),
+('pop3server', 'pop3.yourdomain.com', NULL, 1),
+('pop3user', 'johndoe', NULL, 1),
+('pop3pass', '12345', NULL, 1),
+('pop3port', '110', NULL, 1),
+('fromname', 'Your Name', NULL, 1),
+('fromemail', 'noreply@yourdomain.com', NULL, 1),
+('isaddunsubscrlink', 'on', NULL, 1),
+('isnotifsubscr', 'on', NULL, 1),
+('isnotifunsubscr', 'on', NULL, 1),
+('isdoi', 'on', NULL, 1),
+('doiconfurl', 'http://www.yourdomain.com', NULL, 1),
+('ispop3', '', NULL, 1),
+('redirsub', 'http://www.yourdomain.com', NULL, 1),
+('redirrem', 'http://www.yourdomain.com', NULL, 1),
+('PID', '0', NULL, 0),
+('timebroadcast', '1053972878', NULL, 0),
+('sendmail', '/usr/sbin/sendmail', NULL, 0),
+('modsend', 'sendmail', NULL, 0),
+('smtp', 'localhost', NULL, 0),
+('adminname', 'Admin', NULL, 0),
+('adminemail', 'yourname@yourdomain.com', NULL, 0),
+('statbyemail', 'on', NULL, 0),
+('enablelog', 'on', NULL, 0),
+('sendsubscr', 'on', NULL, 1),
+('sendunsubscr', 'on', NULL, 1),
+('maxlim', '23', NULL, 0),
+('timecorr', '+00:00', NULL, 0),
+('replyto', 'noreply@yourdomain.com', NULL, 1),
+('uppercase', '', NULL, 1),
+('messlogging', 'on', NULL, 1),
+('ispurge', '', NULL, 1),
+('banmails', '', NULL, 1),
+('banmailserror', '', NULL, 1),
+('defcharset', '', NULL, 1),
+('no_uppercase', '', NULL, 1),
+('adminpwd', 'fumpdev123', NULL, 0),
+('serverurl', 'http://fumpservice.test/cgi-bin/fumpdev/', NULL, 0),
+('splashsettings', 'daily_stats', NULL, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_doi`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_doi` (
+  `pk_doi` int(11) NOT NULL AUTO_INCREMENT,
+  `ran` char(10) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`pk_doi`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_doiaccounts`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_doiaccounts` (
+  `fk_doi` int(11) NOT NULL DEFAULT '0',
+  `fk_account` int(11) NOT NULL DEFAULT '0',
+  `fk_user` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`fk_doi`,`fk_account`),
+  KEY `fk_user` (`fk_user`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_doppar`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_doppar` (
+  `fk_fields` int(11) NOT NULL DEFAULT '0',
+  `fk_user` int(11) NOT NULL DEFAULT '0',
+  `value` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`fk_fields`,`fk_user`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_fields`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_fields` (
+  `pk_fields` int(11) NOT NULL AUTO_INCREMENT,
+  `fieldname` varchar(40) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `fk_account` int(11) NOT NULL DEFAULT '0',
+  `is_req` int(11) NOT NULL DEFAULT '0',
+  `rang` tinyint(4) NOT NULL DEFAULT '1',
+  `type` enum('text','textarea') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'text',
+  PRIMARY KEY (`pk_fields`),
+  KEY `fieldaddr` (`fieldname`,`fk_account`,`pk_fields`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=16 ;
+
+--
+-- Dumping data for table `swd_fields`
+--
+
+INSERT INTO `swd_fields` (`pk_fields`, `fieldname`, `fk_account`, `is_req`, `rang`, `type`) VALUES
+(7, 'Date', 1, 0, 4, 'text'),
+(6, 'City', 1, 0, 3, 'text'),
+(5, 'Address', 1, 0, 2, 'text'),
+(8, 'Date2', 1, 0, 5, 'text'),
+(9, 'sex', 1, 0, 6, 'text'),
+(10, 'sname', 1, 0, 7, 'text'),
+(11, 'state', 1, 0, 8, 'text'),
+(12, 'url1', 1, 0, 9, 'text'),
+(13, 'url2', 1, 0, 10, 'text'),
+(14, 'Zip', 1, 0, 11, 'text'),
+(15, 'Country', 1, 0, 1, 'text');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_links`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_links` (
+  `pk_link` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `redirect_link` text COLLATE utf8_unicode_ci NOT NULL,
+  `fk_account` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`pk_link`),
+  KEY `fk_account` (`fk_account`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `swd_links`
+--
+
+INSERT INTO `swd_links` (`pk_link`, `name`, `redirect_link`, `fk_account`) VALUES
+(1, 'Test1', 'http://www.yahoo.com', 1),
+(2, 'Test 2', 'http://www.microsoft.com', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_link_clicks`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_link_clicks` (
+  `pk_link_click` int(11) NOT NULL AUTO_INCREMENT,
+  `fk_link` int(11) DEFAULT '0',
+  `fk_user` int(11) DEFAULT '0',
+  `fk_mess` int(11) DEFAULT '0',
+  `timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`pk_link_click`),
+  KEY `fk_account` (`fk_user`,`fk_mess`,`fk_link`),
+  KEY `timestamp` (`timestamp`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_log`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_log` (
+  `pk_log` int(11) NOT NULL AUTO_INCREMENT,
+  `date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `log` text COLLATE utf8_unicode_ci,
+  PRIMARY KEY (`pk_log`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_mess`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_mess` (
+  `pk_mess` int(11) NOT NULL AUTO_INCREMENT,
+  `fk_account` int(11) NOT NULL DEFAULT '0',
+  `subject` varchar(100) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `mess` text COLLATE utf8_unicode_ci,
+  `messhtml` text COLLATE utf8_unicode_ci,
+  `type` enum('text','html','mixed') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'text',
+  `defmesstype` tinyint(4) DEFAULT '1',
+  `typesend` enum('manual','doi','auto','senddat','subscribe','unsubscribe') COLLATE utf8_unicode_ci NOT NULL DEFAULT 'manual',
+  `days` int(11) DEFAULT NULL,
+  `senddat` date DEFAULT NULL,
+  `sent` int(11) DEFAULT '0',
+  `datesend` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `priority` int(11) DEFAULT NULL,
+  `encoding` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `issendnow` tinyint(4) NOT NULL DEFAULT '0',
+  `saveinhistory` varchar(2) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `messrss` text COLLATE utf8_unicode_ci,
+  `rsslink` text COLLATE utf8_unicode_ci,
+  `fromnamemess` varchar(80) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `fromemailmess` varchar(80) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `usefrom` tinyint(4) DEFAULT '0',
+  `repeating` tinyint(4) DEFAULT '0',
+  PRIMARY KEY (`pk_mess`),
+  KEY `typesend` (`typesend`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
+
+--
+-- Dumping data for table `swd_mess`
+--
+
+INSERT INTO `swd_mess` (`pk_mess`, `fk_account`, `subject`, `mess`, `messhtml`, `type`, `defmesstype`, `typesend`, `days`, `senddat`, `sent`, `datesend`, `priority`, `encoding`, `issendnow`, `saveinhistory`, `messrss`, `rsslink`, `fromnamemess`, `fromemailmess`, `usefrom`, `repeating`) VALUES
+(2, 1, 'Test sequential message for [FULLNAME]', '[FULLNAME] will extract and print your prospect''s whole name (i.e. ''Mr. [FULLNAME],'' will print ''Mr. John Doe'', if your prospect''s name is John Doe). \r\n[EMAIL] will extract and print your prospect''s e-mail address (i.e. ''Your e-mail address is [EMAIL]'' will output ''Your e-mail address is john@domain.com'', if your prospect''s e-mail address is john@domain.com. \r\n[DATE] will print current date in dd/mm/yyyy format. \r\n[DATE+32d] [DATE-32d] [DATE+1m] [DATE-1m] [DATE+1y] [DATE-1y] will print corrected current date in dd/mm/yyyy format. \r\nExtra merge field words\r\n[ADD15] - Country \r\n[ADD5] - Address \r\n[ADD6] - City \r\n[ADD7] - Date \r\n[ADD8] - Date2 \r\n[ADD9] - sex \r\n[ADD10] - sname \r\n[ADD11] - state \r\n[ADD12] - url1 \r\n[ADD13] - url2 \r\n[ADD14] - Zip\r\n', '', 'text', 1, 'auto', 1, NULL, 0, '2012-08-05 15:03:58', NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, 0, 0),
+(5, 1, 'Sample manual message  for [FULLNAME]', 'This is the Sample manual message  for [FULLNAME]', '', 'text', 1, 'manual', 0, NULL, 0, '2012-08-05 15:03:58', NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, 0, 0),
+(3, 1, 'Subscribe message', 'Put your subscribe message here', '', 'text', 1, 'subscribe', 0, NULL, 0, '2012-08-05 15:03:58', NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, 0, 0),
+(4, 1, 'Unsubscribe message', 'Your message', '', 'text', 1, 'unsubscribe', 0, NULL, 0, '2012-08-05 15:03:58', NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, 0, 0),
+(1, 1, 'Please confirm your subscription', 'To confirm your subscription, click on the link below \r\n(you must be connected to the internet at the time):\r\n\r\n[CONFIRM_URL]\r\n\r\nIf you did not make the request, there is no need\r\nto take any further action.\r\n', '', 'text', 1, 'doi', 0, NULL, 0, '2012-08-05 15:03:58', 2, NULL, 0, NULL, NULL, NULL, NULL, NULL, 0, 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_process_loc`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_process_loc` (
+  `pk_process_loc` int(11) NOT NULL AUTO_INCREMENT,
+  `date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `PID` varchar(8) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `procnomber` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`pk_process_loc`),
+  KEY `procnomber` (`procnomber`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_senthistory`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_senthistory` (
+  `fk_user` int(11) NOT NULL,
+  `fk_mess` int(11) NOT NULL,
+  `date` datetime DEFAULT NULL,
+  PRIMARY KEY (`fk_user`,`fk_mess`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_sentlog`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_sentlog` (
+  `fk_user` int(11) NOT NULL DEFAULT '0',
+  `fk_mess` int(11) NOT NULL DEFAULT '0',
+  `date` datetime DEFAULT NULL,
+  PRIMARY KEY (`fk_user`,`fk_mess`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_ses`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_ses` (
+  `pk_ses` int(11) NOT NULL AUTO_INCREMENT,
+  `ran` varchar(25) COLLATE utf8_unicode_ci NOT NULL DEFAULT '0',
+  `date` datetime DEFAULT NULL,
+  `host` varchar(14) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`pk_ses`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=7 ;
+
+--
+-- Dumping data for table `swd_ses`
+--
+
+INSERT INTO `swd_ses` (`pk_ses`, `ran`, `date`, `host`) VALUES
+(6, 'zMSdm_Btrep6s8gV1JwMjDCWN', '2012-08-09 04:09:36', '212.92.251.3');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_stat_account_dayly`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_stat_account_dayly` (
+  `fk_account` tinyint(4) NOT NULL DEFAULT '0',
+  `date` date NOT NULL DEFAULT '0000-00-00',
+  `subscribers` int(11) NOT NULL DEFAULT '0',
+  `unsubscribers` int(11) NOT NULL DEFAULT '0',
+  `sent_manual` int(11) NOT NULL DEFAULT '0',
+  `sent_sheduled` int(11) NOT NULL DEFAULT '0',
+  `sent_sequential` int(11) NOT NULL DEFAULT '0',
+  `sent_subscribe` int(11) NOT NULL DEFAULT '0',
+  `sent_unsubscribe` int(11) NOT NULL DEFAULT '0',
+  `sent_doubleoptin` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`fk_account`,`date`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_stat_dayly`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_stat_dayly` (
+  `date` date NOT NULL DEFAULT '0000-00-00',
+  `broadcast_starts` int(11) NOT NULL DEFAULT '0',
+  `is_adm_notif` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`date`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_tosend`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_tosend` (
+  `fk_mess` int(11) NOT NULL DEFAULT '0',
+  `fk_user` int(11) NOT NULL DEFAULT '0',
+  `proc` tinyint(4) NOT NULL DEFAULT '0',
+  `paused` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`fk_mess`,`fk_user`),
+  KEY `proc` (`proc`),
+  KEY `procpaused` (`proc`,`paused`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `swd_user`
+--
+
+CREATE TABLE IF NOT EXISTS `swd_user` (
+  `pk_user` int(11) NOT NULL AUTO_INCREMENT,
+  `fk_account` int(11) NOT NULL DEFAULT '0',
+  `email` varchar(80) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(60) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `isact` tinyint(4) NOT NULL DEFAULT '1',
+  `datereg` date DEFAULT NULL,
+  `days` int(11) DEFAULT '0',
+  `datelastsend` date DEFAULT NULL,
+  `messlastsend` int(11) DEFAULT NULL,
+  `countsend` int(11) NOT NULL DEFAULT '0',
+  `undelivered` tinyint(4) DEFAULT NULL,
+  `ip` varchar(15) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `unsubscribe` varchar(12) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `messageformat` tinyint(4) NOT NULL DEFAULT '0',
+  `fk_affiliate` int(11) DEFAULT NULL,
+  `fromname` varchar(80) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `referrer_link` varchar(12) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `sequence_repeat` int(11) NOT NULL DEFAULT '0',
+  `fromemail` varchar(80) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`pk_user`),
+  KEY `email` (`email`),
+  KEY `unsubscribe` (`unsubscribe`),
+  KEY `fk_account` (`fk_account`,`isact`),
+  KEY `fk_affiliate` (`fk_affiliate`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `swd_user`
+--
+
+INSERT INTO `swd_user` (`pk_user`, `fk_account`, `email`, `name`, `isact`, `datereg`, `days`, `datelastsend`, `messlastsend`, `countsend`, `undelivered`, `ip`, `unsubscribe`, `messageformat`, `fk_affiliate`, `fromname`, `referrer_link`, `sequence_repeat`, `fromemail`) VALUES
+(1, 1, 'first@hotmail.com', 'First Subscriber', 0, '2005-05-03', 0, NULL, NULL, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, 0, NULL);
 

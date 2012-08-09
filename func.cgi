@@ -175,7 +175,7 @@ $YEAR_NOW= $d[5]+1900;
 %CASH_USER_TABLE_FILEDS = ();
 
 sub get_meta_charset{
-	$CONF{defcharset}='iso-8859-1' unless(length($CONF{defcharset}));
+	$CONF{defcharset}='utf-8' unless(length($CONF{defcharset}));
 	return qq|<meta http-equiv="Content-Type" content="text/html; charset=$CONF{defcharset}" />|;
 }
 
@@ -457,6 +457,9 @@ sub db_prepare{
 	$BDHOST='localhost' unless $BDHOST;
 	$db = DBI->connect("DBI:mysql:database=$DATABASE;host=$BDHOST",$USER,$PASS) ||
 	die "We are not connected to database $DATABASE \n\n Error: $DBI::err : $DBI::errstr ";
+	#enable UTF support	
+	$db->{'mysql_enable_utf8'} = 1;
+    	$db->do('SET NAMES utf8');
 	my $where;
 	if (exists $PAR{account}){
 		$where= " where fk_account in (0,$PAR{account}) ";

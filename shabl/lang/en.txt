@@ -17,7 +17,8 @@ HTML_FORM_LOCK_ACCOUNTS	Select accounts where you automatically want to lock pro
 HTML_FORM_LOCK_ALL	Lock on all other accounts
 MAIN_MENU	Main Menu
 ADMIN_CONTROL_PANEL	Admin Control Panel
-LOGO	<img src="content.cgi?get=image&f=logo&mode=png">
+LOGO	<img src="content.cgi?get=image&f=fumplogo&mode=png">
+LOGO_SM	<img src="content.cgi?get=image&f=fumplogo_sm&mode=gif">
 #Version 5.01.03
 PHP_INTEGRATION	PHP Integration
 PHP_INTEGRATION_DESCR	This PHP code will help you emulate posting to the account registration code. You can use this function in your PHP scripts to post information to FUMP.

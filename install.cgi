@@ -4,7 +4,7 @@
 # Version 5.01.06                                                    #
 # Developed by Kostya Ursalov, Andrey Stepanyuk,Dick Sсhiferly       #
 # http://fump.biz http://goo.gl/A33qk                                #
-# Last modified 05/07/2012                                           #
+# Last modified 10/07/2012                                           #
 ######################################################################
 use lib('lib');
 require 'conf.cgi';

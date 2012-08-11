@@ -18,13 +18,27 @@ local %CONF;
 $c_file="cnf.rd";
 $cfg_psd="Follow Up Mailing List Processor Installation - SellWide.com";
 %TYPESEND=(html=>"text/html",text=>"text/plain");
-%ENCODINGS=('iso-8859-1'=>'Western (latin)', 
-	'iso-8859-2'=>'Central European (iso-8859-2)', 'x-mac-ce'=>'Central European (Mac CE)', 'windows-1250'=>'Central European (Windows-1250)',
-	'iso-8859-5'=>'Cyrrillic (iso-8859-5)', 'koi8-r' => 'Cyrrillic (koi8-r)',
-	'koi8-u' => 'Cyrrillic Ukraine (koi8-u)','x-mac-cyrillic'=>'Cyrillic (Mac)' ,'windows-1251' => 'Cyrillic (Windows-1251)',
-	'iso-8859-7'=>'Greek (iso-8859-7)','x-mac-greek' =>'Greek (Mac)', 'windows-1253'=>'Greek (Windows-1253)',
-	'windows-1250'=>'Windows-1250','windows-1252'=>'Windows-1252',
-	'Shift_JIS'=>'Japanies (Shift_JIS)','iso-2022-jp'=>'Japanies (iso-2022-jp)','EUC-JP'=>'Japanies  (EUC-JP)', 'big5' => 'Chinese Traditional (Big5)', 'gb2312'=> 'Simplified Chinese');
+%ENCODINGS=(
+	'UTF-8'	=>'UTF-8',
+	'iso-8859-1'=>'Western (latin)', 
+	'iso-8859-2'=>'Central European (iso-8859-2)', 
+	'x-mac-ce'=>'Central European (Mac CE)', 
+	'windows-1250'=>'Central European (Windows-1250)',
+	'iso-8859-5'=>'Cyrrillic (iso-8859-5)', 
+	'koi8-r' => 'Cyrrillic (koi8-r)',
+	'koi8-u' => 'Cyrrillic Ukraine (koi8-u)',
+	'x-mac-cyrillic'=>'Cyrillic (Mac)' ,
+	'windows-1251' => 'Cyrillic (Windows-1251)',
+	'iso-8859-7'=>'Greek (iso-8859-7)',
+	'x-mac-greek' =>'Greek (Mac)', 
+	'windows-1253'=>'Greek (Windows-1253)',
+	'windows-1250'=>'Windows-1250',
+	'windows-1252'=>'Windows-1252',
+	'Shift_JIS'=>'Japanies (Shift_JIS)',
+	'iso-2022-jp'=>'Japanies (iso-2022-jp)',
+	'EUC-JP'=>'Japanies  (EUC-JP)', 
+	'big5' => 'Chinese Traditional (Big5)', 
+	'gb2312'=> 'Simplified Chinese');
 %PRIORITY=(''=>'Default',3=>"Normal",2=>"High",1=>"Low");
 %rss_languages = (
     'af'    => 'Afrikaans',
@@ -1221,6 +1235,8 @@ sub GetMessForUser{
 	}
 	
 	my $from,$to;
+	#let's set tefault encoding - utf-8 for sending messages
+	$mess->{encoding}="utf-8" unless $mess->{encoding}; 
 	$from=prepare_words($from_name,$mess->{encoding})." <$from_email>" if $from_name;
 	$from="$from_email" unless $from_name;
 	#Bug fix with dublicate sending
